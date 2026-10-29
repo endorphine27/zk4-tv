@@ -30,6 +30,7 @@ import com.nuvio.tv.data.local.PlayerPreference
 import com.nuvio.tv.data.local.PlayerSettings
 import com.nuvio.tv.data.local.PlayerSettingsDataStore
 import com.nuvio.tv.data.local.StreamAutoPlayMode
+import com.nuvio.tv.data.local.StreamAutoPlaySource
 import com.nuvio.tv.data.local.StreamBadgeSettingsDataStore
 import com.nuvio.tv.data.local.StreamLinkCacheDataStore
 import com.nuvio.tv.data.local.BingeGroupCacheDataStore
@@ -406,7 +407,17 @@ class StreamScreenViewModel @Inject constructor(
         streamLoadScope = newScope
         streamLoadJob = newScope.launch {
             streamLoadCompleted = false
-            val playerSettings = playerSettingsDataStore.playerSettings.first()
+            // Live TV channels always start the first stream straight away
+            val playerSettings = playerSettingsDataStore.playerSettings.first().let { settings ->
+                if (contentType.equals("tv", ignoreCase = true)) {
+                    settings.copy(
+                        streamAutoPlayMode = StreamAutoPlayMode.FIRST_STREAM,
+                        streamAutoPlaySource = StreamAutoPlaySource.ALL_SOURCES,
+                    )
+                } else {
+                    settings
+                }
+            }
             if (manualSelection) {
                 directAutoPlayModeInitializedForSession = true
                 directAutoPlayFlowEnabledForSession = false
