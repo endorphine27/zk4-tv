@@ -28,19 +28,15 @@ jobs:
           echo "APP_VERSION=1.0.0-tv.$(printf '%04d' "${GITHUB_RUN_NUMBER}")" >> "$GITHUB_ENV"
           echo "APP_VERSION_CODE=$((2000 + GITHUB_RUN_NUMBER))" >> "$GITHUB_ENV"
 
-      # A fresh signing key per build: no secrets are stored. Updating the app on the TV means
-      # uninstalling the previous build first (Android refuses an update signed with a different key).
-      - name: Create signing key
+      # One fixed signing key kept in the repo, so every build can be installed over the previous one.
+      # It only identifies this personal app on your own TV; it is not a store key.
+      - name: Use fixed signing key
         run: |
-          PW="$(openssl rand -hex 16)"
-          keytool -genkeypair -keystore "$RUNNER_TEMP/tv.jks" -alias cineboxtv -keyalg RSA -keysize 2048 \
-            -validity 10000 -storepass "$PW" -keypass "$PW" -dname "CN=CINEBOX TV, O=Personal, C=RO"
-          echo "::add-mask::$PW"
           {
-            echo "NUVIO_RELEASE_STORE_FILE=$RUNNER_TEMP/tv.jks"
+            echo "NUVIO_RELEASE_STORE_FILE=$GITHUB_WORKSPACE/ci/cinebox-tv.jks"
             echo "NUVIO_RELEASE_KEY_ALIAS=cineboxtv"
-            echo "NUVIO_RELEASE_KEY_PASSWORD=$PW"
-            echo "NUVIO_RELEASE_STORE_PASSWORD=$PW"
+            echo "NUVIO_RELEASE_KEY_PASSWORD=cinebox-tv"
+            echo "NUVIO_RELEASE_STORE_PASSWORD=cinebox-tv"
           } >> "$GITHUB_ENV"
 
       - name: Build full debug APK
