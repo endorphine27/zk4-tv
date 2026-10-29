@@ -359,7 +359,7 @@
     <string name="licenses_attributions_section_app">LICENCA E APLIKACIONIT</string>
     <string name="licenses_attributions_section_data">TË DHËNAT DHE SHËRBIMET</string>
     <string name="licenses_attributions_section_playback">LICENCAT E RIPRODHIMIT ANDROID</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Kodi burimor dhe kushtet e licencës janë të disponueshme në depon e projektit. Licencuar sipas GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX përdor API-në TMDB për metadata të filmave dhe serialeve, grafika, trailera, aktorë, detaje produksioni, koleksione dhe rekomandime. Ky produkt përdor API-në TMDB, por nuk mbështetet ose certifikohet nga TMDB.</string>
@@ -1752,7 +1752,7 @@
     <string name="library_delete_subtitle">Kjo heq listën dhe të gjithë artikujt e saj nga Trakt.</string>
     <string name="library_delete_confirm">Fshi</string>
     <string name="library_source_local">LOKAL</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Ruajtur</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2139,7 +2139,7 @@
     <string name="cd_preview">Pamje paraprake</string>
     <string name="cd_test">Testo</string>
     <string name="cd_unlink">Shkëput</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logoja e Trakt</string>
     <string name="cd_trakt_qr">QR-ja e aktivizimit Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2469,7 +2469,7 @@
     <string name="autoplay_regex_preset_no_cam_ts">Pa CAM/TS</string>
     <string name="autoplay_regex_preset_no_remux_hdr">Pa REMUX/HDR</string>
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Përdor luajtësin e integruar të NuvioTV</string>
+    <string name="playback_player_internal_desc">Përdor luajtësin e integruar të CINEBOX</string>
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>
     <string name="player_torrent_buffered_status">%1$s në buffer · %2$s · %3$s</string>

@@ -356,7 +356,7 @@
     <string name="licenses_attributions_section_app">ЛІЦЕНЗІЯ ЗАСТОСУНКУ</string>
     <string name="licenses_attributions_section_data">ДАНІ ТА СЕРВІСИ</string>
     <string name="licenses_attributions_section_playback">ЛІЦЕНЗІЇ ВІДТВОРЕННЯ ANDROID</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Вихідний код та умови ліцензії доступні в репозиторії проєкту. Ліцензовано під GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX використовує API TMDB для метаданих фільмів та ТВ, ілюстрацій, трейлерів, акторів, виробничих деталей, колекцій та рекомендацій. Цей продукт використовує API TMDB, але не схвалений та не сертифікований TMDB.</string>
@@ -1621,7 +1621,7 @@
     <string name="library_delete_subtitle">Це видалить список та всі його елементи з Trakt.</string>
     <string name="library_delete_confirm">Видалити</string>
     <string name="library_source_local">ЛОКАЛЬНО</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Збережене</string>
     <string name="library_source_cloud">Хмара</string>
@@ -1976,7 +1976,7 @@
     <string name="cd_preview">Попередній перегляд</string>
     <string name="cd_test">Тест</string>
     <string name="cd_unlink">Від\'єднати</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Логотип Trakt</string>
     <string name="cd_trakt_qr">QR-код активації Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2302,7 +2302,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Без REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Використовувати вбудований плеєр NuvioTV</string>
+    <string name="playback_player_internal_desc">Використовувати вбудований плеєр CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d сідів · %2$d пірів</string>

@@ -411,7 +411,7 @@
     <string name="licenses_attributions_section_app">APP-LICENTIE</string>
     <string name="licenses_attributions_section_data">GEGEVENS &amp; SERVICES</string>
     <string name="licenses_attributions_section_playback">ANDROID-AFSPEELLICENTIES</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">De broncode en licentievoorwaarden zijn beschikbaar in de projectrepository. Gelicentieerd onder de GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX gebruikt de TMDB-API voor metadata, illustraties, trailers, cast, productiedetails, collecties en aanbevelingen van films en series. Dit product gebruikt de TMDB-API, maar wordt niet onderschreven of gecertificeerd door TMDB.</string>
@@ -1919,7 +1919,7 @@
     <string name="library_delete_subtitle">Dit verwijdert de lijst en alle items uit Trakt.</string>
     <string name="library_delete_confirm">Verwijderen</string>
     <string name="library_source_local">LOKAAL</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Opgeslagen</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2346,7 +2346,7 @@
     <string name="cd_preview">Voorbeeld</string>
     <string name="cd_test">Testen</string>
     <string name="cd_unlink">Ontkoppelen</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt-logo</string>
     <string name="cd_trakt_qr">QR-code voor Trakt-activering</string>
     <string name="cd_imdb">IMDb</string>
@@ -2682,7 +2682,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Geen REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Gebruik de ingebouwde speler van NuvioTV</string>
+    <string name="playback_player_internal_desc">Gebruik de ingebouwde speler van CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeds · %2$d peers</string>

@@ -337,7 +337,7 @@
     <string name="licenses_attributions_section_app">LICENCA APLIKACIJE</string>
     <string name="licenses_attributions_section_data">PODATKI IN STORITVE</string>
     <string name="licenses_attributions_section_playback">LICENCE ZA PREDVAJANJE V ANDROIDU</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Izvorna koda in licenčni pogoji so na voljo v repozitoriju projekta. Licencirano pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX uporablja API TMDB za metapodatke o filmih in TV serijah, naslovnice, napovednike, igralsko zasedbo, podrobnosti o produkciji, zbirke in priporočila. Ta izdelek uporablja API TMDB, vendar ni odobren ali certificiran s strani TMDB.</string>
@@ -1355,7 +1355,7 @@
     <string name="library_delete_subtitle">To odstrani seznam in vse elemente seznama iz Trakt.</string>
     <string name="library_delete_confirm">Izbriši</string>
     <string name="library_source_local">LOKALNO</string>
-	<string name="library_source_nuvio">NUVIO</string>
+	<string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>																 
 	<string name="library_watchlist">Seznam za ogled</string> 
 	<string name="library_syncing_library">Sinhroniziranje knjižnice\u2026</string>
@@ -1661,7 +1661,7 @@
     <string name="cd_preview">Predogled</string>
     <string name="cd_test">Preizkus</string>
     <string name="cd_unlink">Odstrani povezavo</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logotip Trakt</string>
     <string name="cd_trakt_qr">QR za aktivacijo Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -1990,7 +1990,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Brez REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Uporabi vgrajeni predvajalnik NuvioTV</string>
+    <string name="playback_player_internal_desc">Uporabi vgrajeni predvajalnik CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->    
     <string name="player_torrent_peer_info">%1$d sejalcev · %2$d vrstnikov</string>

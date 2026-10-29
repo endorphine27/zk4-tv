@@ -400,7 +400,7 @@
     <string name="licenses_attributions_section_ui">UI লাইব্রেরি</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">ব্যাকগ্রাউন্ড ব্লার ইফেক্টের জন্য ব্যবহৃত হয়। Chris Banes দ্বারা তৈরি। Apache License, Version 2.0-এর অধীনে লাইসেন্সকৃত।</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">প্রজেক্ট রিপোজিটরিতে সোর্স কোড এবং লাইসেন্সের শর্তাবলী পাওয়া যাবে। GNU General Public License v3.0-এর অধীনে লাইসেন্সকৃত।</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX মুভি এবং টিভি মেটাডেটা, আর্টওয়ার্ক, ট্রেলার, কাস্ট, প্রোডাকশন বিবরণ, কালেকশন এবং সুপারিশের জন্য TMDB API ব্যবহার করে। এই পণ্যটি TMDB API ব্যবহার করে কিন্তু TMDB দ্বারা অনুমোদিত বা প্রত্যয়িত নয়।</string>
@@ -1593,7 +1593,7 @@
     <string name="profile_pin_overlay_set_support">এই প্রোফাইল খোলার আগে এই পিনটি প্রয়োজন হবে।</string>
     <string name="profile_pin_overlay_confirm_support">সেটআপ শেষ করতে একই ৪-ডিজিট পুনরায় লিখুন।</string>
     <string name="profile_pin_overlay_mismatch">পিন মেলেনি। আবার নতুন পিন লিখুন।</string>
-    <string name="profile_pin_overlay_forgot_hint">পিন ভুলে গেছেন? nuvio ওয়েবসাইট থেকে আপনার CINEBOX অ্যাকাউন্ট থেকে এটি রিসেট করুন।</string>
+    <string name="profile_pin_overlay_forgot_hint">পিন ভুলে গেছেন? CINEBOX ওয়েবসাইট থেকে আপনার CINEBOX অ্যাকাউন্ট থেকে এটি রিসেট করুন।</string>
     <string name="profile_pin_overlay_back_hint">বাতিল করতে back-এ চাপ দিন</string>
     <string name="essential_addon_setup_title">অ্যাডন সেটআপ করুন</string>
     <string name="essential_addon_setup_subtitle">স্ট্রিমিং শুরু করতে একটি অ্যাডন ইনস্টল করুন। আপনি পরবর্তীতে Addons থেকে আরও যোগ করতে পারবেন।</string>
@@ -1997,7 +1997,7 @@
     <string name="library_delete_subtitle">এটি Trakt থেকে লিস্ট এবং লিস্টের সমস্ত আইটেম মুছে ফেলবে।</string>
     <string name="library_delete_confirm">মুছুন</string>
     <string name="library_source_local">লোকাল</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">সংরক্ষিত</string>
     <string name="library_source_cloud">ক্লাউড</string>
@@ -2361,7 +2361,7 @@
     <string name="cd_preview">পূর্বরূপ</string>
     <string name="cd_test">টেস্ট</string>
     <string name="cd_unlink">আনলিংক করুন</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt লোগো</string>
     <string name="cd_trakt_qr">Trakt অ্যাক্টিভেশন QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2685,7 +2685,7 @@
     <string name="autoplay_regex_preset_english">ইংরেজি</string>
     <string name="autoplay_regex_preset_no_cam_ts">CAM/TS নেই</string>
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDR নেই</string>
-    <string name="playback_player_internal_desc">NuvioTV-এর বিল্ট-ইন প্লেয়ার ব্যবহার করুন</string>
+    <string name="playback_player_internal_desc">CINEBOX-এর বিল্ট-ইন প্লেয়ার ব্যবহার করুন</string>
     <string name="player_torrent_peer_info">%1$d সিডস · %2$d পিয়ার্স</string>
     <string name="player_torrent_buffered_status">%1$s বাফার করা হয়েছে · %2$s · %3$s</string>
     <string name="player_torrent_status">%1$s · %2$s</string>

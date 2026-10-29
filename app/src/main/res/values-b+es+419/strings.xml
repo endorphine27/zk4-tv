@@ -437,7 +437,7 @@
     <string name="licenses_attributions_section_ui">BIBLIOTECAS DE INTERFAZ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Se usa para efectos de desenfoque de fondo. Creado por Chris Banes. Licenciado bajo la Licencia Apache, Versión 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">El código fuente y los términos de la licencia están disponibles en el repositorio del proyecto. Licenciado bajo la GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX utiliza la API de TMDB para metadatos de películas y series, imágenes, tráilers, reparto, detalles de producción, colecciones y recomendaciones. Este producto utiliza la API de TMDB, pero no está respaldado ni certificado por TMDB.</string>
@@ -2103,7 +2103,7 @@
     <string name="library_delete_subtitle">Esto eliminará la lista y todos sus elementos de Trakt.</string>
     <string name="library_delete_confirm">Eliminar</string>
     <string name="library_source_local">LOCAL</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Guardado</string>
     <string name="library_source_cloud">Nube</string>
@@ -2530,7 +2530,7 @@
     <string name="cd_preview">Vista previa</string>
     <string name="cd_test">Probar</string>
     <string name="cd_unlink">Desvincular</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo de Trakt</string>
     <string name="cd_trakt_qr">QR de activación de Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2867,7 +2867,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Sin REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Usar el reproductor integrado de NuvioTV</string>
+    <string name="playback_player_internal_desc">Usar el reproductor integrado de CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeds · %2$d peers</string>

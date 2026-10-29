@@ -444,7 +444,7 @@
     <string name="licenses_attributions_section_ui">ARAYÜZ KÜTÜPHANELERİ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Arka plan bulanıklık efektleri için kullanılır. Chris Banes tarafından oluşturulmuştur. Apache License, Version 2.0 altında lisanslanmıştır.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Kaynak kodu ve lisans koşulları proje deposunda mevcuttur. GNU Genel Kamu Lisansı v3.0 altında lisanslanmıştır.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX, film ve dizi meta verileri, görseller, fragmanlar, oyuncular, yapım detayları, koleksiyonlar ve öneriler için TMDB API\'sini kullanır. Bu ürün TMDB API\'sini kullanır ancak TMDB tarafından onaylanmamıştır veya sertifikalandırılmamıştır.</string>
@@ -2138,7 +2138,7 @@
     <string name="library_delete_subtitle">Bu işlem listeyi ve içindeki tüm öğeleri Trakt hesabınızdan kaldırır.</string>
     <string name="library_delete_confirm">Sil</string>
     <string name="library_source_local">YEREL</string>
-    <string name="library_source_nuvio">NUVİO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Kaydedildi</string>
     <string name="library_source_cloud">Bulut</string>
@@ -2825,7 +2825,7 @@
     <string name="cd_trailer_controls">Fragman kontrolleri</string>
     <string name="cd_seek_bar">İlerleme çubuğu</string>
     <string name="cd_unlink">Bağlantıyı kes</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logosu</string>
     <string name="cd_trakt_qr">Trakt etkinleştirme QR kodu</string>
     <string name="cd_simkl_qr">Simkl etkinleştirme QR kodu</string>
@@ -3175,7 +3175,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDR olmasın</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">NuvioTV\'nin dahili oynatıcısını kullan</string>
+    <string name="playback_player_internal_desc">CINEBOX\'nin dahili oynatıcısını kullan</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>

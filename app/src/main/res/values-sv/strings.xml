@@ -866,7 +866,7 @@
     <string name="library_delete_subtitle">Detta tar bort listan och alla listobjekt från Trakt.</string>
     <string name="library_delete_confirm">Radera</string>
     <string name="library_source_local">LOKAL</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_syncing_library">Synkroniserar bibliotek\u2026</string>
     <string name="library_type_all">Alla</string>
@@ -1506,7 +1506,7 @@
     <string name="cd_preview">Förhandsvisning</string>
     <string name="cd_test">Testa</string>
     <string name="cd_unlink">Avlänka</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt-logotyp</string>
     <string name="cd_trakt_qr">Trakt-aktiverings-QR</string>
     <string name="cd_imdb">IMDb</string>

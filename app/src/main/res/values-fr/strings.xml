@@ -441,7 +441,7 @@
     <string name="licenses_attributions_section_ui">BIBLIOTHÈQUES D’INTERFACE</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Utilisée pour les effets de flou d’arrière-plan. Créée par Chris Banes. Distribuée sous licence Apache, version 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Le code source et les conditions de licence sont disponibles dans le dépôt du projet. Distribué sous licence GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX utilise l’API TMDB pour les métadonnées des films et des séries, les visuels, les bandes-annonces, la distribution, les détails de production, les collections et les recommandations. Ce produit utilise l’API TMDB, mais n’est ni approuvé ni certifié par TMDB.</string>
@@ -2126,7 +2126,7 @@
     <string name="library_delete_subtitle">Cela supprime la liste et tous ses éléments de Trakt.</string>
     <string name="library_delete_confirm">Supprimer</string>
     <string name="library_source_local">LOCAL</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Enregistrés</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2564,7 +2564,7 @@
     <string name="cd_trailer_controls">Commandes de la bande-annonce</string>
     <string name="cd_seek_bar">Barre de progression</string>
     <string name="cd_unlink">Dissocier</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Code QR d’activation Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2901,7 +2901,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Sans REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Utiliser le lecteur intégré de NuvioTV</string>
+    <string name="playback_player_internal_desc">Utiliser le lecteur intégré de CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeders · %2$d pairs</string>

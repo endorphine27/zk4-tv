@@ -364,7 +364,7 @@
     <string name="licenses_attributions_section_app">APP LICENSE</string>
     <string name="licenses_attributions_section_data">DATA &amp; SERVICES</string>
     <string name="licenses_attributions_section_playback">ANDROID PLAYBACK LICENSES</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Source code and license terms are available in the project repository. Licensed under the GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX uses the TMDB API for movie and TV metadata, artwork, trailers, cast, production details, collections, and recommendations. This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
@@ -1637,7 +1637,7 @@
     <string name="library_delete_subtitle">سيؤدي هذا لحذف القائمة وجميع عناصرها من Trakt.</string>
     <string name="library_delete_confirm">حذف</string>
     <string name="library_source_local">محلي</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">محفوظ</string>
     <string name="library_source_cloud">سحابي</string>
@@ -1990,7 +1990,7 @@
     <string name="cd_preview">معاينة</string>
     <string name="cd_test">اختبار</string>
     <string name="cd_unlink">إلغاء الارتباط</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">شعار Trakt</string>
     <string name="cd_trakt_qr">رمز QR لتفعيل Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2317,7 +2317,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">بدون REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">استخدام مشغل NuvioTV المدمج</string>
+    <string name="playback_player_internal_desc">استخدام مشغل CINEBOX المدمج</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seeds · %2$d peers</string>

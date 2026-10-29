@@ -426,7 +426,7 @@
     <string name="licenses_attributions_section_ui">UI BIBLIOTEKE</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Koristi se za efekte zamućenja pozadine. Autor: Chris Banes. Licencirano pod Apache licencom, verzija 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Izvorni kôd i uvjeti licence dostupni su u repozitoriju projekta. Licencirano pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX koristi TMDB API za metapodatke o filmovima i serijama, grafike, trailere, glumce, produkcijske detalje, kolekcije i preporuke. Ovaj proizvod koristi TMDB API, ali ga TMDB ne podržava niti certificira.</string>
@@ -2057,7 +2057,7 @@
     <string name="library_delete_subtitle">Ovo uklanja popis i sve njegove stavke s Trakta.</string>
     <string name="library_delete_confirm">Izbriši</string>
     <string name="library_source_local">LOKALNO</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Spremljeno</string>
     <string name="library_source_cloud">Oblak</string>
@@ -2469,7 +2469,7 @@
     <string name="cd_preview">Pretpregled</string>
     <string name="cd_test">Testiraj</string>
     <string name="cd_unlink">Odspoji</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logo</string>
     <string name="cd_trakt_qr">QR za aktivaciju Trakta</string>
     <string name="cd_imdb">IMDb</string>
@@ -2806,7 +2806,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Bez REMUX/HDR</string>
 
     <!-- Odjeljci postavki reprodukcije -->
-    <string name="playback_player_internal_desc">Koristi ugrađeni player NuvioTV-a</string>
+    <string name="playback_player_internal_desc">Koristi ugrađeni player CINEBOX-a</string>
 
     <!-- Player: torrent sloj + zapisi -->
     <string name="player_torrent_peer_info">%1$d seedova · %2$d peerova</string>

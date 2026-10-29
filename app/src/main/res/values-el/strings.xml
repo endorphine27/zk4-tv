@@ -410,7 +410,7 @@
   <string name="licenses_attributions_section_ui">ΒΙΒΛΙΟΘΗΚΕΣ UI</string>
   <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
   <string name="licenses_attributions_haze_body">Χρησιμοποιείται για εφέ θολώματος φόντου. Δημιουργήθηκε από τον Chris Banes. Διατίθεται υπό την άδεια Apache, έκδοση 2.0.</string>
-  <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+  <string name="licenses_attributions_nuvio_title">CINEBOX</string>
   <string name="licenses_attributions_nuvio_body">Ο πηγαίος κώδικας και οι όροι άδειας είναι διαθέσιμοι στο αποθετήριο του έργου. Διατίθεται υπό την άδεια GNU General Public License v3.0.</string>
   <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
   <string name="licenses_attributions_tmdb_body">Το CINEBOX χρησιμοποιεί το API του TMDB για μεταδεδομένα ταινιών και σειρών, εικόνες, τρέιλερ, ηθοποιούς, λεπτομέρειες παραγωγής, συλλογές και προτάσεις. Αυτό το προϊόν χρησιμοποιεί το API του TMDB αλλά δεν υποστηρίζεται ούτε πιστοποιείται από το TMDB.</string>
@@ -1939,7 +1939,7 @@
   <string name="library_delete_subtitle">Αυτό θα διαγράψει τη λίστα και όλα τα στοιχεία της από το Trakt.</string>
   <string name="library_delete_confirm">Διαγραφή</string>
   <string name="library_source_local">ΤΟΠΙΚΗ</string>
-  <string name="library_source_nuvio">NUVIO</string>
+  <string name="library_source_nuvio">CINEBOX</string>
   <string name="library_source_trakt">TRAKT</string>
   <string name="library_source_saved">Αποθηκευμένα</string>
   <string name="library_source_cloud">Cloud</string>
@@ -2343,7 +2343,7 @@
   <string name="cd_test">Δοκιμή</string>
   <string name="cd_clear_search">Εκκαθάριση αναζήτησης</string>
   <string name="cd_unlink">Αποσύνδεση</string>
-  <string name="cd_nuvio_logo">NuvioTV</string>
+  <string name="cd_nuvio_logo">CINEBOX</string>
   <string name="cd_trakt_logo">Λογότυπο Trakt</string>
   <string name="cd_trakt_qr">QR ενεργοποίησης Trakt</string>
   <string name="cd_imdb">IMDb</string>
@@ -2665,7 +2665,7 @@
   <string name="autoplay_regex_preset_no_cam_ts">Χωρίς CAM/TS</string>
   <string name="autoplay_regex_preset_no_remux_hdr">Χωρίς REMUX/HDR</string>
   <!-- Playback settings sections -->
-  <string name="playback_player_internal_desc">Χρήση του ενσωματωμένου προγράμματος αναπαραγωγής NuvioTV</string>
+  <string name="playback_player_internal_desc">Χρήση του ενσωματωμένου προγράμματος αναπαραγωγής CINEBOX</string>
   <!-- Player runtime: torrent overlay + tracks -->
   <string name="player_torrent_peer_info">%1$d διανομείς · %2$d λήπτες</string>
   <string name="player_torrent_buffered_status">%1$s στην προσωρινή μνήμη · %2$s · %3$s</string>

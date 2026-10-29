@@ -441,7 +441,7 @@
     <string name="licenses_attributions_section_ui">THƯ VIỆN GIAO DIỆN NGƯỜI DÙNG</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Dùng cho hiệu ứng làm mờ nền. Được tạo bởi Chris Banes. Được cấp phép theo Giấy phép Apache, Phiên bản 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Mã nguồn và các điều khoản cấp phép có sẵn trong kho lưu trữ của dự án. Phần mềm được cấp phép theo Giấy phép Công cộng GNU phiên bản 3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX sử dụng API TMDB để lấy dữ liệu phim và TV, ảnh hiển thị, trailer, diễn viên, thông tin sản xuất, bộ sưu tập và đề xuất. Sản phẩm này sử dụng API TMDB nhưng không được TMDB xác thực hoặc chứng nhận.</string>
@@ -2126,7 +2126,7 @@
     <string name="library_delete_subtitle">Thao tác này sẽ xóa danh sách và tất cả mục danh sách khỏi Trakt.</string>
     <string name="library_delete_confirm">Xóa</string>
     <string name="library_source_local">CỤC BỘ</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Đã lưu</string>
     <string name="library_source_cloud">Đám mây</string>
@@ -2564,7 +2564,7 @@
     <string name="cd_trailer_controls">Nút điều khiển trailer</string>
     <string name="cd_seek_bar">Thanh tua</string>
     <string name="cd_unlink">Hủy liên kết</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Mã QR kích hoạt Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2901,7 +2901,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Loại bỏ REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Sử dụng trình phát tích hợp của NuvioTV</string>
+    <string name="playback_player_internal_desc">Sử dụng trình phát tích hợp của CINEBOX</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>

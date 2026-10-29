@@ -440,7 +440,7 @@
     <string name="licenses_attributions_section_ui">FELÜLETI KÖNYVTÁRAK</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Háttérelmosáshoz használjuk. Készítette Chris Banes. Apache License 2.0 alatt érhető el.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">A forráskód és a licencfeltételek elérhetők a projekt tárolójában. Licenc: GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">A CINEBOX a TMDB API-t használja a filmek és tévéműsorok metaadataihoz, borítóképekhez, előzetesekhez, stáblistákhoz, gyártási adatokhoz, gyűjteményekhez és ajánlásokhoz. Ez a termék a TMDB API-t használja, de a TMDB nem támogatja és nem hagyta jóvá.</string>
@@ -2116,7 +2116,7 @@
     <string name="library_delete_subtitle">Ez eltávolítja a listát és annak minden elemét a Trakt-ról.</string>
     <string name="library_delete_confirm">Törlés</string>
     <string name="library_source_local">HELYI</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Mentett</string>
     <string name="library_source_cloud">Felhő</string>
@@ -2548,7 +2548,7 @@
     <string name="cd_preview">Előnézet</string>
     <string name="cd_test">Tesztelés</string>
     <string name="cd_unlink">Leválasztás</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logó</string>
     <string name="cd_trakt_qr">Trakt aktivációs QR-kód</string>
     <string name="cd_imdb">IMDb</string>
@@ -2885,7 +2885,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDR kizárása</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">A NuvioTV beépített lejátszójának használata</string>
+    <string name="playback_player_internal_desc">A CINEBOX beépített lejátszójának használata</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d seed · %2$d peer</string>

@@ -369,7 +369,7 @@
     <string name="licenses_attributions_section_app">LICENCIA APLIKÁCIE</string>
     <string name="licenses_attributions_section_data">DÁT A SLUŽBY</string>
     <string name="licenses_attributions_section_playback">ANDROID LICENCIE PREHRÁVANIA</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Zdrojový kód a licenčné podmienky sú dostupné v repozitári projektu. Licencované pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX používa TMDB API pre metadáta filmov a TV, grafiku, trailery, obsadenie, produkčné detaily, kolekcie a odporúčania. Tento produkt používa TMDB API, ale nie je schválený ani certifikovaný TMDB.</string>
@@ -1571,7 +1571,7 @@
     <string name="library_delete_subtitle">Týmto sa odstráni zoznam aj všetky položky zoznamu z Trakt.</string>
     <string name="library_delete_confirm">Odstrániť</string>
     <string name="library_source_local">LOKÁLNE</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Uložené</string>
     <string name="library_source_cloud">Cloud</string>
@@ -1942,7 +1942,7 @@
     <string name="cd_preview">Náhľad</string>
     <string name="cd_test">Testovať</string>
     <string name="cd_unlink">Odpojiť</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Trakt aktivačné QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2269,7 +2269,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Bez REMUX/HDR</string>
 
     
-    <string name="playback_player_internal_desc">Použiť vstavaný prehrávač NuvioTV</string>
+    <string name="playback_player_internal_desc">Použiť vstavaný prehrávač CINEBOX</string>
 
     
     <string name="player_torrent_peer_info">%1$d seedov · %2$d peerov</string>

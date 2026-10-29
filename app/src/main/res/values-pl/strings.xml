@@ -1378,7 +1378,7 @@
     <string name="library_watched_filter_all">Wszystko</string>
     <string name="library_watched_filter_watched">Obejrzane</string>
     <string name="library_watched_filter_unwatched">Nieobejrzane</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_syncing_library">Synchronizacja biblioteki\u2026</string>
 
@@ -1443,7 +1443,7 @@
     <string name="cd_preview">Podgląd</string>
     <string name="cd_test">Test</string>
     <string name="cd_unlink">Odłącz</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Kod QR aktywacji Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2332,7 +2332,7 @@
     <string name="licenses_attributions_mdblist_body">CINEBOX korzysta z MDBList do ocen i danych zewnętrznych dostawców wyników. CINEBOX nie jest powiązane z MDBList.</string>
     <string name="licenses_attributions_mdblist_title">MDBList</string>
     <string name="licenses_attributions_nuvio_body">Kod źródłowy i warunki licencji są dostępne w repozytorium projektu. Licencjonowane na GNU General Public License v3.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_section_app">LICENCJA APLIKACJI</string>
     <string name="licenses_attributions_section_data">DANE I USŁUGI</string>
     <string name="licenses_attributions_section_playback">LICENCJE ODTWARZANIA ANDROID</string>
@@ -2345,7 +2345,7 @@
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_trakt_body">CINEBOX łączy się z Trakt w celu uwierzytelniania konta, historii obejrzanych, synchronizacji postępu, danych biblioteki, ocen, list i komentarzy. CINEBOX nie jest powiązane z Trakt.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
-    <string name="playback_player_internal_desc">Użyj wbudowanego odtwarzacza NuvioTV</string>
+    <string name="playback_player_internal_desc">Użyj wbudowanego odtwarzacza CINEBOX</string>
     <string name="player_error_decoder">Błąd dekodera</string>
     <string name="player_error_initialize_failed">Nie udało się zainicjalizować odtwarzacza</string>
     <string name="player_error_mpv_playback_failed">Nie udało się zainicjalizować odtwarzania libmpv</string>

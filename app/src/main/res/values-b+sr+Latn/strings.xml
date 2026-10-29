@@ -421,7 +421,7 @@
     <string name="licenses_attributions_section_app">LICENCA APLIKACIJE</string>
     <string name="licenses_attributions_section_data">PODACI I USLUGE</string>
     <string name="licenses_attributions_section_playback">ANDROID LICENCE ZA REPRODUKCIJU</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">Izvorni kod i uslovi licenciranja su dostupni u spremištu projekta. Licencirano pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX koristi TMDB API za metapodatke o filmovima i TV serijama, grafiku, trejlere, glumačku ekipu, detalje o produkciji, kolekcije i preporuke. Ovaj proizvod koristi TMDB API, ali nije podržan niti sertifikovan od strane TMDB-a.</string>
@@ -1544,7 +1544,7 @@
     <string name="profile_pin_overlay_set_support">Ovaj PIN će biti potreban pre otvaranja ovog profila.</string>
     <string name="profile_pin_overlay_confirm_support">Ponovo unesite iste 4 cifre da završite podešavanje.</string>
     <string name="profile_pin_overlay_mismatch">PIN kodovi se ne poklapaju. Unesite novi PIN ponovo.</string>
-    <string name="profile_pin_overlay_forgot_hint">Zaboravili ste PIN? Resetujte ga sa svog CINEBOX naloga na nuvio veb-sajtu.</string>
+    <string name="profile_pin_overlay_forgot_hint">Zaboravili ste PIN? Resetujte ga sa svog CINEBOX naloga na CINEBOX veb-sajtu.</string>
     <string name="profile_pin_overlay_back_hint">Pritisnite nazad za otkazivanje</string>
 
 
@@ -1946,7 +1946,7 @@
     <string name="library_delete_subtitle">Ovo uklanja listu i sve stavke u njoj sa Trakt-a.</string>
     <string name="library_delete_confirm">Obriši</string>
     <string name="library_source_local">LOKALNO</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Sačuvano</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2373,7 +2373,7 @@
     <string name="cd_preview">Pregled</string>
     <string name="cd_test">Testiraj</string>
     <string name="cd_unlink">Prekini vezu</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logotip</string>
     <string name="cd_trakt_qr">QR kod za Trakt aktivaciju</string>
     <string name="cd_imdb">IMDb</string>
@@ -2709,7 +2709,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Bez REMUX/HDR</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">Koristi ugrađeni NuvioTV plejer</string>
+    <string name="playback_player_internal_desc">Koristi ugrađeni CINEBOX plejer</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$d sedera · %2$d pira</string>

@@ -351,7 +351,7 @@
     <string name="licenses_attributions_section_app">アプリライセンス</string>
     <string name="licenses_attributions_section_data">データ &amp; サービス</string>
     <string name="licenses_attributions_section_playback">Android再生ライセンス</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">ソースコードとライセンス条項はプロジェクトリポジトリで入手可能です。GNU General Public License v3.0 の下でライセンスされています。</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOXは映画・TVのメタデータ、アートワーク、予告編、キャスト、制作詳細、コレクション、レコメンドにTMDB APIを使用しています。この製品はTMDB APIを使用していますが、TMDBによって承認または認定されていません。</string>
@@ -1630,7 +1630,7 @@
     <string name="library_delete_subtitle">Traktからリストとすべてのリストアイテムが削除されます</string>
     <string name="library_delete_confirm">削除</string>
     <string name="library_source_local">ローカル</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">保存済み</string>
     <string name="library_source_cloud">クラウド</string>
@@ -1983,7 +1983,7 @@
     <string name="cd_preview">プレビュー</string>
     <string name="cd_test">テスト</string>
     <string name="cd_unlink">リンク解除</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Traktロゴ</string>
     <string name="cd_trakt_qr">Trakt認証QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2309,7 +2309,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">REMUX/HDRなし</string>
 
     <!-- Playback settings sections -->
-    <string name="playback_player_internal_desc">NuvioTVの内蔵プレーヤーを使用</string>
+    <string name="playback_player_internal_desc">CINEBOXの内蔵プレーヤーを使用</string>
 
     <!-- Player runtime: torrent overlay + tracks -->
     <string name="player_torrent_peer_info">%1$dシード · %2$dピア</string>

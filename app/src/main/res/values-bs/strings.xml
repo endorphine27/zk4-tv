@@ -1093,7 +1093,7 @@
     <string name="library_delete_subtitle">Ovo uklanja listu i sve stavke sa Trakta.</string>
     <string name="library_delete_confirm">Izbriši</string>
     <string name="library_source_local">LOKALNO</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_syncing_library">Sinhronizacija biblioteke…</string>
     <string name="library_type_all">Sve</string>
@@ -1394,7 +1394,7 @@
     <string name="cd_preview">Pregled</string>
     <string name="cd_test">Testiraj</string>
     <string name="cd_unlink">Odspoji</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt Logo</string>
     <string name="cd_trakt_qr">Trakt QR za aktivaciju</string>
     <string name="cd_imdb">IMDb</string>

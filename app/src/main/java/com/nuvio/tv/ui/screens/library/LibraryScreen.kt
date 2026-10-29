@@ -353,7 +353,7 @@ fun LibraryScreen(
                         uiState.sourceMode == LibrarySourceMode.TRAKT -> "TRAKT"
                         uiState.sourceMode == LibrarySourceMode.SIMKL -> "SIMKL"
                         uiState.sourceMode == LibrarySourceMode.MDBLIST -> "MDBLIST"
-                        uiState.isNuvioAccount -> "NUVIO"
+                        uiState.isNuvioAccount -> "CINEBOX"
                         else -> stringResource(R.string.library_source_local)
                     },
                     style = MaterialTheme.typography.labelLarge,

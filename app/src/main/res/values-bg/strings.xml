@@ -440,7 +440,7 @@
     <string name="licenses_attributions_section_ui">БИБЛИОТЕКИ С ПОТРЕБИТЕЛСКИ ИНТЕРНЕТ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Използва се за ефекти на размазване на фона. Създадено от Крис Бейнс. Лицензирано под Apache License, версия 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio телевизор</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX телевизор</string>
     <string name="licenses_attributions_nuvio_body">Изходният код и лицензионните условия са достъпни в хранилището на проекта. Лицензиран под GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">Базата данни за филми (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX използва TMDB API за метаданни за филми и телевизионни предавания, произведения на изкуството, трейлъри, актьорски състав, подробности за продукцията, колекции и препоръки. Този продукт използва TMDB API, но не е одобрен или сертифициран от TMDB.</string>
@@ -2563,7 +2563,7 @@
     <string name="cd_trailer_controls">Управление на трейлъра</string>
     <string name="cd_seek_bar">Лента за търсене</string>
     <string name="cd_unlink">Прекратяване на връзката</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Лого на Trakt</string>
     <string name="cd_trakt_qr">QR код за активиране на Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2900,7 +2900,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">Без REMUX/HDR</string>
 
 <!-- Playback settings sections --> 
-    <string name="playback_player_internal_desc">Използване на вградения плейър на NuvioTV</string>
+    <string name="playback_player_internal_desc">Използване на вградения плейър на CINEBOX</string>
 
 <!-- Player runtime: torrent overlay + tracks --> 
     <string name="player_torrent_peer_info">%1$d начални точки · %2$d пиъри</string>

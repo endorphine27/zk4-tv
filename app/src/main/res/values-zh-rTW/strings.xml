@@ -422,7 +422,7 @@
     <string name="licenses_attributions_section_ui">UI 函式庫</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">用於背景模糊效果。由 Chris Banes 建立。基於 Apache License, Version 2.0 授權。</string>
-    <string name="licenses_attributions_nuvio_title">Nuvio TV</string>
+    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
     <string name="licenses_attributions_nuvio_body">原始碼和授權條款可在專案倉庫中取得。基於 GNU General Public License v3.0 授權。</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX 使用 TMDB API 獲取電影和電視節目的中繼資料、美術圖、預告片、演員、製作細節、收藏和推薦內容。本產品使用 TMDB API，但未經 TMDB 認可或認證。</string>
@@ -1599,7 +1599,7 @@
     <string name="profile_pin_overlay_set_support">開啟此個人資料前將需要此 PIN。</string>
     <string name="profile_pin_overlay_confirm_support">重新輸入相同的 4 位數字以完成設定。</string>
     <string name="profile_pin_overlay_mismatch">PIN 碼不相符。請重新輸入新的 PIN。</string>
-    <string name="profile_pin_overlay_forgot_hint">忘記 PIN？請從 nuvio 網站上的 CINEBOX 帳戶重設。</string>
+    <string name="profile_pin_overlay_forgot_hint">忘記 PIN？請從 CINEBOX 網站上的 CINEBOX 帳戶重設。</string>
     <string name="profile_pin_overlay_back_hint">按返回鍵取消</string>
 
 
@@ -2000,7 +2000,7 @@
     <string name="library_delete_subtitle">這將從 Trakt 移除該清單及其所有項目。</string>
     <string name="library_delete_confirm">刪除</string>
     <string name="library_source_local">本地</string>
-    <string name="library_source_nuvio">NUVIO</string>
+    <string name="library_source_nuvio">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">已儲存</string>
     <string name="library_source_cloud">雲端</string>
@@ -2427,7 +2427,7 @@
     <string name="cd_preview">預覽</string>
     <string name="cd_test">測試</string>
     <string name="cd_unlink">取消連結</string>
-    <string name="cd_nuvio_logo">NuvioTV</string>
+    <string name="cd_nuvio_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt 標誌</string>
     <string name="cd_trakt_qr">Trakt 啟用 QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -2763,7 +2763,7 @@
     <string name="autoplay_regex_preset_no_remux_hdr">無 REMUX/HDR</string>
 
     <!-- 播放設定區段 -->
-    <string name="playback_player_internal_desc">使用 NuvioTV 的內建播放器</string>
+    <string name="playback_player_internal_desc">使用 CINEBOX 的內建播放器</string>
 
     <!-- 播放器執行時期：torrent 覆蓋層 + 音軌 -->
     <string name="player_torrent_peer_info">%1$d 個種子 · %2$d 個對等節點</string>
