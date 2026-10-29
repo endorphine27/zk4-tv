@@ -1493,7 +1493,7 @@
     <string name="trakt_watch_progress_title">Megtekintési állapot</string>
     <string name="trakt_watch_progress_subtitle">Válaszd ki a lejátszás folytatásához és a Megtekintés folytatása sorhoz használt adatforrást</string>
     <string name="trakt_watch_progress_dialog_title">Megtekintési állapot</string>
-    <string name="trakt_watch_progress_dialog_subtitle">Válaszd ki, hogy a lejátszás folytatásához és a Megtekintés folytatása sorhoz a Trakt vagy a CINEBOX Sync adatait használja-e a Nuvio. A lejátszási adatokat továbbra is elküldi a Traktnak.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">Válaszd ki, hogy a lejátszás folytatásához és a Megtekintés folytatása sorhoz a Trakt vagy a CINEBOX Sync adatait használja-e a CINEBOX. A lejátszási adatokat továbbra is elküldi a Traktnak.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
     <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Könyvtár forrása</string>

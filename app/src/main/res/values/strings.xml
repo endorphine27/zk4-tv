@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">No addons installed. Add one to get started.</string>
     <string name="home_no_catalog_addons">No catalog addons installed. Install a catalog addon to see content.</string>
-    <string name="auth_notice_nuvio_logged_out">You have been signed out of Nuvio. Please sign in again.</string>
+    <string name="auth_notice_nuvio_logged_out">You have been signed out of CINEBOX. Please sign in again.</string>
     <string name="auth_notice_trakt_logged_out">You have been signed out of Trakt. Please reconnect.</string>
     <string name="error_generic">An error occurred</string>
 
@@ -389,7 +389,7 @@
     <string name="appearance_app_icon_picker_title">Choose App Icon &amp; Banner</string>
     <string name="appearance_app_icon_picker_subtitle">Each style includes a matching square icon and TV banner</string>
     <string name="appearance_app_icon_confirmation_title">Change App Icon?</string>
-    <string name="appearance_app_icon_confirmation_message">Changing to %1$s will close Nuvio. The TV banner may require a device restart before it updates. Select OK to continue.</string>
+    <string name="appearance_app_icon_confirmation_message">Changing to %1$s will close CINEBOX. The TV banner may require a device restart before it updates. Select OK to continue.</string>
     <string name="appearance_app_icon_change_failed">The icon and banner could not be changed. Please try again.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Arctic Blue</string>
@@ -674,7 +674,7 @@
     <string name="supporters_contributors_loading_donation_progress">Loading funding progress...</string>
     <string name="supporters_contributors_donate_button">Support CINEBOX</string>
     <string name="supporters_contributors_qr_title">Scan to support</string>
-    <string name="supporters_contributors_qr_subtitle">Open the link on your phone to support Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Open the link on your phone to support CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Point your camera at the QR code or use the button below.</string>
     <string name="supporters_contributors_back_button">Back to details</string>
     <string name="supporter_membership_title">CINEBOX Supporter Membership</string>
@@ -1315,7 +1315,7 @@
     <string name="debrid_disconnect">Disconnect</string>
     <string name="debrid_device_auth_connected">%1$s is connected on this device.</string>
     <string name="debrid_device_auth_starting">Starting secure sign-in...</string>
-    <string name="debrid_device_auth_instructions">Scan the QR and enter this code to approve Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Scan the QR and enter this code to approve CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Code copied.</string>
     <string name="debrid_device_auth_waiting">Waiting for approval...</string>
     <string name="debrid_device_auth_failed">Could not start sign-in.</string>
@@ -1553,7 +1553,7 @@
     <string name="trakt_stat_watched_hours">Watched Hours</string>
     <string name="trakt_disconnect">Disconnect</string>
     <string name="trakt_disconnect_title">Disconnect Trakt?</string>
-    <string name="trakt_disconnect_subtitle">This will disconnect your Trakt account from Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">This will disconnect your Trakt account from CINEBOX.</string>
     <string name="trakt_login">Login</string>
     <string name="trakt_retry">Retry</string>
     <string name="trakt_back">Back</string>

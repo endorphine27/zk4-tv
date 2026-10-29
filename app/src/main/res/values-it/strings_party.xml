@@ -72,6 +72,6 @@
     <string name="party_share_unavailable">Questo flusso non può essere condiviso.</string>
     <string name="party_shared_by">Condiviso da %1$s</string>
     <string name="party_invite_scan">Scansiona con un telefono per unirti</string>
-    <string name="party_invite_share">Oppure condividi il codice. Gli amici possono inserirlo in Watch party da qualsiasi app Nuvio.</string>
+    <string name="party_invite_share">Oppure condividi il codice. Gli amici possono inserirlo in Watch party da qualsiasi app CINEBOX.</string>
     <string name="party_invite_qr">Codice QR di invito alla watch party</string>
 </resources>

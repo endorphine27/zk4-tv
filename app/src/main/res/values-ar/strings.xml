@@ -100,7 +100,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">لا توجد إضافات مثبتة. أضف إضافة واحدة للبدء.</string>
     <string name="home_no_catalog_addons">لا توجد إضافات قوائم عرض مثبتة. ثبت واحدة لعرض المحتوى.</string>
-    <string name="auth_notice_nuvio_logged_out">تم تسجيل خروجك من Nuvio. يرجى تسجيل الدخول مرة أخرى.</string>
+    <string name="auth_notice_nuvio_logged_out">تم تسجيل خروجك من CINEBOX. يرجى تسجيل الدخول مرة أخرى.</string>
     <string name="auth_notice_trakt_logged_out">تم تسجيل خروجك من Trakt. يرجى إعادة الاتصال.</string>
     <string name="error_generic">حدث خطأ</string>
 
@@ -520,7 +520,7 @@
     <string name="supporters_contributors_donate_copy">سيبقى CINEBOX مجانياً ومفتوح المصدر. إذا كنت ترغب في دعم المشروع، يمكنك المساعدة في تغطية تكاليف الوقت والبنية التحتية.</string>
     <string name="supporters_contributors_donate_button">التبرع لـ CINEBOX</string>
     <string name="supporters_contributors_qr_title">امسح للتبرع</string>
-    <string name="supporters_contributors_qr_subtitle">افتح الرابط على هاتفك لدعم Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">افتح الرابط على هاتفك لدعم CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">وجه كاميرتك نحو رمز QR أو استخدم الزر أدناه.</string>
     <string name="supporters_contributors_back_button">العودة للتفاصيل</string>
     <string name="supporters_tab">الداعمون</string>
@@ -1162,7 +1162,7 @@
     <string name="trakt_stat_watched_hours">ساعات المشاهدة</string>
     <string name="trakt_disconnect">قطع الاتصال</string>
     <string name="trakt_disconnect_title">قطع اتصال Trakt؟</string>
-    <string name="trakt_disconnect_subtitle">سيؤدي هذا لقطع اتصال حساب Trakt عن Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">سيؤدي هذا لقطع اتصال حساب Trakt عن CINEBOX.</string>
     <string name="trakt_login">تسجيل الدخول</string>
     <string name="trakt_retry">إعادة المحاولة</string>
     <string name="trakt_back">رجوع</string>
@@ -1230,7 +1230,7 @@
     <string name="profile_addons">الإضافات</string>
     <string name="profile_plugins">الملحقات</string>
     <string name="profile_choose_avatar">اختيار الصورة الرمزية</string>
-    <string name="profile_custom_avatar_web_panel_note">يمكنك ضبط وتغيير روابط الصور الرمزية المخصصة عبر لوحة ويب Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">يمكنك ضبط وتغيير روابط الصور الرمزية المخصصة عبر لوحة ويب CINEBOX.</string>
     <string name="profile_avatar_none_selected">لم يتم تحديد رمز تعبيري</string>
     <string name="profile_avatar_focus_hint">قف على الصورة الرمزية لعرض الاسم</string>
     <string name="profile_avatar_category_all">الكل</string>
@@ -1837,7 +1837,7 @@
     <string name="update_unknown_sources">اسمح بتثبيت التطبيقات من مصادر غير معروفة للمتابعة.</string>
     <!-- AccountScreen -->
     <string name="account_title">الحساب</string>
-    <string name="account_sign_in_description">سجل دخولك لمزامنة مكتبتك، وتقدم المشاهدة، والإضافات، والملحقات عبر أجهزتك. تستخدم مزامنة المكتبة CINEBOX Sync عندما يكون Trakt غير متصل، ويمكن لمستوى المشاهدة استخدام Trakt أو مزامنة Nuvio.</string>
+    <string name="account_sign_in_description">سجل دخولك لمزامنة مكتبتك، وتقدم المشاهدة، والإضافات، والملحقات عبر أجهزتك. تستخدم مزامنة المكتبة CINEBOX Sync عندما يكون Trakt غير متصل، ويمكن لمستوى المشاهدة استخدام Trakt أو مزامنة CINEBOX.</string>
     <string name="account_sync_code_title">رمز المزامنة</string>
     <string name="account_sync_code_description">المزامنة عبر الأجهزة دون إنشاء حساب.</string>
     <string name="account_linked_devices">الأجهزة المرتبطة (%1$d)</string>

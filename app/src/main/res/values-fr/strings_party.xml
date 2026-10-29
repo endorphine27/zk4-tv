@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Ce flux ne peut pas être partagé.</string>
     <string name="party_shared_by">Partagé par %1$s</string>
     <string name="party_invite_scan">Scannez avec un téléphone pour rejoindre</string>
-    <string name="party_invite_share">Ou partagez le code. Vos amis peuvent le saisir dans Watch party sur n’importe quelle application Nuvio.</string>
+    <string name="party_invite_share">Ou partagez le code. Vos amis peuvent le saisir dans Watch party sur n’importe quelle application CINEBOX.</string>
     <string name="party_invite_qr">Code QR d’invitation à la watch party</string>
     <string name="party_phone_chat_note">Ouvrez la watch party sur votre téléphone avec ce profil pour discuter.</string>
 </resources>

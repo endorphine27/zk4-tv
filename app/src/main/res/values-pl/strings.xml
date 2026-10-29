@@ -658,7 +658,7 @@
     <string name="trakt_stat_watched_hours">Godziny oglądania</string>
     <string name="trakt_disconnect">Rozłącz</string>
     <string name="trakt_disconnect_title">Rozłączyć Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Spowoduje to odłączenie konta Trakt od Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Spowoduje to odłączenie konta Trakt od CINEBOX.</string>
     <string name="trakt_login">Zaloguj</string>
     <string name="trakt_retry">Ponów</string>
     <string name="trakt_back">Wstecz</string>
@@ -1157,7 +1157,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX pozostanie darmowe i open source. Jeśli chcesz wesprzeć projekt, możesz pomóc pokryć czas i infrastrukturę za nim stojącą.</string>
     <string name="supporters_contributors_donate_button">Wesprzyj CINEBOX</string>
     <string name="supporters_contributors_qr_title">Zeskanuj, aby wesprzeć</string>
-    <string name="supporters_contributors_qr_subtitle">Otwórz link na telefonie, aby wesprzeć Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Otwórz link na telefonie, aby wesprzeć CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Skieruj aparat na kod QR lub użyj przycisku poniżej.</string>
     <string name="supporters_contributors_back_button">Wróć do szczegółów</string>
     <string name="supporters_tab">Wspierający</string>
@@ -1208,7 +1208,7 @@
     <string name="audio_mix_range_saved">Zakres: %1$d dB do %2$d dB (zapisano)</string>
     <string name="audio_mix_unavailable">Wzmocnienie nie jest dostępne na tym urządzeniu</string>
 
-    <string name="auth_notice_nuvio_logged_out">Zostałeś wylogowany z Nuvio. Zaloguj się ponownie.</string>
+    <string name="auth_notice_nuvio_logged_out">Zostałeś wylogowany z CINEBOX. Zaloguj się ponownie.</string>
     <string name="auth_notice_trakt_logged_out">Zostałeś wylogowany z Trakt. Połącz ponownie.</string>
 
     <string name="error_state_generic_issue">Coś poszło nie tak.</string>
@@ -1585,7 +1585,7 @@
     <string name="playback_auto_switch_internal_player_on_error_sub">Jeśli uruchomienie strumienia się nie powiedzie, automatycznie przełącz między ExoPlayer a libmpv.</string>
     <string name="playback_external_forward_subtitles">Przekazuj napisy do zewnętrznego odtwarzacza</string>
     <string name="playback_external_forward_subtitles_sub">Pobierz napisy w preferowanym języku z dodatków i przekaż je do zewnętrznego odtwarzacza.</string>
-    <string name="playback_engine_exoplayer_desc">Najlepsza kompatybilność z funkcjami Nuvio.</string>
+    <string name="playback_engine_exoplayer_desc">Najlepsza kompatybilność z funkcjami CINEBOX.</string>
     <string name="playback_engine_mvplayer_desc">Używa libmpv z kontrolkami CINEBOX OSD. Eksperymentalny.</string>
     <string name="player_engine_switching_title">Przełączanie silnika odtwarzacza</string>
     <string name="player_engine_switching_message">Uruchomienie nie powiodło się. Przełączanie na %1$s…</string>
@@ -1742,7 +1742,7 @@
     <string name="advanced_fast_horizontal_navigation">Szybka nawigacja pozioma</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Zwiększ prędkość powtarzania D-pad w wierszach przy zachowaniu ograniczania powtórzeń.</string>
     <string name="advanced_nuvio_focus_scroll">Przewijanie fokusa CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Używaj niestandardowej globalnej animacji przewijania i pozycjonowania fokusa Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Używaj niestandardowej globalnej animacji przewijania i pozycjonowania fokusa CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Przewijanie pionowe tylko z pamięci</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Pomijaj żądania obrazów z dysku i sieci podczas pionowego przewijania wierszy strony głównej.</string>
     <string name="detail_tab_trailer">Zwiastun</string>
@@ -1782,7 +1782,7 @@
     <string name="appearance_app_icon_and_banner_subtitle">Zmień ikonę i baner aplikacji</string>
     <string name="appearance_app_icon_arctic_blue">Arctic Blue</string>
     <string name="appearance_app_icon_change_failed">Nie udało się zmienić ikony i baneru. Spróbuj ponownie.</string>
-    <string name="appearance_app_icon_confirmation_message">Zmiana na %1$s zamknie Nuvio. Baner TV może wymagać restartu urządzenia. Wybierz OK, aby kontynuować.</string>
+    <string name="appearance_app_icon_confirmation_message">Zmiana na %1$s zamknie CINEBOX. Baner TV może wymagać restartu urządzenia. Wybierz OK, aby kontynuować.</string>
     <string name="appearance_app_icon_confirmation_title">Zmienić ikonę aplikacji?</string>
     <string name="appearance_app_icon_copper">Copper</string>
     <string name="appearance_app_icon_emerald">Emerald</string>
@@ -2156,7 +2156,7 @@
     <string name="web_title_show">Pokaż</string>
 
     <string name="tv_channel_continue_watching">Kontynuuj oglądanie</string>
-    <string name="profile_custom_avatar_web_panel_note">Niestandardowe adresy URL awatarów można skonfigurować z panelu webowego Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Niestandardowe adresy URL awatarów można skonfigurować z panelu webowego CINEBOX.</string>
     <string name="collections_editor_tmdb_mode_person">Osoba</string>
     <string name="collections_editor_tmdb_mode_director">Reżyser</string>
     <string name="collections_editor_tmdb_help_person">Wpisz ID osoby z TMDB lub URL, aby zbudować wiersz z obsady.</string>
@@ -2575,7 +2575,7 @@
     <string name="debrid_device_auth_connected">%1$s jest połączony na tym urządzeniu.</string>
     <string name="debrid_device_auth_expired">Kod wygasł. Spróbuj ponownie.</string>
     <string name="debrid_device_auth_failed">Nie udało się rozpocząć logowania.</string>
-    <string name="debrid_device_auth_instructions">Zeskanuj kod QR i wprowadź ten kod, aby autoryzować Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Zeskanuj kod QR i wprowadź ten kod, aby autoryzować CINEBOX.</string>
     <string name="debrid_device_auth_missing_configuration">Ta metoda logowania nie jest skonfigurowana w tej wersji.</string>
     <string name="debrid_device_auth_starting">Rozpoczynanie bezpiecznego logowania...</string>
     <string name="debrid_device_auth_waiting">Oczekiwanie na zatwierdzenie...</string>
@@ -3255,7 +3255,7 @@
     <string name="profile_editor_tab_avatar">Awatar</string>
     <string name="profile_editor_tab_background">Tło</string>
     <string name="profile_choose_background">Wybierz tło profilu</string>
-    <string name="profile_background_member_note">Niestandardowe adresy URL tła można skonfigurować z panelu Nuvio.</string>
+    <string name="profile_background_member_note">Niestandardowe adresy URL tła można skonfigurować z panelu CINEBOX.</string>
     <string name="profile_background_normal">Normalne</string>
     <string name="profile_background_custom">Niestandardowe</string>
     <string name="profile_avatar_category_supporter">Supporter</string>

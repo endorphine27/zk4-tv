@@ -99,7 +99,7 @@
 
     <string name="home_no_addons">Немає встановлених адонів. Додайте один для початку.</string>
     <string name="home_no_catalog_addons">Немає встановлених адонів каталогу. Встановіть адон каталогу, щоб побачити контент.</string>
-    <string name="auth_notice_nuvio_logged_out">Ви вийшли з системи Nuvio. Будь ласка, увійдіть знову.</string>
+    <string name="auth_notice_nuvio_logged_out">Ви вийшли з системи CINEBOX. Будь ласка, увійдіть знову.</string>
     <string name="auth_notice_trakt_logged_out">Ви вийшли з системи Trakt. Будь ласка, підключіться знову.</string>
     <string name="error_generic">Сталася помилка</string>
 
@@ -476,7 +476,7 @@
     <string name="advanced_fast_horizontal_navigation">Швидка горизонтальна навігація</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Збільшити швидкість повторення D-pad у рядках зі збереженням дроселювання повторень.</string>
     <string name="advanced_nuvio_focus_scroll">Прокручування фокусу CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Використовувати власну глобальну анімацію прокручування та позиціонування фокусу Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Використовувати власну глобальну анімацію прокручування та позиціонування фокусу CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Вертикальне прокручування тільки з пам\'яті</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Пропускати запити зображень з диска та мережі при вертикальному прокручуванні рядків головного екрана.</string>
     <string name="advanced_compose_highlighter">Підсвічування Compose</string>
@@ -517,7 +517,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX завжди буде безкоштовним і відкритим. Якщо ви хочете підтримати проєкт, ви можете допомогти покрити витрати на час та інфраструктуру.</string>
     <string name="supporters_contributors_donate_button">Підтримати CINEBOX</string>
     <string name="supporters_contributors_qr_title">Відскануйте для пожертви</string>
-    <string name="supporters_contributors_qr_subtitle">Відкрийте посилання на телефоні, щоб підтримати Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Відкрийте посилання на телефоні, щоб підтримати CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Наведіть камеру на QR-код або використайте кнопку нижче.</string>
     <string name="supporters_contributors_back_button">Назад до деталей</string>
     <string name="supporters_tab">Спонсори</string>
@@ -594,8 +594,8 @@
     <string name="playback_player_ask_desc">Обирати плеєр щоразу</string>
     <string name="playback_player_auto">Авто (Найкраще для контенту)</string>
     <string name="playback_player_auto_desc">ExoPlayer для фільмів та серіалів · MPV для аніме</string>
-    <string name="playback_engine_exoplayer_desc">Найкраща сумісність з поточними функціями Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Використовує libmpv з інтерфейсом керування Nuvio. Експериментальний.</string>
+    <string name="playback_engine_exoplayer_desc">Найкраща сумісність з поточними функціями CINEBOX.</string>
+    <string name="playback_engine_mvplayer_desc">Використовує libmpv з інтерфейсом керування CINEBOX. Експериментальний.</string>
 
     <string name="video_section">Відео</string>
     <string name="audio_trailer_section">Трейлер</string>
@@ -933,7 +933,7 @@
     <string name="debrid_disconnect">Відключити</string>
     <string name="debrid_device_auth_connected">%1$s підключено на цьому пристрої.</string>
     <string name="debrid_device_auth_starting">Запуск безпечного входу...</string>
-    <string name="debrid_device_auth_instructions">Відскануйте QR та введіть цей код для підтвердження Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Відскануйте QR та введіть цей код для підтвердження CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Код скопійовано.</string>
     <string name="debrid_device_auth_waiting">Очікування підтвердження...</string>
     <string name="debrid_device_auth_failed">Не вдалося запустити вхід.</string>
@@ -1162,7 +1162,7 @@
     <string name="trakt_stat_watched_hours">Годин переглянуто</string>
     <string name="trakt_disconnect">Відключити</string>
     <string name="trakt_disconnect_title">Відключити Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Це відключить ваш акаунт Trakt від Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Це відключить ваш акаунт Trakt від CINEBOX.</string>
     <string name="trakt_login">Увійти</string>
     <string name="trakt_retry">Повторити</string>
     <string name="trakt_back">Назад</string>
@@ -1228,7 +1228,7 @@
     <string name="profile_addons">адони</string>
     <string name="profile_plugins">плагіни</string>
     <string name="profile_choose_avatar">Обрати аватар</string>
-    <string name="profile_custom_avatar_web_panel_note">Користувацькі URL аватарів можна налаштувати у веб-панелі Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Користувацькі URL аватарів можна налаштувати у веб-панелі CINEBOX.</string>
     <string name="profile_avatar_none_selected">Аватар не обрано</string>
     <string name="profile_avatar_focus_hint">Сфокусуйтесь на аватарі, щоб побачити його назву</string>
     <string name="profile_avatar_category_all">Всі</string>
@@ -1271,7 +1271,7 @@
     <string name="profile_pin_overlay_set_support">Цей PIN-код запитуватиметься перед відкриттям цього профілю.</string>
     <string name="profile_pin_overlay_confirm_support">Введіть ті самі 4 цифри ще раз для завершення налаштування.</string>
     <string name="profile_pin_overlay_mismatch">PIN-коди не збіглися. Введіть новий PIN-код ще раз.</string>
-    <string name="profile_pin_overlay_forgot_hint">Забули PIN? Скиньте його у вашому акаунті CINEBOX на веб-сайті Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Забули PIN? Скиньте його у вашому акаунті CINEBOX на веб-сайті CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Натисніть «Назад» для скасування</string>
 
 

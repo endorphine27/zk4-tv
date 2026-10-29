@@ -97,7 +97,7 @@
     
     <string name="home_no_addons">Няма инсталирани добавки. Добавете една, за да започнете.</string>
     <string name="home_no_catalog_addons">Няма инсталирани добавки за каталог. Инсталирайте добавка за каталог, за да видите съдържанието.</string>
-    <string name="auth_notice_nuvio_logged_out">Излезли сте от Nuvio. Моля, влезте отново.</string>
+    <string name="auth_notice_nuvio_logged_out">Излезли сте от CINEBOX. Моля, влезте отново.</string>
     <string name="auth_notice_trakt_logged_out">Излезли сте от Trakt. Моля, свържете се отново.</string>
     <string name="error_generic">Възникна грешка</string>
     
@@ -388,7 +388,7 @@
     <string name="appearance_app_icon_picker_title">Избор на икона и банер на приложението</string>
     <string name="appearance_app_icon_picker_subtitle">Всеки стил включва съответстваща квадратна икона и телевизионен банер</string>
     <string name="appearance_app_icon_confirmation_title">Да се промени ли иконата на приложението?</string>
-    <string name="appearance_app_icon_confirmation_message">Промяната на %1$s ще затвори Nuvio. Телевизионният банер може да изисква рестартиране на устройството, преди да се актуализира. Изберете OK, за да продължите.</string>
+    <string name="appearance_app_icon_confirmation_message">Промяната на %1$s ще затвори CINEBOX. Телевизионният банер може да изисква рестартиране на устройството, преди да се актуализира. Изберете OK, за да продължите.</string>
     <string name="appearance_app_icon_change_failed">Иконата и банерът не можаха да бъдат променени. Моля, опитайте отново.</string>
     <string name="appearance_app_icon_original">Оригинал</string>
     <string name="appearance_app_icon_arctic_blue">Арктическо синьо</string>
@@ -621,7 +621,7 @@
     <string name="buffer_unsafe_warning">Предупреждение: Превишава препоръчителния безопасен лимит (%1$d MB) за вашето %2$s устройство. Може да причини сривове на приложението.</string>
     <string name="buffer_auto_limit_active">Автоматично мащабиран безопасен лимит: %d MB</string>
     <string name="advanced_nuvio_focus_scroll">Превъртане на фокуса с CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Използвайте персонализираната анимация и позициониране на глобалния фокус при превъртане на Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Използвайте персонализираната анимация и позициониране на глобалния фокус при превъртане на CINEBOX.</string>
     <string name="advanced_rgb565">Декодиране на RGB565 изображения</string>
     <string name="advanced_rgb565_subtitle">Използвайте 16-битов цвят с по-малко памет за допустими непрозрачни изображения. Промяната на това рестартира приложението.</string>
     <string name="advanced_memory_only_vertical_scroll">Вертикално скролиране само с памет</string>
@@ -673,7 +673,7 @@
     <string name="supporters_contributors_loading_donation_progress">Зареждане на напредъка на финансирането...</string>
     <string name="supporters_contributors_donate_button">Подкрепете CINEBOX</string>
     <string name="supporters_contributors_qr_title">Сканирайте, за да подкрепите</string>
-    <string name="supporters_contributors_qr_subtitle">Отворете връзката на телефона си, за да подкрепите Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Отворете връзката на телефона си, за да подкрепите CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Насочете камерата си към QR кода или използвайте бутона по-долу.</string>
     <string name="supporters_contributors_back_button">Обратно към подробностите</string>
     <string name="supporter_membership_title">Членство за поддръжници на CINEBOX</string>
@@ -690,7 +690,7 @@
     <string name="supporter_membership_tier_supporter">Поддръжник</string>
     <string name="supporter_membership_tier_supporter_plus">Поддръжник Плюс</string>
     <string name="supporter_membership_connected_title">Patreon е свързан</string>
-    <string name="supporter_membership_connected_description">В този Patreon акаунт не е намерено активно ниво в Nuvio. Вижте наличните опции или опреснете страницата, след като промените членството си в Patreon.</string>
+    <string name="supporter_membership_connected_description">В този Patreon акаунт не е намерено активно ниво в CINEBOX. Вижте наличните опции или опреснете страницата, след като промените членството си в Patreon.</string>
     <string name="supporter_membership_scan_support">Сканирайте, за да видите членството</string>
     <string name="supporter_membership_scan_support_description">Отворете страницата за членство на поддръжници на телефона си.</string>
     <string name="supporter_membership_scan_manage">Сканиране за управление на членството</string>
@@ -801,7 +801,7 @@
     <string name="playback_player_ask_desc">Избирай играча всеки път</string>
     <string name="playback_player_auto">Автоматично (най-добро за съдържание)</string>
     <string name="playback_player_auto_desc">ExoPlayer за филми и телевизионни предавания · MPV за аниме</string>
-    <string name="playback_engine_exoplayer_desc">Най-добра съвместимост с текущите функции на Nuvio.</string>
+    <string name="playback_engine_exoplayer_desc">Най-добра съвместимост с текущите функции на CINEBOX.</string>
     <string name="playback_engine_mvplayer_desc">Използва libmpv с CINEBOX OSD контроли. Експериментално.</string>
     
     <string name="video_section">Видео</string>
@@ -1307,7 +1307,7 @@
     <string name="debrid_disconnect">Изключване</string>
     <string name="debrid_device_auth_connected">%1$s е свързано с това устройство.</string>
     <string name="debrid_device_auth_starting">Стартиране на защитено влизане...</string>
-    <string name="debrid_device_auth_instructions">Сканирайте QR кода и въведете този код, за да одобрите Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Сканирайте QR кода и въведете този код, за да одобрите CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Кодът е копиран.</string>
     <string name="debrid_device_auth_waiting">Изчаква се одобрение...</string>
     <string name="debrid_device_auth_failed">Не можа да започне влизането.</string>
@@ -1545,7 +1545,7 @@
     <string name="trakt_stat_watched_hours">Часове на гледане</string>
     <string name="trakt_disconnect">Изключване</string>
     <string name="trakt_disconnect_title">Да се прекъсне ли връзката с Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Това ще прекъсне връзката на вашия Trakt акаунт с Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Това ще прекъсне връзката на вашия Trakt акаунт с CINEBOX.</string>
     <string name="trakt_login">Вход</string>
     <string name="trakt_retry">Повторен опит</string>
     <string name="trakt_back">Назад</string>
@@ -1622,11 +1622,11 @@
     <string name="profile_addons">добавки</string>
     <string name="profile_plugins">плъгини</string>
     <string name="profile_choose_avatar">Избор на аватар</string>
-    <string name="profile_custom_avatar_web_panel_note">URL адресите за персонализирани аватари могат да бъдат конфигурирани от уеб панела на Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">URL адресите за персонализирани аватари могат да бъдат конфигурирани от уеб панела на CINEBOX.</string>
     <string name="profile_editor_tab_avatar">Аватар</string>
     <string name="profile_editor_tab_background">Фон</string>
     <string name="profile_choose_background">Избор на фон на профила</string>
-    <string name="profile_background_member_note">Персонализираните URL адреси за фон могат да бъдат конфигурирани от уеб панела на Nuvio.</string>
+    <string name="profile_background_member_note">Персонализираните URL адреси за фон могат да бъдат конфигурирани от уеб панела на CINEBOX.</string>
     <string name="profile_background_normal">Нормален</string>
     <string name="profile_background_custom">Персонализирано</string>
     <string name="profile_avatar_none_selected">Няма избран аватар</string>
@@ -1694,7 +1694,7 @@
     <string name="profile_pin_overlay_set_support">Този ПИН ще бъде необходим преди отваряне на този профил.</string>
     <string name="profile_pin_overlay_confirm_support">Въведете отново същите 4 цифри, за да завършите настройката.</string>
     <string name="profile_pin_overlay_mismatch">ПИН кодовете не съвпадат. Въведете отново нов ПИН.</string>
-    <string name="profile_pin_overlay_forgot_hint">Забравили сте ПИН кода? Нулирайте го от вашия CINEBOX акаунт на уебсайта на Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Забравили сте ПИН кода? Нулирайте го от вашия CINEBOX акаунт на уебсайта на CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Натиснете назад за отмяна</string>
 
 

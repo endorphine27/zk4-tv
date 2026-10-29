@@ -99,7 +99,7 @@
 	<!-- HomeScreen -->
     <string name="home_no_addons">Ni nameščenih dodatkov. Dodajte enega za začetek.</string>
     <string name="home_no_catalog_addons">Nameščen ni noben dodatek za katalog. Namestite dodatek za katalog, da vidite vsebino.</string>
-    <string name="auth_notice_nuvio_logged_out">Odjavljeni ste bili iz storitve Nuvio. Prosimo, prijavite se znova.</string>
+    <string name="auth_notice_nuvio_logged_out">Odjavljeni ste bili iz storitve CINEBOX. Prosimo, prijavite se znova.</string>
     <string name="auth_notice_trakt_logged_out">Odjavljeni ste bili iz storitve Trakt. Prosimo, ponovno se povežite.</string>
     <string name="error_generic">Prišlo je do napake</string>
 	<!-- ErrorState -->
@@ -450,7 +450,7 @@
     <string name="advanced_fast_horizontal_navigation">Hitra vodoravna navigacija</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Povečajte hitrost ponavljanja D-pad v vrsticah, hkrati pa obdržite omogočeno omejevanje ponavljanja.</string>
     <string name="advanced_nuvio_focus_scroll">Drsenje s poudarkom CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Uporabi globalno animacijo drsenja in pozicioniranje Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Uporabi globalno animacijo drsenja in pozicioniranje CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Navpično drsenje samo iz pomnilnika</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Preskočite zahteve za slike z diska in omrežja med navpičnim drsenjem po vrsticah začetnega zaslona.</string>
     <string name="advanced_compose_highlighter">Osvetljevalnik Compose</string>
@@ -490,7 +490,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX bo ostal brezplačen in odprtokoden. Če želite podpreti projekt, lahko pomagate pokriti porabljen čas in infrastrukturo, ki stoji za njim.</string>
     <string name="supporters_contributors_donate_button">Donirajte za CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skenirajte za donacijo</string>
-    <string name="supporters_contributors_qr_subtitle">Odprite povezavo v telefonu in podprite Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Odprite povezavo v telefonu in podprite CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Usmerite kamero v QR kodo ali uporabite spodnji gumb.</string>
     <string name="supporters_contributors_back_button">Nazaj na podrobnosti</string>
     <string name="supporters_tab">Podporniki</string>
@@ -563,7 +563,7 @@
     <string name="playback_player_ask_desc">Vsakič izberi predvajalnik</string>
     <string name="playback_player_auto">Samodejno (najboljše za vsebino)</string>
     <string name="playback_player_auto_desc">ExoPlayer za filme in TV-serije · MPV za anime</string>
-    <string name="playback_engine_exoplayer_desc">Najboljša združljivost s trenutnimi funkcijami Nuvio.</string>
+    <string name="playback_engine_exoplayer_desc">Najboljša združljivost s trenutnimi funkcijami CINEBOX.</string>
     <string name="playback_engine_mvplayer_desc">Uporablja libmpv s kontrolniki CINEBOX OSD. Eksperimentalno.</string>																								  
     <!-- PlaybackAudioSettings -->
     <string name="audio_trailer_section">Napovednik</string>
@@ -931,7 +931,7 @@
     <string name="trakt_stat_watched_hours">Ure gledanja</string>
     <string name="trakt_disconnect">Prekini povezavo</string>
     <string name="trakt_disconnect_title">Prekinitev povezave s Trakt?</string>
-    <string name="trakt_disconnect_subtitle">To bo prekinilo povezavo vašega Trakt računa z Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">To bo prekinilo povezavo vašega Trakt računa z CINEBOX.</string>
     <string name="trakt_login">Prijava</string>
     <string name="trakt_retry">Poskusi znova</string>
     <string name="trakt_back">Nazaj</string>
@@ -995,7 +995,7 @@
     <string name="profile_addons">dodatke</string>
     <string name="profile_plugins">vtičnike</string>
 	<string name="profile_choose_avatar">Izberite avatar</string>
-	<string name="profile_custom_avatar_web_panel_note">Naslove URL za avatarje po meri lahko konfigurirate v spletni nadzorni plošči Nuvio.</string>																														   
+	<string name="profile_custom_avatar_web_panel_note">Naslove URL za avatarje po meri lahko konfigurirate v spletni nadzorni plošči CINEBOX.</string>																														   
     <string name="profile_avatar_none_selected">Ni izbranega avatarja</string>
     <string name="profile_avatar_focus_hint">Označite avatar za prikaz imena</string>
     <string name="profile_avatar_category_all">Vse</string>
@@ -1036,7 +1036,7 @@
 	<string name="profile_pin_overlay_delete_verify_heading">Vnesite trenutno kodo PIN za izbris profila %1$s.</string>																								   
     <string name="profile_pin_overlay_set_support">Ta koda PIN bo zahtevana pred odpiranjem tega profila.</string>
     <string name="profile_pin_overlay_mismatch">Kodi PIN se nista ujemali. Ponovno vnesite novo kodo PIN.</string>
-    <string name="profile_pin_overlay_forgot_hint">Ste pozabili kodo PIN? Ponastavite jo v svojem računu CINEBOX na spletni strani Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Ste pozabili kodo PIN? Ponastavite jo v svojem računu CINEBOX na spletni strani CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Pritisnite nazaj za preklic</string>															
 	<!-- Essential addon setup wizard -->									 
 	<string name="essential_addon_setup_title">Nastavitev dodatkov</string>

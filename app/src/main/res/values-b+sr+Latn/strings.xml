@@ -376,7 +376,7 @@
     <string name="appearance_app_icon_picker_title">Izaberite ikonicu i baner aplikacije</string>
     <string name="appearance_app_icon_picker_subtitle">Svaki stil uključuje odgovarajuću kvadratnu ikonicu i TV baner</string>
     <string name="appearance_app_icon_confirmation_title">Promeniti ikonicu aplikacije?</string>
-    <string name="appearance_app_icon_confirmation_message">Promena na %1$s će zatvoriti Nuvio. TV baner može zahtevati ponovno pokretanje uređaja pre nego što se ažurira. Izaberite OK za nastavak.</string>
+    <string name="appearance_app_icon_confirmation_message">Promena na %1$s će zatvoriti CINEBOX. TV baner može zahtevati ponovno pokretanje uređaja pre nego što se ažurira. Izaberite OK za nastavak.</string>
     <string name="appearance_app_icon_change_failed">Ikonica i baner nisu mogli biti promenjeni. Pokušajte ponovo.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Arktičko plava</string>
@@ -651,7 +651,7 @@
     <string name="supporters_contributors_loading_donation_progress">Učitavanje napretka finansiranja...</string>
     <string name="supporters_contributors_donate_button">Podržite CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skenirajte da podržite</string>
-    <string name="supporters_contributors_qr_subtitle">Otvori vezu na telefonu da podržiš Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Otvori vezu na telefonu da podržiš CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Usmerite kameru prema QR kodu ili koristite dugme ispod.</string>
     <string name="supporters_contributors_back_button">Nazad na detalje</string>
     <string name="supporter_membership_title">CINEBOX Supporter članstvo</string>
@@ -1163,7 +1163,7 @@
     <string name="debrid_disconnect">Prekini vezu</string>
     <string name="debrid_device_auth_connected">%1$s je povezan na ovom uređaju.</string>
     <string name="debrid_device_auth_starting">Pokretanje bezbedne prijave...</string>
-    <string name="debrid_device_auth_instructions">Skenirajte QR i unesite ovaj kod da biste odobrili Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Skenirajte QR i unesite ovaj kod da biste odobrili CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Kod je kopiran.</string>
     <string name="debrid_device_auth_waiting">Čeka se odobrenje...</string>
     <string name="debrid_device_auth_failed">Nije moguće pokrenuti prijavu.</string>

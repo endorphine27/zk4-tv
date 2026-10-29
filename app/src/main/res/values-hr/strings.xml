@@ -378,7 +378,7 @@
     <string name="appearance_app_icon_picker_title">Odaberi ikonu i baner aplikacije</string>
     <string name="appearance_app_icon_picker_subtitle">Svaki stil uključuje odgovarajuću kvadratnu ikonu i TV baner</string>
     <string name="appearance_app_icon_confirmation_title">Promijeniti ikonu aplikacije?</string>
-    <string name="appearance_app_icon_confirmation_message">Promjena na %1$s zatvorit će Nuvio. TV baner možda će zahtijevati ponovno pokretanje uređaja da se ažurira. Odaberi OK za nastavak.</string>
+    <string name="appearance_app_icon_confirmation_message">Promjena na %1$s zatvorit će CINEBOX. TV baner možda će zahtijevati ponovno pokretanje uređaja da se ažurira. Odaberi OK za nastavak.</string>
     <string name="appearance_app_icon_change_failed">Ikonu i baner nije moguće promijeniti. Pokušaj ponovno.</string>
     <string name="appearance_app_icon_original">Izvorno</string>
     <string name="appearance_app_icon_arctic_blue">Arktičko plava</string>
@@ -658,7 +658,7 @@
     <string name="supporters_contributors_loading_donation_progress">Učitavanje napretka financiranja...</string>
     <string name="supporters_contributors_donate_button">Podrži CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skeniraj za podršku</string>
-    <string name="supporters_contributors_qr_subtitle">Otvori poveznicu na mobitelu i podrži Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Otvori poveznicu na mobitelu i podrži CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Usmjeri kameru prema QR kodu ili koristi gumb ispod.</string>
     <string name="supporters_contributors_back_button">Natrag na detalje</string>
     <string name="supporter_membership_title">CINEBOX članstvo za podupiratelje</string>

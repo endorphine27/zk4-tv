@@ -98,7 +98,7 @@
 
 <string name="home_no_addons">Nessun addon installato. Aggiungine uno per iniziare.</string>
 <string name="home_no_catalog_addons">Nessun catalogo installato. Installane uno per vedere i contenuti.</string>
-<string name="auth_notice_nuvio_logged_out">Sei stato disconnesso da Nuvio. Accedi di nuovo.</string>
+<string name="auth_notice_nuvio_logged_out">Sei stato disconnesso da CINEBOX. Accedi di nuovo.</string>
 <string name="auth_notice_trakt_logged_out">Sei stato disconnesso da Trakt. Riconnettiti.</string>
 <string name="error_generic">Si è verificato un errore</string>
 
@@ -572,7 +572,7 @@
 <string name="buffer_unsafe_warning">Avviso: supera il limite di sicurezza consigliato (%1$d MB) per il tuo dispositivo %2$s. Può causare arresti anomali dell\'app.</string>
 <string name="buffer_auto_limit_active">Limite di sicurezza scalato automaticamente: %d MB</string>
 <string name="advanced_nuvio_focus_scroll">Scorrimento Focus CINEBOX</string>
-<string name="advanced_nuvio_focus_scroll_subtitle">Usa l\'animazione di scorrimento e il posizionamento personalizzato del focus di Nuvio.</string>
+<string name="advanced_nuvio_focus_scroll_subtitle">Usa l\'animazione di scorrimento e il posizionamento personalizzato del focus di CINEBOX.</string>
 <string name="advanced_rgb565">Decodifica immagini RGB565</string>
 <string name="advanced_rgb565_subtitle">Usa colore a 16 bit a minor consumo di memoria per le immagini opache idonee. La modifica riavvia l\'app.</string>
 <string name="advanced_memory_only_vertical_scroll">Scorrimento Verticale Solo Memoria</string>
@@ -624,7 +624,7 @@
 <string name="supporters_contributors_loading_donation_progress">Caricamento dell\'avanzamento del finanziamento...</string>
 <string name="supporters_contributors_donate_button">Dona a CINEBOX</string>
 <string name="supporters_contributors_qr_title">Scansiona per donare</string>
-<string name="supporters_contributors_qr_subtitle">Apri il link sul tuo telefono per supportare Nuvio.</string>
+<string name="supporters_contributors_qr_subtitle">Apri il link sul tuo telefono per supportare CINEBOX.</string>
 <string name="supporters_contributors_qr_hint">Punta la fotocamera verso il QR code o usa il bottone in basso.</string>
 <string name="supporters_contributors_back_button">Torna ai dettagli</string>
 <string name="supporter_membership_title">Iscrizione Supporter di CINEBOX</string>
@@ -727,8 +727,8 @@
 <string name="playback_player_ask_desc">Scegli il player ogni volta</string>
 <string name="playback_player_auto">Automatico (Il migliore per i contenuti)</string>
 <string name="playback_player_auto_desc">ExoPlayer per Film e Serie TV · MPV per gli Anime</string>
-<string name="playback_engine_exoplayer_desc">Migliore compatibilità con le attuali funzioni di Nuvio.</string>
-<string name="playback_engine_mvplayer_desc">Usa libmpv con i controlli OSD di Nuvio. Sperimentale.</string>
+<string name="playback_engine_exoplayer_desc">Migliore compatibilità con le attuali funzioni di CINEBOX.</string>
+<string name="playback_engine_mvplayer_desc">Usa libmpv con i controlli OSD di CINEBOX. Sperimentale.</string>
 
 <string name="video_section">Video</string>
 <string name="audio_trailer_section">Trailer</string>
@@ -1132,7 +1132,7 @@
 <string name="debrid_disconnect">Scollega</string>
 <string name="debrid_device_auth_connected">%1$s è collegato su questo dispositivo.</string>
 <string name="debrid_device_auth_starting">Avvio accesso sicuro...</string>
-<string name="debrid_device_auth_instructions">Scansiona il QR e inserisci questo codice per autorizzare Nuvio.</string>
+<string name="debrid_device_auth_instructions">Scansiona il QR e inserisci questo codice per autorizzare CINEBOX.</string>
 <string name="debrid_device_auth_code_copied">Codice copiato.</string>
 <string name="debrid_device_auth_waiting">In attesa di autorizzazione...</string>
 <string name="debrid_device_auth_failed">Impossibile avviare l\'accesso.</string>
@@ -1364,7 +1364,7 @@
 <string name="trakt_stat_watched_hours">Ore di visione</string>
 <string name="trakt_disconnect">Disconnetti</string>
 <string name="trakt_disconnect_title">Disconnettere Trakt?</string>
-<string name="trakt_disconnect_subtitle">Questo disconnetterà il tuo account Trakt da Nuvio.</string>
+<string name="trakt_disconnect_subtitle">Questo disconnetterà il tuo account Trakt da CINEBOX.</string>
 <string name="trakt_login">Accedi</string>
 <string name="trakt_retry">Riprova</string>
 <string name="trakt_back">Indietro</string>
@@ -1441,11 +1441,11 @@
 <string name="profile_addons">addon</string>
 <string name="profile_plugins">plugin</string>
 <string name="profile_choose_avatar">Scegli Avatar</string>
-<string name="profile_custom_avatar_web_panel_note">Gli URL degli avatar personalizzati possono essere configurati dal pannello web di Nuvio.</string>
+<string name="profile_custom_avatar_web_panel_note">Gli URL degli avatar personalizzati possono essere configurati dal pannello web di CINEBOX.</string>
 <string name="profile_editor_tab_avatar">Avatar</string>
 <string name="profile_editor_tab_background">Sfondo</string>
 <string name="profile_choose_background">Scegli sfondo profilo</string>
-<string name="profile_background_member_note">Gli URL personalizzati per lo sfondo possono essere configurati dal pannello web di Nuvio.</string>
+<string name="profile_background_member_note">Gli URL personalizzati per lo sfondo possono essere configurati dal pannello web di CINEBOX.</string>
 <string name="profile_background_normal">Normale</string>
 <string name="profile_background_custom">Personalizzato</string>
 <string name="profile_avatar_none_selected">Nessun avatar selezionato</string>

@@ -98,7 +98,7 @@
   <!-- HomeScreen -->
   <string name="home_no_addons">Δεν έχετε εγκαταστήσει πρόσθετα. Προσθέστε ένα για να ξεκινήσετε.</string>
   <string name="home_no_catalog_addons">Δεν έχετε εγκαταστήσει πρόσθετα καταλόγου. Εγκαταστήστε ένα πρόσθετο καταλόγου για να δείτε περιεχόμενο.</string>
-  <string name="auth_notice_nuvio_logged_out">Έχετε αποσυνδεθεί από το Nuvio. Συνδεθείτε ξανά.</string>
+  <string name="auth_notice_nuvio_logged_out">Έχετε αποσυνδεθεί από το CINEBOX. Συνδεθείτε ξανά.</string>
   <string name="auth_notice_trakt_logged_out">Έχετε αποσυνδεθεί από το Trakt. Συνδεθείτε ξανά.</string>
   <string name="error_generic">Προέκυψε σφάλμα</string>
   <!-- ErrorState -->
@@ -525,7 +525,7 @@
   <string name="advanced_fast_horizontal_navigation">Γρήγορη οριζόντια πλοήγηση</string>
   <string name="advanced_fast_horizontal_navigation_subtitle">Αύξηση ταχύτητας επανάληψης D-pad στις σειρές, διατηρώντας ενεργό το throttling επανάληψης.</string>
   <string name="advanced_nuvio_focus_scroll">Κύλιση εστίασης CINEBOX</string>
-  <string name="advanced_nuvio_focus_scroll_subtitle">Χρήση του προσαρμοσμένου καθολικού animation και positioning κύλισης εστίασης του Nuvio.</string>
+  <string name="advanced_nuvio_focus_scroll_subtitle">Χρήση του προσαρμοσμένου καθολικού animation και positioning κύλισης εστίασης του CINEBOX.</string>
   <string name="advanced_rgb565">Αποκωδικοποίηση εικόνων RGB565</string>
   <string name="advanced_rgb565_subtitle">Χρήση 16-bit χρώματος με χαμηλότερη κατανάλωση μνήμης για κατάλληλες αδιαφανείς εικόνες. Η αλλαγή επανεκκινεί την εφαρμογή.</string>
   <string name="advanced_memory_only_vertical_scroll">Κάθετη κύλιση μόνο από μνήμη</string>
@@ -572,7 +572,7 @@
   <string name="supporters_contributors_donate_copy">Το CINEBOX θα παραμείνει δωρεάν και ανοιχτού κώδικα. Αν θέλετε να υποστηρίξετε το έργο, μπορείτε να βοηθήσετε στην κάλυψη του χρόνου και της υποδομής πίσω από αυτό.</string>
   <string name="supporters_contributors_donate_button">Δωρεά στο CINEBOX</string>
   <string name="supporters_contributors_qr_title">Σάρωση για δωρεά</string>
-  <string name="supporters_contributors_qr_subtitle">Ανοίξτε τον σύνδεσμο στο κινητό σας για να υποστηρίξετε το Nuvio.</string>
+  <string name="supporters_contributors_qr_subtitle">Ανοίξτε τον σύνδεσμο στο κινητό σας για να υποστηρίξετε το CINEBOX.</string>
   <string name="supporters_contributors_qr_hint">Στρέψτε την κάμερα στο QR code ή χρησιμοποιήστε το κουμπί παρακάτω.</string>
   <string name="supporters_contributors_back_button">Επιστροφή σε λεπτομέρειες</string>
   <string name="supporters_tab">Υποστηρικτές</string>
@@ -698,8 +698,8 @@
   <string name="playback_player_ask_desc">Επιλογή προγράμματος αναπαραγωγής κάθε φορά</string>
   <string name="playback_player_auto">Αυτόματο (Καλύτερο για το περιεχόμενο)</string>
   <string name="playback_player_auto_desc">ExoPlayer για Ταινίες &amp; Σειρές · MPV για Anime</string>
-  <string name="playback_engine_exoplayer_desc">Καλύτερη συμβατότητα με τις τρέχουσες δυνατότητες του Nuvio.</string>
-  <string name="playback_engine_mvplayer_desc">Χρησιμοποιεί libmpv με χειριστήρια OSD του Nuvio. Πειραματικό.</string>
+  <string name="playback_engine_exoplayer_desc">Καλύτερη συμβατότητα με τις τρέχουσες δυνατότητες του CINEBOX.</string>
+  <string name="playback_engine_mvplayer_desc">Χρησιμοποιεί libmpv με χειριστήρια OSD του CINEBOX. Πειραματικό.</string>
   <!-- PlaybackAudioSettings -->
   <string name="playback_true_black_letterbox">Πραγματικά μαύρες μπάρες</string>
   <string name="playback_true_black_letterbox_sub">Αφήστε τις μπάρες γύρω από την εικόνα άβαφες ώστε το HDR να παραμένει πραγματικά μαύρο. Κρατήστε το ανενεργό αν εμφανίζεται φωτεινή γραμμή στις μπάρες.</string>
@@ -1158,7 +1158,7 @@
   <string name="debrid_disconnect">Αποσύνδεση</string>
   <string name="debrid_device_auth_connected">Το %1$s είναι συνδεδεμένο σε αυτή τη συσκευή.</string>
   <string name="debrid_device_auth_starting">Εκκίνηση ασφαλούς σύνδεσης…</string>
-  <string name="debrid_device_auth_instructions">Σαρώστε το QR και εισάγετε αυτόν τον κωδικό για έγκριση του Nuvio.</string>
+  <string name="debrid_device_auth_instructions">Σαρώστε το QR και εισάγετε αυτόν τον κωδικό για έγκριση του CINEBOX.</string>
   <string name="debrid_device_auth_code_copied">Ο κωδικός αντιγράφηκε.</string>
   <string name="debrid_device_auth_waiting">Αναμονή για έγκριση…</string>
   <string name="debrid_device_auth_failed">Δεν ήταν δυνατή η εκκίνηση της σύνδεσης.</string>
@@ -1318,7 +1318,7 @@
   <string name="trakt_stat_watched_hours">Ώρες παρακολούθησης</string>
   <string name="trakt_disconnect">Αποσύνδεση</string>
   <string name="trakt_disconnect_title">Αποσύνδεση Trakt;</string>
-  <string name="trakt_disconnect_subtitle">Αυτό θα αποσυνδέσει τον λογαριασμό σας Trakt από το Nuvio.</string>
+  <string name="trakt_disconnect_subtitle">Αυτό θα αποσυνδέσει τον λογαριασμό σας Trakt από το CINEBOX.</string>
   <string name="trakt_login">Σύνδεση</string>
   <string name="trakt_retry">Δοκιμή ξανά</string>
   <string name="trakt_back">Πίσω</string>
@@ -1461,11 +1461,11 @@
   <string name="profile_addons">πρόσθετα</string>
   <string name="profile_plugins">πρόσθετα</string>
   <string name="profile_choose_avatar">Επιλογή avatar</string>
-  <string name="profile_custom_avatar_web_panel_note">Οι URL προσαρμοσμένων avatar μπορούν να ρυθμιστούν από το web panel Nuvio.</string>
+  <string name="profile_custom_avatar_web_panel_note">Οι URL προσαρμοσμένων avatar μπορούν να ρυθμιστούν από το web panel CINEBOX.</string>
   <string name="profile_editor_tab_avatar">Avatar</string>
   <string name="profile_editor_tab_background">Φόντο</string>
   <string name="profile_choose_background">Επιλογή φόντου προφίλ</string>
-  <string name="profile_background_member_note">Οι URL προσαρμοσμένων φόντων μπορούν να ρυθμιστούν από το web panel Nuvio.</string>
+  <string name="profile_background_member_note">Οι URL προσαρμοσμένων φόντων μπορούν να ρυθμιστούν από το web panel CINEBOX.</string>
   <string name="profile_background_normal">Κανονικό</string>
   <string name="profile_background_custom">Προσαρμοσμένο</string>
   <string name="profile_avatar_none_selected">Δεν επιλέχθηκε avatar</string>
@@ -3238,7 +3238,7 @@
   <string name="appearance_app_icon_picker_title">Επιλογή εικονιδίου εφαρμογής &amp; Banner</string>
   <string name="appearance_app_icon_picker_subtitle">Κάθε στυλ περιλαμβάνει αντίστοιχο τετράγωνο εικονίδιο και banner TV</string>
   <string name="appearance_app_icon_confirmation_title">Αλλαγή εικονιδίου εφαρμογής;</string>
-  <string name="appearance_app_icon_confirmation_message">Η αλλαγή σε %1$s θα κλείσει το Nuvio. Το banner TV μπορεί να απαιτήσει επανεκκίνηση της συσκευής για να ενημερωθεί. Επιλέξτε OK για να συνεχίσετε.</string>
+  <string name="appearance_app_icon_confirmation_message">Η αλλαγή σε %1$s θα κλείσει το CINEBOX. Το banner TV μπορεί να απαιτήσει επανεκκίνηση της συσκευής για να ενημερωθεί. Επιλέξτε OK για να συνεχίσετε.</string>
   <string name="appearance_app_icon_change_failed">Δεν ήταν δυνατή η αλλαγή του εικονιδίου και του banner. Δοκιμάστε ξανά.</string>
   <string name="appearance_app_icon_original">Αρχικό</string>
   <string name="appearance_app_icon_arctic_blue">Αρκτικό μπλε</string>

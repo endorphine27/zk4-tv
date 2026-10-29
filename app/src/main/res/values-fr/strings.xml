@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Aucun addon installé. Ajoutez-en un pour commencer.</string>
     <string name="home_no_catalog_addons">Aucun addon de catalogue installé. Installez-en un pour afficher du contenu.</string>
-    <string name="auth_notice_nuvio_logged_out">Vous avez été déconnecté de Nuvio. Veuillez vous reconnecter.</string>
+    <string name="auth_notice_nuvio_logged_out">Vous avez été déconnecté de CINEBOX. Veuillez vous reconnecter.</string>
     <string name="auth_notice_trakt_logged_out">Vous avez été déconnecté de Trakt. Veuillez vous reconnecter.</string>
     <string name="error_generic">Une erreur est survenue</string>
 
@@ -389,7 +389,7 @@
     <string name="appearance_app_icon_picker_title">Choisir l’icône et la bannière de l’application</string>
     <string name="appearance_app_icon_picker_subtitle">Chaque style comprend une icône carrée et une bannière TV assorties</string>
     <string name="appearance_app_icon_confirmation_title">Changer l’icône de l’application&#160;?</string>
-    <string name="appearance_app_icon_confirmation_message">Passer à %1$s fermera Nuvio. La bannière TV peut nécessiter un redémarrage de l’appareil pour être mise à jour. Sélectionnez OK pour continuer.</string>
+    <string name="appearance_app_icon_confirmation_message">Passer à %1$s fermera CINEBOX. La bannière TV peut nécessiter un redémarrage de l’appareil pour être mise à jour. Sélectionnez OK pour continuer.</string>
     <string name="appearance_app_icon_change_failed">Impossible de modifier l’icône et la bannière. Veuillez réessayer.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Bleu arctique</string>
@@ -674,7 +674,7 @@
     <string name="supporters_contributors_loading_donation_progress">Chargement de la progression du financement…</string>
     <string name="supporters_contributors_donate_button">Soutenir CINEBOX</string>
     <string name="supporters_contributors_qr_title">Scanner pour soutenir</string>
-    <string name="supporters_contributors_qr_subtitle">Ouvrez le lien sur votre téléphone pour soutenir Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Ouvrez le lien sur votre téléphone pour soutenir CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Pointez l’appareil photo de votre téléphone vers le code QR ou utilisez le bouton ci-dessous.</string>
     <string name="supporters_contributors_back_button">Retour aux détails</string>
     <string name="supporter_membership_title">Adhésion Supporter CINEBOX</string>
@@ -802,8 +802,8 @@
     <string name="playback_player_ask_desc">Choisir le lecteur à chaque fois</string>
     <string name="playback_player_auto">Auto (le mieux adapté au contenu)</string>
     <string name="playback_player_auto_desc">ExoPlayer pour les films et les séries · MPV pour les animés</string>
-    <string name="playback_engine_exoplayer_desc">Meilleure compatibilité avec les fonctionnalités actuelles de Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Utilise libmpv avec les commandes OSD de Nuvio. Expérimental.</string>
+    <string name="playback_engine_exoplayer_desc">Meilleure compatibilité avec les fonctionnalités actuelles de CINEBOX.</string>
+    <string name="playback_engine_mvplayer_desc">Utilise libmpv avec les commandes OSD de CINEBOX. Expérimental.</string>
 
     <string name="video_section">Vidéo</string>
     <string name="playback_true_black_letterbox">Bandes noires pures</string>
@@ -1308,7 +1308,7 @@
     <string name="debrid_disconnect">Déconnecter</string>
     <string name="debrid_device_auth_connected">%1$s est connecté sur cet appareil.</string>
     <string name="debrid_device_auth_starting">Démarrage de la connexion sécurisée…</string>
-    <string name="debrid_device_auth_instructions">Scannez le code QR et saisissez ce code pour autoriser Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Scannez le code QR et saisissez ce code pour autoriser CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Code copié.</string>
     <string name="debrid_device_auth_waiting">En attente d’approbation…</string>
     <string name="debrid_device_auth_failed">Impossible de démarrer la connexion.</string>
@@ -1546,7 +1546,7 @@
     <string name="trakt_stat_watched_hours">Heures visionnées</string>
     <string name="trakt_disconnect">Déconnecter</string>
     <string name="trakt_disconnect_title">Déconnecter Trakt&#160;?</string>
-    <string name="trakt_disconnect_subtitle">Cela déconnectera votre compte Trakt de Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Cela déconnectera votre compte Trakt de CINEBOX.</string>
     <string name="trakt_login">Se connecter</string>
     <string name="trakt_retry">Réessayer</string>
     <string name="trakt_back">Retour</string>
@@ -1623,11 +1623,11 @@
     <string name="profile_addons">addons</string>
     <string name="profile_plugins">plugins</string>
     <string name="profile_choose_avatar">Choisir un avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">Les URL d’avatar personnalisé peuvent être configurées depuis le panneau web de Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Les URL d’avatar personnalisé peuvent être configurées depuis le panneau web de CINEBOX.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Arrière-plan</string>
     <string name="profile_choose_background">Choisir l’arrière-plan du profil</string>
-    <string name="profile_background_member_note">Les URL d’arrière-plan personnalisé peuvent être configurées depuis le panneau web de Nuvio.</string>
+    <string name="profile_background_member_note">Les URL d’arrière-plan personnalisé peuvent être configurées depuis le panneau web de CINEBOX.</string>
     <string name="profile_background_normal">Normal</string>
     <string name="profile_background_custom">Personnalisé</string>
     <string name="profile_avatar_none_selected">Aucun avatar sélectionné</string>
@@ -1695,7 +1695,7 @@
     <string name="profile_pin_overlay_set_support">Ce code PIN sera demandé avant l’ouverture de ce profil.</string>
     <string name="profile_pin_overlay_confirm_support">Saisissez de nouveau les mêmes 4 chiffres pour terminer la configuration.</string>
     <string name="profile_pin_overlay_mismatch">Les codes PIN ne correspondent pas. Saisissez de nouveau un code PIN.</string>
-    <string name="profile_pin_overlay_forgot_hint">Code PIN oublié&#160;? Réinitialisez-le depuis votre compte CINEBOX sur le site web de Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Code PIN oublié&#160;? Réinitialisez-le depuis votre compte CINEBOX sur le site web de CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Appuyez sur «&#160;Retour&#160;» pour annuler</string>
 
 

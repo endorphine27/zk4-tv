@@ -7,7 +7,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">Ingen tillegg installert. Legg til et for å komme i gang.</string>
     <string name="home_no_catalog_addons">Ingen katalogtillegg installert. Installer et katalogtillegg for å se innhold.</string>
-    <string name="auth_notice_nuvio_logged_out">Du har blitt logget ut av Nuvio. Logg inn igjen.</string>
+    <string name="auth_notice_nuvio_logged_out">Du har blitt logget ut av CINEBOX. Logg inn igjen.</string>
     <string name="auth_notice_trakt_logged_out">Du har blitt logget ut av Trakt. Koble til igjen.</string>
     <string name="error_generic">En feil har oppstått</string>
 
@@ -270,7 +270,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX vil forbli gratis og åpen kildekode. Hvis du vil støtte prosjektet, kan du donere for å dekke kostnadene for infrastrukturen bak det.</string>
     <string name="supporters_contributors_donate_button">Doner til CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skann for å donere</string>
-    <string name="supporters_contributors_qr_subtitle">Åpne lenken på telefonen din for å støtte Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Åpne lenken på telefonen din for å støtte CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Pek kameraet på QR-koden eller bruk knappen nedenfor.</string>
     <string name="supporters_contributors_back_button">Tilbake til detaljer</string>
     <string name="supporters_tab">Støttespillere</string>
@@ -619,7 +619,7 @@
     <string name="trakt_stat_watched_hours">Sette timer</string>
     <string name="trakt_disconnect">Koble fra</string>
     <string name="trakt_disconnect_title">Koble fra Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Dette vil koble fra Trakt-kontoen din fra Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Dette vil koble fra Trakt-kontoen din fra CINEBOX.</string>
     <string name="trakt_login">Logge inn</string>
     <string name="trakt_retry">Prøv igjen</string>
     <string name="trakt_back">Tilbake</string>

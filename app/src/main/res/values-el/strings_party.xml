@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Αυτή η ροή δεν μπορεί να κοινοποιηθεί.</string>
     <string name="party_shared_by">Κοινοποιήθηκε από %1$s</string>
     <string name="party_invite_scan">Σαρώστε με ένα τηλέφωνο για συμμετοχή</string>
-    <string name="party_invite_share">Ή μοιραστείτε τον κωδικό. Οι φίλοι μπορούν να τον εισάγουν στο Πάρτι προβολής σε οποιαδήποτε εφαρμογή Nuvio.</string>
+    <string name="party_invite_share">Ή μοιραστείτε τον κωδικό. Οι φίλοι μπορούν να τον εισάγουν στο Πάρτι προβολής σε οποιαδήποτε εφαρμογή CINEBOX.</string>
     <string name="party_invite_qr">Κωδικός QR πρόσκλησης πάρτι προβολής</string>
     <string name="party_phone_chat_note">Ανοίξτε το Πάρτι προβολής στο τηλέφωνό σας με αυτό το προφίλ για συνομιλία.</string>
 </resources>

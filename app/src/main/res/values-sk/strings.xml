@@ -100,7 +100,7 @@
     
     <string name="home_no_addons">Žiadne doplnky nie sú nainštalované. Pridajte jeden pre začiatok.</string>
     <string name="home_no_catalog_addons">Žiadne katalógové doplnky. Nainštalujte katalógový doplnok pre zobrazenie obsahu.</string>
-    <string name="auth_notice_nuvio_logged_out">Boli ste odhlásení z Nuvio. Prihláste sa znova.</string>
+    <string name="auth_notice_nuvio_logged_out">Boli ste odhlásení z CINEBOX. Prihláste sa znova.</string>
     <string name="auth_notice_trakt_logged_out">Boli ste odhlásení z Trakt. Znova sa pripojte.</string>
     <string name="error_generic">Vyskytla sa chyba</string>
 
@@ -483,7 +483,7 @@
     <string name="advanced_fast_horizontal_navigation">Rýchla horizontálna navigácia</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Zvýšiť rýchlosť opakovania D-padu v radoch pri zachovaní obmedzovania opakovania.</string>
     <string name="advanced_nuvio_focus_scroll">CINEBOX rolovanie zamerania</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Použiť vlastnú globálnu animáciu rolovania zamerania a polohovanie Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Použiť vlastnú globálnu animáciu rolovania zamerania a polohovanie CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Iba pamäťové vertikálne rolovanie</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Preskočiť požiadavky na obrázky z disku a siete počas vertikálneho rolovania domácich radov.</string>
     <string name="advanced_compose_highlighter">Zvýrazňovač Compose</string>
@@ -526,7 +526,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX zostane bezplatné a Open Source. Ak chcete podporiť projekt, môžete prispieť.</string>
     <string name="supporters_contributors_donate_button">Prispieť CINEBOX</string>
     <string name="supporters_contributors_qr_title">Naskenujte pre príspevok</string>
-    <string name="supporters_contributors_qr_subtitle">Otvorte odkaz v telefóne a podporte Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Otvorte odkaz v telefóne a podporte CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Namierte kameru na QR kód alebo použite tlačidlo nižšie.</string>
     <string name="supporters_contributors_back_button">Späť na detaily</string>
     <string name="supporters_tab">Podporovatelia</string>
@@ -602,7 +602,7 @@
     <string name="playback_player_ask_desc">Vybrať prehrávač pri každom prehratí</string>
     <string name="playback_player_auto">Automaticky (Najlepšie pre obsah)</string>
     <string name="playback_player_auto_desc">ExoPlayer pre filmy a seriály · MPV pre anime</string>
-    <string name="playback_engine_exoplayer_desc">Najlepšia kompatibilita s aktuálnymi funkciami Nuvio.</string>
+    <string name="playback_engine_exoplayer_desc">Najlepšia kompatibilita s aktuálnymi funkciami CINEBOX.</string>
     <string name="playback_engine_mvplayer_desc">Používa libmpv s ovládaním CINEBOX OSD. Experimentálne.</string>
 
     
@@ -913,7 +913,7 @@
     <string name="debrid_disconnect">Odpojiť</string>
     <string name="debrid_device_auth_connected">%1$s je pripojený na tomto zariadení.</string>
     <string name="debrid_device_auth_starting">Spúšťa sa bezpečné prihlásenie...</string>
-    <string name="debrid_device_auth_instructions">Naskenujte QR a zadajte tento kód na schválenie Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Naskenujte QR a zadajte tento kód na schválenie CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Kód bol skopírovaný.</string>
     <string name="debrid_device_auth_waiting">Čaká sa na schválenie...</string>
     <string name="debrid_device_auth_failed">Nepodarilo sa spustiť prihlásenie.</string>
@@ -1109,7 +1109,7 @@
     <string name="trakt_stat_watched_hours">Hodiny sledovania</string>
     <string name="trakt_disconnect">Odpojiť</string>
     <string name="trakt_disconnect_title">Odpojiť Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Týmto odpojíte svoj Trakt účet od Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Týmto odpojíte svoj Trakt účet od CINEBOX.</string>
     <string name="trakt_login">Prihlásiť sa</string>
     <string name="trakt_retry">Skúsiť znova</string>
     <string name="trakt_back">Späť</string>
@@ -1175,7 +1175,7 @@
     <string name="profile_addons">doplnky</string>
     <string name="profile_plugins">pluginy</string>
     <string name="profile_choose_avatar">Vybrať avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">Vlastné URL avatara je možné nakonfigurovať z webového panela Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Vlastné URL avatara je možné nakonfigurovať z webového panela CINEBOX.</string>
     <string name="profile_avatar_none_selected">Žiadny avatar nie je vybraný</string>
     <string name="profile_avatar_focus_hint">Zamerajte avatar pre zobrazenie jeho názvu</string>
     <string name="profile_avatar_category_all">Všetky</string>
@@ -1218,7 +1218,7 @@
     <string name="profile_pin_overlay_set_support">Tento PIN bude vyžadovaný pred otvorením tohto profilu.</string>
     <string name="profile_pin_overlay_confirm_support">Znovu zadajte rovnaké 4 číslice pre dokončenie nastavenia.</string>
     <string name="profile_pin_overlay_mismatch">PINy sa nezhodovali. Zadajte nový PIN znova.</string>
-    <string name="profile_pin_overlay_forgot_hint">Zabudli ste PIN? Resetujte ho zo svojho CINEBOX účtu na webovej stránke Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Zabudli ste PIN? Resetujte ho zo svojho CINEBOX účtu na webovej stránke CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Stlačte späť pre zrušenie</string>
 
     
@@ -2950,7 +2950,7 @@
     <string name="supporter_membership_tier_supporter">Podporovateľ</string>
     <string name="supporter_membership_tier_supporter_plus">Podporovateľ+</string>
     <string name="supporter_membership_connected_title">Patreon je pripojený</string>
-    <string name="supporter_membership_connected_description">Na tomto účte Patreon sa nenašla žiadna aktívna úroveň Nuvio. Pozrite si dostupné možnosti alebo obnovte stav po zmene členstva na Patreone.</string>
+    <string name="supporter_membership_connected_description">Na tomto účte Patreon sa nenašla žiadna aktívna úroveň CINEBOX. Pozrite si dostupné možnosti alebo obnovte stav po zmene členstva na Patreone.</string>
     <string name="supporter_membership_scan_support">Naskenujte pre zobrazenie členstva</string>
     <string name="supporter_membership_scan_support_description">Otvorte stránku Členstvo podporovateľa na svojom telefóne.</string>
     <string name="supporter_membership_scan_manage">Naskenujte pre správu členstva</string>
@@ -2994,7 +2994,7 @@
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Pozadie</string>
     <string name="profile_choose_background">Vybrať pozadie profilu</string>
-    <string name="profile_background_member_note">Vlastné URL adresy pozadia je možné nastaviť vo webovom paneli Nuvio.</string>
+    <string name="profile_background_member_note">Vlastné URL adresy pozadia je možné nastaviť vo webovom paneli CINEBOX.</string>
     <string name="profile_background_normal">Normálne</string>
     <string name="profile_background_custom">Vlastné</string>
     <string name="profile_avatar_category_supporter">Podporovateľ</string>
@@ -3112,7 +3112,7 @@
     <string name="appearance_app_icon_picker_title">Vybrať ikonu aplikácie a banner</string>
     <string name="appearance_app_icon_picker_subtitle">Každý štýl obsahuje zodpovedajúcu štvorcovú ikonu a TV banner</string>
     <string name="appearance_app_icon_confirmation_title">Zmeniť ikonu aplikácie?</string>
-    <string name="appearance_app_icon_confirmation_message">Zmena na %1$s zatvorí aplikáciu Nuvio. TV banner sa môže aktualizovať až po reštarte zariadenia. Pokračujte výberom možnosti OK.</string>
+    <string name="appearance_app_icon_confirmation_message">Zmena na %1$s zatvorí aplikáciu CINEBOX. TV banner sa môže aktualizovať až po reštarte zariadenia. Pokračujte výberom možnosti OK.</string>
     <string name="appearance_app_icon_change_failed">Ikonu a banner sa nepodarilo zmeniť. Skúste to znova.</string>
     <string name="appearance_app_icon_original">Pôvodná</string>
     <string name="appearance_app_icon_arctic_blue">Arktická</string>

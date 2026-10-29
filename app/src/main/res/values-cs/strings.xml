@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Nejsou nainstalovány žádné doplňky. Přidejte jeden pro začátek.</string>
     <string name="home_no_catalog_addons">Nejsou nainstalovány žádné katalogové doplňky. Nainstalujte katalogový doplněk pro zobrazení obsahu.</string>
-    <string name="auth_notice_nuvio_logged_out">Byli jste odhlášeni z Nuvio. Přihlaste se prosím znovu.</string>
+    <string name="auth_notice_nuvio_logged_out">Byli jste odhlášeni z CINEBOX. Přihlaste se prosím znovu.</string>
     <string name="auth_notice_trakt_logged_out">Byli jste odhlášeni z Trakt. Připojte se prosím znovu.</string>
     <string name="error_generic">Došlo k chybě</string>
 
@@ -513,7 +513,7 @@
     <string name="buffer_unsafe_warning">Varování: přesahuje doporučený bezpečný limit (%1$d MB) pro vaše zařízení %2$s. Může způsobit pády aplikace.</string>
     <string name="buffer_auto_limit_active">Automaticky škálovaný bezpečný limit: %d MB</string>
     <string name="advanced_nuvio_focus_scroll">CINEBOX Focus Scrolling</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Použít vlastní globální animaci a umístění posunu fokusu Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Použít vlastní globální animaci a umístění posunu fokusu CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Vertikální posun pouze v paměti</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Přeskočit požadavky na obrázky z disku a sítě při vertikálním posouvání domovských řádků.</string>
     <string name="advanced_compose_highlighter">Compose Highlighter</string>
@@ -559,7 +559,7 @@
     <string name="supporters_contributors_loading_donation_progress">Načítání stavu financování...</string>
     <string name="supporters_contributors_donate_button">Přispět CINEBOX</string>
     <string name="supporters_contributors_qr_title">Naskenujte pro darování</string>
-    <string name="supporters_contributors_qr_subtitle">Otevřete odkaz na telefonu a podpořte Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Otevřete odkaz na telefonu a podpořte CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Namiřte fotoaparát na QR kód nebo použijte tlačítko níže.</string>
     <string name="supporters_contributors_back_button">Zpět na podrobnosti</string>
     <string name="supporters_tab">Podporovatelé</string>
@@ -638,8 +638,8 @@
     <string name="playback_player_ask_desc">Vybrat přehrávač pokaždé</string>
     <string name="playback_player_auto">Auto (Nejlepší pro obsah)</string>
     <string name="playback_player_auto_desc">ExoPlayer pro filmy a seriály · MPV pro anime</string>
-    <string name="playback_engine_exoplayer_desc">Nejlepší kompatibilita s aktuálními funkcemi Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Používá libmpv s OSD ovládacími prvky Nuvio. Experimentální.</string>
+    <string name="playback_engine_exoplayer_desc">Nejlepší kompatibilita s aktuálními funkcemi CINEBOX.</string>
+    <string name="playback_engine_mvplayer_desc">Používá libmpv s OSD ovládacími prvky CINEBOX. Experimentální.</string>
 
     <string name="video_section">Video</string>
     <string name="audio_trailer_section">Trailer</string>
@@ -1240,7 +1240,7 @@
     <string name="trakt_stat_watched_hours">Zhlédnuté hodiny</string>
     <string name="trakt_disconnect">Odpojit</string>
     <string name="trakt_disconnect_title">Odpojit Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Toto odpojí váš účet Trakt od Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Toto odpojí váš účet Trakt od CINEBOX.</string>
     <string name="trakt_login">Přihlásit</string>
     <string name="trakt_retry">Opakovat</string>
     <string name="trakt_back">Zpět</string>
@@ -1312,7 +1312,7 @@
     <string name="profile_addons">doplňky</string>
     <string name="profile_plugins">pluginy</string>
     <string name="profile_choose_avatar">Vybrat avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">Vlastní URL avatarů lze konfigurovat z webového panelu Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Vlastní URL avatarů lze konfigurovat z webového panelu CINEBOX.</string>
     <string name="profile_avatar_none_selected">Není vybrán žádný avatar</string>
     <string name="profile_avatar_focus_hint">Zaměřte avatara pro zobrazení jeho jména</string>
     <string name="profile_avatar_category_all">Vše</string>

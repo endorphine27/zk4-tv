@@ -431,7 +431,7 @@
     <string name="trakt_stat_watched_hours">Ore vizionate</string>
     <string name="trakt_disconnect">Deconectare</string>
     <string name="trakt_disconnect_title">Deconectare Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Aceasta va deconecta contul tău Trakt de Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Aceasta va deconecta contul tău Trakt de CINEBOX.</string>
     <string name="trakt_login">Autentificare</string>
     <string name="trakt_retry">Reîncercare</string>
     <string name="trakt_back">Înapoi</string>

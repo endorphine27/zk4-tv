@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Nenhum addon instalado. Adicione um para começar.</string>
     <string name="home_no_catalog_addons">Nenhum addon de catálogo instalado. Instale um para ver conteúdos.</string>
-    <string name="auth_notice_nuvio_logged_out">Você foi desconectado do Nuvio. Faça login novamente.</string>
+    <string name="auth_notice_nuvio_logged_out">Você foi desconectado do CINEBOX. Faça login novamente.</string>
     <string name="auth_notice_trakt_logged_out">Você foi desconectado do Trakt. Reconecte-se.</string>
     <string name="error_generic">Ocorreu um erro</string>
 
@@ -670,7 +670,7 @@
     <string name="supporters_contributors_loading_donation_progress">Carregando progresso do financiamento...</string>
     <string name="supporters_contributors_donate_button">Apoiar o CINEBOX</string>
     <string name="supporters_contributors_qr_title">Escaneie para apoiar</string>
-    <string name="supporters_contributors_qr_subtitle">Abra o link no seu celular para apoiar o Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Abra o link no seu celular para apoiar o CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Aponte a câmera para o código QR ou use o botão abaixo.</string>
     <string name="supporters_contributors_back_button">Voltar para detalhes</string>
     <string name="supporter_membership_title">Assinatura de Apoio do CINEBOX</string>
@@ -1288,7 +1288,7 @@
     <string name="debrid_disconnect">Desconectar</string>
     <string name="debrid_device_auth_connected">%1$s está conectado neste dispositivo.</string>
     <string name="debrid_device_auth_starting">Iniciando login seguro...</string>
-    <string name="debrid_device_auth_instructions">Escaneie o QR Code e digite este código para aprovar o Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Escaneie o QR Code e digite este código para aprovar o CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Código copiado.</string>
     <string name="debrid_device_auth_waiting">Aguardando aprovação...</string>
     <string name="debrid_device_auth_failed">Não foi possível iniciar o login.</string>
@@ -1521,7 +1521,7 @@
     <string name="trakt_stat_watched_hours">Horas assistidas</string>
     <string name="trakt_disconnect">Desconectar</string>
     <string name="trakt_disconnect_title">Desconectar Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Isso removerá sua conta Trakt do Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Isso removerá sua conta Trakt do CINEBOX.</string>
     <string name="trakt_login">Login</string>
     <string name="trakt_retry">Tentar novamente</string>
     <string name="trakt_back">Voltar</string>
@@ -1598,11 +1598,11 @@
     <string name="profile_addons">addons</string>
     <string name="profile_plugins">plugins</string>
     <string name="profile_choose_avatar">Escolher Avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">URLs de avatar personalizados podem ser configurados pelo painel web do Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">URLs de avatar personalizados podem ser configurados pelo painel web do CINEBOX.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Plano de fundo</string>
     <string name="profile_choose_background">Escolher plano de fundo do perfil</string>
-    <string name="profile_background_member_note">URLs de plano de fundo personalizados podem ser configurados pelo painel web do Nuvio.</string>
+    <string name="profile_background_member_note">URLs de plano de fundo personalizados podem ser configurados pelo painel web do CINEBOX.</string>
     <string name="profile_background_normal">Normal</string>
     <string name="profile_background_custom">Personalizado</string>
     <string name="profile_avatar_none_selected">Nenhum avatar selecionado</string>

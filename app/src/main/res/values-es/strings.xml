@@ -99,7 +99,7 @@
 
     <string name="home_no_addons">No hay complementos instalados. Instala uno para empezar.</string>
     <string name="home_no_catalog_addons">No hay complementos de catálogo instalados. Instala un complemento de catálogo para ver contenido.</string>
-    <string name="auth_notice_nuvio_logged_out">Has sido desconectado de Nuvio. Por favor, inicia sesión de nuevo.</string>
+    <string name="auth_notice_nuvio_logged_out">Has sido desconectado de CINEBOX. Por favor, inicia sesión de nuevo.</string>
     <string name="auth_notice_trakt_logged_out">Has sido desconectado de Trakt. Por favor, reconéctate.</string>
     <string name="error_generic">Ha ocurrido un error</string>
 
@@ -392,7 +392,7 @@
     <string name="appearance_app_icon_picker_title">Elige icono &amp; banner de la app</string>
     <string name="appearance_app_icon_picker_subtitle">Cada estilo incluye un icono cuadrado y un banner de TV a juego</string>
     <string name="appearance_app_icon_confirmation_title">¿Cambiar icono de la app?</string>
-    <string name="appearance_app_icon_confirmation_message">Cambiar a %1$s cerrará Nuvio. Es posible que el banner de TV requiera reiniciar el dispositivo antes de actualizarse. Selecciona OK para continuar.</string>
+    <string name="appearance_app_icon_confirmation_message">Cambiar a %1$s cerrará CINEBOX. Es posible que el banner de TV requiera reiniciar el dispositivo antes de actualizarse. Selecciona OK para continuar.</string>
     <string name="appearance_app_icon_change_failed">No se pudo cambiar el icono y el banner. Inténtalo de nuevo.</string>
     <string name="appearance_app_icon_original">Original</string>
     <string name="appearance_app_icon_arctic_blue">Azul ártico</string>
@@ -625,7 +625,7 @@
     <string name="buffer_unsafe_warning">Advertencia: supera el límite seguro recomendado (%1$d MB) para tu dispositivo %2$s. Puede provocar fallos en la app.</string>
     <string name="buffer_auto_limit_active">Límite seguro autoajustado: %d MB</string>
     <string name="advanced_nuvio_focus_scroll">Desplazamiento de enfoque de CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Usa la animación y el posicionamiento personalizados de desplazamiento de enfoque global de Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Usa la animación y el posicionamiento personalizados de desplazamiento de enfoque global de CINEBOX.</string>
     <string name="advanced_rgb565">Decodificación de imágenes RGB565</string>
     <string name="advanced_rgb565_subtitle">Usa color de 16 bits de menor consumo de memoria para imágenes opacas compatibles. Cambiar esto reinicia la app.</string>
     <string name="advanced_memory_only_vertical_scroll">Desplazamiento vertical solo en memoria</string>
@@ -677,7 +677,7 @@
     <string name="supporters_contributors_loading_donation_progress">Cargando progreso de financiación...</string>
     <string name="supporters_contributors_donate_button">Donar a CINEBOX</string>
     <string name="supporters_contributors_qr_title">Escanear para donar</string>
-    <string name="supporters_contributors_qr_subtitle">Abre el enlace en tu teléfono para apoyar a Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Abre el enlace en tu teléfono para apoyar a CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Apunta tu cámara al código QR o usa el botón de abajo.</string>
     <string name="supporters_contributors_back_button">Volver a detalles</string>
     <string name="supporter_membership_title">Membresía de apoyador de CINEBOX</string>
@@ -806,8 +806,8 @@
     <string name="playback_player_ask_desc">Elige el reproductor cada vez</string>
     <string name="playback_player_auto">Automático (Mejor para el contenido)</string>
     <string name="playback_player_auto_desc">ExoPlayer para Películas y Series · MPV para Anime</string>
-    <string name="playback_engine_exoplayer_desc">Mejor compatibilidad con las funciones actuales de Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Usa libmpv con los controles OSD de Nuvio. Experimental.</string>
+    <string name="playback_engine_exoplayer_desc">Mejor compatibilidad con las funciones actuales de CINEBOX.</string>
+    <string name="playback_engine_mvplayer_desc">Usa libmpv con los controles OSD de CINEBOX. Experimental.</string>
 
     <string name="video_section">Vídeo</string>
     <string name="playback_true_black_letterbox">Barras negras puras</string>
@@ -1312,7 +1312,7 @@
     <string name="debrid_disconnect">Desconectar</string>
     <string name="debrid_device_auth_connected">%1$s está conectado en este dispositivo.</string>
     <string name="debrid_device_auth_starting">Iniciando sesión segura…</string>
-    <string name="debrid_device_auth_instructions">Escanea el QR e introduce este código para aprobar Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Escanea el QR e introduce este código para aprobar CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Código copiado.</string>
     <string name="debrid_device_auth_waiting">Esperando aprobación…</string>
     <string name="debrid_device_auth_failed">No se pudo iniciar sesión.</string>
@@ -1547,7 +1547,7 @@
     <string name="trakt_stat_watched_hours">Horas vistas</string>
     <string name="trakt_disconnect">Desconectar</string>
     <string name="trakt_disconnect_title">¿Desconectar Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Esto desconectará tu cuenta de Trakt de Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Esto desconectará tu cuenta de Trakt de CINEBOX.</string>
     <string name="trakt_login">Iniciar sesión</string>
     <string name="trakt_retry">Reintentar</string>
     <string name="trakt_back">Atrás</string>
@@ -1624,11 +1624,11 @@
     <string name="profile_addons">complementos</string>
     <string name="profile_plugins">complementos</string>
     <string name="profile_choose_avatar">Elige avatar</string>
-    <string name="profile_custom_avatar_web_panel_note">Las URLs de avatar personalizado se pueden configurar desde el panel web de Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">Las URLs de avatar personalizado se pueden configurar desde el panel web de CINEBOX.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Fondo</string>
     <string name="profile_choose_background">Elige el fondo de perfil</string>
-    <string name="profile_background_member_note">Las URLs de fondo personalizado se pueden configurar desde el panel web de Nuvio.</string>
+    <string name="profile_background_member_note">Las URLs de fondo personalizado se pueden configurar desde el panel web de CINEBOX.</string>
     <string name="profile_background_normal">Normal</string>
     <string name="profile_background_custom">Personalizado</string>
     <string name="profile_avatar_none_selected">Ningún avatar seleccionado</string>

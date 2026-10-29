@@ -99,7 +99,7 @@
 
     <string name="home_no_addons">אין עדיין תוספים מותקנים. יש להוסיף תוסף כדי להתחיל לצפות.</string>
     <string name="home_no_catalog_addons">אין תוספי קטלוג מותקנים עדיין. יש להתקין תוסף קטלוג כדי להתחיל לראות תוכן.</string>
-    <string name="auth_notice_nuvio_logged_out">יצאת מחשבון Nuvio. נדרשת התחברות מחדש.</string>
+    <string name="auth_notice_nuvio_logged_out">יצאת מחשבון CINEBOX. נדרשת התחברות מחדש.</string>
     <string name="auth_notice_trakt_logged_out">יצאת מחשבון Trakt. נדרשת התחברות מחדש.</string>
     <string name="error_generic">אירעה שגיאה</string>
 
@@ -393,7 +393,7 @@
     <string name="appearance_app_icon_picker_title">בחירת סמל אפליקציה ובאנר</string>
     <string name="appearance_app_icon_picker_subtitle">כל סגנון כולל סמל ריבועי תואם ובאנר טלוויזיה</string>
     <string name="appearance_app_icon_confirmation_title">לשנות את סמל האפליקציה?</string>
-    <string name="appearance_app_icon_confirmation_message">מעבר ל-%1$s יסגור את Nuvio. ייתכן שבאנר הטלוויזיה יזדקק לאתחול מחדש של המכשיר לפני שיתעדכן. יש לבחור באישור כדי להמשיך.</string>
+    <string name="appearance_app_icon_confirmation_message">מעבר ל-%1$s יסגור את CINEBOX. ייתכן שבאנר הטלוויזיה יזדקק לאתחול מחדש של המכשיר לפני שיתעדכן. יש לבחור באישור כדי להמשיך.</string>
     <string name="appearance_app_icon_change_failed">לא ניתן היה לשנות את הסמל והבאנר. כדאי לנסות שוב.</string>
     <string name="appearance_app_icon_original">מקורי</string>
     <string name="appearance_app_icon_arctic_blue">כחול ארקטי</string>
@@ -678,7 +678,7 @@
     <string name="supporters_contributors_loading_donation_progress">טוען התקדמות מימון…</string>
     <string name="supporters_contributors_donate_button">תרומה ל-CINEBOX</string>
     <string name="supporters_contributors_qr_title">סריקה לתרומה</string>
-    <string name="supporters_contributors_qr_subtitle">יש לפתוח את הקישור בטלפון כדי לתמוך ב-Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">יש לפתוח את הקישור בטלפון כדי לתמוך ב-CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">יש לכוון את המצלמה לקוד ה-QR או להשתמש בכפתור למטה.</string>
     <string name="supporters_contributors_back_button">חזרה לפרטים</string>
     <string name="supporter_membership_title">מנויים תומכי CINEBOX</string>
@@ -807,7 +807,7 @@
     <string name="playback_player_auto">אוטומטי (הטוב ביותר לתוכן)</string>
     <string name="playback_player_auto_desc">ExoPlayer לסרטים ולתוכניות טלוויזיה · MPV לאנימה</string>
     <string name="playback_engine_exoplayer_desc">התאימות הטובה ביותר עם תכונות CINEBOX הנוכחיות.</string>
-    <string name="playback_engine_mvplayer_desc">משתמש ב-Libmpv עם פקדי המסך של Nuvio. ניסיוני.</string>
+    <string name="playback_engine_mvplayer_desc">משתמש ב-Libmpv עם פקדי המסך של CINEBOX. ניסיוני.</string>
 
     <string name="video_section">וידאו</string>
     <string name="playback_true_black_letterbox">פסים שחורים אמיתיים</string>
@@ -1312,7 +1312,7 @@
     <string name="debrid_disconnect">ניתוק</string>
     <string name="debrid_device_auth_connected">%1$s מחובר במכשיר זה.</string>
     <string name="debrid_device_auth_starting">מתחיל התחברות מאובטחת…</string>
-    <string name="debrid_device_auth_instructions">יש לסרוק את קוד ה-QR ולהזין קוד זה כדי לאשר את Nuvio.</string>
+    <string name="debrid_device_auth_instructions">יש לסרוק את קוד ה-QR ולהזין קוד זה כדי לאשר את CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">הקוד הועתק.</string>
     <string name="debrid_device_auth_waiting">ממתין לאישור…</string>
     <string name="debrid_device_auth_failed">לא ניתן להתחיל את תהליך ההתחברות.</string>
@@ -1507,7 +1507,7 @@
     <string name="trakt_watch_progress_title">התקדמות צפייה</string>
     <string name="trakt_watch_progress_subtitle">בחירת מקור ההתקדמות שמנהל את חידוש הצפייה ואת המשך הצפייה</string>
     <string name="trakt_watch_progress_dialog_title">התקדמות צפייה</string>
-    <string name="trakt_watch_progress_dialog_subtitle">בחירת מקום לשמירת התקדמות הצפייה: ב-Trakt או בשרת של Nuvio.</string>
+    <string name="trakt_watch_progress_dialog_subtitle">בחירת מקום לשמירת התקדמות הצפייה: ב-Trakt או בשרת של CINEBOX.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
     <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
     <string name="trakt_library_source_title">מקור ספרייה</string>
@@ -1550,7 +1550,7 @@
     <string name="trakt_stat_watched_hours">שעות צפייה</string>
     <string name="trakt_disconnect">ניתוק</string>
     <string name="trakt_disconnect_title">לנתק Trakt?</string>
-    <string name="trakt_disconnect_subtitle">פעולה זו תנתק את חשבון Trakt שלך מ-Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">פעולה זו תנתק את חשבון Trakt שלך מ-CINEBOX.</string>
     <string name="trakt_login">התחברות</string>
     <string name="trakt_retry">ניסיון נוסף</string>
     <string name="trakt_back">חזרה</string>
@@ -1627,11 +1627,11 @@
     <string name="profile_addons">תוספים</string>
     <string name="profile_plugins">פלאגינים</string>
     <string name="profile_choose_avatar">בחירת אווטאר</string>
-    <string name="profile_custom_avatar_web_panel_note">ניתן להגדיר כתובות אווטאר מותאמות אישית מלוח הבקרה המקוון של Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">ניתן להגדיר כתובות אווטאר מותאמות אישית מלוח הבקרה המקוון של CINEBOX.</string>
     <string name="profile_editor_tab_avatar">אווטאר</string>
     <string name="profile_editor_tab_background">רקע</string>
     <string name="profile_choose_background">בחירת רקע פרופיל</string>
-    <string name="profile_background_member_note">ניתן להגדיר כתובות רקע מותאמות אישית מלוח הבקרה המקוון של Nuvio.</string>
+    <string name="profile_background_member_note">ניתן להגדיר כתובות רקע מותאמות אישית מלוח הבקרה המקוון של CINEBOX.</string>
     <string name="profile_background_normal">רגיל</string>
     <string name="profile_background_custom">מותאם אישית</string>
     <string name="profile_avatar_none_selected">לא נבחר אווטאר</string>
@@ -1699,7 +1699,7 @@
     <string name="profile_pin_overlay_set_support">סיסמה זו תידרש לפני פתיחת פרופיל זה.</string>
     <string name="profile_pin_overlay_confirm_support">יש להזין שוב את אותן 4 ספרות כדי לסיים את ההגדרה.</string>
     <string name="profile_pin_overlay_mismatch">הסיסמות אינן תואמות. יש להזין סיסמה חדשה שוב.</string>
-    <string name="profile_pin_overlay_forgot_hint">שכחת את הסיסמה? אפשר לאפס אותה באתר של Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">שכחת את הסיסמה? אפשר לאפס אותה באתר של CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">יש ללחוץ חזרה כדי לבטל</string>
 
 

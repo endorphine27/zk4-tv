@@ -96,7 +96,7 @@
     <string name="web_import_invalid_json">JSON i pavlefshëm</string>
     <string name="home_no_addons">Nuk ka shtesa të instaluara. Shtoni një për të filluar.</string>
     <string name="home_no_catalog_addons">Nuk ka shtesa katalogu të instaluara. Instaloni një shtesë katalogu për të parë përmbajtjen.</string>
-    <string name="auth_notice_nuvio_logged_out">Jeni çkyçur nga Nuvio. Ju lutemi kyçuni përsëri.</string>
+    <string name="auth_notice_nuvio_logged_out">Jeni çkyçur nga CINEBOX. Ju lutemi kyçuni përsëri.</string>
     <string name="auth_notice_trakt_logged_out">Jeni çkyçur nga Trakt. Ju lutemi rilidhuni.</string>
     <string name="error_generic">Ndodhi një gabim</string>
     <string name="action_retry">Provo përsëri</string>
@@ -534,7 +534,7 @@
     <string name="buffer_unsafe_warning">Paralajmërim: Tejkalon kufirin e sigurt të rekomanduar (%1$d MB) për pajisjen tuaj %2$s. Mund të shkaktojë dështime të aplikacionit.</string>
     <string name="buffer_auto_limit_active">Kufiri i sigurt i shkallëzuar automatikisht: %d MB</string>
     <string name="advanced_nuvio_focus_scroll">Lëvizja e fokusit CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Përdor animacionin dhe pozicionimin e personalizuar global të lëvizjes së fokusit nga Nuvio.</string>
+    <string name="advanced_nuvio_focus_scroll_subtitle">Përdor animacionin dhe pozicionimin e personalizuar global të lëvizjes së fokusit nga CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Lëvizje vertikale vetëm në memorie</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Anashkalo kërkesat për imazhe nga disku dhe rrjeti gjatë lëvizjes vertikale në rreshtat e faqes kryesore.</string>
     <string name="advanced_compose_highlighter">Theksuesi Compose</string>
@@ -579,7 +579,7 @@
     <string name="supporters_contributors_loading_donation_progress">Duke ngarkuar progresin e financimit...</string>
     <string name="supporters_contributors_donate_button">Mbështet CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skano për të mbështetur</string>
-    <string name="supporters_contributors_qr_subtitle">Hap lidhjen në telefonin tënd për të mbështetur Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Hap lidhjen në telefonin tënd për të mbështetur CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Drejto kamerën nga kodi QR ose përdor butonin më poshtë.</string>
     <string name="supporters_contributors_back_button">Kthehu te detajet</string>
     <string name="supporters_tab">Mbështetësit</string>
@@ -661,8 +661,8 @@
     <string name="playback_player_ask_desc">Zgjidh luajtësin çdo herë</string>
     <string name="playback_player_auto">Automatik (më i miri për përmbajtjen)</string>
     <string name="playback_player_auto_desc">ExoPlayer për filma dhe seriale · MPV për anime</string>
-    <string name="playback_engine_exoplayer_desc">Përputhshmëria më e mirë me veçoritë aktuale të Nuvio.</string>
-    <string name="playback_engine_mvplayer_desc">Përdor libmpv me kontrollet OSD të Nuvio. Eksperimentale.</string>
+    <string name="playback_engine_exoplayer_desc">Përputhshmëria më e mirë me veçoritë aktuale të CINEBOX.</string>
+    <string name="playback_engine_mvplayer_desc">Përdor libmpv me kontrollet OSD të CINEBOX. Eksperimentale.</string>
     <string name="video_section">Video</string>
     <string name="audio_trailer_section">Traileri</string>
     <string name="audio_autoplay_trailers">Luaj automatikisht trailerat</string>
@@ -1047,7 +1047,7 @@
     <string name="debrid_disconnect">Shkëput</string>
     <string name="debrid_device_auth_connected">%1$s është i lidhur në këtë pajisje.</string>
     <string name="debrid_device_auth_starting">Duke nisur hyrjen e sigurt...</string>
-    <string name="debrid_device_auth_instructions">Skano QR-në dhe shkruaj këtë kod për të miratuar Nuvio.</string>
+    <string name="debrid_device_auth_instructions">Skano QR-në dhe shkruaj këtë kod për të miratuar CINEBOX.</string>
     <string name="debrid_device_auth_code_copied">Kodi u kopjua.</string>
     <string name="debrid_device_auth_waiting">Në pritje të miratimit...</string>
     <string name="debrid_device_auth_failed">Nuk mund të nisej hyrja.</string>
@@ -1273,7 +1273,7 @@
     <string name="trakt_stat_watched_hours">Orë të shikuara</string>
     <string name="trakt_disconnect">Shkëput</string>
     <string name="trakt_disconnect_title">Të shkëputet Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Kjo do ta shkëpusë llogarinë tënde Trakt nga Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Kjo do ta shkëpusë llogarinë tënde Trakt nga CINEBOX.</string>
     <string name="trakt_login">Hyr</string>
     <string name="trakt_retry">Provo përsëri</string>
     <string name="trakt_back">Kthehu</string>
@@ -1348,11 +1348,11 @@
     <string name="profile_addons">shtesa</string>
     <string name="profile_plugins">shtojca</string>
     <string name="profile_choose_avatar">Zgjidh avatarin</string>
-    <string name="profile_custom_avatar_web_panel_note">URL-të e personalizuara të avatarëve mund të konfigurohen nga paneli web i Nuvio.</string>
+    <string name="profile_custom_avatar_web_panel_note">URL-të e personalizuara të avatarëve mund të konfigurohen nga paneli web i CINEBOX.</string>
     <string name="profile_editor_tab_avatar">Avatar</string>
     <string name="profile_editor_tab_background">Sfondi</string>
     <string name="profile_choose_background">Zgjidh sfondin e profilit</string>
-    <string name="profile_background_member_note">URL-të e personalizuara të sfondit mund të konfigurohen nga paneli web i Nuvio.</string>
+    <string name="profile_background_member_note">URL-të e personalizuara të sfondit mund të konfigurohen nga paneli web i CINEBOX.</string>
     <string name="profile_background_normal">Normal</string>
     <string name="profile_background_custom">I personalizuar</string>
     <string name="profile_avatar_none_selected">Nuk është zgjedhur avatar</string>
@@ -1398,7 +1398,7 @@
     <string name="profile_pin_overlay_set_support">Ky PIN do të kërkohet para hapjes së këtij profili.</string>
     <string name="profile_pin_overlay_confirm_support">Shkruaj përsëri të njëjtat 4 shifra për të përfunduar konfigurimin.</string>
     <string name="profile_pin_overlay_mismatch">PIN-et nuk përputhen. Shkruaj përsëri një PIN të ri.</string>
-    <string name="profile_pin_overlay_forgot_hint">Harrove PIN-in? Rivendose nga llogaria jote CINEBOX në faqen e internetit të Nuvio.</string>
+    <string name="profile_pin_overlay_forgot_hint">Harrove PIN-in? Rivendose nga llogaria jote CINEBOX në faqen e internetit të CINEBOX.</string>
     <string name="profile_pin_overlay_back_hint">Shtyp Kthehu për të anuluar</string>
     <!-- Essential addon setup wizard -->
     <string name="essential_addon_setup_title">Konfiguro shtesat</string>

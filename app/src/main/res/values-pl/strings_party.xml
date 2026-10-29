@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">Tego streamu nie można udostępnić.</string>
     <string name="party_shared_by">Udostępnione przez %1$s</string>
     <string name="party_invite_scan">Zeskanuj telefonem, aby dołączyć</string>
-    <string name="party_invite_share">Lub udostępnij kod. Znajomi mogą go wpisać we Wspólnym oglądaniu w dowolnej aplikacji Nuvio.</string>
+    <string name="party_invite_share">Lub udostępnij kod. Znajomi mogą go wpisać we Wspólnym oglądaniu w dowolnej aplikacji CINEBOX.</string>
     <string name="party_invite_qr">Kod QR zaproszenia</string>
     <string name="party_phone_chat_note">Otwórz Wspólne oglądanie na telefonie z tym profilem, aby czatować.</string>
 </resources>

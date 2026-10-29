@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">לא ניתן לשתף זרם זה.</string>
     <string name="party_shared_by">שותף על ידי %1$s</string>
     <string name="party_invite_scan">יש לסרוק בטלפון כדי להצטרף</string>
-    <string name="party_invite_share">או לשתף את הקוד. חברים יכולים להזין אותו במסיבת צפייה בכל אפליקציית Nuvio.</string>
+    <string name="party_invite_share">או לשתף את הקוד. חברים יכולים להזין אותו במסיבת צפייה בכל אפליקציית CINEBOX.</string>
     <string name="party_invite_qr">קוד QR להזמנה למסיבת צפייה</string>
     <string name="party_phone_chat_note">יש לפתוח את מסיבת הצפייה בטלפון עם פרופיל זה כדי לשוחח בצ׳אט.</string>
 </resources>

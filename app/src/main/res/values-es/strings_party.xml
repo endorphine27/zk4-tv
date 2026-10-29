@@ -72,7 +72,7 @@
     <string name="party_share_unavailable">No se puede compartir esta fuente.</string>
     <string name="party_shared_by">Compartida por %1$s</string>
     <string name="party_invite_scan">Escanea con tu teléfono para unirte</string>
-    <string name="party_invite_share">O comparte el código. Tus amigos pueden introducirlo en Ver en grupo desde cualquier app de Nuvio.</string>
+    <string name="party_invite_share">O comparte el código. Tus amigos pueden introducirlo en Ver en grupo desde cualquier app de CINEBOX.</string>
     <string name="party_invite_qr">Código QR de invitación para ver en grupo</string>
     <string name="party_phone_chat_note">Abre Ver en grupo en tu teléfono con este perfil para chatear.</string>
 </resources>

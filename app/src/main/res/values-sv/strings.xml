@@ -6,7 +6,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">Inga tillägg installerade. Lägg till ett tillägg för att komma igång.</string>
     <string name="home_no_catalog_addons">Inga tillägg med kataloger installerade. Installera ett katalogtillägg för att se innehåll.</string>
-    <string name="auth_notice_nuvio_logged_out">Du har loggats ut från Nuvio. Logga in igen.</string>
+    <string name="auth_notice_nuvio_logged_out">Du har loggats ut från CINEBOX. Logga in igen.</string>
     <string name="auth_notice_trakt_logged_out">Du har loggats ut från Trakt. Anslut igen.</string>
     <string name="error_generic">Ett fel uppstod</string>
 
@@ -229,7 +229,7 @@
     <string name="supporters_contributors_donate_copy">CINEBOX förblir gratis och öppen källkod. Om du vill stödja projektet kan du hjälpa till att täcka tiden och infrastrukturen bakom det.</string>
     <string name="supporters_contributors_donate_button">Donera till CINEBOX</string>
     <string name="supporters_contributors_qr_title">Skanna för att donera</string>
-    <string name="supporters_contributors_qr_subtitle">Öppna länken på din telefon för att stödja Nuvio.</string>
+    <string name="supporters_contributors_qr_subtitle">Öppna länken på din telefon för att stödja CINEBOX.</string>
     <string name="supporters_contributors_qr_hint">Rikta kameran mot QR-koden eller använd knappen nedan.</string>
     <string name="supporters_contributors_back_button">Tillbaka till detaljer</string>
     <string name="supporters_tab">Supportrar</string>
@@ -562,7 +562,7 @@
     <string name="trakt_stat_watched_hours">Tittade timmar</string>
     <string name="trakt_disconnect">Koppla från</string>
     <string name="trakt_disconnect_title">Koppla från Trakt?</string>
-    <string name="trakt_disconnect_subtitle">Detta kopplar från ditt Trakt-konto från Nuvio.</string>
+    <string name="trakt_disconnect_subtitle">Detta kopplar från ditt Trakt-konto från CINEBOX.</string>
     <string name="trakt_login">Logga in</string>
     <string name="trakt_retry">Försök igen</string>
     <string name="trakt_back">Tillbaka</string>

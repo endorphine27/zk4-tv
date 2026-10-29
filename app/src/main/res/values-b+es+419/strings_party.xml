@@ -72,6 +72,6 @@
     <string name="party_share_unavailable">No se puede compartir este stream.</string>
     <string name="party_shared_by">Compartido por %1$s</string>
     <string name="party_invite_scan">Escanea con un teléfono para unirte</string>
-    <string name="party_invite_share">O comparte el código. Tus amigos pueden ingresarlo en Ver en grupo desde cualquier app de Nuvio.</string>
+    <string name="party_invite_share">O comparte el código. Tus amigos pueden ingresarlo en Ver en grupo desde cualquier app de CINEBOX.</string>
     <string name="party_invite_qr">Código QR de invitación para ver en grupo</string>
 </resources>
