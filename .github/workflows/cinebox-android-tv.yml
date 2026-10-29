@@ -1,0 +1,40 @@
+name: CINEBOX TV (same app as Mac)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: endorphine27/zk4-utils
+          ref: android-tv
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Build APK
+        run: |
+          touch local.properties
+          chmod +x gradlew
+          ./gradlew :androidApp:assembleFullDebug -Pcompose.desktop.packaging.checkJdkVendor=false --no-daemon --stacktrace
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APP_VERSION="2.0.0-tv.$(printf '%04d' "$GITHUB_RUN_NUMBER")"
+          find androidApp/build/outputs/apk -name '*.apk'
+          apk="$(find androidApp/build/outputs/apk -name '*.apk' | head -n 1)"
+          test -f "$apk"
+          cp "$apk" "cinebox-tv-${APP_VERSION}.apk"
+          gh release create "v${APP_VERSION}" "cinebox-tv-${APP_VERSION}.apk" --repo "$GITHUB_REPOSITORY" --title "CINEBOX TV ${GITHUB_RUN_NUMBER}" --notes "Same app as the Mac version." --latest
