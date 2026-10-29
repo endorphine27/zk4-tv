@@ -143,43 +143,6 @@ fun AboutSettingsContent(
                             if (AppFeaturePolicy.inAppUpdatesEnabled) {
                                 UpdateChannelSettings(initialFocusRequester, modifier = firstRowModifier)
                             }
-
-                            SettingsActionRow(
-                                title = stringResource(R.string.about_privacy_policy),
-                                subtitle = stringResource(R.string.about_privacy_policy_subtitle),
-                                trailingIcon = Icons.Default.OpenInNew,
-                                modifier = if (!AppFeaturePolicy.inAppUpdatesEnabled) {
-                                    firstRowModifier.then(
-                                        if (initialFocusRequester != null) Modifier.focusRequester(initialFocusRequester)
-                                        else Modifier
-                                    )
-                                } else {
-                                    Modifier
-                                },
-                                onClick = {
-                                    val intent = Intent(
-                                        Intent.ACTION_VIEW,
-                                        Uri.parse("https://nuvio.tv/privacy-policy")
-                                    )
-                                    context.startActivity(intent)
-                                }
-                            )
-
-                            if (AppFeaturePolicy.supportNuvioEnabled) {
-                                SettingsActionRow(
-                                    title = stringResource(R.string.support_nuvio_name),
-                                    subtitle = stringResource(R.string.about_supporters_contributors_subtitle),
-                                    trailingIcon = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                                    onClick = onNavigateToSupportersContributors
-                                )
-                            }
-
-                            SettingsActionRow(
-                                title = stringResource(R.string.about_licenses_attributions),
-                                subtitle = stringResource(R.string.about_licenses_attributions_subtitle),
-                                trailingIcon = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                                onClick = onNavigateToLicensesAttributions
-                            )
                         }
                     }
                 }

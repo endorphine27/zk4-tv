@@ -4,7 +4,7 @@
     <string name="party_start_title">Ver juntos</string>
     <string name="party_start_description">Invita a tus amigos. Cada quien reproduce desde sus propias fuentes y todos se mantienen sincronizados.</string>
     <string name="party_start_action">Iniciar sesión para ver en grupo</string>
-    <string name="party_sign_in_required">Inicia sesión en tu cuenta de Nuvio para usar las sesiones para ver en grupo.</string>
+    <string name="party_sign_in_required">Inicia sesión en tu cuenta de CINEBOX para usar las sesiones para ver en grupo.</string>
     <string name="party_unavailable">Las sesiones para ver en grupo no están disponibles en este momento.</string>
     <string name="party_experimental">Las sesiones para ver en grupo son experimentales y podrían no funcionar como se espera.</string>
     <string name="party_code_label">Código del grupo</string>

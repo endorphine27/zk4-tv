@@ -1079,7 +1079,7 @@ private fun IntegrationSettingsContent(
     }
     val hubEntryTargetSection = hubReturnSection.takeIf {
         it != IntegrationSettingsSection.Hub
-    } ?: IntegrationSettingsSection.Debrid
+    } ?: IntegrationSettingsSection.Tmdb
 
     LaunchedEffect(selectedSection, autoFocusEnabled) {
         if (!autoFocusEnabled) return@LaunchedEffect
@@ -1115,19 +1115,6 @@ private fun IntegrationSettingsContent(
                             state = integrationHubState,
                             verticalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
-                            item(key = "integration_hub_debrid") {
-                                SettingsActionRow(
-                                    title = stringResource(R.string.debrid_title),
-                                    subtitle = stringResource(R.string.settings_debrid_subtitle),
-                                    leadingIcon = Icons.Default.CloudDownload,
-                                    onClick = { onSelectSection(IntegrationSettingsSection.Debrid) },
-                                    modifier = if (hubEntryTargetSection == IntegrationSettingsSection.Debrid) {
-                                        Modifier.focusRequester(hubEntryFocusRequester)
-                                    } else {
-                                        Modifier
-                                    }
-                                )
-                            }
                             item(key = "integration_hub_tmdb") {
                                 SettingsActionRow(
                                     title = "TMDB",

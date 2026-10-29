@@ -4,7 +4,7 @@
     <string name="party_start_title">Παρακολούθηση μαζί</string>
     <string name="party_start_description">Προσκαλέστε τους φίλους σας. Όλοι αναπαράγουν από τις δικές τους πηγές και μένουν συγχρονισμένοι.</string>
     <string name="party_start_action">Έναρξη πάρτι προβολής</string>
-    <string name="party_sign_in_required">Συνδεθείτε στον λογαριασμό σας Nuvio για να χρησιμοποιήσετε τα πάρτι προβολής.</string>
+    <string name="party_sign_in_required">Συνδεθείτε στον λογαριασμό σας CINEBOX για να χρησιμοποιήσετε τα πάρτι προβολής.</string>
     <string name="party_unavailable">Τα πάρτι προβολής δεν είναι διαθέσιμα αυτή τη στιγμή.</string>
     <string name="party_experimental">Τα πάρτι προβολής είναι πειραματικά και ενδέχεται να μη λειτουργήσουν όπως αναμένεται.</string>
     <string name="party_code_label">Κωδικός πάρτι</string>

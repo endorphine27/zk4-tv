@@ -4,7 +4,7 @@
     <string name="party_start_title">Oglądaj razem</string>
     <string name="party_start_description">Zaproś znajomych. Każdy odtwarza ze swoich źródeł i jest zsynchronizowany.</string>
     <string name="party_start_action">Rozpocznij wspólne oglądanie</string>
-    <string name="party_sign_in_required">Zaloguj się na konto Nuvio, aby korzystać ze wspólnego oglądania.</string>
+    <string name="party_sign_in_required">Zaloguj się na konto CINEBOX, aby korzystać ze wspólnego oglądania.</string>
     <string name="party_unavailable">Wspólne oglądanie jest teraz niedostępne.</string>
     <string name="party_experimental">Wspólne oglądanie jest eksperymentalne i może nie działać zgodnie z oczekiwaniami.</string>
     <string name="party_code_label">Kod pokoju</string>
