@@ -3414,4 +3414,10 @@
     <string name="autosync_label_synced">Auto synced</string>
     <string name="stream_resume_from_time">Resume from %1$s</string>
     <string name="stream_resume_from_percent">Resume from %1$d%%</string>
+    <string name="nav_tv_channels">TV Channels</string>
+    <string name="tv_channels_hint">Press OK to watch. Hold OK or press Menu to add or remove a favourite.</string>
+    <string name="tv_channels_loading">Loading channels...</string>
+    <string name="tv_channels_empty">No TV channels found. Install an addon with a catalog of type tv.</string>
+    <string name="tv_channels_favorites">Favourites</string>
+    <string name="tv_channels_all">All channels</string>
 </resources>

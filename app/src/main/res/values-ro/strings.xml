@@ -826,4 +826,10 @@
     <string name="update_ignore">Ignoră</string>
       <string name="playback_player_auto">Automat (Cel mai bun pentru conținut)</string>
     <string name="playback_player_auto_desc">ExoPlayer pentru Filme și Seriale · MPV pentru Anime</string>
+    <string name="nav_tv_channels">Canale TV</string>
+    <string name="tv_channels_hint">Apasă OK ca să urmărești. Ține apăsat OK sau apasă Meniu ca să adaugi sau să scoți un favorit.</string>
+    <string name="tv_channels_loading">Se încarcă canalele...</string>
+    <string name="tv_channels_empty">Nu am găsit canale TV. Instalează un addon cu un catalog de tip tv.</string>
+    <string name="tv_channels_favorites">Favorite</string>
+    <string name="tv_channels_all">Toate canalele</string>
 </resources>

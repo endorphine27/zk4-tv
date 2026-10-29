@@ -35,6 +35,7 @@ import com.nuvio.tv.ui.screens.detail.MetaDetailsScreen
 import com.nuvio.tv.ui.screens.home.HomeScreen
 import com.nuvio.tv.ui.screens.addon.AddonManagerScreen
 import com.nuvio.tv.ui.screens.addon.CatalogOrderScreen
+import com.nuvio.tv.ui.screens.tvchannels.TvChannelsScreen
 import com.nuvio.tv.ui.screens.library.LibraryScreen
 import com.nuvio.tv.ui.screens.player.PlayerExitReason
 import com.nuvio.tv.ui.screens.player.PlayerScreen
@@ -1205,6 +1206,23 @@ private fun PlaybackNavHost(
                             itemType = itemType,
                             addonBaseUrl = addonBaseUrl,
                             heroBackdropUrl = heroBackdrop
+                        )
+                    )
+                }
+            )
+        }
+
+        composable(Screen.TvChannels.route) {
+            TvChannelsScreen(
+                showBuiltInHeader = !hideBuiltInHeaders,
+                onOpenChannel = { channel ->
+                    // playOnLoad starts the channel straight away instead of showing the source list
+                    navController.navigate(
+                        Screen.Detail.createRoute(
+                            itemId = channel.id,
+                            itemType = channel.type,
+                            addonBaseUrl = channel.addonBaseUrl,
+                            playOnLoad = true
                         )
                     )
                 }
