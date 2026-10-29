@@ -50,7 +50,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          apk="$(find app/build/outputs/apk -name '*.apk' | grep -i full | head -n 1)"
+          find app/build/outputs/apk -name '*.apk'
+          apk="$(find app/build/outputs/apk -name '*.apk' | grep -i full | grep -i universal | head -n 1)"
           test -f "$apk"
           ls -lh "$apk"
           cp "$apk" "app-${APP_VERSION}.apk"
