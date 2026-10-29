@@ -210,7 +210,8 @@ fun PlayerScreen(
     onPlaybackEnded: ((nextVideoId: String?, nextSeason: Int?, nextEpisode: Int?, exitReason: PlayerExitReason?) -> Unit)? = null,
     onPlayRecommendation: (PostPlayRecommendation, manualSelection: Boolean) -> Unit = { _, _ -> },
     onOpenRecommendationDetails: (PostPlayRecommendation) -> Unit = {},
-    onOpenPartyMedia: (PartyMedia) -> Unit = {}
+    onOpenPartyMedia: (PartyMedia) -> Unit = {},
+    onZapChannel: ((direction: Int) -> Unit)? = null
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val playerBadges = rememberPlayerBadges(viewModel, uiState)
@@ -690,6 +691,16 @@ fun PlayerScreen(
                         }
                         else -> true
                     }
+                }
+
+                val zapDirection = when (keyEvent.nativeKeyEvent.keyCode) {
+                    KeyEvent.KEYCODE_CHANNEL_UP, KeyEvent.KEYCODE_PAGE_UP -> 1
+                    KeyEvent.KEYCODE_CHANNEL_DOWN, KeyEvent.KEYCODE_PAGE_DOWN -> -1
+                    else -> 0
+                }
+                if (zapDirection != 0 && onZapChannel != null) {
+                    if (keyEvent.nativeKeyEvent.action == KeyEvent.ACTION_UP) onZapChannel(zapDirection)
+                    return@onPreviewKeyEvent true
                 }
 
                 if (keyEvent.nativeKeyEvent.keyCode != KeyEvent.KEYCODE_CAPTIONS) {

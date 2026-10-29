@@ -832,4 +832,8 @@
     <string name="tv_channels_empty">Nu am găsit canale TV. Instalează un addon cu un catalog de tip tv.</string>
     <string name="tv_channels_favorites">Favorite</string>
     <string name="tv_channels_all">Toate canalele</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="calendar_loading">Se încarcă episoadele…</string>
+    <string name="calendar_empty">Nu există episoade apropiate pentru serialele din bibliotecă.</string>
+    <string name="calendar_watched">Văzut</string>
 </resources>

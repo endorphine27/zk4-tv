@@ -35,6 +35,8 @@ import com.nuvio.tv.ui.screens.detail.MetaDetailsScreen
 import com.nuvio.tv.ui.screens.home.HomeScreen
 import com.nuvio.tv.ui.screens.addon.AddonManagerScreen
 import com.nuvio.tv.ui.screens.addon.CatalogOrderScreen
+import com.nuvio.tv.ui.screens.calendar.CalendarScreen
+import com.nuvio.tv.ui.screens.tvchannels.TvChannelRegistry
 import com.nuvio.tv.ui.screens.tvchannels.TvChannelsScreen
 import com.nuvio.tv.ui.screens.library.LibraryScreen
 import com.nuvio.tv.ui.screens.player.PlayerExitReason
@@ -901,7 +903,26 @@ private fun PlaybackNavHost(
                 }
             }
 
+            val zapContentId = backStackEntry.arguments?.getString("contentId").orEmpty()
+            val zapIsTv = backStackEntry.arguments?.getString("contentType").orEmpty().equals("tv", ignoreCase = true)
             PlayerScreen(
+                onZapChannel = if (zapIsTv) { direction ->
+                    val list = TvChannelRegistry.channels
+                    val index = list.indexOfFirst { it.id == zapContentId }
+                    if (index >= 0 && list.size > 1) {
+                        val next = list[((index + direction) % list.size + list.size) % list.size]
+                        navController.navigate(
+                            Screen.Detail.createRoute(
+                                itemId = next.id,
+                                itemType = next.type,
+                                addonBaseUrl = next.addonBaseUrl,
+                                playOnLoad = true
+                            )
+                        ) {
+                            popUpTo(Screen.TvChannels.route) { inclusive = false }
+                        }
+                    }
+                } else null,
                 onBackPress = { currentVideoId, currentSeason, currentEpisode, autoPlayEnabled, playbackCompleted ->
                     val args = backStackEntry.arguments
                     val initialSeason = args?.getString("season")?.toIntOrNull()
@@ -1225,6 +1246,15 @@ private fun PlaybackNavHost(
                             playOnLoad = true
                         )
                     )
+                }
+            )
+        }
+
+        composable(Screen.Calendar.route) {
+            CalendarScreen(
+                showBuiltInHeader = !hideBuiltInHeaders,
+                onOpenSeries = { id, type, addonBaseUrl ->
+                    navController.navigate(Screen.Detail.createRoute(id, type, addonBaseUrl))
                 }
             )
         }

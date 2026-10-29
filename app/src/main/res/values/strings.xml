@@ -3420,4 +3420,8 @@
     <string name="tv_channels_empty">No TV channels found. Install an addon with a catalog of type tv.</string>
     <string name="tv_channels_favorites">Favourites</string>
     <string name="tv_channels_all">All channels</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="calendar_loading">Loading episodes…</string>
+    <string name="calendar_empty">No upcoming episodes for the series in your library.</string>
+    <string name="calendar_watched">Watched</string>
 </resources>
