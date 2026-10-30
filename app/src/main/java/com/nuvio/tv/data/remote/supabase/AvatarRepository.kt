@@ -100,8 +100,15 @@ class AvatarRepository @Inject constructor(
     }
 
     private suspend fun getStandardAvatarCatalog(): List<AvatarCatalogItem> {
-        cachedStandardCatalog?.let { return it }
-        return fetchStandardAvatarCatalog()
+        val remote = cachedStandardCatalog ?: try {
+            fetchStandardAvatarCatalog()
+        } catch (error: CancellationException) {
+            throw error
+        } catch (error: Exception) {
+            Log.w(MemberAvatarTag, "Unable to load avatar catalog, using built-in avatars", error)
+            emptyList()
+        }
+        return BuiltInAvatars + remote.filter { item -> BuiltInAvatars.none { it.id == item.id } }
     }
 
     private suspend fun fetchStandardAvatarCatalog(): List<AvatarCatalogItem> {
