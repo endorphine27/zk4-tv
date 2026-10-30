@@ -63,9 +63,9 @@ class ServerConfigurationStore @Inject constructor(
         backendUrl = BuildConfig.SUPABASE_URL.trimEnd('/'),
         publishableKey = BuildConfig.SUPABASE_ANON_KEY,
         capabilities = ServerCapabilities(
-            emailPasswordAuth = false,
-            tvLogin = true,
-            watchParty = true
+            emailPasswordAuth = true,
+            tvLogin = false,
+            watchParty = false
         ),
         isCustom = false,
         fallbackBackendUrl = BuildConfig.SUPABASE_FALLBACK_URL.trim().trimEnd('/').takeIf { it.isNotBlank() },

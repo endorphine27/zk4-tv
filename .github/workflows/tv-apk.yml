@@ -19,9 +19,17 @@ jobs:
           java-version: "17"
           cache: gradle
 
-      # Empty on purpose: no backend, Trakt, Simkl or MDBList keys are available here
-      - name: Create empty local.properties
-        run: touch local.properties
+      # Own CINEBOX server. The public client key is read from the server's discovery document;
+      # Trakt, Simkl and MDBList keys stay empty.
+      - name: Create local.properties
+        run: |
+          key="$(curl -fsS https://destinyab.go.ro:8444/.well-known/nuvio | jq -r .publishable_key)"
+          test -n "$key" && test "$key" != null
+          {
+            echo "NUVIO_SUPABASE_URL=https://destinyab.go.ro:8444"
+            echo "NUVIO_SUPABASE_ANON_KEY=${key}"
+            echo "AVATAR_PUBLIC_BASE_URL=https://destinyab.go.ro:8444/storage/v1/object/public/avatars"
+          } > local.properties
 
       - name: Compute app version
         run: |
