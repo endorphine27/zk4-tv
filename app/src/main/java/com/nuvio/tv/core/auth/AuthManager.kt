@@ -93,7 +93,7 @@ class AuthManager @Inject constructor(
     private val refreshMutex = Mutex()
     private val sessionValidator = AuthSessionValidator(auth)
     private val startupAuthLock = Any()
-    private val authHttpClient = if (serverConfiguration.isCustom) customServerHttpClient else httpClient
+    private val authHttpClient = customServerHttpClient
 
     private val _authState = MutableStateFlow<AuthState>(AuthState.Loading)
     val authState: StateFlow<AuthState> = _authState.asStateFlow()

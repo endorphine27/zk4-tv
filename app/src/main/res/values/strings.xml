@@ -3424,4 +3424,5 @@
     <string name="calendar_loading">Loading episodes…</string>
     <string name="calendar_empty">No upcoming episodes for the series in your library.</string>
     <string name="calendar_watched">Watched</string>
+    <string name="auth_forgot_password_hint">Forgot your password? On your phone, open destinyab.go.ro:8444/reset</string>
 </resources>

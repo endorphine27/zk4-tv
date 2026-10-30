@@ -503,6 +503,16 @@ private fun AuthEmailLoginForm(
                 )
             }
         }
+        Text(
+            text = stringResource(R.string.auth_forgot_password_hint),
+            modifier = Modifier.fillMaxWidth(),
+            style = MaterialTheme.typography.bodyMedium.copy(
+                color = AuthTextSecondary,
+                fontSize = 13.sp,
+                lineHeight = 18.sp
+            ),
+            textAlign = TextAlign.Center
+        )
         AuthTermsAcknowledgement()
         uiState.error?.takeIf { it.isNotBlank() }?.let { error ->
             StatusPill(
