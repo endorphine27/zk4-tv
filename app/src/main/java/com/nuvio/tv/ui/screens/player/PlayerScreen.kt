@@ -1424,6 +1424,14 @@ fun PlayerScreen(
             torrentBufferingProgress = uiState.torrentBufferingProgress
         )
 
+        // Live channel links expire after a while (HTTP 404/410): reopen the same channel for a fresh link.
+        LaunchedEffect(uiState.error) {
+            if (uiState.error != null && onZapChannel != null && TvChannelAutoReload.tryAcquire()) {
+                delay(1_500)
+                onZapChannel(0)
+            }
+        }
+
         // Error state
         if (uiState.error != null) {
             ErrorOverlay(
@@ -4525,5 +4533,22 @@ private fun PlayerBufferingIndicator(
         } else {
             LoadingIndicator()
         }
+    }
+}
+
+
+/** Limits automatic channel reloads so a channel that is really down does not loop forever. */
+private object TvChannelAutoReload {
+    private const val MAX_RELOADS = 3
+    private const val WINDOW_MS = 2 * 60_000L
+    private val stamps = ArrayDeque<Long>()
+
+    @Synchronized
+    fun tryAcquire(): Boolean {
+        val now = System.currentTimeMillis()
+        while (stamps.isNotEmpty() && now - stamps.first() > WINDOW_MS) stamps.removeFirst()
+        if (stamps.size >= MAX_RELOADS) return false
+        stamps.addLast(now)
+        return true
     }
 }

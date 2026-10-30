@@ -909,7 +909,7 @@ private fun PlaybackNavHost(
                 onZapChannel = if (zapIsTv) { direction ->
                     val list = TvChannelRegistry.channels
                     val index = list.indexOfFirst { it.id == zapContentId }
-                    if (index >= 0 && list.size > 1) {
+                    if (index >= 0 && (list.size > 1 || direction == 0)) {
                         val next = list[((index + direction) % list.size + list.size) % list.size]
                         navController.navigate(
                             Screen.Detail.createRoute(
