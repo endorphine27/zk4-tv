@@ -831,7 +831,6 @@
     <string name="tv_channels_loading">Se încarcă canalele...</string>
     <string name="tv_channels_empty">Nu am găsit canale TV. Instalează un addon cu un catalog de tip tv.</string>
     <string name="tv_channels_favorites">Favorite</string>
-    <string name="tv_channels_live">ÎN DIRECT</string>
     <string name="tv_channels_search">Caută canal…</string>
     <string name="tv_channels_next">Urmează</string>
     <string name="tv_channels_all">Toate canalele</string>

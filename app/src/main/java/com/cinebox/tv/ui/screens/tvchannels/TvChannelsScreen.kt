@@ -4,11 +4,7 @@ import android.view.KeyEvent as AndroidKeyEvent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.layout.Column
@@ -264,26 +260,6 @@ private fun ChannelTile(
                         tint = CineboxTheme.colors.Secondary,
                         modifier = Modifier.align(Alignment.TopEnd).padding(8.dp),
                     )
-                }
-                if (channel.programme != null) {
-                    Row(
-                        modifier = Modifier
-                            .align(Alignment.TopStart)
-                            .padding(8.dp)
-                            .clip(RoundedCornerShape(6.dp))
-                            .background(Color(0xCC000000))
-                            .padding(horizontal = 6.dp, vertical = 2.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.spacedBy(5.dp),
-                    ) {
-                        Box(Modifier.size(7.dp).clip(CircleShape).background(Color(0xFFE53935)))
-                        Text(
-                            text = stringResource(R.string.tv_channels_live),
-                            style = MaterialTheme.typography.labelSmall,
-                            color = Color.White,
-                            fontWeight = FontWeight.Bold,
-                        )
-                    }
                 }
                 val progress = programmeProgress(channel.programme)
                 if (progress != null) {
