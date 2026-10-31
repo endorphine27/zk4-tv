@@ -513,7 +513,7 @@ private fun AuthEmailLoginForm(
             ),
             textAlign = TextAlign.Center
         )
-        AuthTermsAcknowledgement()
+        // Terms link removed: pointed at nuvio.tv
         uiState.error?.takeIf { it.isNotBlank() }?.let { error ->
             StatusPill(
                 text = error,
@@ -563,7 +563,7 @@ private fun AuthQrCodeBlock(
     )
 
     Spacer(modifier = Modifier.height(12.dp))
-    AuthTermsAcknowledgement()
+    // Terms link removed: pointed at nuvio.tv
 
     val statusText = uiState.error ?: uiState.qrLoginStatus
     if (!statusText.isNullOrBlank()) {
