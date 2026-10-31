@@ -14,7 +14,7 @@ import com.nuvio.tv.data.local.PlayerSettings
 import com.nuvio.tv.ui.screens.settings.MemoryBudget
 
 /**
- * Centralizes all Nuvio ExoPlayer performance enhancements behind a single toggle.
+ * Centralizes all CINEBOX ExoPlayer performance enhancements behind a single toggle.
  *
  * When [enabled] is `true`, the helper applies:
  * - Large allocator segments (256 KB) with a 400 MB target buffer
@@ -29,7 +29,7 @@ import com.nuvio.tv.ui.screens.settings.MemoryBudget
 @androidx.media3.common.util.UnstableApi
 object NuvioExoPlayerPerformanceHelper {
 
-    /** Whether Nuvio performance enhancements are active. Set from [PlayerSettingsDataStore]. */
+    /** Whether CINEBOX performance enhancements are active. Set from [PlayerSettingsDataStore]. */
     @Volatile
     var enabled: Boolean = false
         set(value) {
@@ -276,7 +276,7 @@ object NuvioExoPlayerPerformanceHelper {
     }
 
     /**
-     * Builds a [DefaultLoadControl] tuned for Nuvio performance when enabled,
+     * Builds a [DefaultLoadControl] tuned for CINEBOX performance when enabled,
      * or a standard ExoPlayer [DefaultLoadControl] when disabled.
      */
     fun buildLoadControl(context: Context? = null, chunkOverheadMb: Int = 0): DefaultLoadControl {

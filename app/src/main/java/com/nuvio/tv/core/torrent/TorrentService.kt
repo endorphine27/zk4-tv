@@ -300,7 +300,7 @@ class TorrentService @Inject constructor(
         } catch (cancellation: CancellationException) {
             throw cancellation
         } catch (error: Exception) {
-            Log.w(TAG, "Error stopping Nuvio Engine stream route", error)
+            Log.w(TAG, "Error stopping CINEBOX Engine stream route", error)
         }
     }
 
@@ -336,7 +336,7 @@ class TorrentService @Inject constructor(
             engine = created
             engineConfigurationKey = configurationKey
             observeEngineEvents(created)
-            Log.i(TAG, "Using Nuvio Engine ${NuvioEngine.version} (${NuvioEngine.protocolBackendVersion})")
+            Log.i(TAG, "Using CINEBOX Engine ${NuvioEngine.version} (${NuvioEngine.protocolBackendVersion})")
         }
     }
 
@@ -353,7 +353,7 @@ class TorrentService @Inject constructor(
             try {
                 target.shutdown()
             } catch (error: Exception) {
-                Log.w(TAG, "Error shutting down Nuvio Engine", error)
+                Log.w(TAG, "Error shutting down CINEBOX Engine", error)
             }
         }
     }
@@ -428,7 +428,7 @@ class TorrentService @Inject constructor(
                     } catch (cancellation: CancellationException) {
                         throw cancellation
                     } catch (error: Exception) {
-                        Log.w(TAG, "Error sampling Nuvio Engine stream progress", error)
+                        Log.w(TAG, "Error sampling CINEBOX Engine stream progress", error)
                         null
                     }
                     val aggregate = activeEngine.stats.value

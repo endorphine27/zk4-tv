@@ -646,7 +646,7 @@ class StartupSyncService @Inject constructor(
         val isTrackingLibrary = libraryRepository.sourceMode.first() != LibrarySourceMode.LOCAL
         if (isTrackingLibrary) {
             libraryRepository.hasCompletedInitialPull = true
-            Log.d(TAG, "Skipping Nuvio library pull for profile $profileId because a tracking library provider is active")
+            Log.d(TAG, "Skipping CINEBOX library pull for profile $profileId because a tracking library provider is active")
             return true
         }
 
@@ -662,7 +662,7 @@ class StartupSyncService @Inject constructor(
             true
         } catch (e: Exception) {
             libraryRepository.hasCompletedInitialPull = true
-            Log.e(TAG, "Periodic Nuvio library pull failed profile=$profileId", e)
+            Log.e(TAG, "Periodic CINEBOX library pull failed profile=$profileId", e)
             false
         } finally {
             libraryRepository.isSyncingFromRemote = false

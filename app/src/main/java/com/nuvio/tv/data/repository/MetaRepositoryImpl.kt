@@ -171,7 +171,7 @@ class MetaRepositoryImpl @Inject constructor(
             }
         }
 
-        // The caller names the addon but not necessarily a type it serves. Nuvio's
+        // The caller names the addon but not necessarily a type it serves. CINEBOX's
         // internal "tv" against a series-only addon is the usual case. Resolve it
         // like the multi-addon path does, so the request and the cached entry line
         // up with the other paths.
@@ -665,7 +665,7 @@ class MetaRepositoryImpl @Inject constructor(
 
     private fun inferCanonicalType(type: String, id: String): String {
         val normalizedType = type.trim()
-        // "tv" is Nuvio's internal synonym for episodic content. Stremio metadata
+        // "tv" is CINEBOX's internal synonym for episodic content. Stremio metadata
         // addons advertise episodic content as "series", so fold it over here rather
         // than requesting a type nothing declares. Live TV is a separate type
         // ("channel") and is left alone.

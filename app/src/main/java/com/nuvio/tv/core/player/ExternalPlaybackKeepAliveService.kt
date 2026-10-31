@@ -14,7 +14,7 @@ import com.nuvio.tv.BuildConfig
 import com.nuvio.tv.R
 
 /**
- * Foreground service that prevents the system from killing Nuvio while an
+ * Foreground service that prevents the system from killing CINEBOX while an
  * external video player is active.
  *
  *

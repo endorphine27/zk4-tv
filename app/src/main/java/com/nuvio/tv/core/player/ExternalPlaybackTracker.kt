@@ -245,7 +245,7 @@ class ExternalPlaybackTracker @Inject constructor(
     // Using a time window instead of a sticky flag means the abort can never get permanently stuck
     // if a continuation never actually launches (e.g. user backed out before it auto-played).
     private var lastAutoNextEmitMs = 0L
-    // True from next-episode navigation until external playback covers Nuvio or the handoff ends.
+    // True from next-episode navigation until external playback covers CINEBOX or the handoff ends.
     // This distinguishes a cancellable continuation from an unrelated direct auto-play launch.
     private var autoNextNavigationPending = false
     // Set when the loader is released on a routine screen settle, so a later onStart can't re-raise a
@@ -634,7 +634,7 @@ class ExternalPlaybackTracker @Inject constructor(
         Log.d(TAG, "External player returned: pos=${result.positionMs}ms, dur=${result.durationMs}ms, endedByUser=${result.endedByUser}")
 
         // Some players (notably VLC on network streams) return a real position but no usable
-        // duration, so Nuvio can't compute a % and nothing is saved as resumable/watched.
+        // duration, so CINEBOX can't compute a % and nothing is saved as resumable/watched.
         // Backfill the duration (saved progress, else episode/movie runtime) off-thread, then
         // process. Players that DO report a duration keep the synchronous path below unchanged.
         if ((result.durationMs == null || result.durationMs <= 0L) && result.positionMs > 0L) {
@@ -1161,7 +1161,7 @@ class ExternalPlaybackTracker @Inject constructor(
     }
 
     // ===================== "Loading next episode" loader =====================
-    // WARNING: autoNextOverlay is the ONLY cover for the player->Nuvio transition. To hide the
+    // WARNING: autoNextOverlay is the ONLY cover for the player->CINEBOX transition. To hide the
     // episode-list flash, raise THIS loader early (raiseAutoNextOverlayOnReturn). Do NOT add a
     // second full-screen cover to mask the gap — a competing overlay caused flicker and hid this
     // loader's text. Cancellation: backing out sets autoNextCancelled (reset per launch in
@@ -1186,7 +1186,7 @@ class ExternalPlaybackTracker @Inject constructor(
     }
 
     /** Hide the loader when Stream settles. A possible active handoff retains ownership until the
-     * next external player covers Nuvio. Explicit manual fallback and launch failures force it off. */
+     * next external player covers CINEBOX. Explicit manual fallback and launch failures force it off. */
     fun releaseAutoNextOverlay(forceRelease: Boolean = false) {
         if (!forceRelease && ExternalAutoNextPolicy.shouldIgnoreLoaderRelease(isTracking)) {
             Log.d(AUTO_NEXT_TAG, "releaseAutoNextOverlay ignored while external player is active")
@@ -1225,7 +1225,7 @@ class ExternalPlaybackTracker @Inject constructor(
         Log.d(AUTO_NEXT_TAG, "loader status message=${updated.message} progress=${updated.progress}")
     }
 
-    /** The launched external player now owns the display, so the Nuvio transition cover can end. */
+    /** The launched external player now owns the display, so the CINEBOX transition cover can end. */
     fun onExternalPlayerCoveredApp() {
         if (!isTracking) return
         Log.d(AUTO_NEXT_TAG, "external player covered app -> clearing transition loader")

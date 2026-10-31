@@ -66,7 +66,7 @@ Additional missing roles and states were annotated across the app since the side
 - 2026-10-04 (after upstream beta 4 fast-forward): `git diff --check` passed and `:app:compileFullDebugKotlin` passed with the memory-constrained recipe. `:app:testFullDebugUnitTest` ran 1,839 tests: 1,834 passed, 4 failed, 1 skipped. The failures were `LocalhostZeroCopyDataSourceTest.testHttpError404`, `DefaultAllocatorTest.testLateReleasedAllocationsMemoryLeak`, `TraktAuthServiceTest.refresh token 400 clears credentials and prevents another refresh`, and `DefaultDataSourceRoutingTest.testRoutingToLocalhostZeroCopyWhenEnabled`; none exercises the changed Compose semantics. No APK was assembled or installed.
 - 2026-09-26 (extended semantics pass): `git diff --check` passed. `:app:compileFullDebugKotlin` passed with the memory-constrained recipe above. `:app:testFullDebugUnitTest` ran 1,263 tests: 1,248 passed, 14 failed, 1 skipped — identical to the pre-change baseline failures (unrelated media, networking, migration, and playback tests). No regression from the semantics annotations.
 - 2026-09-24 (sidebar label fix, installed on device):
-  - Verified Nuvio was the resumed package and input focus was inside its content grid.
+  - Verified CINEBOX was the resumed package and input focus was inside its content grid.
   - Verified the semantic tree contained 22 focusable controls and four unlabeled sidebar controls before the fix.
   - `git diff --check` passed.
   - `:app:compileFullDebugKotlin` passed with one worker and a 1536 MB heap.
@@ -76,7 +76,7 @@ Additional missing roles and states were annotated across the app since the side
   - `adb install -r` succeeded, preserving the installed package and its data.
   - Post-install package inspection confirmed version `1.0.0` (`1062`) and a new update time.
   - TalkBack and the existing launcher accessibility service remained enabled after installation.
-  - Nuvio launched successfully and became both the focused app and current focused window.
+  - CINEBOX launched successfully and became both the focused app and current focused window.
   - Automated hierarchy inspection did not expose a focused semantic node, so spoken sidebar labels, D-pad traversal, and Back focus restoration still require direct user observation.
 
 ## Static naming sweep of the remaining surfaces (2026-10-07)

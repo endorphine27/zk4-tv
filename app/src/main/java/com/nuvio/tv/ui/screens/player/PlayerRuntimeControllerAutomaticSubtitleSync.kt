@@ -42,7 +42,7 @@ private fun PlayerRuntimeController.showAutoSyncToast(
     }
 }
 /**
- * Wraps Nuvio's extractors so AutoSync can observe embedded subtitle timing (output is forwarded
+ * Wraps CINEBOX's extractors so AutoSync can observe embedded subtitle timing (output is forwarded
  * unchanged), and starts AutoSync's embedded subtitle index download while the stream opens.
  */
 internal fun PlayerRuntimeController.autoSyncExtractorsFactory(

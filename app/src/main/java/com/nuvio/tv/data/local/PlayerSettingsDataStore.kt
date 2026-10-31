@@ -346,7 +346,7 @@ data class PlayerSettings(
     val enableHttp2: Boolean = DEFAULT_ENABLE_HTTP2,
     val enableBufferLogs: Boolean = false,
     val resizeMode: Int = 0,
-    // Nuvio ExoPlayer Performance Mode
+    // CINEBOX ExoPlayer Performance Mode
     val nuvioPerformanceModeEnabled: Boolean = DEFAULT_NUVIO_PERFORMANCE_MODE_ENABLED
 ) {
     /** Prefer FFmpeg/extension audio decoder (EXTENSION_RENDERER_MODE_PREFER). */
@@ -1884,7 +1884,7 @@ class PlayerSettingsDataStore @Inject constructor(
         }
     }
 
-    // Nuvio ExoPlayer Performance Mode
+    // CINEBOX ExoPlayer Performance Mode
 
     val nuvioPerformanceModeEnabled: Flow<Boolean> = profileManager.activeProfileId.flatMapLatest { pid ->
         factory.get(pid, FEATURE).data.map { prefs ->
