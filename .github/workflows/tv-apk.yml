@@ -59,4 +59,4 @@ jobs:
           test -f "$apk"
           ls -lh "$apk"
           cp "$apk" "app-${APP_VERSION}.apk"
-          gh release create "v${APP_VERSION}" "app-${APP_VERSION}.apk" --title "Build ${GITHUB_RUN_NUMBER}" --notes "Unsigned-store build." --latest
+          gh release create "v${APP_VERSION}" "app-${APP_VERSION}.apk" --title "Build ${GITHUB_RUN_NUMBER}" --notes-file RELEASE_NOTES.md --latest
