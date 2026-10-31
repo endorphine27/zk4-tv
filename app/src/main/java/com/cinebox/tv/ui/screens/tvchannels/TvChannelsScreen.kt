@@ -2,7 +2,15 @@ package com.cinebox.tv.ui.screens.tvchannels
 
 import android.view.KeyEvent as AndroidKeyEvent
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -138,7 +146,7 @@ fun TvChannelsScreen(
                 color = CineboxTheme.colors.TextSecondary,
             )
             else -> LazyVerticalGrid(
-                columns = GridCells.Adaptive(minSize = 210.dp),
+                columns = GridCells.Adaptive(minSize = 168.dp),
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(bottom = 48.dp),
                 horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -205,7 +213,7 @@ private fun ChannelTile(
             onClick = onClick,
             modifier = Modifier
                 .fillMaxWidth()
-                .aspectRatio(1f)
+                .aspectRatio(16f / 10f)
                 .then(if (focusRequester != null) Modifier.focusRequester(focusRequester) else Modifier)
                 .onFocusChanged { if (it.isFocused) onFocused() }
                 .onPreviewKeyEvent { keyEvent ->
@@ -254,19 +262,57 @@ private fun ChannelTile(
                         imageVector = Icons.Filled.Star,
                         contentDescription = null,
                         tint = CineboxTheme.colors.Secondary,
-                        modifier = Modifier.align(Alignment.TopEnd).padding(10.dp),
+                        modifier = Modifier.align(Alignment.TopEnd).padding(8.dp),
                     )
+                }
+                if (channel.programme != null) {
+                    Row(
+                        modifier = Modifier
+                            .align(Alignment.TopStart)
+                            .padding(8.dp)
+                            .clip(RoundedCornerShape(6.dp))
+                            .background(Color(0xCC000000))
+                            .padding(horizontal = 6.dp, vertical = 2.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(5.dp),
+                    ) {
+                        Box(Modifier.size(7.dp).clip(CircleShape).background(Color(0xFFE53935)))
+                        Text(
+                            text = stringResource(R.string.tv_channels_live),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                        )
+                    }
+                }
+                val progress = programmeProgress(channel.programme)
+                if (progress != null) {
+                    Box(
+                        modifier = Modifier
+                            .align(Alignment.BottomStart)
+                            .fillMaxWidth()
+                            .height(4.dp)
+                            .background(Color(0x99000000)),
+                    ) {
+                        Box(
+                            Modifier
+                                .fillMaxHeight()
+                                .fillMaxWidth(progress)
+                                .background(CineboxTheme.colors.Secondary)
+                        )
+                    }
                 }
             }
         }
         Text(
             text = channel.name,
             modifier = Modifier.fillMaxWidth(),
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.titleSmall,
+            fontWeight = FontWeight.SemiBold,
             color = CineboxTheme.colors.TextPrimary,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-            textAlign = TextAlign.Center,
+            textAlign = TextAlign.Start,
         )
         if (channel.programme != null) {
             Text(
@@ -276,10 +322,22 @@ private fun ChannelTile(
                 color = CineboxTheme.colors.TextSecondary,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
-                textAlign = TextAlign.Center,
+                textAlign = TextAlign.Start,
             )
         }
     }
+}
+
+/** Share of the running programme already played, from a "HH:mm–HH:mm" range at the start of [programme]. */
+private fun programmeProgress(programme: String?): Float? {
+    val match = Regex("(\\d{1,2}):(\\d{2})\\s*[–-]\\s*(\\d{1,2}):(\\d{2})").find(programme ?: return null) ?: return null
+    val (h1, m1, h2, m2) = match.destructured
+    val start = h1.toInt() * 60 + m1.toInt()
+    var end = h2.toInt() * 60 + m2.toInt()
+    if (end <= start) end += 24 * 60
+    val now = java.time.LocalTime.now().let { it.hour * 60 + it.minute }
+    val position = if (now < start && end > 24 * 60) now + 24 * 60 else now
+    return ((position - start).toFloat() / (end - start)).coerceIn(0f, 1f)
 }
 
 /** Lower-case and strip accents, so "pro" finds "PRO TV" and "stiri" finds "Știri". */

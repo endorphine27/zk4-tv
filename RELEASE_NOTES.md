@@ -1,4 +1,5 @@
 Ce se schimbă în această versiune:
-• Canale TV: ghid de programe — vezi ce rulează acum și ce urmează pe canalul selectat
+• Canale TV: dale noi, mai mici, cu mai multe canale pe rând
+• Canale TV: insigna „ÎN DIRECT" și bară de progres pentru emisiunea curentă
+• Canale TV: ghid de programe — ce rulează acum și ce urmează pe canalul selectat
 • Canale TV: căutare după nume (de exemplu „pro", „antena", „știri")
-• Rândurile cu cataloage au numele în română
