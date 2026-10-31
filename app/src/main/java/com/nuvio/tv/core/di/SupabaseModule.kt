@@ -57,7 +57,7 @@ object SupabaseModule {
     fun provideSupabaseClient(
         serverConfiguration: ServerConfiguration
     ): SupabaseClient = runBlocking(Dispatchers.IO) {
-        val userAgent = "NuvioTV/${BuildConfig.VERSION_NAME.ifBlank { "dev" }}"
+        val userAgent = "CINEBOXTV/${BuildConfig.VERSION_NAME.ifBlank { "dev" }}"
         val rateLimitCoordinator = BackendRateLimitCoordinator()
         lateinit var client: SupabaseClient
         client = createSupabaseClient(
