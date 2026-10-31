@@ -100,7 +100,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">لا توجد إضافات مثبتة. أضف إضافة واحدة للبدء.</string>
     <string name="home_no_catalog_addons">لا توجد إضافات قوائم عرض مثبتة. ثبت واحدة لعرض المحتوى.</string>
-    <string name="auth_notice_nuvio_logged_out">تم تسجيل خروجك من CINEBOX. يرجى تسجيل الدخول مرة أخرى.</string>
+    <string name="auth_notice_cinebox_logged_out">تم تسجيل خروجك من CINEBOX. يرجى تسجيل الدخول مرة أخرى.</string>
     <string name="auth_notice_trakt_logged_out">تم تسجيل خروجك من Trakt. يرجى إعادة الاتصال.</string>
     <string name="error_generic">حدث خطأ</string>
 
@@ -364,8 +364,8 @@
     <string name="licenses_attributions_section_app">APP LICENSE</string>
     <string name="licenses_attributions_section_data">DATA &amp; SERVICES</string>
     <string name="licenses_attributions_section_playback">ANDROID PLAYBACK LICENSES</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Source code and license terms are available in the project repository. Licensed under the GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Source code and license terms are available in the project repository. Licensed under the GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX uses the TMDB API for movie and TV metadata, artwork, trailers, cast, production details, collections, and recommendations. This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -478,8 +478,8 @@
     <string name="advanced_section_dv_diagnostics" translatable="false">DV Diagnostics</string>
     <string name="advanced_fast_horizontal_navigation">التصفح الأفقي السريع</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">رفع سرعة تكرار أزرار الاتجاهات (D-pad) في الصفوف مع بقاء ميزة تقييد التكرار قيد التشغيل..</string>
-    <string name="advanced_nuvio_focus_scroll">تصفح التركيز الخاص بـ CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">استخدام نظام CINEBOX المخصص للرسوم المتحركة وتموضع التركيز في كافة واجهات التطبيق.</string>
+    <string name="advanced_cinebox_focus_scroll">تصفح التركيز الخاص بـ CINEBOX</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">استخدام نظام CINEBOX المخصص للرسوم المتحركة وتموضع التركيز في كافة واجهات التطبيق.</string>
     <string name="advanced_memory_only_vertical_scroll">التمرير العمودي من الذاكرة فقط</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">تخطي طلبات الصور من القرص والشبكة أثناء التمرير العمودي في صفوف الشاشة الرئيسية.</string>
     <string name="advanced_compose_highlighter">مؤشر إعادة البناء (Compose)</string>
@@ -1122,19 +1122,19 @@
     <string name="trakt_watch_progress_dialog_title">مستوى المشاهدة</string>
     <string name="trakt_watch_progress_dialog_subtitle">إختر ما إذا كان الاستئناف ومتابعة المشاهدة سيستخدم Trakt أم مزامنة CINEBOX، بينما تظل سجلات Trakt مفعلة.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">مزامنة CINEBOX</string>
+    <string name="trakt_watch_progress_source_cinebox">مزامنة CINEBOX</string>
     <string name="trakt_library_source_title">مصدر المكتبة</string>
     <string name="trakt_library_source_subtitle">إختر المكتبة المراد استخدامها لحفظ مجموعتك وعرضها</string>
     <string name="trakt_library_source_dialog_title">مصدر المكتبة</string>
     <string name="trakt_library_source_dialog_subtitle">إختر مكان حفظ عناصر مكتبتك وإدارتها</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">مكتبة CINEBOX</string>
+    <string name="trakt_library_source_cinebox">مكتبة CINEBOX</string>
     <string name="trakt_library_source_trakt_selected">تم اختيار مكتبة Trakt</string>
-    <string name="trakt_library_source_nuvio_selected">تم اختيار مكتبة CINEBOX</string>
+    <string name="trakt_library_source_cinebox_selected">تم اختيار مكتبة CINEBOX</string>
     <string name="trakt_setting_on">مفعل</string>
     <string name="trakt_setting_off">معطل</string>
     <string name="trakt_watch_progress_trakt_selected">تم تعيين مصدر مستوى المشاهدة إلى Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">تم تعيين مصدر مستوى المشاهدة إلى مزامنة CINEBOX</string>
+    <string name="trakt_watch_progress_cinebox_selected">تم تعيين مصدر مستوى المشاهدة إلى مزامنة CINEBOX</string>
     <string name="trakt_continue_watching_window">نافذة متابعة المشاهدة</string>
     <string name="trakt_continue_watching_subtitle">تاريخ Trakt المعتمد لمتابعة المشاهدة</string>
     <string name="trakt_unaired_next_up">الحلقات التالية التي لم تعرض بعد</string>
@@ -1637,7 +1637,7 @@
     <string name="library_delete_subtitle">سيؤدي هذا لحذف القائمة وجميع عناصرها من Trakt.</string>
     <string name="library_delete_confirm">حذف</string>
     <string name="library_source_local">محلي</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">محفوظ</string>
     <string name="library_source_cloud">سحابي</string>
@@ -1990,7 +1990,7 @@
     <string name="cd_preview">معاينة</string>
     <string name="cd_test">اختبار</string>
     <string name="cd_unlink">إلغاء الارتباط</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">شعار Trakt</string>
     <string name="cd_trakt_qr">رمز QR لتفعيل Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2001,7 +2001,7 @@
     <string name="cd_expand">توسيع %1$s</string>
     <string name="cd_collapse">طي %1$s</string>
     <string name="cd_qr_login">رمز QR لتسجيل الدخول</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <!-- Debug -->
     <string name="debug_signin_success">تم تسجيل الدخول بنجاح</string>
@@ -2037,7 +2037,7 @@
     <string name="collections_paste_clipboard">لصق من الحافظة</string>
     <string name="collections_validate">تحقق</string>
     <string name="collections_paste_hint">الصق ملف JSON للمجموعات هنا…</string>
-    <string name="collections_file_description">يقرأ nuvio-collections.json من مجلد التنزيلات.</string>
+    <string name="collections_file_description">يقرأ cinebox-collections.json من مجلد التنزيلات.</string>
     <string name="collections_load_file">تحميل الملف</string>
     <string name="collections_file_loaded">تم تحميل الملف (%1$d حرفاً)</string>
     <string name="collections_fetch_url">جلب من الرابط</string>
@@ -2573,8 +2573,8 @@
     <string name="action_back">رجوع</string>
     <string name="action_remove_anyway">إزالة على أي حال</string>
     <string name="action_switch">تبديل</string>
-    <string name="advanced_nuvio_performance_mode">ذاكرة ExoPlayer الأصلية</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">يفعّل مخصص ذاكرة أصليًا عالي الأداء وذاكرة خارج الكومة وتحسينات شبكة لتشغيل أكثر سلاسة</string>
+    <string name="advanced_cinebox_performance_mode">ذاكرة ExoPlayer الأصلية</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">يفعّل مخصص ذاكرة أصليًا عالي الأداء وذاكرة خارج الكومة وتحسينات شبكة لتشغيل أكثر سلاسة</string>
     <string name="advanced_playback_issue_reports">تقارير مشاكل التشغيل</string>
     <string name="advanced_playback_issue_reports_subtitle">إظهار أزرار التقرير أثناء التشغيل والتحميل الطويل وأخطاء التشغيل</string>
     <string name="advanced_sentry_reports">تقارير أعطال Sentry</string>
@@ -2798,9 +2798,9 @@
     <string name="playback_net_custom">شبكة مخصصة</string>
     <string name="playback_net_custom_sub">استخدام اتصالات متوازية متعددة لجلب البثوث التدريجية. عند الإيقاف، يُستخدم اتصال واحد.</string>
     <string name="playback_net_device_memory_info">ذاكرة الجهاز: %1$s | الحد الآمن الموصى به: %2$d م.ب</string>
-    <string name="playback_net_nuvio_performance_mode">ذاكرة ExoPlayer الأصلية</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">هذه الميزة غير مدعومة على جهازك.</string>
-    <string name="playback_net_nuvio_performance_mode_sub">تفعيل المخصص الأصلي للذاكرة خارج الكومة وتحسينات التنقل السريع.</string>
+    <string name="playback_net_cinebox_performance_mode">ذاكرة ExoPlayer الأصلية</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">هذه الميزة غير مدعومة على جهازك.</string>
+    <string name="playback_net_cinebox_performance_mode_sub">تفعيل المخصص الأصلي للذاكرة خارج الكومة وتحسينات التنقل السريع.</string>
     <string name="playback_net_parallel">اتصالات متوازية</string>
     <string name="playback_net_parallel_sub">استخدام اتصالات متعددة بالتوازي لجلب البثوث. فعّلها إذا كنت تعاني تقطعًا رغم أن سرعة تنزيلك كافية تمامًا.</string>
     <string name="playback_reset_to_default">إعادة الضبط للافتراضي</string>
@@ -2942,7 +2942,7 @@
     <string name="sub_strip_sdh">إزالة ترجمات SDH</string>
     <string name="sub_strip_sdh_desc">إخفاء أوصاف الأصوات وأسماء المتحدثين من الترجمات النصية</string>
     <string name="subtitle_delay_reset">تصفير</string>
-    <string name="support_nuvio_name">ادعم CINEBOX</string>
+    <string name="support_cinebox_name">ادعم CINEBOX</string>
     <string name="supporters_contributors_donation_progress_complete">تمت التغطية. الدعم الإضافي الآن يذهب للتطوير.</string>
     <string name="supporters_contributors_donation_progress_remaining">بعد 100%، الدعم الإضافي يذهب للتطوير.</string>
     <string name="supporters_contributors_donation_progress_title">خوادم وصيانة هذا الشهر</string>

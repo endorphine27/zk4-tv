@@ -100,7 +100,7 @@
     
     <string name="home_no_addons">Žiadne doplnky nie sú nainštalované. Pridajte jeden pre začiatok.</string>
     <string name="home_no_catalog_addons">Žiadne katalógové doplnky. Nainštalujte katalógový doplnok pre zobrazenie obsahu.</string>
-    <string name="auth_notice_nuvio_logged_out">Boli ste odhlásení z CINEBOX. Prihláste sa znova.</string>
+    <string name="auth_notice_cinebox_logged_out">Boli ste odhlásení z CINEBOX. Prihláste sa znova.</string>
     <string name="auth_notice_trakt_logged_out">Boli ste odhlásení z Trakt. Znova sa pripojte.</string>
     <string name="error_generic">Vyskytla sa chyba</string>
 
@@ -369,8 +369,8 @@
     <string name="licenses_attributions_section_app">LICENCIA APLIKÁCIE</string>
     <string name="licenses_attributions_section_data">DÁT A SLUŽBY</string>
     <string name="licenses_attributions_section_playback">ANDROID LICENCIE PREHRÁVANIA</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Zdrojový kód a licenčné podmienky sú dostupné v repozitári projektu. Licencované pod GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Zdrojový kód a licenčné podmienky sú dostupné v repozitári projektu. Licencované pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX používa TMDB API pre metadáta filmov a TV, grafiku, trailery, obsadenie, produkčné detaily, kolekcie a odporúčania. Tento produkt používa TMDB API, ale nie je schválený ani certifikovaný TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -482,8 +482,8 @@
     <string name="advanced_section_cache">Cache</string>
     <string name="advanced_fast_horizontal_navigation">Rýchla horizontálna navigácia</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Zvýšiť rýchlosť opakovania D-padu v radoch pri zachovaní obmedzovania opakovania.</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX rolovanie zamerania</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Použiť vlastnú globálnu animáciu rolovania zamerania a polohovanie CINEBOX.</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX rolovanie zamerania</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Použiť vlastnú globálnu animáciu rolovania zamerania a polohovanie CINEBOX.</string>
     <string name="advanced_memory_only_vertical_scroll">Iba pamäťové vertikálne rolovanie</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Preskočiť požiadavky na obrázky z disku a siete počas vertikálneho rolovania domácich radov.</string>
     <string name="advanced_compose_highlighter">Zvýrazňovač Compose</string>
@@ -1069,19 +1069,19 @@
     <string name="trakt_watch_progress_dialog_title">Postup sledovania</string>
     <string name="trakt_watch_progress_dialog_subtitle">Vyberte, či má obnovenie a pokračovanie v sledovaní používať Trakt alebo CINEBOX Sync, kým Trakt scrobbling zostane aktívny.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Zdroj knižnice</string>
     <string name="trakt_library_source_subtitle">Vyberte, ktorú knižnicu použiť na ukladanie a zobrazovanie vašej kolekcie</string>
     <string name="trakt_library_source_dialog_title">Zdroj knižnice</string>
     <string name="trakt_library_source_dialog_subtitle">Vyberte, kde ukladať a spravovať položky knižnice</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX knižnica</string>
+    <string name="trakt_library_source_cinebox">CINEBOX knižnica</string>
     <string name="trakt_library_source_trakt_selected">Vybraná Trakt knižnica</string>
-    <string name="trakt_library_source_nuvio_selected">Vybraná CINEBOX knižnica</string>
+    <string name="trakt_library_source_cinebox_selected">Vybraná CINEBOX knižnica</string>
     <string name="trakt_setting_on">Zapnuté</string>
     <string name="trakt_setting_off">Vypnuté</string>
     <string name="trakt_watch_progress_trakt_selected">Zdroj postupu sledovania nastavený na Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Zdroj postupu sledovania nastavený na CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Zdroj postupu sledovania nastavený na CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Okno pokračovania v sledovaní</string>
     <string name="trakt_continue_watching_subtitle">História Trakt zohľadnená pre pokračovanie v sledovaní</string>
     <string name="trakt_unaired_next_up">Nevysielané epizódy Ďalej sledovať</string>
@@ -1571,7 +1571,7 @@
     <string name="library_delete_subtitle">Týmto sa odstráni zoznam aj všetky položky zoznamu z Trakt.</string>
     <string name="library_delete_confirm">Odstrániť</string>
     <string name="library_source_local">LOKÁLNE</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Uložené</string>
     <string name="library_source_cloud">Cloud</string>
@@ -1942,7 +1942,7 @@
     <string name="cd_preview">Náhľad</string>
     <string name="cd_test">Testovať</string>
     <string name="cd_unlink">Odpojiť</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Trakt aktivačné QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -1953,7 +1953,7 @@
     <string name="cd_expand">Rozbaliť %1$s</string>
     <string name="cd_collapse">Zbaliť %1$s</string>
     <string name="cd_qr_login">QR prihlasovací kód</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     
     <string name="debug_signin_success">Úspešne prihlásený</string>
@@ -1989,7 +1989,7 @@
     <string name="collections_paste_clipboard">Vložiť zo schránky</string>
     <string name="collections_validate">Overiť</string>
     <string name="collections_paste_hint">Sem vložte JSON kolekcií…</string>
-    <string name="collections_file_description">Načíta nuvio-collections.json z priečinka Stiahnuté.</string>
+    <string name="collections_file_description">Načíta cinebox-collections.json z priečinka Stiahnuté.</string>
     <string name="collections_load_file">Načítať súbor</string>
     <string name="collections_file_loaded">Súbor načítaný (%1$d znakov)</string>
     <string name="collections_fetch_url">Načítať URL</string>
@@ -2486,8 +2486,8 @@
 <string name="sentry_turn_off">Vypnúť</string>
 <string name="sentry_turn_on">Zapnúť</string>
 <string name="advanced_section_dv_diagnostics">Diagnostika DV</string>
-<string name="advanced_nuvio_performance_mode">Natívna pamäť ExoPlayer</string>
-<string name="advanced_nuvio_performance_mode_subtitle">Povoľuje vysokovýkonný natívny alokátor, pamäť mimo haldy a optimalizácie siete pre plynulejšie prehrávanie</string>
+<string name="advanced_cinebox_performance_mode">Natívna pamäť ExoPlayer</string>
+<string name="advanced_cinebox_performance_mode_subtitle">Povoľuje vysokovýkonný natívny alokátor, pamäť mimo haldy a optimalizácie siete pre plynulejšie prehrávanie</string>
 <string name="buffer_device_ram_info">RAM zariadenia: %s</string>
 <string name="buffer_safe_limit_info">Odporúčaný bezpečný limit: %d MB</string>
 <string name="buffer_safe_status">Bezpečné: V rámci odporúčaného limitu pre toto zariadenie.</string>
@@ -2731,9 +2731,9 @@
 <string name="playback_section_buffer_network">Vyrovnávacia pamäť a sieť</string>
 <string name="playback_section_buffer_network_desc">Určuje veľkosť pamäte pre ukladanie obsahu a spôsob načítavania streamov.</string>
 <string name="playback_net_device_memory_info">Pamäť zariadenia: %1$s | Odporúčaný bezpečný limit: %2$d MB</string>
-<string name="playback_net_nuvio_performance_mode">Natívna pamäť ExoPlayer</string>
-<string name="playback_net_nuvio_performance_mode_sub">Povoľuje natívny alokátor mimo haldy a optimalizácie čistenia pamäte.</string>
-<string name="playback_net_nuvio_performance_mode_not_supported">Môže spôsobovať zlyhanie na zariadeniach bez podpory.</string>
+<string name="playback_net_cinebox_performance_mode">Natívna pamäť ExoPlayer</string>
+<string name="playback_net_cinebox_performance_mode_sub">Povoľuje natívny alokátor mimo haldy a optimalizácie čistenia pamäte.</string>
+<string name="playback_net_cinebox_performance_mode_not_supported">Môže spôsobovať zlyhanie na zariadeniach bez podpory.</string>
 <string name="playback_buffer_custom">Vlastné vyrovnávacie pamäte prehrávania</string>
 <string name="playback_buffer_custom_sub">Prepíše predvolenú vyrovnávaciu pamäť Media3 hodnotami nižšie. Vypnutím použiť predvolené nastavenia Media3.</string>
 <string name="playback_buffer_header">Vyrovnávacia pamäť</string>
@@ -2935,7 +2935,7 @@
     <string name="theme_color_graphite">Grafitová</string>
     <string name="about_update_banner_title">Banner automatickej aktualizácie</string>
     <string name="about_update_banner_subtitle">Zobraziť banner, keď je k dispozícii nová verzia</string>
-    <string name="support_nuvio_name">Podporiť CINEBOX</string>
+    <string name="support_cinebox_name">Podporiť CINEBOX</string>
     <string name="supporter_membership_title">Členstvo podporovateľa CINEBOX</string>
     <string name="supporter_membership_description">Podpora aplikácie CINEBOX pomáha pokrývať náklady na infraštruktúru a nepretržitý vývoj, pričom základné funkcie ostávajú pre všetkých zadarmo.</string>
     <string name="supporter_membership_view">Zobraziť členstvo</string>

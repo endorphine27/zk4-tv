@@ -99,7 +99,7 @@
 
     <string name="home_no_addons">Nema instaliranih dodataka. Dodaj jedan za početak.</string>
     <string name="home_no_catalog_addons">Nema instaliranih dodataka s katalozima. Instaliraj dodatak s katalogom za prikaz sadržaja.</string>
-    <string name="auth_notice_nuvio_logged_out">Sesija u Nuviju je završila. Prijavi se ponovno.</string>
+    <string name="auth_notice_cinebox_logged_out">Sesija u Nuviju je završila. Prijavi se ponovno.</string>
     <string name="auth_notice_trakt_logged_out">Veza s Traktom je prekinuta. Ponovno se poveži.</string>
     <string name="error_generic">Došlo je do pogreške</string>
 
@@ -413,7 +413,7 @@
     <string name="update_channel_beta_description">Rana ažuriranja koja mogu sadržavati greške, pokvariti značajke ili se ponašati neočekivano.</string>
     <string name="about_privacy_policy">Pravila o privatnosti</string>
     <string name="about_privacy_policy_subtitle">Pogledaj naša pravila o privatnosti</string>
-    <string name="support_nuvio_name">Podrži CINEBOX</string>
+    <string name="support_cinebox_name">Podrži CINEBOX</string>
     <string name="about_supporters_contributors">Podrži CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Podrži projekt i pogledaj zasluge zajednice</string>
     <string name="about_licenses_attributions">Licence i atribucije</string>
@@ -426,8 +426,8 @@
     <string name="licenses_attributions_section_ui">UI BIBLIOTEKE</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Koristi se za efekte zamućenja pozadine. Autor: Chris Banes. Licencirano pod Apache licencom, verzija 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Izvorni kôd i uvjeti licence dostupni su u repozitoriju projekta. Licencirano pod GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Izvorni kôd i uvjeti licence dostupni su u repozitoriju projekta. Licencirano pod GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX koristi TMDB API za metapodatke o filmovima i serijama, grafike, trailere, glumce, produkcijske detalje, kolekcije i preporuke. Ovaj proizvod koristi TMDB API, ali ga TMDB ne podržava niti certificira.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -598,15 +598,15 @@
     <string name="advanced_section_network_tests">Mrežni testovi</string>
     <string name="advanced_fast_horizontal_navigation">Brza vodoravna navigacija</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Povećaj brzinu ponavljanja D-pada u redovima uz zadržano ograničavanje ponavljanja.</string>
-    <string name="advanced_nuvio_performance_mode">ExoPlayer nativna memorija</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Omogućuje visokoučinkoviti nativni alokator, memoriju izvan heapa i mrežne optimizacije za glađu reprodukciju</string>
+    <string name="advanced_cinebox_performance_mode">ExoPlayer nativna memorija</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Omogućuje visokoučinkoviti nativni alokator, memoriju izvan heapa i mrežne optimizacije za glađu reprodukciju</string>
     <string name="buffer_device_ram_info">RAM uređaja: %s</string>
     <string name="buffer_safe_limit_info">Preporučeno sigurno ograničenje: %d MB</string>
     <string name="buffer_safe_status">Sigurno: unutar preporučenog ograničenja za tvoj uređaj.</string>
     <string name="buffer_unsafe_warning">Upozorenje: premašuje preporučeno sigurno ograničenje (%1$d MB) za tvoj uređaj (%2$s). Može uzrokovati rušenje aplikacije.</string>
     <string name="buffer_auto_limit_active">Automatski prilagođeno sigurno ograničenje: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX fokus pomicanje</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Koristi CINEBOX prilagođenu globalnu animaciju pomicanja i pozicioniranje fokusa.</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX fokus pomicanje</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Koristi CINEBOX prilagođenu globalnu animaciju pomicanja i pozicioniranje fokusa.</string>
     <string name="advanced_rgb565">RGB565 dekodiranje slika</string>
     <string name="advanced_rgb565_subtitle">Koristi 16-bitne boje s manjom potrošnjom memorije za prikladne neprozirne slike. Promjena ponovno pokreće aplikaciju.</string>
     <string name="advanced_memory_only_vertical_scroll">Okomito pomicanje samo iz memorije</string>
@@ -1442,19 +1442,19 @@
     <string name="trakt_watch_progress_dialog_title">Napredak gledanja</string>
     <string name="trakt_watch_progress_dialog_subtitle">Odaberi trebaju li nastavak reprodukcije i Nastavi gledati koristiti Trakt ili CINEBOX Sync, dok Trakt scrobblanje ostaje aktivno.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Izvor biblioteke</string>
     <string name="trakt_library_source_subtitle">Odaberi koji izvor CINEBOX čita za tvoju biblioteku</string>
     <string name="trakt_library_source_dialog_title">Izvor biblioteke</string>
     <string name="trakt_library_source_dialog_subtitle">Odaberi gdje spremati i upravljati stavkama biblioteke</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX biblioteka</string>
+    <string name="trakt_library_source_cinebox">CINEBOX biblioteka</string>
     <string name="trakt_library_source_trakt_selected">Odabrana Trakt biblioteka</string>
-    <string name="trakt_library_source_nuvio_selected">Odabrana CINEBOX biblioteka</string>
+    <string name="trakt_library_source_cinebox_selected">Odabrana CINEBOX biblioteka</string>
     <string name="trakt_setting_on">Uključeno</string>
     <string name="trakt_setting_off">Isključeno</string>
     <string name="trakt_watch_progress_trakt_selected">Izvor napretka gledanja postavljen na Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Izvor napretka gledanja postavljen na CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Izvor napretka gledanja postavljen na CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Razdoblje za Nastavi gledati</string>
     <string name="trakt_continue_watching_subtitle">Trakt povijest koja se uzima u obzir za Nastavi gledati</string>
     <string name="trakt_unaired_next_up">Neemitirane sljedeće epizode</string>
@@ -2057,7 +2057,7 @@
     <string name="library_delete_subtitle">Ovo uklanja popis i sve njegove stavke s Trakta.</string>
     <string name="library_delete_confirm">Izbriši</string>
     <string name="library_source_local">LOKALNO</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Spremljeno</string>
     <string name="library_source_cloud">Oblak</string>
@@ -2467,7 +2467,7 @@
     <string name="cd_preview">Pretpregled</string>
     <string name="cd_test">Testiraj</string>
     <string name="cd_unlink">Odspoji</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logo</string>
     <string name="cd_trakt_qr">QR za aktivaciju Trakta</string>
     <string name="cd_imdb">IMDb</string>
@@ -2479,7 +2479,7 @@
     <string name="cd_expand">Proširi %1$s</string>
     <string name="cd_collapse">Sažmi %1$s</string>
     <string name="cd_qr_login">QR kôd za prijavu</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <string name="debug_signin_success">Prijava uspješna</string>
     <string name="debug_generate_description">Debug-generirana stavka %1$s #%2$d</string>
@@ -2514,7 +2514,7 @@
     <string name="collections_paste_clipboard">Zalijepi iz međuspremnika</string>
     <string name="collections_validate">Provjeri</string>
     <string name="collections_paste_hint">Ovdje zalijepi JSON kolekcija…</string>
-    <string name="collections_file_description">Čita nuvio-collections.json iz mape Preuzimanja.</string>
+    <string name="collections_file_description">Čita cinebox-collections.json iz mape Preuzimanja.</string>
     <string name="collections_load_file">Učitaj datoteku</string>
     <string name="collections_file_loaded">Datoteka učitana (znakova: %1$d)</string>
     <string name="collections_fetch_url">Dohvati URL</string>
@@ -3137,9 +3137,9 @@
     <string name="playback_section_buffer_network">Međuspremnik i mreža</string>
     <string name="playback_section_buffer_network_desc">Koliko sadržaja držati u memoriji i kako dohvaćati streamove.</string>
     <string name="playback_net_device_memory_info">Memorija uređaja: %1$s | Preporučeno sigurno ograničenje: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">ExoPlayer nativna memorija</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Omogući nativni alokator izvan heapa i optimizacije premotavanja.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Tvoj uređaj ne podržava ovu značajku.</string>
+    <string name="playback_net_cinebox_performance_mode">ExoPlayer nativna memorija</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Omogući nativni alokator izvan heapa i optimizacije premotavanja.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Tvoj uređaj ne podržava ovu značajku.</string>
     <string name="playback_buffer_custom">Prilagođeni međuspremnici reprodukcije</string>
     <string name="playback_buffer_custom_sub">Zamijeni zadano međuspremanje Media3 vrijednostima ispod. Kada je isključeno, player koristi standardna trajanja i ciljnu veličinu međuspremnika Media3.</string>
     <string name="playback_buffer_header">Međuspremnik</string>

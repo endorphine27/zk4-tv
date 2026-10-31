@@ -2,8 +2,8 @@
 
 ## Current status
 
-- The `nuviotv-accessibility` branch was fast-forwarded from `1a132cb05` to upstream `dev` at `4a91028b3` (`1.1.0-beta.4`) on 2026-10-04. The dirty accessibility patch reapplied without Git conflicts.
-- The device still has the older `fullDebug` build version `1.0.0` (`1062`) installed as `com.nuviodebug.com`; the updated source has not been packaged or installed yet.
+- The `cineboxtv-accessibility` branch was fast-forwarded from `1a132cb05` to upstream `dev` at `4a91028b3` (`1.1.0-beta.4`) on 2026-10-04. The dirty accessibility patch reapplied without Git conflicts.
+- The device still has the older `fullDebug` build version `1.0.0` (`1062`) installed as `com.cineboxdebug.com`; the updated source has not been packaged or installed yet.
 - TalkBack remains enabled. It was not disabled or reconfigured.
 - The installed APK contains the original sidebar-label fix below, but not the complete extended semantics pass rebased onto beta 4.
 
@@ -111,7 +111,7 @@ Additional missing roles and states were annotated across the app since the side
 
 ## 2026-10-11 — naming/state pass and the uiautomator artifact
 
-- Added the missing `Role.Tab` / `Role.RadioButton` + `selected` state (and a few names) across player, library, collection, settings and the hero carousel; dropped nameless click actions on loading skeletons and the player overlay scrim. Committed as `daefdb1ea`, built and installed on the onn. 4K Plus (`com.nuviodebug.com` 1.1.0-beta.5).
+- Added the missing `Role.Tab` / `Role.RadioButton` + `selected` state (and a few names) across player, library, collection, settings and the hero carousel; dropped nameless click actions on loading skeletons and the player overlay scrim. Committed as `daefdb1ea`, built and installed on the onn. 4K Plus (`com.cineboxdebug.com` 1.1.0-beta.5).
 - Decompiled `androidx.tv:tv-material` 1.1.0: `Card(onClick)` -> `Surface` -> `tvClickable(modifier, ...)` = `modifier.focusable(handleDPadEnter(...)).semantics(mergeDescendants = true) { onClick; onLongClick }`, applied to the same `Box` that holds the card content. So cards and the sidebar rail are already named from their merged content.
 - Therefore the "unnamed clickable + named child" split `uiautomator` shows for the rail and row cards is a dump artifact, not a defect — consistent with this document's earlier on-device "0 unnamed" result. Do not "fix" it by adding content descriptions to those cards.
 - Roles / `selected` still cannot be confirmed through `uiautomator` (Compose exposes generic views). An ear pass with TalkBack remains the only real check.
@@ -132,13 +132,13 @@ CI (fork-local; separate files so `git merge upstream/dev` never conflicts):
 
 Local dev loop:
 - gradle.properties: -Xmx3g, daemon, caching, vfs.watch=false, kotlin.incremental=true.
-- app/build.gradle.kts: ABI split gated behind -Pnuvio.localAbi (local-only edit).
+- app/build.gradle.kts: ABI split gated behind -Pcinebox.localAbi (local-only edit).
 - dev-install.ps1 = local one-ABI build (slow on this box); dev-fetch-apk.ps1 = download the CI APK and install (fast). Both kept out of git via .git/info/exclude.
 - PowerShell: CurrentUser execution policy set to RemoteSigned so the .ps1 helpers run.
 
 Measured on this machine: of a 33-min build, 18 min is a single Kotlin compile, and it is memory-bound (0.29 GB free RAM -> paging). That is the hardware, not the flags; CI builds the same APK in ~12 min.
 
-Resolved without a change: InputField/NuvioTextField wrap a BasicTextField in a clickable Surface. tv-material3 applies semantics(mergeDescendants = true) on the same node (decompiled tv-material 1.1.0), so the field's semantics merge up and stay editable. Changing it would risk focus/IME for no proven gain.
+Resolved without a change: InputField/CineboxTextField wrap a BasicTextField in a clickable Surface. tv-material3 applies semantics(mergeDescendants = true) on the same node (decompiled tv-material 1.1.0), so the field's semantics merge up and stay editable. Changing it would risk focus/IME for no proven gain.
 
 Deliberately not changed: LoadingOverlay's decorative cd_loading_backdrop/cd_loading_logo strings (intentional); liveRegion beyond auth/PIN/player (44 error-colour sites â€” needs a deliberate design call, not a blanket apply).
 

@@ -32,7 +32,7 @@
         android:required="false" />
 
     <application
-        android:name=".NuvioApplication"
+        android:name=".CineboxApplication"
         android:allowBackup="false"
         android:banner="@mipmap/banner"
         android:icon="@mipmap/ic_launcher"
@@ -92,7 +92,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="nuvio" />
+                <data android:scheme="cinebox" />
                 <data android:scheme="cinebox" />
             </intent-filter>
             <intent-filter>

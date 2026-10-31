@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Nincsenek telepített bővítmények. A kezdéshez adj hozzá egyet.</string>
     <string name="home_no_catalog_addons">Nincsenek katalógusbővítmények. Telepíts egyet a tartalom megtekintéséhez.</string>
-    <string name="auth_notice_nuvio_logged_out">Kijelentkeztél a CINEBOX-fiókodból. Jelentkezz be újra.</string>
+    <string name="auth_notice_cinebox_logged_out">Kijelentkeztél a CINEBOX-fiókodból. Jelentkezz be újra.</string>
     <string name="auth_notice_trakt_logged_out">Kijelentkeztél a Trakt-fiókodból. Csatlakoztasd újra a fiókot.</string>
     <string name="error_generic">Hiba történt</string>
 
@@ -427,7 +427,7 @@
     <string name="update_channel_beta_description">Korai frissítések, amelyek hibákat tartalmazhatnak. Egyes funkciók hibásan vagy váratlanul működhetnek, illetve leállhatnak.</string>
     <string name="about_privacy_policy">Adatvédelmi irányelvek</string>
     <string name="about_privacy_policy_subtitle">Adatvédelmi irányelvek megtekintése</string>
-    <string name="support_nuvio_name">CINEBOX támogatása</string>
+    <string name="support_cinebox_name">CINEBOX támogatása</string>
     <string name="about_supporters_contributors">CINEBOX támogatása</string>
     <string name="about_supporters_contributors_subtitle">Támogasd a projektet, és nézd meg a közreműködők listáját</string>
     <string name="about_licenses_attributions">Licencek és forrásmegjelölések</string>
@@ -440,8 +440,8 @@
     <string name="licenses_attributions_section_ui">FELÜLETI KÖNYVTÁRAK</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Háttérelmosáshoz használjuk. Készítette Chris Banes. Apache License 2.0 alatt érhető el.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">A forráskód és a licencfeltételek elérhetők a projekt tárolójában. Licenc: GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">A forráskód és a licencfeltételek elérhetők a projekt tárolójában. Licenc: GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">A CINEBOX a TMDB API-t használja a filmek és tévéműsorok metaadataihoz, borítóképekhez, előzetesekhez, stáblistákhoz, gyártási adatokhoz, gyűjteményekhez és ajánlásokhoz. Ez a termék a TMDB API-t használja, de a TMDB nem támogatja és nem hagyta jóvá.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -613,15 +613,15 @@
     <string name="advanced_section_dv_diagnostics" translatable="false">DV Diagnostics</string>
     <string name="advanced_fast_horizontal_navigation">Gyors vízszintes navigáció</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Növeli az iránygomb (D-pad) ismétlési sebességét a sorokban, miközben a görgetés korlátozása aktív marad.</string>
-    <string name="advanced_nuvio_performance_mode">ExoPlayer natív memória</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Nagy teljesítményű natív memóriakezelést, a heapen kívüli memóriát és hálózati optimalizációkat használ az egyenletesebb lejátszáshoz</string>
+    <string name="advanced_cinebox_performance_mode">ExoPlayer natív memória</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Nagy teljesítményű natív memóriakezelést, a heapen kívüli memóriát és hálózati optimalizációkat használ az egyenletesebb lejátszáshoz</string>
     <string name="buffer_device_ram_info">Eszköz RAM: %s</string>
     <string name="buffer_safe_limit_info">Ajánlott biztonságos határ: %d MB</string>
     <string name="buffer_safe_status">Biztonságos: az eszközödhöz ajánlott határon belül.</string>
     <string name="buffer_unsafe_warning">Figyelem: a puffer túllépi az eszközhöz (%2$s) ajánlott biztonságos határt (%1$d MB). Az alkalmazás összeomolhat.</string>
     <string name="buffer_auto_limit_active">Automatikusan skálázott biztonságos határ: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX fókuszkövető görgetés</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">A CINEBOX saját görgetési animációját és pozicionálását használja a kijelölt elem követéséhez az egész alkalmazásban.</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX fókuszkövető görgetés</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">A CINEBOX saját görgetési animációját és pozicionálását használja a kijelölt elem követéséhez az egész alkalmazásban.</string>
     <string name="advanced_rgb565">Képek dekódolása RGB565 formátumban</string>
     <string name="advanced_rgb565_subtitle">Az arra alkalmas, átlátszatlan képeket 16 bites színmélységgel tölti be, így kevesebb memóriát használ. A beállítás módosítása újraindítja az alkalmazást.</string>
     <string name="advanced_memory_only_vertical_scroll">Görgetés új képek betöltése nélkül</string>
@@ -1495,19 +1495,19 @@
     <string name="trakt_watch_progress_dialog_title">Megtekintési állapot</string>
     <string name="trakt_watch_progress_dialog_subtitle">Válaszd ki, hogy a lejátszás folytatásához és a Megtekintés folytatása sorhoz a Trakt vagy a CINEBOX Sync adatait használja-e a CINEBOX. A lejátszási adatokat továbbra is elküldi a Traktnak.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Könyvtár forrása</string>
     <string name="trakt_library_source_subtitle">Válaszd ki, honnan töltse be a CINEBOX a Könyvtár adatait</string>
     <string name="trakt_library_source_dialog_title">Könyvtár forrása</string>
     <string name="trakt_library_source_dialog_subtitle">Válaszd ki, hol szeretnéd menteni és kezelni a könyvtárelemeidet</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX Könyvtár</string>
+    <string name="trakt_library_source_cinebox">CINEBOX Könyvtár</string>
     <string name="trakt_library_source_trakt_selected">Trakt könyvtár kiválasztva</string>
-    <string name="trakt_library_source_nuvio_selected">CINEBOX könyvtár kiválasztva</string>
+    <string name="trakt_library_source_cinebox_selected">CINEBOX könyvtár kiválasztva</string>
     <string name="trakt_setting_on">Be</string>
     <string name="trakt_setting_off">Ki</string>
     <string name="trakt_watch_progress_trakt_selected">Megtekintési állapot forrása: Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Megtekintési állapot forrása: CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Megtekintési állapot forrása: CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Folytatási időablak</string>
     <string name="trakt_continue_watching_subtitle">A Trakt előzmények figyelembe vétele a folytatáshoz</string>
     <string name="trakt_unaired_next_up">Még nem vetített epizódok</string>
@@ -2116,7 +2116,7 @@
     <string name="library_delete_subtitle">Ez eltávolítja a listát és annak minden elemét a Trakt-ról.</string>
     <string name="library_delete_confirm">Törlés</string>
     <string name="library_source_local">HELYI</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Mentett</string>
     <string name="library_source_cloud">Felhő</string>
@@ -2546,7 +2546,7 @@
     <string name="cd_preview">Előnézet</string>
     <string name="cd_test">Tesztelés</string>
     <string name="cd_unlink">Leválasztás</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logó</string>
     <string name="cd_trakt_qr">Trakt aktivációs QR-kód</string>
     <string name="cd_imdb">IMDb</string>
@@ -2558,7 +2558,7 @@
     <string name="cd_expand">Kibontás: %1$s</string>
     <string name="cd_collapse">Összecsukás: %1$s</string>
     <string name="cd_qr_login">QR-kód a bejelentkezéshez</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <string name="debug_signin_success">Sikeres bejelentkezés</string>
     <string name="debug_generate_description">Debug-generált %1$s elem #%2$d</string>
@@ -2593,7 +2593,7 @@
     <string name="collections_paste_clipboard">Beillesztés vágólapról</string>
     <string name="collections_validate">Ellenőrzés</string>
     <string name="collections_paste_hint">Ide illeszd be a gyűjtemények JSON-adatait…</string>
-    <string name="collections_file_description">A nuvio-collections.json beolvasása a Letöltések mappából.</string>
+    <string name="collections_file_description">A cinebox-collections.json beolvasása a Letöltések mappából.</string>
     <string name="collections_load_file">Fájl betöltése</string>
     <string name="collections_file_loaded">Fájl betöltve (%1$d karakter)</string>
     <string name="collections_fetch_url">URL lekérése</string>
@@ -3207,9 +3207,9 @@
     <string name="playback_section_buffer_network">Puffer és hálózat</string>
     <string name="playback_section_buffer_network_desc">Mennyi tartalom maradjon a memóriában, és hogyan töltődjenek le a streamek.</string>
     <string name="playback_net_device_memory_info">Eszköz memóriája: %1$s | Ajánlott biztonságos határ: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">ExoPlayer natív memória</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Natív, heap-en kívüli allokátor és tekerési optimalizációk engedélyezése.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Ezt a funkciót az eszközöd nem támogatja.</string>
+    <string name="playback_net_cinebox_performance_mode">ExoPlayer natív memória</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Natív, heap-en kívüli allokátor és tekerési optimalizációk engedélyezése.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Ezt a funkciót az eszközöd nem támogatja.</string>
     <string name="playback_buffer_custom">Egyéni lejátszási pufferek</string>
     <string name="playback_buffer_custom_sub">A Media3 alapértelmezett pufferelésének felülbírálása az alábbi értékekkel. Ha ki van kapcsolva, a lejátszó a Media3 gyári puffer időtartamait és célméretét használja.</string>
     <string name="playback_buffer_header">Puffer</string>

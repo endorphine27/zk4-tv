@@ -98,7 +98,7 @@
   <!-- HomeScreen -->
   <string name="home_no_addons">Δεν έχετε εγκαταστήσει πρόσθετα. Προσθέστε ένα για να ξεκινήσετε.</string>
   <string name="home_no_catalog_addons">Δεν έχετε εγκαταστήσει πρόσθετα καταλόγου. Εγκαταστήστε ένα πρόσθετο καταλόγου για να δείτε περιεχόμενο.</string>
-  <string name="auth_notice_nuvio_logged_out">Έχετε αποσυνδεθεί από το CINEBOX. Συνδεθείτε ξανά.</string>
+  <string name="auth_notice_cinebox_logged_out">Έχετε αποσυνδεθεί από το CINEBOX. Συνδεθείτε ξανά.</string>
   <string name="auth_notice_trakt_logged_out">Έχετε αποσυνδεθεί από το Trakt. Συνδεθείτε ξανά.</string>
   <string name="error_generic">Προέκυψε σφάλμα</string>
   <!-- ErrorState -->
@@ -410,8 +410,8 @@
   <string name="licenses_attributions_section_ui">ΒΙΒΛΙΟΘΗΚΕΣ UI</string>
   <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
   <string name="licenses_attributions_haze_body">Χρησιμοποιείται για εφέ θολώματος φόντου. Δημιουργήθηκε από τον Chris Banes. Διατίθεται υπό την άδεια Apache, έκδοση 2.0.</string>
-  <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-  <string name="licenses_attributions_nuvio_body">Ο πηγαίος κώδικας και οι όροι άδειας είναι διαθέσιμοι στο αποθετήριο του έργου. Διατίθεται υπό την άδεια GNU General Public License v3.0.</string>
+  <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+  <string name="licenses_attributions_cinebox_body">Ο πηγαίος κώδικας και οι όροι άδειας είναι διαθέσιμοι στο αποθετήριο του έργου. Διατίθεται υπό την άδεια GNU General Public License v3.0.</string>
   <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
   <string name="licenses_attributions_tmdb_body">Το CINEBOX χρησιμοποιεί το API του TMDB για μεταδεδομένα ταινιών και σειρών, εικόνες, τρέιλερ, ηθοποιούς, λεπτομέρειες παραγωγής, συλλογές και προτάσεις. Αυτό το προϊόν χρησιμοποιεί το API του TMDB αλλά δεν υποστηρίζεται ούτε πιστοποιείται από το TMDB.</string>
   <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -524,8 +524,8 @@
   <string name="advanced_section_cache">Προσωρινή μνήμη</string>
   <string name="advanced_fast_horizontal_navigation">Γρήγορη οριζόντια πλοήγηση</string>
   <string name="advanced_fast_horizontal_navigation_subtitle">Αύξηση ταχύτητας επανάληψης D-pad στις σειρές, διατηρώντας ενεργό το throttling επανάληψης.</string>
-  <string name="advanced_nuvio_focus_scroll">Κύλιση εστίασης CINEBOX</string>
-  <string name="advanced_nuvio_focus_scroll_subtitle">Χρήση του προσαρμοσμένου καθολικού animation και positioning κύλισης εστίασης του CINEBOX.</string>
+  <string name="advanced_cinebox_focus_scroll">Κύλιση εστίασης CINEBOX</string>
+  <string name="advanced_cinebox_focus_scroll_subtitle">Χρήση του προσαρμοσμένου καθολικού animation και positioning κύλισης εστίασης του CINEBOX.</string>
   <string name="advanced_rgb565">Αποκωδικοποίηση εικόνων RGB565</string>
   <string name="advanced_rgb565_subtitle">Χρήση 16-bit χρώματος με χαμηλότερη κατανάλωση μνήμης για κατάλληλες αδιαφανείς εικόνες. Η αλλαγή επανεκκινεί την εφαρμογή.</string>
   <string name="advanced_memory_only_vertical_scroll">Κάθετη κύλιση μόνο από μνήμη</string>
@@ -598,7 +598,7 @@
   <string name="contributors_hide_kofi_qr">Απόκρυψη QR Ko-fi</string>
   <string name="contributors_profile_unavailable">Ο σύνδεσμος προφίλ GitHub δεν είναι διαθέσιμος.</string>
   <!-- SupporterMembershipPanel -->
-  <string name="support_nuvio_name">Υποστήριξη CINEBOX</string>
+  <string name="support_cinebox_name">Υποστήριξη CINEBOX</string>
   <string name="supporter_membership_title">Συνδρομή υποστηρικτή CINEBOX</string>
   <string name="supporter_membership_description">Η υποστήριξη του CINEBOX βοηθά στην κάλυψη της υποδομής και της συνεχούς ανάπτυξης, διατηρώντας παράλληλα τη βασική εμπειρία δωρεάν για όλους.</string>
   <string name="supporter_membership_view">Προβολή συνδρομής</string>
@@ -1277,19 +1277,19 @@
   <string name="trakt_watch_progress_dialog_title">Πρόοδος παρακολούθησης</string>
   <string name="trakt_watch_progress_dialog_subtitle">Επιλέξτε αν η επανάληψη και η Συνέχεια παρακολούθησης θα χρησιμοποιούν Trakt ή CINEBOX Sync ενώ το scrobbling Trakt παραμένει ενεργό.</string>
   <string name="trakt_watch_progress_source_trakt">Trakt</string>
-  <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+  <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
   <string name="trakt_library_source_title">Πηγή βιβλιοθήκης</string>
   <string name="trakt_library_source_subtitle">Επιλέξτε ποια βιβλιοθήκη θα χρησιμοποιείται για αποθήκευση και προβολή της συλλογής σας</string>
   <string name="trakt_library_source_dialog_title">Πηγή βιβλιοθήκης</string>
   <string name="trakt_library_source_dialog_subtitle">Επιλέξτε πού θα αποθηκεύονται και θα διαχειρίζονται τα στοιχεία της βιβλιοθήκης σας</string>
   <string name="trakt_library_source_trakt">Trakt</string>
-  <string name="trakt_library_source_nuvio">Βιβλιοθήκη CINEBOX</string>
+  <string name="trakt_library_source_cinebox">Βιβλιοθήκη CINEBOX</string>
   <string name="trakt_library_source_trakt_selected">Επιλέχθηκε η βιβλιοθήκη Trakt</string>
-  <string name="trakt_library_source_nuvio_selected">Επιλέχθηκε η βιβλιοθήκη CINEBOX</string>
+  <string name="trakt_library_source_cinebox_selected">Επιλέχθηκε η βιβλιοθήκη CINEBOX</string>
   <string name="trakt_setting_on">Ενεργό</string>
   <string name="trakt_setting_off">Απενεργοποιημένο</string>
   <string name="trakt_watch_progress_trakt_selected">Η πηγή προόδου ορίστηκε σε Trakt</string>
-  <string name="trakt_watch_progress_nuvio_selected">Η πηγή προόδου ορίστηκε σε CINEBOX Sync</string>
+  <string name="trakt_watch_progress_cinebox_selected">Η πηγή προόδου ορίστηκε σε CINEBOX Sync</string>
   <string name="trakt_continue_watching_window">Παράθυρο Συνέχεια παρακολούθησης</string>
   <string name="trakt_continue_watching_subtitle">Ιστορικό Trakt που λαμβάνεται υπόψη για Συνέχεια παρακολούθησης</string>
   <string name="trakt_unaired_next_up">Επόμενα επεισόδια που δεν έχουν προβληθεί</string>
@@ -1939,7 +1939,7 @@
   <string name="library_delete_subtitle">Αυτό θα διαγράψει τη λίστα και όλα τα στοιχεία της από το Trakt.</string>
   <string name="library_delete_confirm">Διαγραφή</string>
   <string name="library_source_local">ΤΟΠΙΚΗ</string>
-  <string name="library_source_nuvio">CINEBOX</string>
+  <string name="library_source_cinebox">CINEBOX</string>
   <string name="library_source_trakt">TRAKT</string>
   <string name="library_source_saved">Αποθηκευμένα</string>
   <string name="library_source_cloud">Cloud</string>
@@ -2341,7 +2341,7 @@
   <string name="cd_test">Δοκιμή</string>
   <string name="cd_clear_search">Εκκαθάριση αναζήτησης</string>
   <string name="cd_unlink">Αποσύνδεση</string>
-  <string name="cd_nuvio_logo">CINEBOX</string>
+  <string name="cd_cinebox_logo">CINEBOX</string>
   <string name="cd_trakt_logo">Λογότυπο Trakt</string>
   <string name="cd_trakt_qr">QR ενεργοποίησης Trakt</string>
   <string name="cd_imdb">IMDb</string>
@@ -2352,7 +2352,7 @@
   <string name="cd_expand">Ανάπτυξη %1$s</string>
   <string name="cd_collapse">Σύμπτυξη %1$s</string>
   <string name="cd_qr_login">Κωδικός σύνδεσης QR</string>
-  <string name="cd_nuvio">CINEBOX</string>
+  <string name="cd_cinebox">CINEBOX</string>
   <!-- Debug -->
   <string name="debug_signin_success">Η σύνδεση ολοκληρώθηκε με επιτυχία</string>
   <string name="debug_generate_description">Δημιουργήθηκε δοκιμαστικά στοιχείο %1$s #%2$d</string>
@@ -2386,7 +2386,7 @@
   <string name="collections_paste_clipboard">Επικόλληση από το πρόχειρο</string>
   <string name="collections_validate">Επικύρωση</string>
   <string name="collections_paste_hint">Επικολλήστε εδώ το JSON των συλλογών…</string>
-  <string name="collections_file_description">Διαβάζει το nuvio-collections.json από τον φάκελο Λήψεις.</string>
+  <string name="collections_file_description">Διαβάζει το cinebox-collections.json από τον φάκελο Λήψεις.</string>
   <string name="collections_load_file">Φόρτωση αρχείου</string>
   <string name="collections_file_loaded">Το αρχείο φορτώθηκε (%1$d χαρακτήρες)</string>
   <string name="collections_fetch_url">Ανάκτηση URL</string>
@@ -3031,7 +3031,7 @@
   <string name="hero_synopsis_read_more">Περισσότερα</string>
   <string name="unit_speed_mb_s">%1$s MB/s</string>
   <string name="diag_label_device">Συσκευή</string>
-  <string name="playback_net_nuvio_performance_mode_sub">Ενεργοποίηση εγγενούς εκχωρητή μνήμης εκτός σωρού και βελτιστοποιήσεων μετακίνησης στο βίντεο.</string>
+  <string name="playback_net_cinebox_performance_mode_sub">Ενεργοποίηση εγγενούς εκχωρητή μνήμης εκτός σωρού και βελτιστοποιήσεων μετακίνησης στο βίντεο.</string>
   <string name="dv7_libdovi_mode_3_sub">Μετατρέπει τις ροές Προφίλ 5 (DV5) σε Προφίλ 8.1. Ίδια μετατροπή με αυτή που χρησιμοποιεί η εναλλαγή «Μετατροπή DV5 σε DV8.1».</string>
   <string name="web_debrid_title">Ρυθμίσεις άμεσου Debrid</string>
   <string name="buffer_unsafe_warning">Προειδοποίηση: Υπερβαίνει το προτεινόμενο ασφαλές όριο (%1$d MB) για τη συσκευή σας %2$s. Ενδέχεται να προκαλέσει κολλήματα της εφαρμογής.</string>
@@ -3064,7 +3064,7 @@
   <string name="diag_value_not_ready">Μη έτοιμο</string>
   <string name="web_stream_badge_error_import_limit">Μπορείτε να εισαγάγετε έως %1$d URL σημάτων.</string>
   <string name="dv7_libdovi_mode_4_sub">Μετατροπή σε στατικό προφίλ 8.4.</string>
-  <string name="advanced_nuvio_performance_mode_subtitle">Ενεργοποιεί εγγενή εκχωρητή υψηλής απόδοσης, μνήμη εκτός σωρού και βελτιστοποιήσεις δικτύου για πιο ομαλή αναπαραγωγή</string>
+  <string name="advanced_cinebox_performance_mode_subtitle">Ενεργοποιεί εγγενή εκχωρητή υψηλής απόδοσης, μνήμη εκτός σωρού και βελτιστοποιήσεις δικτύου για πιο ομαλή αναπαραγωγή</string>
   <string name="diag_value_decoder_hidden">%1$s (κρυφό)</string>
   <string name="web_debrid_tab_formatter">Διαμορφωτής</string>
   <string name="player_report_issue_sending">Αποστολή αναφοράς αναπαραγωγής...</string>
@@ -3119,7 +3119,7 @@
   <string name="web_debrid_restore_default">Επαναφορά προεπιλογής</string>
   <string name="diag_label_dv_mode_requested">Λειτουργία DV (αιτούμενη)</string>
   <string name="auth_qr_terms_prefix">Με την εγγραφή / σύνδεση, συμφωνώ με τους</string>
-  <string name="playback_net_nuvio_performance_mode">Εγγενής μνήμη ExoPlayer</string>
+  <string name="playback_net_cinebox_performance_mode">Εγγενής μνήμη ExoPlayer</string>
   <string name="stream_test_btn_start">Έναρξη δοκιμής</string>
   <string name="diag_label_dv_mode_effective">Λειτουργία DV (ενεργή)</string>
   <string name="buffer_safe_limit_info">Προτεινόμενο ασφαλές όριο: %d MB</string>
@@ -3167,7 +3167,7 @@
   <string name="diag_value_never_rendered">Δεν αποδόθηκε ποτέ</string>
   <string name="audio_strip_hdr10plus_title">Αφαίρεση μεταδεδομένων HDR10+</string>
   <string name="diag_label_dv7_decoder">Αποκωδικοποιητής DV7</string>
-  <string name="advanced_nuvio_performance_mode">Εγγενής μνήμη ExoPlayer</string>
+  <string name="advanced_cinebox_performance_mode">Εγγενής μνήμη ExoPlayer</string>
   <string name="web_debrid_stream_rules">Κανόνες ροών</string>
   <string name="player_report_issue_failed">Δεν ήταν δυνατή η αποστολή αναφοράς</string>
   <string name="web_debrid_min_size_gb">Ελάχιστο μέγεθος (GB)</string>
@@ -3205,7 +3205,7 @@
   <string name="web_stream_badge_error_url_required">Εισαγάγετε ένα URL JSON σημάτων.</string>
   <string name="audio_strip_hdr10plus_sub">Αφαίρεση δυναμικών μεταδεδομένων HDR10+ από τις ροές. Όταν είναι ενεργή και η μετατροπή σε DV8.1, η αφαίρεση εκτελείται μετά τη μετατροπή.</string>
   <string name="diag_label_result">Αποτέλεσμα</string>
-  <string name="playback_net_nuvio_performance_mode_not_supported">Αυτή η λειτουργία δεν υποστηρίζεται από τη συσκευή σας.</string>
+  <string name="playback_net_cinebox_performance_mode_not_supported">Αυτή η λειτουργία δεν υποστηρίζεται από τη συσκευή σας.</string>
   <string name="stream_test_server_label">Διακομιστής: %1$s</string>
   <string name="stream_test_btn_run_again">Εκτέλεση ξανά</string>
   <string name="dv7_libdovi_mode_caption">Λειτουργία μετατροπής (αυτόματα επιλεγμένη, μην την αλλάξετε εκτός αν σας υποδειχθεί). Επιλέξτε μία για να την επιβάλετε· το Κανένα χρησιμοποιεί την αυτόματη. Ενεργή μόνο όταν ο Χειρισμός DV7 είναι «Μετατροπή σε DV8.1».</string>

@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Aucun addon installé. Ajoutez-en un pour commencer.</string>
     <string name="home_no_catalog_addons">Aucun addon de catalogue installé. Installez-en un pour afficher du contenu.</string>
-    <string name="auth_notice_nuvio_logged_out">Vous avez été déconnecté de CINEBOX. Veuillez vous reconnecter.</string>
+    <string name="auth_notice_cinebox_logged_out">Vous avez été déconnecté de CINEBOX. Veuillez vous reconnecter.</string>
     <string name="auth_notice_trakt_logged_out">Vous avez été déconnecté de Trakt. Veuillez vous reconnecter.</string>
     <string name="error_generic">Une erreur est survenue</string>
 
@@ -428,7 +428,7 @@
     <string name="update_channel_beta_description">Mises à jour anticipées pouvant contenir des bugs, perturber des fonctionnalités ou se comporter de façon inattendue.</string>
     <string name="about_privacy_policy">Politique de confidentialité</string>
     <string name="about_privacy_policy_subtitle">Consulter notre politique de confidentialité</string>
-    <string name="support_nuvio_name">Soutenir CINEBOX</string>
+    <string name="support_cinebox_name">Soutenir CINEBOX</string>
     <string name="about_supporters_contributors">Soutenir CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Soutenez le projet et consultez les remerciements de la communauté</string>
     <string name="about_licenses_attributions">Licences et attributions</string>
@@ -441,8 +441,8 @@
     <string name="licenses_attributions_section_ui">BIBLIOTHÈQUES D’INTERFACE</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Utilisée pour les effets de flou d’arrière-plan. Créée par Chris Banes. Distribuée sous licence Apache, version 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Le code source et les conditions de licence sont disponibles dans le dépôt du projet. Distribué sous licence GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Le code source et les conditions de licence sont disponibles dans le dépôt du projet. Distribué sous licence GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX utilise l’API TMDB pour les métadonnées des films et des séries, les visuels, les bandes-annonces, la distribution, les détails de production, les collections et les recommandations. Ce produit utilise l’API TMDB, mais n’est ni approuvé ni certifié par TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -614,15 +614,15 @@
     <string name="advanced_section_dv_diagnostics" translatable="false">DV Diagnostics</string>
     <string name="advanced_fast_horizontal_navigation">Navigation horizontale rapide</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Augmenter la vitesse de répétition du pavé directionnel dans les rangées tout en conservant la limitation de la répétition.</string>
-    <string name="advanced_nuvio_performance_mode">Mémoire native ExoPlayer</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Active l’allocateur natif haute performance, la mémoire hors tas et des optimisations réseau pour une lecture plus fluide</string>
+    <string name="advanced_cinebox_performance_mode">Mémoire native ExoPlayer</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Active l’allocateur natif haute performance, la mémoire hors tas et des optimisations réseau pour une lecture plus fluide</string>
     <string name="buffer_device_ram_info">RAM de l’appareil&#160;: %s</string>
     <string name="buffer_safe_limit_info">Limite de sécurité recommandée&#160;: %d Mo</string>
     <string name="buffer_safe_status">Sûr&#160;: dans la limite recommandée pour votre appareil.</string>
     <string name="buffer_unsafe_warning">Attention&#160;: dépasse la limite de sécurité recommandée (%1$d Mo) pour votre appareil %2$s. Peut provoquer des plantages de l’application.</string>
     <string name="buffer_auto_limit_active">Limite de sécurité ajustée automatiquement&#160;: %d Mo</string>
-    <string name="advanced_nuvio_focus_scroll">Défilement de la sélection CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Utiliser l’animation et le positionnement globaux personnalisés de CINEBOX pour le défilement de la sélection.</string>
+    <string name="advanced_cinebox_focus_scroll">Défilement de la sélection CINEBOX</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Utiliser l’animation et le positionnement globaux personnalisés de CINEBOX pour le défilement de la sélection.</string>
     <string name="advanced_rgb565">Décodage d’image RGB565</string>
     <string name="advanced_rgb565_subtitle">Utilise une couleur 16 bits, moins gourmande en mémoire, pour les images opaques éligibles. Cette modification redémarre l’application.</string>
     <string name="advanced_memory_only_vertical_scroll">Défilement vertical en mémoire uniquement</string>
@@ -1505,19 +1505,19 @@
     <string name="trakt_watch_progress_dialog_title">Progression de visionnage</string>
     <string name="trakt_watch_progress_dialog_subtitle">Choisissez si la reprise et Continuer à regarder utilisent Trakt ou CINEBOX Sync, le scrobbling Trakt restant actif.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Source de la bibliothèque</string>
     <string name="trakt_library_source_subtitle">Choisir la source que CINEBOX lit pour votre bibliothèque</string>
     <string name="trakt_library_source_dialog_title">Source de la bibliothèque</string>
     <string name="trakt_library_source_dialog_subtitle">Choisissez où enregistrer et gérer les éléments de votre bibliothèque</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">Bibliothèque CINEBOX</string>
+    <string name="trakt_library_source_cinebox">Bibliothèque CINEBOX</string>
     <string name="trakt_library_source_trakt_selected">Bibliothèque Trakt sélectionnée</string>
-    <string name="trakt_library_source_nuvio_selected">Bibliothèque CINEBOX sélectionnée</string>
+    <string name="trakt_library_source_cinebox_selected">Bibliothèque CINEBOX sélectionnée</string>
     <string name="trakt_setting_on">Activé</string>
     <string name="trakt_setting_off">Désactivé</string>
     <string name="trakt_watch_progress_trakt_selected">Source de progression définie sur Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Source de progression définie sur CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Source de progression définie sur CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Période de Continuer à regarder</string>
     <string name="trakt_continue_watching_subtitle">Historique Trakt pris en compte pour Continuer à regarder</string>
     <string name="trakt_unaired_next_up">Prochains épisodes non diffusés</string>
@@ -2126,7 +2126,7 @@
     <string name="library_delete_subtitle">Cela supprime la liste et tous ses éléments de Trakt.</string>
     <string name="library_delete_confirm">Supprimer</string>
     <string name="library_source_local">LOCAL</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Enregistrés</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2562,7 +2562,7 @@
     <string name="cd_trailer_controls">Commandes de la bande-annonce</string>
     <string name="cd_seek_bar">Barre de progression</string>
     <string name="cd_unlink">Dissocier</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Code QR d’activation Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2574,7 +2574,7 @@
     <string name="cd_expand">Développer %1$s</string>
     <string name="cd_collapse">Réduire %1$s</string>
     <string name="cd_qr_login">Code QR de connexion</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <string name="debug_signin_success">Connexion réussie</string>
     <string name="debug_generate_description">Élément %1$s n°&#160;%2$d généré en mode débogage</string>
@@ -2609,7 +2609,7 @@
     <string name="collections_paste_clipboard">Coller depuis le presse-papiers</string>
     <string name="collections_validate">Valider</string>
     <string name="collections_paste_hint">Collez le JSON des collections ici…</string>
-    <string name="collections_file_description">Lit le fichier nuvio-collections.json dans le dossier Téléchargements.</string>
+    <string name="collections_file_description">Lit le fichier cinebox-collections.json dans le dossier Téléchargements.</string>
     <string name="collections_load_file">Charger le fichier</string>
     <string name="collections_file_loaded">Fichier chargé (%1$d caractères)</string>
     <string name="collections_fetch_url">Récupérer l’URL</string>
@@ -3231,9 +3231,9 @@
     <string name="playback_section_buffer_network">Mémoire tampon et réseau</string>
     <string name="playback_section_buffer_network_desc">Quelle quantité de contenu garder en mémoire et comment récupérer les flux.</string>
     <string name="playback_net_device_memory_info">Mémoire de l’appareil&#160;: %1$s | Limite de sécurité recommandée&#160;: %2$d Mo</string>
-    <string name="playback_net_nuvio_performance_mode">Mémoire native ExoPlayer</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Active l’allocateur natif hors tas et les optimisations du déplacement.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Cette fonctionnalité n’est pas prise en charge par votre appareil.</string>
+    <string name="playback_net_cinebox_performance_mode">Mémoire native ExoPlayer</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Active l’allocateur natif hors tas et les optimisations du déplacement.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Cette fonctionnalité n’est pas prise en charge par votre appareil.</string>
     <string name="playback_buffer_custom">Mémoires tampons de lecture personnalisées</string>
     <string name="playback_buffer_custom_sub">Remplace la mise en mémoire tampon par défaut de Media3 par les valeurs ci-dessous. Lorsque cette option est désactivée, le lecteur utilise les durées et la taille cible de mémoire tampon d’origine de Media3.</string>
     <string name="playback_buffer_header">Mémoire tampon</string>

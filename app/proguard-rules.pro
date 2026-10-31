@@ -29,7 +29,7 @@
 # broader kotlin.** keep rule below for DexClassLoader extension compatibility.
 -keep,allowobfuscation,allowshrinking class kotlin.coroutines.Continuation
 # Keep all project API interfaces
--keep class com.nuvio.tv.data.remote.api.** { *; }
+-keep class com.cinebox.tv.data.remote.api.** { *; }
 
 # ── OkHttp ─────────────────────────────────────────────────────────────────────
 -dontwarn okhttp3.internal.platform.**
@@ -39,8 +39,8 @@
 
 # ── Data classes (DTOs) ────────────────────────────────────────────────────────
 # Keep all DTO classes used with Moshi/Retrofit
--keep class com.nuvio.tv.data.remote.dto.** { *; }
--keep class com.nuvio.tv.domain.model.** { *; }
+-keep class com.cinebox.tv.data.remote.dto.** { *; }
+-keep class com.cinebox.tv.domain.model.** { *; }
 
 # ── Kotlin ─────────────────────────────────────────────────────────────────────
 -keepattributes *Annotation*
@@ -53,10 +53,10 @@
 # ── NanoHTTPD (used by local server) ───────────────────────────────────────────
 -keep class fi.iki.elonen.** { *; }
 # Keep server classes and their inner data classes (serialized with Gson)
--keep class com.nuvio.tv.core.server.** { *; }
+-keep class com.cinebox.tv.core.server.** { *; }
 
-# ── Torrent streaming (Nuvio Engine) ───────────────────────────────────────────
--keep class com.nuvio.tv.core.torrent.** { *; }
+# ── Torrent streaming (Cinebox Engine) ───────────────────────────────────────────
+-keep class com.cinebox.tv.core.torrent.** { *; }
 -keep class com.nuvio.engine.** { *; }
 -keep interface com.nuvio.engine.** { *; }
 
@@ -65,8 +65,8 @@
 -keep class com.dokar.quickjs.** { *; }
 -keepclassmembers class com.dokar.quickjs.** { *; }
 # Keep PluginRuntime and related classes for JS bindings
--keep class com.nuvio.tv.core.plugin.** { *; }
--keepclassmembers class com.nuvio.tv.core.plugin.** { *; }
+-keep class com.cinebox.tv.core.plugin.** { *; }
+-keepclassmembers class com.cinebox.tv.core.plugin.** { *; }
 
 # ── ExoPlayer / Media3 ────────────────────────────────────────────────────────
 -dontwarn androidx.media3.**
@@ -80,7 +80,7 @@
 -keep interface com.google.android.exoplayer2.** { *; }
 -keep class com.google.android.exoplayer2.ext.** { *; }
 
-# Keep native interfaces and handles for Nuvio Engine JNI
+# Keep native interfaces and handles for Cinebox Engine JNI
 -keep class androidx.media3.exoplayer.upstream.DefaultAllocatorNative {
     native <methods>;
 }
@@ -96,7 +96,7 @@
 -keep class io.github.jan.supabase.** { *; }
 -keep class io.ktor.** { *; }
 -dontwarn io.ktor.**
--keep class com.nuvio.tv.data.remote.supabase.** { *; }
+-keep class com.cinebox.tv.data.remote.supabase.** { *; }
 # Keep @Serializable classes and their generated serializers
 -keepclassmembers class * {
     kotlinx.serialization.KSerializer serializer(...);

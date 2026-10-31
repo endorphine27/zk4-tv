@@ -2,7 +2,7 @@ from __future__ import annotations
 
 SPECIAL_RULES = [
     (
-        r"upgrade\s+ass-media\s+so\s+Nuvio's\s+custom\s+ASS\s+Matroska\s+extractor\s+"
+        r"upgrade\s+ass-media\s+so\s+Cinebox's\s+custom\s+ASS\s+Matroska\s+extractor\s+"
         r"can\s+register\s+embedded\s+MKV\s+font\s+attachments\s+through\s+"
         r"AssHandler\.addFont\(\.\.\.\)",
         "Improved ASS subtitle font support for embedded Matroska attachments",
@@ -25,8 +25,8 @@ SPECIAL_RULES = [
         "Improved metadata and add-on behavior while fixing Trakt Continue Watching stability",
     ),
     (
-        r"Feat/nuvio\s+exoplayer\s+performance\s+mode\s+clean\s+v2",
-        "Added Nuvio Engine player performance settings",
+        r"Feat/cinebox\s+exoplayer\s+performance\s+mode\s+clean\s+v2",
+        "Added Cinebox Engine player performance settings",
     ),
     (
         r"make\s+connectionPoolSize\s+dynamic\s+and\s+recreate\s+connection",
@@ -113,7 +113,7 @@ SPECIAL_RULES = [
         "Added experimental real-time sync",
     ),
     (
-        r"use\s+nuvio\.tv\s+for\s+TV\s+login\s+QR\s+links",
+        r"use\s+cinebox\.tv\s+for\s+TV\s+login\s+QR\s+links",
         "Updated TV login QR links to use nuvio.tv",
     ),
     (
@@ -230,7 +230,7 @@ SPECIAL_RULES = [
     ),
     (
         r"ASS\s+subtitle\s+gibberish\s+caused\s+by\s+a\s+zlib\s+false-positive\s+"
-        r"on\s+plain-text\s+ASS\s+samples\s+in\s+NuvioAssMatroskaExtractor",
+        r"on\s+plain-text\s+ASS\s+samples\s+in\s+CineboxAssMatroskaExtractor",
         "Fixed ASS subtitle gibberish caused by zlib false positives on plain-text samples",
     ),
     (

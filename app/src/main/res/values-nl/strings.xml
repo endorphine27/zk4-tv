@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Er zijn geen add-ons geïnstalleerd. Voeg er één toe om te beginnen.</string>
     <string name="home_no_catalog_addons">Er zijn geen catalogus-add-ons geïnstalleerd. Installeer een catalogus-add-on om de inhoud te bekijken.</string>
-    <string name="auth_notice_nuvio_logged_out">Je bent afgemeld bij CINEBOX. Meld je opnieuw aan.</string>
+    <string name="auth_notice_cinebox_logged_out">Je bent afgemeld bij CINEBOX. Meld je opnieuw aan.</string>
     <string name="auth_notice_trakt_logged_out">Je bent afgemeld bij Trakt. Maak opnieuw verbinding.</string>
     <string name="error_generic">Er is een fout opgetreden</string>
 
@@ -401,7 +401,7 @@
     <string name="update_channel_beta_description">Vroege updates die fouten kunnen bevatten, functies kunnen breken of zich onverwacht kunnen gedragen.</string>
     <string name="about_privacy_policy">Privacybeleid</string>
     <string name="about_privacy_policy_subtitle">Bekijk ons privacybeleid</string>
-    <string name="support_nuvio_name">Steun CINEBOX</string>
+    <string name="support_cinebox_name">Steun CINEBOX</string>
     <string name="about_supporters_contributors">Steun CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Steun het project en bekijk de community-credits</string>
     <string name="about_licenses_attributions">Licenties &amp; naamsvermelding</string>
@@ -411,8 +411,8 @@
     <string name="licenses_attributions_section_app">APP-LICENTIE</string>
     <string name="licenses_attributions_section_data">GEGEVENS &amp; SERVICES</string>
     <string name="licenses_attributions_section_playback">ANDROID-AFSPEELLICENTIES</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">De broncode en licentievoorwaarden zijn beschikbaar in de projectrepository. Gelicentieerd onder de GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">De broncode en licentievoorwaarden zijn beschikbaar in de projectrepository. Gelicentieerd onder de GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX gebruikt de TMDB-API voor metadata, illustraties, trailers, cast, productiedetails, collecties en aanbevelingen van films en series. Dit product gebruikt de TMDB-API, maar wordt niet onderschreven of gecertificeerd door TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -580,15 +580,15 @@
     <string name="advanced_section_cache">Cache</string>
     <string name="advanced_fast_horizontal_navigation">Snelle horizontale navigatie</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Verhoog de herhaalsnelheid van de D-pad in rijen terwijl de herhalingsbegrenzing ingeschakeld blijft.</string>
-    <string name="advanced_nuvio_performance_mode">Native geheugen van ExoPlayer</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Schakelt een krachtige native allocator, geheugen buiten de heap en netwerkoptimalisaties in voor vloeiender afspelen</string>
+    <string name="advanced_cinebox_performance_mode">Native geheugen van ExoPlayer</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Schakelt een krachtige native allocator, geheugen buiten de heap en netwerkoptimalisaties in voor vloeiender afspelen</string>
     <string name="buffer_device_ram_info">RAM van apparaat: %s</string>
     <string name="buffer_safe_limit_info">Aanbevolen veilige limiet: %d MB</string>
     <string name="buffer_safe_status">Veilig: binnen de aanbevolen limiet voor je apparaat.</string>
     <string name="buffer_unsafe_warning">Waarschuwing: overschrijdt de aanbevolen veilige limiet (%1$d MB) voor je %2$s-apparaat. Kan crashes van de app veroorzaken.</string>
     <string name="buffer_auto_limit_active">Automatisch geschaalde veilige limiet: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX-focusscrollen</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Gebruik de eigen globale focus-scrollanimatie en -positionering van CINEBOX.</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX-focusscrollen</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Gebruik de eigen globale focus-scrollanimatie en -positionering van CINEBOX.</string>
     <string name="advanced_rgb565">RGB565-beelddecodering</string>
     <string name="advanced_rgb565_subtitle">Gebruik 16-bits kleur met minder geheugengebruik voor geschikte ondoorzichtige afbeeldingen. Bij wijziging wordt de app opnieuw gestart.</string>
     <string name="advanced_memory_only_vertical_scroll">Verticaal scrollen alleen uit geheugen</string>
@@ -1330,19 +1330,19 @@
     <string name="trakt_watch_progress_dialog_title">Kijkvoortgang</string>
     <string name="trakt_watch_progress_dialog_subtitle">Kies of hervatten en Verder kijken Trakt of CINEBOX Sync gebruiken, terwijl Trakt-scrobbelen actief blijft.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Bibliotheekbron</string>
     <string name="trakt_library_source_subtitle">Kies welke bron CINEBOX uitleest voor je bibliotheek</string>
     <string name="trakt_library_source_dialog_title">Bibliotheekbron</string>
     <string name="trakt_library_source_dialog_subtitle">Kies waar je bibliotheekitems worden opgeslagen en beheerd</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX-bibliotheek</string>
+    <string name="trakt_library_source_cinebox">CINEBOX-bibliotheek</string>
     <string name="trakt_library_source_trakt_selected">Trakt-bibliotheek geselecteerd</string>
-    <string name="trakt_library_source_nuvio_selected">CINEBOX-bibliotheek geselecteerd</string>
+    <string name="trakt_library_source_cinebox_selected">CINEBOX-bibliotheek geselecteerd</string>
     <string name="trakt_setting_on">Aan</string>
     <string name="trakt_setting_off">Uit</string>
     <string name="trakt_watch_progress_trakt_selected">Bron voor kijkvoortgang ingesteld op Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Bron voor kijkvoortgang ingesteld op CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Bron voor kijkvoortgang ingesteld op CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Verder kijken-venster</string>
     <string name="trakt_continue_watching_subtitle">Trakt-geschiedenis die wordt meegenomen voor Verder kijken</string>
     <string name="trakt_unaired_next_up">Nog niet uitgezonden afleveringen in Volgende</string>
@@ -1919,7 +1919,7 @@
     <string name="library_delete_subtitle">Dit verwijdert de lijst en alle items uit Trakt.</string>
     <string name="library_delete_confirm">Verwijderen</string>
     <string name="library_source_local">LOKAAL</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Opgeslagen</string>
     <string name="library_source_cloud">Cloud</string>
@@ -2344,7 +2344,7 @@
     <string name="cd_preview">Voorbeeld</string>
     <string name="cd_test">Testen</string>
     <string name="cd_unlink">Ontkoppelen</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt-logo</string>
     <string name="cd_trakt_qr">QR-code voor Trakt-activering</string>
     <string name="cd_imdb">IMDb</string>
@@ -2356,7 +2356,7 @@
     <string name="cd_expand">%1$s uitvouwen</string>
     <string name="cd_collapse">%1$s samenvouwen</string>
     <string name="cd_qr_login">QR-aanmeldcode</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <string name="debug_signin_success">Aanmelden gelukt</string>
     <string name="debug_generate_description">Door debug gegenereerd %1$s-item #%2$d</string>
@@ -2391,7 +2391,7 @@
     <string name="collections_paste_clipboard">Plakken vanaf klembord</string>
     <string name="collections_validate">Valideren</string>
     <string name="collections_paste_hint">Plak hier de JSON met collecties…</string>
-    <string name="collections_file_description">Leest nuvio-collections.json uit de map Downloads.</string>
+    <string name="collections_file_description">Leest cinebox-collections.json uit de map Downloads.</string>
     <string name="collections_load_file">Bestand laden</string>
     <string name="collections_file_loaded">Bestand geladen (%1$d tekens)</string>
     <string name="collections_fetch_url">URL ophalen</string>
@@ -3007,9 +3007,9 @@
     <string name="playback_section_buffer_network">Buffer &amp; netwerk</string>
     <string name="playback_section_buffer_network_desc">Hoeveel inhoud in het geheugen wordt bewaard en hoe streams worden opgehaald.</string>
     <string name="playback_net_device_memory_info">Apparaatgeheugen: %1$s | Aanbevolen veilige limiet: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">Native geheugen van ExoPlayer</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Schakel de native off-heap-allocator en scrub-optimalisaties in.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Deze functie wordt niet ondersteund door je apparaat.</string>
+    <string name="playback_net_cinebox_performance_mode">Native geheugen van ExoPlayer</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Schakel de native off-heap-allocator en scrub-optimalisaties in.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Deze functie wordt niet ondersteund door je apparaat.</string>
     <string name="playback_buffer_custom">Aangepaste afspeelbuffers</string>
     <string name="playback_buffer_custom_sub">Overschrijf de standaardbuffering van Media3 met de onderstaande waarden. Wanneer dit uitstaat, gebruikt de speler de standaardbufferduur en -doelgrootte van Media3.</string>
     <string name="playback_buffer_header">Buffer</string>

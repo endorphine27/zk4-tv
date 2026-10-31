@@ -100,7 +100,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">Yüklü eklenti yok. Başlamak için bir eklenti ekleyin.</string>
     <string name="home_no_catalog_addons">Katalog eklentisi yok. İçerikleri görmek için bir katalog eklentisi yükleyin.</string>
-    <string name="auth_notice_nuvio_logged_out">CINEBOX hesabınızdan çıkış yapıldı. Lütfen tekrar giriş yapın.</string>
+    <string name="auth_notice_cinebox_logged_out">CINEBOX hesabınızdan çıkış yapıldı. Lütfen tekrar giriş yapın.</string>
     <string name="auth_notice_trakt_logged_out">Trakt hesabınızdan çıkış yapıldı. Lütfen yeniden bağlanın.</string>
     <string name="error_generic">Bir hata oluştu</string>
 
@@ -431,7 +431,7 @@
     <string name="update_channel_beta_description">Hata içerebilen, özellikleri bozabilen veya beklenmedik şekilde davranabilen erken güncellemeler.</string>
     <string name="about_privacy_policy">Gizlilik Politikası</string>
     <string name="about_privacy_policy_subtitle">Gizlilik politikamızı görüntüleyin</string>
-    <string name="support_nuvio_name">CINEBOX\'yu Destekle</string>
+    <string name="support_cinebox_name">CINEBOX\'yu Destekle</string>
     <string name="about_supporters_contributors">Destekleyenler ve Katkıda Bulunanlar</string>
     <string name="about_supporters_contributors_subtitle">Projede emeği geçenler ve açık kaynak destekçileri</string>
     <string name="about_licenses_attributions">Lisanslar ve Atıflar</string>
@@ -444,8 +444,8 @@
     <string name="licenses_attributions_section_ui">ARAYÜZ KÜTÜPHANELERİ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Arka plan bulanıklık efektleri için kullanılır. Chris Banes tarafından oluşturulmuştur. Apache License, Version 2.0 altında lisanslanmıştır.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Kaynak kodu ve lisans koşulları proje deposunda mevcuttur. GNU Genel Kamu Lisansı v3.0 altında lisanslanmıştır.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Kaynak kodu ve lisans koşulları proje deposunda mevcuttur. GNU Genel Kamu Lisansı v3.0 altında lisanslanmıştır.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX, film ve dizi meta verileri, görseller, fragmanlar, oyuncular, yapım detayları, koleksiyonlar ve öneriler için TMDB API\'sini kullanır. Bu ürün TMDB API\'sini kullanır ancak TMDB tarafından onaylanmamıştır veya sertifikalandırılmamıştır.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -619,15 +619,15 @@
     <string name="advanced_section_dv_diagnostics">DV Tanılama</string>
     <string name="advanced_fast_horizontal_navigation">Hızlı Yatay Gezinme</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Performans için yatay listelerde daha pürüzsüz kaydırma sağlar</string>
-    <string name="advanced_nuvio_performance_mode">ExoPlayer Native Memory</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Daha akıcı oynatma için yüksek performanslı yerel ayırıcı (native allocator), yığın dışı bellek (off-heap memory) ve ağ optimizasyonlarını etkinleştirir</string>
+    <string name="advanced_cinebox_performance_mode">ExoPlayer Native Memory</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Daha akıcı oynatma için yüksek performanslı yerel ayırıcı (native allocator), yığın dışı bellek (off-heap memory) ve ağ optimizasyonlarını etkinleştirir</string>
     <string name="buffer_device_ram_info">Cihaz Belleği: %s</string>
     <string name="buffer_safe_limit_info">Önerilen Güvenli Sınır: %d MB</string>
     <string name="buffer_safe_status">Güvenli: Cihazınız için önerilen sınırlar dahilinde.</string>
     <string name="buffer_unsafe_warning">Uyarı: %2$s cihazınız için önerilen güvenli sınırı (%1$d MB) aşıyor. Çökmeler yaşanabilir.</string>
     <string name="buffer_auto_limit_active">Otomatik Ayarlanan Güvenli Sınır: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX Odak Kaydırma</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Varsayılan Android TV odak davranışını CINEBOX\'nun özel kaydırma sistemi ile değiştirir</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX Odak Kaydırma</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Varsayılan Android TV odak davranışını CINEBOX\'nun özel kaydırma sistemi ile değiştirir</string>
     <string name="advanced_rgb565">RGB565 Görüntü Çözme</string>
     <string name="advanced_rgb565_subtitle">Uygun opak görüntüler için daha az bellek kullanan 16 bit renk kullanır. Değiştirmek uygulamayı yeniden başlatır.</string>
     <string name="advanced_memory_only_vertical_scroll">Yalnızca Bellekte Dikey Kaydırma</string>
@@ -1519,19 +1519,19 @@
     <string name="trakt_watch_progress_dialog_title">İzleme İlerlemesi</string>
     <string name="trakt_watch_progress_dialog_subtitle">Trakt scrobbling aktifken devam etme ve izlemeye devam etmenin Trakt mı yoksa CINEBOX Sync mi kullanacağını seçin.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Kütüphane Kaynağı</string>
     <string name="trakt_library_source_subtitle">Koleksiyonunuzu kaydetmek ve görüntülemek için hangi kütüphanenin kullanılacağını seçin</string>
     <string name="trakt_library_source_dialog_title">Kütüphane Kaynağı</string>
     <string name="trakt_library_source_dialog_subtitle">Kütüphane öğelerinizi nerede kaydedeceğinizi ve yöneteceğinizi seçin</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX Kütüphanesi</string>
+    <string name="trakt_library_source_cinebox">CINEBOX Kütüphanesi</string>
     <string name="trakt_library_source_trakt_selected">Trakt kütüphanesi seçildi</string>
-    <string name="trakt_library_source_nuvio_selected">CINEBOX kütüphanesi seçildi</string>
+    <string name="trakt_library_source_cinebox_selected">CINEBOX kütüphanesi seçildi</string>
     <string name="trakt_setting_on">Açık</string>
     <string name="trakt_setting_off">Kapalı</string>
     <string name="trakt_watch_progress_trakt_selected">İzleme ilerlemesi kaynağı Trakt olarak ayarlandı</string>
-    <string name="trakt_watch_progress_nuvio_selected">İzleme ilerlemesi kaynağı CINEBOX Sync olarak ayarlandı</string>
+    <string name="trakt_watch_progress_cinebox_selected">İzleme ilerlemesi kaynağı CINEBOX Sync olarak ayarlandı</string>
     <string name="trakt_continue_watching_window">İzlemeye Devam Etme Penceresi</string>
     <string name="trakt_continue_watching_subtitle">İzlemeye devam etme için dikkate alınan Trakt geçmişi</string>
     <string name="trakt_unaired_next_up">Yayınlanmamış Sıradaki Bölümler</string>
@@ -2138,7 +2138,7 @@
     <string name="library_delete_subtitle">Bu işlem listeyi ve içindeki tüm öğeleri Trakt hesabınızdan kaldırır.</string>
     <string name="library_delete_confirm">Sil</string>
     <string name="library_source_local">YEREL</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Kaydedildi</string>
     <string name="library_source_cloud">Bulut</string>
@@ -2559,9 +2559,9 @@
     <string name="playback_section_buffer_network">Arabellek ve Ağ</string>
     <string name="playback_section_buffer_network_desc">Bellekte ne kadar içerik tutulacağını ve yayınların nasıl çekileceğini ayarlayın.</string>
     <string name="playback_net_device_memory_info">Cihaz Belleği: %1$s | Önerilen Güvenli Sınır: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">ExoPlayer Native Memory</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Yerel (off-heap) bellek ayırıcıyı ve oynatma/sarma optimizasyonlarını etkinleştirir.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Bu özellik cihazınız tarafından desteklenmiyor.</string>
+    <string name="playback_net_cinebox_performance_mode">ExoPlayer Native Memory</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Yerel (off-heap) bellek ayırıcıyı ve oynatma/sarma optimizasyonlarını etkinleştirir.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Bu özellik cihazınız tarafından desteklenmiyor.</string>
     <string name="playback_buffer_custom">Özel Oynatma Arabellekleri</string>
     <string name="playback_buffer_custom_sub">Media3\'ün varsayılan arabelleğini aşağıdaki değerlerle geçersiz kılın. Kapalıyken oynatıcı standart Media3 arabellek sürelerini ve hedef boyutunu kullanır.</string>
     <string name="playback_buffer_header">Arabellek</string>
@@ -2823,7 +2823,7 @@
     <string name="cd_trailer_controls">Fragman kontrolleri</string>
     <string name="cd_seek_bar">İlerleme çubuğu</string>
     <string name="cd_unlink">Bağlantıyı kes</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt logosu</string>
     <string name="cd_trakt_qr">Trakt etkinleştirme QR kodu</string>
     <string name="cd_simkl_qr">Simkl etkinleştirme QR kodu</string>
@@ -2837,7 +2837,7 @@
     <string name="cd_expand">%1$s öğesini genişlet</string>
     <string name="cd_collapse">%1$s öğesini daralt</string>
     <string name="cd_qr_login">QR giriş kodu</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <!-- Debug -->
     <string name="debug_signin_success">Giriş başarılı</string>
@@ -2870,7 +2870,7 @@
     <string name="collections_paste_clipboard">Panodan Yapıştır</string>
     <string name="collections_validate">Doğrula</string>
     <string name="collections_paste_hint">JSON\'u buraya yapıştırın…</string>
-    <string name="collections_file_description">İndirilenler klasöründeki nuvio-collections.json dosyasını okur.</string>
+    <string name="collections_file_description">İndirilenler klasöründeki cinebox-collections.json dosyasını okur.</string>
     <string name="collections_load_file">Dosyayı Yükle</string>
     <string name="collections_file_loaded">Dosya yüklendi (%1$d karakter)</string>
     <string name="collections_fetch_url">URL\'yi Getir</string>

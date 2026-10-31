@@ -98,7 +98,7 @@
 
 <string name="home_no_addons">Nessun addon installato. Aggiungine uno per iniziare.</string>
 <string name="home_no_catalog_addons">Nessun catalogo installato. Installane uno per vedere i contenuti.</string>
-<string name="auth_notice_nuvio_logged_out">Sei stato disconnesso da CINEBOX. Accedi di nuovo.</string>
+<string name="auth_notice_cinebox_logged_out">Sei stato disconnesso da CINEBOX. Accedi di nuovo.</string>
 <string name="auth_notice_trakt_logged_out">Sei stato disconnesso da Trakt. Riconnettiti.</string>
 <string name="error_generic">Si è verificato un errore</string>
 
@@ -384,7 +384,7 @@
 <string name="update_channel_beta_description">Aggiornamenti anticipati che potrebbero contenere bug, funzionalità non funzionanti o comportamenti inattesi.</string>
 <string name="about_privacy_policy">Informativa sulla privacy</string>
 <string name="about_privacy_policy_subtitle">Visualizza la nostra informativa sulla privacy</string>
-<string name="support_nuvio_name">Sostieni CINEBOX</string>
+<string name="support_cinebox_name">Sostieni CINEBOX</string>
 <string name="about_supporters_contributors">Sostenitori &amp; Collaboratori</string>
 <string name="about_supporters_contributors_subtitle">Apri riconoscimenti e contributi al progetto</string>
 <string name="about_licenses_attributions">Licenze e attribuzioni</string>
@@ -394,8 +394,8 @@
 <string name="licenses_attributions_section_app">LICENZA APP</string>
 <string name="licenses_attributions_section_data">DATI E SERVIZI</string>
 <string name="licenses_attributions_section_playback">LICENZE DI RIPRODUZIONE ANDROID</string>
-<string name="licenses_attributions_nuvio_title">CINEBOX</string>
-<string name="licenses_attributions_nuvio_body">Il codice sorgente e i termini della licenza sono disponibili nel repository del progetto. Distribuito sotto licenza GNU General Public License v3.0.</string>
+<string name="licenses_attributions_cinebox_title">CINEBOX</string>
+<string name="licenses_attributions_cinebox_body">Il codice sorgente e i termini della licenza sono disponibili nel repository del progetto. Distribuito sotto licenza GNU General Public License v3.0.</string>
 <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
 <string name="licenses_attributions_tmdb_body">CINEBOX utilizza l\'API di TMDB per metadati di film e serie TV, locandine, trailer, cast, dettagli di produzione, collezioni e raccomandazioni. Questo prodotto utilizza l\'API di TMDB ma non è approvato o certificato da TMDB.</string>
 <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -564,15 +564,15 @@
 <string name="advanced_section_dv_diagnostics" translatable="false">Diagnostica DV</string>
 <string name="advanced_fast_horizontal_navigation">Navigazione Orizzontale Rapida</string>
 <string name="advanced_fast_horizontal_navigation_subtitle">Aumenta la velocità di ripetizione del D-pad nelle righe mantenendo il throttling attivo.</string>
-<string name="advanced_nuvio_performance_mode">Memoria nativa ExoPlayer</string>
-<string name="advanced_nuvio_performance_mode_subtitle">Abilita l\'allocatore nativo ad alte prestazioni, la memoria off-heap e le ottimizzazioni di rete per una riproduzione più fluida</string>
+<string name="advanced_cinebox_performance_mode">Memoria nativa ExoPlayer</string>
+<string name="advanced_cinebox_performance_mode_subtitle">Abilita l\'allocatore nativo ad alte prestazioni, la memoria off-heap e le ottimizzazioni di rete per una riproduzione più fluida</string>
 <string name="buffer_device_ram_info">RAM del dispositivo: %s</string>
 <string name="buffer_safe_limit_info">Limite di sicurezza consigliato: %d MB</string>
 <string name="buffer_safe_status">Sicuro: entro il limite consigliato per il tuo dispositivo.</string>
 <string name="buffer_unsafe_warning">Avviso: supera il limite di sicurezza consigliato (%1$d MB) per il tuo dispositivo %2$s. Può causare arresti anomali dell\'app.</string>
 <string name="buffer_auto_limit_active">Limite di sicurezza scalato automaticamente: %d MB</string>
-<string name="advanced_nuvio_focus_scroll">Scorrimento Focus CINEBOX</string>
-<string name="advanced_nuvio_focus_scroll_subtitle">Usa l\'animazione di scorrimento e il posizionamento personalizzato del focus di CINEBOX.</string>
+<string name="advanced_cinebox_focus_scroll">Scorrimento Focus CINEBOX</string>
+<string name="advanced_cinebox_focus_scroll_subtitle">Usa l\'animazione di scorrimento e il posizionamento personalizzato del focus di CINEBOX.</string>
 <string name="advanced_rgb565">Decodifica immagini RGB565</string>
 <string name="advanced_rgb565_subtitle">Usa colore a 16 bit a minor consumo di memoria per le immagini opache idonee. La modifica riavvia l\'app.</string>
 <string name="advanced_memory_only_vertical_scroll">Scorrimento Verticale Solo Memoria</string>
@@ -1324,19 +1324,19 @@
 <string name="trakt_watch_progress_dialog_title">Avanzamento visione</string>
 <string name="trakt_watch_progress_dialog_subtitle">Scegli se Riprendi e Continua a guardare devono usare Trakt o CINEBOX Sync, mantenendo attivo lo scrobble su Trakt.</string>
 <string name="trakt_watch_progress_source_trakt">Trakt</string>
-<string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+<string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
 <string name="trakt_library_source_title">Sorgente libreria</string>
 <string name="trakt_library_source_subtitle">Scegli quale libreria usare per salvare e visualizzare la tua collezione</string>
 <string name="trakt_library_source_dialog_title">Sorgente libreria</string>
 <string name="trakt_library_source_dialog_subtitle">Scegli dove salvare e gestire gli elementi della tua libreria</string>
 <string name="trakt_library_source_trakt">Trakt</string>
-<string name="trakt_library_source_nuvio">Libreria CINEBOX</string>
+<string name="trakt_library_source_cinebox">Libreria CINEBOX</string>
 <string name="trakt_library_source_trakt_selected">Libreria Trakt selezionata</string>
-<string name="trakt_library_source_nuvio_selected">Libreria CINEBOX selezionata</string>
+<string name="trakt_library_source_cinebox_selected">Libreria CINEBOX selezionata</string>
 <string name="trakt_setting_on">Attivo</string>
 <string name="trakt_setting_off">Disattivo</string>
 <string name="trakt_watch_progress_trakt_selected">Origine avanzamento impostata su Trakt</string>
-<string name="trakt_watch_progress_nuvio_selected">Origine avanzamento impostata su CINEBOX Sync</string>
+<string name="trakt_watch_progress_cinebox_selected">Origine avanzamento impostata su CINEBOX Sync</string>
 <string name="trakt_continue_watching_window">Finestra Continua a guardare</string>
 <string name="trakt_continue_watching_subtitle">Cronologia Trakt considerata per il \"continua a guardare\"</string>
 <string name="trakt_unaired_next_up">Prossimi episodi non trasmessi</string>
@@ -1912,7 +1912,7 @@
 <string name="library_delete_subtitle">Questo rimuoverà la lista e tutti gli elementi da Trakt.</string>
 <string name="library_delete_confirm">Elimina</string>
 <string name="library_source_local">LOCALE</string>
-<string name="library_source_nuvio">CINEBOX</string>
+<string name="library_source_cinebox">CINEBOX</string>
 <string name="library_source_trakt">TRAKT</string>
 <string name="library_source_saved">Salvati</string>
 <string name="library_source_cloud">Cloud</string>
@@ -2337,7 +2337,7 @@
 <string name="cd_preview">Anteprima</string>
 <string name="cd_test">Test</string>
 <string name="cd_unlink">Scollega</string>
-<string name="cd_nuvio_logo">CINEBOX</string>
+<string name="cd_cinebox_logo">CINEBOX</string>
 <string name="cd_trakt_logo">Logo Trakt</string>
 <string name="cd_trakt_qr">QR attivazione Trakt</string>
 <string name="cd_imdb">IMDb</string>
@@ -2349,7 +2349,7 @@
 <string name="cd_expand">Espandi %1$s</string>
 <string name="cd_collapse">Riduci %1$s</string>
 <string name="cd_qr_login">Codice QR login</string>
-<string name="cd_nuvio">CINEBOX</string>
+<string name="cd_cinebox">CINEBOX</string>
 
 <string name="debug_signin_success">Accesso eseguito correttamente</string>
 <string name="debug_generate_description">Debug-generato %1$s elemento #%2$d</string>
@@ -2384,7 +2384,7 @@
 <string name="collections_paste_clipboard">Incolla dagli appunti</string>
 <string name="collections_validate">Convalida</string>
 <string name="collections_paste_hint">Incolla qui il JSON delle collezioni…</string>
-<string name="collections_file_description">Legge nuvio-collections.json dalla cartella Download.</string>
+<string name="collections_file_description">Legge cinebox-collections.json dalla cartella Download.</string>
 <string name="collections_load_file">Carica file</string>
 <string name="collections_file_loaded">File caricato (%1$d caratteri)</string>
 <string name="collections_fetch_url">Recupera URL</string>
@@ -3000,9 +3000,9 @@
 <string name="playback_section_buffer_network">Buffer e rete</string>
 <string name="playback_section_buffer_network_desc">Quanto contenuto tenere in memoria e come recuperare i flussi.</string>
 <string name="playback_net_device_memory_info">Memoria del dispositivo: %1$s | Limite di sicurezza consigliato: %2$d MB</string>
-<string name="playback_net_nuvio_performance_mode">Memoria nativa ExoPlayer</string>
-<string name="playback_net_nuvio_performance_mode_sub">Abilita l\'allocatore nativo off-heap e le ottimizzazioni di pulizia.</string>
-<string name="playback_net_nuvio_performance_mode_not_supported">Questa funzionalità non è supportata dal tuo dispositivo.</string>
+<string name="playback_net_cinebox_performance_mode">Memoria nativa ExoPlayer</string>
+<string name="playback_net_cinebox_performance_mode_sub">Abilita l\'allocatore nativo off-heap e le ottimizzazioni di pulizia.</string>
+<string name="playback_net_cinebox_performance_mode_not_supported">Questa funzionalità non è supportata dal tuo dispositivo.</string>
 <string name="playback_buffer_custom">Buffer di riproduzione personalizzati</string>
 <string name="playback_buffer_custom_sub">Sostituisce il buffering predefinito di Media3 con i valori qui sotto. Quando è disattivato, il player usa le durate di buffer e la dimensione target standard di Media3.</string>
 <string name="playback_buffer_header">Buffer</string>

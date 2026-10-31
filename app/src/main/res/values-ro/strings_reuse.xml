@@ -277,7 +277,7 @@
     <string name="sentry_keep_enabled">Păstrează activat</string>
     <string name="sentry_turn_off">Dezactivează</string>
     <string name="sentry_turn_on">Activează</string>
-    <string name="advanced_nuvio_performance_mode">Memorie nativă ExoPlayer</string>
+    <string name="advanced_cinebox_performance_mode">Memorie nativă ExoPlayer</string>
     <string name="advanced_clear_cw_cache">Șterge cache-ul pentru Continuă vizionarea</string>
     <string name="advanced_clear_cw_cache_done">Cache golit</string>
     <string name="advanced_remember_last_profile">Reține ultimul profil</string>
@@ -555,13 +555,13 @@
     <string name="trakt_library_source_title">Sursă bibliotecă</string>
     <string name="trakt_library_source_subtitle">Alege ce bibliotecă să folosești pentru salvarea și vizualizarea colecției tale</string>
     <string name="trakt_library_source_dialog_title">Sursă bibliotecă</string>
-    <string name="trakt_library_source_nuvio">Bibliotecă CINEBOX</string>
+    <string name="trakt_library_source_cinebox">Bibliotecă CINEBOX</string>
     <string name="trakt_library_source_trakt_selected">Biblioteca Trakt a fost selectată</string>
-    <string name="trakt_library_source_nuvio_selected">Biblioteca CINEBOX a fost selectată</string>
+    <string name="trakt_library_source_cinebox_selected">Biblioteca CINEBOX a fost selectată</string>
     <string name="trakt_setting_on">Pornit</string>
     <string name="trakt_setting_off">Oprită</string>
     <string name="trakt_watch_progress_trakt_selected">Sursa progresului vizionării a fost setată la Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Sursa progresului vizionării a fost setată la CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Sursa progresului vizionării a fost setată la CINEBOX Sync</string>
     <string name="trakt_comments_title">Comentarii</string>
     <string name="trakt_comments_subtitle">Afișează recenziile Trakt pe paginile de metadate</string>
     <string name="trakt_comments_dialog_title">Comentarii</string>
@@ -1096,7 +1096,7 @@
     <string name="web_stream_badge_error_url_required">Introdu un URL JSON pentru insigne.</string>
     <string name="web_stream_badge_error_url_scheme">URL-ul insignelor trebuie să înceapă cu http:// sau https://.</string>
     <string name="web_stream_badge_error_import_limit">Poți importa maximum %1$d URL-uri de insigne.</string>
-    <string name="playback_net_nuvio_performance_mode">Memorie nativă ExoPlayer</string>
+    <string name="playback_net_cinebox_performance_mode">Memorie nativă ExoPlayer</string>
     <string name="playback_buffer_custom">Buffere de redare personalizate</string>
     <string name="playback_buffer_value_same_as_min">%1$ds (la fel ca minimul)</string>
     <string name="playback_buffer_target">Dimensiunea țintă a bufferului</string>

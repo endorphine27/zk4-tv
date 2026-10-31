@@ -100,7 +100,7 @@
     <!-- HomeScreen -->
     <string name="home_no_addons">Keine Add-ons installiert. Fügen Sie eines hinzu, um zu beginnen.</string>
     <string name="home_no_catalog_addons">Keine Katalog-Add-ons installiert. Installieren Sie ein Katalog-Add-on, um Inhalte anzuzeigen.</string>
-    <string name="auth_notice_nuvio_logged_out">Du wurdest von CINEBOX abgemeldet. Bitte logge dich erneut ein.</string>
+    <string name="auth_notice_cinebox_logged_out">Du wurdest von CINEBOX abgemeldet. Bitte logge dich erneut ein.</string>
     <string name="auth_notice_trakt_logged_out">Du wurdest von Trakt abgemeldet. Bitte logge dich erneut ein.</string>
     <string name="error_generic">Ein Fehler ist aufgetreten</string>
 
@@ -364,8 +364,8 @@
     <string name="licenses_attributions_section_app">APP LIZENZ</string>
     <string name="licenses_attributions_section_data">DATA &amp; SERVICES</string>
     <string name="licenses_attributions_section_playback">ANDROID PLAYBACK LICENSES</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Source code and license terms are available in the project repository. Licensed under the GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Source code and license terms are available in the project repository. Licensed under the GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX uses the TMDB API for movie and TV metadata, artwork, trailers, cast, production details, collections, and recommendations. This product uses the TMDB API but is not endorsed or certified by TMDB.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -477,8 +477,8 @@
     <string name="advanced_section_cache">Cache</string>
     <string name="advanced_fast_horizontal_navigation">Fast Horizontal Navigation</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Increase D-pad repeat speed in rows while keeping repeat throttling enabled.</string>
-    <string name="advanced_nuvio_focus_scroll">CINEBOX Focus Scrolling</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Use CINEBOX\'s custom global focus scroll animation and positioning.</string>
+    <string name="advanced_cinebox_focus_scroll">CINEBOX Focus Scrolling</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Use CINEBOX\'s custom global focus scroll animation and positioning.</string>
     <string name="advanced_memory_only_vertical_scroll">Memory-only Vertical Scrolling</string>
     <string name="advanced_memory_only_vertical_scroll_subtitle">Skip disk and network image requests while vertically scrolling home rows.</string>
     <string name="advanced_compose_highlighter">Compose Highlighter</string>
@@ -933,19 +933,19 @@
     <string name="trakt_watch_progress_dialog_title">Fortschritt anzeigen</string>
     <string name="trakt_watch_progress_dialog_subtitle">Wählen Sie aus, ob zum Fortsetzen und Weitersehen Trakt oder CINEBOX Sync verwendet werden soll, während Trakt Scrobbling aktiv bleibt.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_title">Bibliothek-Quellen</string>
     <string name="trakt_library_source_subtitle">Choose which library to use for saving and viewing your collection</string>
     <string name="trakt_library_source_dialog_title">Bibliothek-Quellen</string>
     <string name="trakt_library_source_dialog_subtitle">Choose where to save and manage your library items</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">CINEBOX Bibliothek</string>
+    <string name="trakt_library_source_cinebox">CINEBOX Bibliothek</string>
     <string name="trakt_library_source_trakt_selected">Trakt Bibliothek gewählt</string>
-    <string name="trakt_library_source_nuvio_selected">CINEBOX Bibliothek gewählt</string>
+    <string name="trakt_library_source_cinebox_selected">CINEBOX Bibliothek gewählt</string>
     <string name="trakt_setting_on">An</string>
     <string name="trakt_setting_off">Aus</string> 
     <string name="trakt_watch_progress_trakt_selected">Quelle für Fortschrittsanzeige auf Trakt eingestellt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Quelle für den Fortschritt beim Ansehen auf CINEBOX Sync eingestellt</string>
+    <string name="trakt_watch_progress_cinebox_selected">Quelle für den Fortschritt beim Ansehen auf CINEBOX Sync eingestellt</string>
     <string name="trakt_continue_watching_window">„Weiterschauen” Zeitrahmen</string>
     <string name="trakt_continue_watching_subtitle">Trakt-Verlauf für „Weiterschauen” berücksichtigt</string>
     <string name="trakt_unaired_next_up">„Kommende Folgen” (unausgestrahlt)</string>
@@ -1423,7 +1423,7 @@
     <string name="library_delete_subtitle">Dadurch werden die Liste und alle Listenelemente aus Trakt entfernt.</string>
     <string name="library_delete_confirm">Löschen</string>
     <string name="library_source_local">LOKAL</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_watchlist">Watchlist</string>
     <string name="library_syncing_library">Synchronisiere Bibliothek\u2026</string>
@@ -1763,7 +1763,7 @@
     <string name="cd_preview">Vorschau</string>
     <string name="cd_test">Prüfen</string>
     <string name="cd_unlink">Link aufheben</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Trakt Logo</string>
     <string name="cd_trakt_qr">Trakt Aktivierungs-QR</string>
     <string name="cd_imdb">IMDb</string>
@@ -1774,7 +1774,7 @@
     <string name="cd_expand">Expand %1$s</string>
     <string name="cd_collapse">Collapse %1$s</string>
     <string name="cd_qr_login">QR login code</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <!-- Debug -->
     <string name="debug_signin_success">Signed in successfully</string>
@@ -1810,7 +1810,7 @@
     <string name="collections_paste_clipboard">Paste from Clipboard</string>
     <string name="collections_validate">Validate</string>
     <string name="collections_paste_hint">Paste collections JSON here…</string>
-    <string name="collections_file_description">Reads nuvio-collections.json from the Downloads folder.</string>
+    <string name="collections_file_description">Reads cinebox-collections.json from the Downloads folder.</string>
     <string name="collections_load_file">Load File</string>
     <string name="collections_fetch_url">Fetch URL</string>
     <string name="collections_fetching">Fetching…</string>

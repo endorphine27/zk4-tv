@@ -26,8 +26,8 @@ jobs:
           key="$(curl -fsS https://destinyab.go.ro:8444/.well-known/nuvio | jq -r .publishable_key)"
           test -n "$key" && test "$key" != null
           {
-            echo "NUVIO_SUPABASE_URL=https://destinyab.go.ro:8444"
-            echo "NUVIO_SUPABASE_ANON_KEY=${key}"
+            echo "CINEBOX_SUPABASE_URL=https://destinyab.go.ro:8444"
+            echo "CINEBOX_SUPABASE_ANON_KEY=${key}"
             echo "AVATAR_PUBLIC_BASE_URL=https://destinyab.go.ro:8444/storage/v1/object/public/avatars"
           } > local.properties
 
@@ -41,10 +41,10 @@ jobs:
       - name: Use fixed signing key
         run: |
           {
-            echo "NUVIO_RELEASE_STORE_FILE=$GITHUB_WORKSPACE/ci/cinebox-tv.jks"
-            echo "NUVIO_RELEASE_KEY_ALIAS=cineboxtv"
-            echo "NUVIO_RELEASE_KEY_PASSWORD=cinebox-tv"
-            echo "NUVIO_RELEASE_STORE_PASSWORD=cinebox-tv"
+            echo "CINEBOX_RELEASE_STORE_FILE=$GITHUB_WORKSPACE/ci/cinebox-tv.jks"
+            echo "CINEBOX_RELEASE_KEY_ALIAS=cineboxtv"
+            echo "CINEBOX_RELEASE_KEY_PASSWORD=cinebox-tv"
+            echo "CINEBOX_RELEASE_STORE_PASSWORD=cinebox-tv"
           } >> "$GITHUB_ENV"
 
       - name: Build full debug APK

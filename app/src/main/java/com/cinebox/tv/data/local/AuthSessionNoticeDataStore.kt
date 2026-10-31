@@ -1,0 +1,124 @@
+package com.cinebox.tv.data.local
+
+import com.cinebox.tv.core.util.LEGACY_BRAND
+import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.preferencesDataStore
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
+import javax.inject.Inject
+import javax.inject.Singleton
+
+private val Context.authSessionNoticeDataStore: DataStore<Preferences> by preferencesDataStore(
+    name = "auth_session_notice_store",
+    corruptionHandler = androidx.datastore.core.handlers.ReplaceFileCorruptionHandler { androidx.datastore.preferences.core.emptyPreferences() }
+)
+
+enum class StartupAuthNotice {
+    CINEBOX,
+    TRAKT
+}
+
+@Singleton
+class AuthSessionNoticeDataStore @Inject constructor(
+    @ApplicationContext private val context: Context
+) {
+    private val hadCineboxAuthKey = booleanPreferencesKey("had_${LEGACY_BRAND}_auth")
+    private val cineboxExplicitLogoutKey = booleanPreferencesKey("${LEGACY_BRAND}_explicit_logout")
+    private val pendingCineboxNoticeKey = booleanPreferencesKey("pending_${LEGACY_BRAND}_notice")
+
+    private val hadTraktAuthKey = booleanPreferencesKey("had_trakt_auth")
+    private val traktExplicitLogoutKey = booleanPreferencesKey("trakt_explicit_logout")
+    private val pendingTraktNoticeKey = booleanPreferencesKey("pending_trakt_notice")
+
+    val pendingNotice: Flow<StartupAuthNotice?> = context.authSessionNoticeDataStore.data.map { preferences ->
+        when {
+            preferences[pendingCineboxNoticeKey] == true -> StartupAuthNotice.CINEBOX
+            preferences[pendingTraktNoticeKey] == true -> StartupAuthNotice.TRAKT
+            else -> null
+        }
+    }
+
+    suspend fun markCineboxAuthenticated() {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            preferences[hadCineboxAuthKey] = true
+            preferences[cineboxExplicitLogoutKey] = false
+            preferences[pendingCineboxNoticeKey] = false
+        }
+    }
+
+    suspend fun markCineboxExplicitLogout() {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            preferences[hadCineboxAuthKey] = false
+            preferences[cineboxExplicitLogoutKey] = true
+            preferences[pendingCineboxNoticeKey] = false
+        }
+    }
+
+    suspend fun markUnexpectedCineboxLogoutIfNeeded(): Boolean {
+        var marked = false
+        context.authSessionNoticeDataStore.edit { preferences ->
+            val hadAuth = preferences[hadCineboxAuthKey] == true
+            val explicitLogout = preferences[cineboxExplicitLogoutKey] == true
+            if (hadAuth && !explicitLogout) {
+                preferences[pendingCineboxNoticeKey] = true
+                marked = true
+            }
+            preferences[hadCineboxAuthKey] = false
+            preferences[cineboxExplicitLogoutKey] = false
+        }
+        return marked
+    }
+
+    suspend fun markTraktAuthenticated() {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            preferences[hadTraktAuthKey] = true
+            preferences[traktExplicitLogoutKey] = false
+            preferences[pendingTraktNoticeKey] = false
+        }
+    }
+
+    suspend fun markTraktExplicitLogout() {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            preferences[hadTraktAuthKey] = false
+            preferences[traktExplicitLogoutKey] = true
+            preferences[pendingTraktNoticeKey] = false
+        }
+    }
+
+    suspend fun markUnexpectedTraktLogoutIfNeeded(): Boolean {
+        var marked = false
+        context.authSessionNoticeDataStore.edit { preferences ->
+            val hadAuth = preferences[hadTraktAuthKey] == true
+            val explicitLogout = preferences[traktExplicitLogoutKey] == true
+            if (hadAuth && !explicitLogout) {
+                preferences[pendingTraktNoticeKey] = true
+                marked = true
+            }
+            preferences[hadTraktAuthKey] = false
+            preferences[traktExplicitLogoutKey] = false
+        }
+        return marked
+    }
+
+    suspend fun markTraktReconnectRequired() {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            preferences[pendingTraktNoticeKey] = true
+            preferences[hadTraktAuthKey] = false
+            preferences[traktExplicitLogoutKey] = false
+        }
+    }
+
+    suspend fun consumeNotice(notice: StartupAuthNotice) {
+        context.authSessionNoticeDataStore.edit { preferences ->
+            when (notice) {
+                StartupAuthNotice.CINEBOX -> preferences[pendingCineboxNoticeKey] = false
+                StartupAuthNotice.TRAKT -> preferences[pendingTraktNoticeKey] = false
+            }
+        }
+    }
+}

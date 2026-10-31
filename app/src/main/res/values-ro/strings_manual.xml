@@ -101,7 +101,7 @@
     <string name="web_import_error_source_missing_trakt_id">Colecția \"{collection}\", dosarul \"{folder}\", sursa {index}: lipsește ID-ul listei Trakt</string>
     <string name="web_import_success">S-au importat {count} colecții. Verifică și apasă „Salvează modificările” ca să le aplici.</string>
     <string name="web_import_invalid_json">JSON invalid</string>
-    <string name="auth_notice_nuvio_logged_out">Ai fost deconectat din CINEBOX. Autentifică-te din nou.</string>
+    <string name="auth_notice_cinebox_logged_out">Ai fost deconectat din CINEBOX. Autentifică-te din nou.</string>
     <string name="auth_notice_trakt_logged_out">Ai fost deconectat din Trakt. Reconectează-te.</string>
     <string name="error_state_generic_issue">Ceva nu a mers bine.</string>
     <string name="error_state_possible_fix">Soluție posibilă: %1$s</string>
@@ -213,7 +213,7 @@
     <string name="about_update_auto_install_notice_subtitle">Arată un banner la următoarea pornire, după ce aplicația s-a actualizat singură</string>
     <string name="update_channel_beta">Beta</string>
     <string name="update_channel_dialog_subtitle">Alege tipul de actualizări pe care vrei să le primești</string>
-    <string name="support_nuvio_name">Susține CINEBOX</string>
+    <string name="support_cinebox_name">Susține CINEBOX</string>
     <string name="about_supporters_contributors">Susține CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Susține proiectul și vezi creditele comunității</string>
     <string name="about_licenses_attributions_subtitle">Surse de date, mulțumiri și licențe Android</string>
@@ -221,8 +221,8 @@
     <string name="licenses_attributions_section_playback">LICENȚE DE REDARE ANDROID</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Folosită pentru efectele de estompare a fundalului. Creată de Chris Banes. Licențiată sub Apache License, Versiunea 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Codul sursă și termenii licenței sunt disponibili în depozitul proiectului. Licențiat sub GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Codul sursă și termenii licenței sunt disponibili în depozitul proiectului. Licențiat sub GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
     <string name="licenses_attributions_simkl_title">Simkl</string>
@@ -338,14 +338,14 @@
     <string name="advanced_section_network_tests">Teste de rețea</string>
     <string name="advanced_fast_horizontal_navigation">Navigare orizontală rapidă</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Mărește viteza de repetare a săgeților în rânduri, păstrând limitarea repetărilor.</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Activează un alocator nativ de înaltă performanță, memorie în afara heap-ului și optimizări de rețea pentru o redare mai fluidă</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Activează un alocator nativ de înaltă performanță, memorie în afara heap-ului și optimizări de rețea pentru o redare mai fluidă</string>
     <string name="buffer_device_ram_info">RAM dispozitiv: %s</string>
     <string name="buffer_safe_limit_info">Limită sigură recomandată: %d MB</string>
     <string name="buffer_safe_status">Sigur: în limita recomandată pentru dispozitivul tău.</string>
     <string name="buffer_unsafe_warning">Atenție: depășește limita sigură recomandată (%1$d MB) pentru dispozitivul tău %2$s. Poate provoca închideri ale aplicației.</string>
     <string name="buffer_auto_limit_active">Limită sigură scalată automat: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">Derulare cu focalizare CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Folosește animația și poziționarea globală de derulare cu focalizare proprii CINEBOX.</string>
+    <string name="advanced_cinebox_focus_scroll">Derulare cu focalizare CINEBOX</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Folosește animația și poziționarea globală de derulare cu focalizare proprii CINEBOX.</string>
     <string name="advanced_rgb565">Decodare imagini RGB565</string>
     <string name="advanced_rgb565_subtitle">Folosește culoare pe 16 biți, cu memorie mai mică, pentru imaginile opace eligibile. Schimbarea repornește aplicația.</string>
     <string name="advanced_memory_only_vertical_scroll">Derulare verticală doar din memorie</string>
@@ -650,7 +650,7 @@
     <string name="qr_login_success">Autentificare reușită</string>
     <string name="qr_login_exchange_failed">Nu s-a putut finaliza autentificarea prin QR</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">CINEBOX Sync</string>
+    <string name="trakt_watch_progress_source_cinebox">CINEBOX Sync</string>
     <string name="trakt_library_source_dialog_subtitle">Alege unde salvezi și gestionezi elementele din bibliotecă</string>
     <string name="trakt_library_source_trakt">Trakt</string>
     <string name="trakt_unaired_now_shown">Episoadele nelansate de la „Următorul” sunt acum afișate</string>
@@ -907,7 +907,7 @@
     <string name="library_sort_title_desc">Titlu Z-A</string>
     <string name="library_error_sort_failed">Nu s-a putut încărca ordinea de sortare. Se arată ordinea furnizorului.</string>
     <string name="library_error_list_name_required">Numele listei este obligatoriu</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_cloud">Cloud</string>
     <string name="library_syncing_library">Se sincronizează biblioteca…</string>
@@ -1034,7 +1034,7 @@
     <string name="cd_trailer_controls">Comenzi trailer</string>
     <string name="cd_seek_bar">Bară de derulare</string>
     <string name="cd_unlink">Dezasociază</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Sigla Trakt</string>
     <string name="cd_trakt_qr">Cod QR de activare Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -1045,7 +1045,7 @@
     <string name="cd_expand">Extinde %1$s</string>
     <string name="cd_collapse">Restrânge %1$s</string>
     <string name="cd_qr_login">Cod de autentificare QR</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
     <string name="debug_signin_success">Autentificare reușită</string>
     <string name="debug_generate_description">Element %1$s generat pentru depanare nr. %2$d</string>
     <string name="debug_generate_result_failed">Eșuat: %1$s</string>
@@ -1070,7 +1070,7 @@
     <string name="collections_mode_url">De la URL</string>
     <string name="collections_paste_clipboard">Lipește din clipboard</string>
     <string name="collections_paste_hint">Lipește aici JSON-ul colecțiilor…</string>
-    <string name="collections_file_description">Citește nuvio-collections.json din folderul Descărcări.</string>
+    <string name="collections_file_description">Citește cinebox-collections.json din folderul Descărcări.</string>
     <string name="collections_load_file">Încarcă fișierul</string>
     <string name="collections_file_loaded">Fișier încărcat (%1$d caractere)</string>
     <string name="collections_fetch_url">Preia URL-ul</string>
@@ -1325,8 +1325,8 @@
     <string name="playback_section_buffer_network">Buffer &amp; rețea</string>
     <string name="playback_section_buffer_network_desc">Cât conținut se păstrează în memorie și cum sunt preluate fluxurile.</string>
     <string name="playback_net_device_memory_info">Memoria dispozitivului: %1$s | Limită de siguranță recomandată: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Activează alocatorul nativ în afara heap-ului și optimizările de derulare.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Această funcție nu este acceptată de dispozitivul tău.</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Activează alocatorul nativ în afara heap-ului și optimizările de derulare.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Această funcție nu este acceptată de dispozitivul tău.</string>
     <string name="playback_buffer_custom_sub">Înlocuiește bufferul implicit Media3 cu valorile de mai jos. Când e oprit, playerul folosește duratele și dimensiunea țintă standard Media3.</string>
     <string name="playback_buffer_header">Buffer</string>
     <string name="playback_buffer_warning">Aceste setări afectează comportamentul bufferului. Valorile greșite pot cauza probleme de redare.</string>

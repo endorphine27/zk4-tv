@@ -97,7 +97,7 @@
     
     <string name="home_no_addons">Няма инсталирани добавки. Добавете една, за да започнете.</string>
     <string name="home_no_catalog_addons">Няма инсталирани добавки за каталог. Инсталирайте добавка за каталог, за да видите съдържанието.</string>
-    <string name="auth_notice_nuvio_logged_out">Излезли сте от CINEBOX. Моля, влезте отново.</string>
+    <string name="auth_notice_cinebox_logged_out">Излезли сте от CINEBOX. Моля, влезте отново.</string>
     <string name="auth_notice_trakt_logged_out">Излезли сте от Trakt. Моля, свържете се отново.</string>
     <string name="error_generic">Възникна грешка</string>
     
@@ -427,7 +427,7 @@
     <string name="update_channel_beta_description">Ранни актуализации, които може да съдържат грешки, да нарушават функции или да се държат неочаквано.</string>
     <string name="about_privacy_policy">Политика за поверителност</string>
     <string name="about_privacy_policy_subtitle">Вижте нашата политика за поверителност</string>
-    <string name="support_nuvio_name">Поддръжка на CINEBOX</string>
+    <string name="support_cinebox_name">Поддръжка на CINEBOX</string>
     <string name="about_supporters_contributors">Подкрепете CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Подкрепете проекта и вижте заслугите на общността</string>
     <string name="about_licenses_attributions">Лицензи и посочване на авторството</string>
@@ -440,8 +440,8 @@
     <string name="licenses_attributions_section_ui">БИБЛИОТЕКИ С ПОТРЕБИТЕЛСКИ ИНТЕРНЕТ</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Използва се за ефекти на размазване на фона. Създадено от Крис Бейнс. Лицензирано под Apache License, версия 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX телевизор</string>
-    <string name="licenses_attributions_nuvio_body">Изходният код и лицензионните условия са достъпни в хранилището на проекта. Лицензиран под GNU General Public License v3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX телевизор</string>
+    <string name="licenses_attributions_cinebox_body">Изходният код и лицензионните условия са достъпни в хранилището на проекта. Лицензиран под GNU General Public License v3.0.</string>
     <string name="licenses_attributions_tmdb_title">Базата данни за филми (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX използва TMDB API за метаданни за филми и телевизионни предавания, произведения на изкуството, трейлъри, актьорски състав, подробности за продукцията, колекции и препоръки. Този продукт използва TMDB API, но не е одобрен или сертифициран от TMDB.</string>
     <string name="licenses_attributions_trakt_title">Тракт</string>
@@ -613,15 +613,15 @@
     <string name="advanced_section_dv_diagnostics" translatable="false">ДВ диагностика</string>
     <string name="advanced_fast_horizontal_navigation">Бърза хоризонтална навигация</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Увеличете скоростта на повторение на D-pad в редове, като същевременно запазите активирано ограничаване на повторението.</string>
-    <string name="advanced_nuvio_performance_mode">Нативна памет на ExoPlayer</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Активира високопроизводителен вграден алокатор, памет извън купчината и мрежови оптимизации за по-плавно възпроизвеждане</string>
+    <string name="advanced_cinebox_performance_mode">Нативна памет на ExoPlayer</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Активира високопроизводителен вграден алокатор, памет извън купчината и мрежови оптимизации за по-плавно възпроизвеждане</string>
     <string name="buffer_device_ram_info">RAM памет на устройството: %s</string>
     <string name="buffer_safe_limit_info">Препоръчителен безопасен лимит: %d MB</string>
     <string name="buffer_safe_status">Безопасно: В рамките на препоръчителния лимит за вашето устройство.</string>
     <string name="buffer_unsafe_warning">Предупреждение: Превишава препоръчителния безопасен лимит (%1$d MB) за вашето %2$s устройство. Може да причини сривове на приложението.</string>
     <string name="buffer_auto_limit_active">Автоматично мащабиран безопасен лимит: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">Превъртане на фокуса с CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Използвайте персонализираната анимация и позициониране на глобалния фокус при превъртане на CINEBOX.</string>
+    <string name="advanced_cinebox_focus_scroll">Превъртане на фокуса с CINEBOX</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Използвайте персонализираната анимация и позициониране на глобалния фокус при превъртане на CINEBOX.</string>
     <string name="advanced_rgb565">Декодиране на RGB565 изображения</string>
     <string name="advanced_rgb565_subtitle">Използвайте 16-битов цвят с по-малко памет за допустими непрозрачни изображения. Промяната на това рестартира приложението.</string>
     <string name="advanced_memory_only_vertical_scroll">Вертикално скролиране само с памет</string>
@@ -1504,19 +1504,19 @@
     <string name="trakt_watch_progress_dialog_title">Наблюдение на напредъка</string>
     <string name="trakt_watch_progress_dialog_subtitle">Изберете дали за възобновяване и продължаване на гледането да се използва Trakt или CINEBOX Sync, докато скробълингът в Trakt остава активен.</string>
     <string name="trakt_watch_progress_source_trakt">Тракт</string>
-    <string name="trakt_watch_progress_source_nuvio">Синхронизиране с CINEBOX</string>
+    <string name="trakt_watch_progress_source_cinebox">Синхронизиране с CINEBOX</string>
     <string name="trakt_library_source_title">Източник на библиотеката</string>
     <string name="trakt_library_source_subtitle">Изберете кой източник CINEBOX чете за вашата библиотека</string>
     <string name="trakt_library_source_dialog_title">Източник на библиотеката</string>
     <string name="trakt_library_source_dialog_subtitle">Изберете къде да запазвате и управлявате библиотечните си елементи</string>
     <string name="trakt_library_source_trakt">Тракт</string>
-    <string name="trakt_library_source_nuvio">Библиотека CINEBOX</string>
+    <string name="trakt_library_source_cinebox">Библиотека CINEBOX</string>
     <string name="trakt_library_source_trakt_selected">Библиотеката на Trakt е избрана</string>
-    <string name="trakt_library_source_nuvio_selected">Избрана е библиотека CINEBOX</string>
+    <string name="trakt_library_source_cinebox_selected">Избрана е библиотека CINEBOX</string>
     <string name="trakt_setting_on">Включено</string>
     <string name="trakt_setting_off">Изключено</string>
     <string name="trakt_watch_progress_trakt_selected">Източникът на напредъка при гледане е зададен на Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Източникът на напредъка на гледане е зададен на CINEBOX Sync</string>
+    <string name="trakt_watch_progress_cinebox_selected">Източникът на напредъка на гледане е зададен на CINEBOX Sync</string>
     <string name="trakt_continue_watching_window">Прозорец за продължаване на гледането</string>
     <string name="trakt_continue_watching_subtitle">Историята на тракта се взема предвид за продължаване на гледането</string>
     <string name="trakt_unaired_next_up">Неизлъчени следващи епизоди</string>
@@ -2125,7 +2125,7 @@
     <string name="library_delete_subtitle">Това премахва списъка и всички елементи от списъка от Trakt.</string>
     <string name="library_delete_confirm">Изтриване</string>
     <string name="library_source_local">ЛОКАЛЕН</string>
-    <string name="library_source_nuvio">НУВИО</string>
+    <string name="library_source_cinebox">НУВИО</string>
     <string name="library_source_trakt">ТРАКТ</string>
     <string name="library_source_saved">Запазено</string>
     <string name="library_source_cloud">Облак</string>
@@ -2561,7 +2561,7 @@
     <string name="cd_trailer_controls">Управление на трейлъра</string>
     <string name="cd_seek_bar">Лента за търсене</string>
     <string name="cd_unlink">Прекратяване на връзката</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Лого на Trakt</string>
     <string name="cd_trakt_qr">QR код за активиране на Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2573,7 +2573,7 @@
     <string name="cd_expand">Разгъване на %1$s</string>
     <string name="cd_collapse">Свиване на %1$s</string>
     <string name="cd_qr_login">QR код за вход</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
     
     <string name="debug_signin_success">Влизането е осъществено успешно</string>
     <string name="debug_generate_description">Генериран от грешки %1$s елемент #%2$d</string>
@@ -2608,7 +2608,7 @@
     <string name="collections_paste_clipboard">Поставяне от клипборда</string>
     <string name="collections_validate">Валидиране</string>
     <string name="collections_paste_hint">Поставете JSON от колекции тук…</string>
-    <string name="collections_file_description">Чете nuvio-collections.json от папката „Изтегляния“.</string>
+    <string name="collections_file_description">Чете cinebox-collections.json от папката „Изтегляния“.</string>
     <string name="collections_load_file">Зареждане на файл</string>
     <string name="collections_file_loaded">Файлът е зареден (%1$d знака)</string>
     <string name="collections_fetch_url">Извличане на URL адрес</string>
@@ -3230,9 +3230,9 @@
     <string name="playback_section_buffer_network">Буфер и мрежа</string>
     <string name="playback_section_buffer_network_desc">Колко съдържание да се съхранява в паметта и как да се извличат потоци.</string>
     <string name="playback_net_device_memory_info">Памет на устройството: %1$s | Препоръчителен лимит за безопасност: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">Нативна памет на ExoPlayer</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Активиране на оптимизации за разпределение извън паметта и пречистване.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Тази функция не се поддържа от вашето устройство.</string>
+    <string name="playback_net_cinebox_performance_mode">Нативна памет на ExoPlayer</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Активиране на оптимизации за разпределение извън паметта и пречистване.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Тази функция не се поддържа от вашето устройство.</string>
     <string name="playback_buffer_custom">Персонализирани буфери за възпроизвеждане</string>
     <string name="playback_buffer_custom_sub">Заменете буферирането по подразбиране на Media3 със стойностите по-долу. Когато е изключено, плейърът използва стандартните продължителности на буфера и целевия размер на Media3.</string>
     <string name="playback_buffer_header">Буфер</string>

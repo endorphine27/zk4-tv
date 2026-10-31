@@ -98,7 +98,7 @@
 
     <string name="home_no_addons">Chưa cài đặt tiện ích nào. Thêm một tiện ích để bắt đầu.</string>
     <string name="home_no_catalog_addons">Chưa cài đặt tiện ích danh mục nào. Cài đặt tiện ích danh mục để xem nội dung.</string>
-    <string name="auth_notice_nuvio_logged_out">Bạn đã đăng xuất khỏi CINEBOX. Vui lòng đăng nhập lại.</string>
+    <string name="auth_notice_cinebox_logged_out">Bạn đã đăng xuất khỏi CINEBOX. Vui lòng đăng nhập lại.</string>
     <string name="auth_notice_trakt_logged_out">Bạn đã đăng xuất khỏi Trakt. Vui lòng kết nối lại.</string>
     <string name="error_generic">Đã xảy ra lỗi</string>
 
@@ -428,7 +428,7 @@
     <string name="update_channel_beta_description">Cập nhật sớm, có thể còn lỗi, làm hỏng tính năng hoặc hoạt động không như mong đợi.</string>
     <string name="about_privacy_policy">Chính sách quyền riêng tư</string>
     <string name="about_privacy_policy_subtitle">Xem chính sách quyền riêng tư của chúng tôi</string>
-    <string name="support_nuvio_name">Tài trợ CINEBOX</string>
+    <string name="support_cinebox_name">Tài trợ CINEBOX</string>
     <string name="about_supporters_contributors">Tài trợ CINEBOX</string>
     <string name="about_supporters_contributors_subtitle">Tài trợ dự án và xem danh sách ghi nhận những người đóng góp</string>
     <string name="about_licenses_attributions">Giấy phép &amp; Ghi công</string>
@@ -441,8 +441,8 @@
     <string name="licenses_attributions_section_ui">THƯ VIỆN GIAO DIỆN NGƯỜI DÙNG</string>
     <string name="licenses_attributions_haze_title">Haze 1.7.2</string>
     <string name="licenses_attributions_haze_body">Dùng cho hiệu ứng làm mờ nền. Được tạo bởi Chris Banes. Được cấp phép theo Giấy phép Apache, Phiên bản 2.0.</string>
-    <string name="licenses_attributions_nuvio_title">CINEBOX</string>
-    <string name="licenses_attributions_nuvio_body">Mã nguồn và các điều khoản cấp phép có sẵn trong kho lưu trữ của dự án. Phần mềm được cấp phép theo Giấy phép Công cộng GNU phiên bản 3.0.</string>
+    <string name="licenses_attributions_cinebox_title">CINEBOX</string>
+    <string name="licenses_attributions_cinebox_body">Mã nguồn và các điều khoản cấp phép có sẵn trong kho lưu trữ của dự án. Phần mềm được cấp phép theo Giấy phép Công cộng GNU phiên bản 3.0.</string>
     <string name="licenses_attributions_tmdb_title">The Movie Database (TMDB)</string>
     <string name="licenses_attributions_tmdb_body">CINEBOX sử dụng API TMDB để lấy dữ liệu phim và TV, ảnh hiển thị, trailer, diễn viên, thông tin sản xuất, bộ sưu tập và đề xuất. Sản phẩm này sử dụng API TMDB nhưng không được TMDB xác thực hoặc chứng nhận.</string>
     <string name="licenses_attributions_trakt_title">Trakt</string>
@@ -614,15 +614,15 @@
     <string name="advanced_section_dv_diagnostics" translatable="false">DV Diagnostics</string>
     <string name="advanced_fast_horizontal_navigation">Điều hướng ngang nhanh</string>
     <string name="advanced_fast_horizontal_navigation_subtitle">Tăng tốc độ lặp của phím điều hướng trong các hàng nhưng vẫn bật tính năng giới hạn tốc độ lặp.</string>
-    <string name="advanced_nuvio_performance_mode">Bộ nhớ Tầng thấp ExoPlayer</string>
-    <string name="advanced_nuvio_performance_mode_subtitle">Bật bộ cấp phát hệ thống hiệu năng cao, bộ nhớ ngoài vùng nhớ đống và tối ưu mạng để phát lại mượt hơn</string>
+    <string name="advanced_cinebox_performance_mode">Bộ nhớ Tầng thấp ExoPlayer</string>
+    <string name="advanced_cinebox_performance_mode_subtitle">Bật bộ cấp phát hệ thống hiệu năng cao, bộ nhớ ngoài vùng nhớ đống và tối ưu mạng để phát lại mượt hơn</string>
     <string name="buffer_device_ram_info">RAM thiết bị: %s</string>
     <string name="buffer_safe_limit_info">Giới hạn an toàn khuyến nghị: %d MB</string>
     <string name="buffer_safe_status">An toàn: Nằm trong giới hạn khuyến nghị dành cho thiết bị của bạn.</string>
     <string name="buffer_unsafe_warning">Cảnh báo: Vượt quá giới hạn an toàn khuyến nghị. (%1$d MB) cho %2$s thiết bị. Có thể khiến ứng dụng bị treo.</string>
     <string name="buffer_auto_limit_active">Giới hạn an toàn được tự động điều chỉnh: %d MB</string>
-    <string name="advanced_nuvio_focus_scroll">Cuộn theo tiêu điểm CINEBOX</string>
-    <string name="advanced_nuvio_focus_scroll_subtitle">Sử dụng hiệu ứng chuyển động cuộn và định vị theo tiêu điểm toàn cục tùy chỉnh của CINEBOX.</string>
+    <string name="advanced_cinebox_focus_scroll">Cuộn theo tiêu điểm CINEBOX</string>
+    <string name="advanced_cinebox_focus_scroll_subtitle">Sử dụng hiệu ứng chuyển động cuộn và định vị theo tiêu điểm toàn cục tùy chỉnh của CINEBOX.</string>
     <string name="advanced_rgb565">Giải mã hình ảnh RGB565</string>
     <string name="advanced_rgb565_subtitle">Dùng màu 16 bit để tiết kiệm bộ nhớ cho các hình ảnh không trong suốt. Thay đổi tùy chọn này sẽ khởi động lại ứng dụng.</string>
     <string name="advanced_memory_only_vertical_scroll">Cuộn dọc chỉ trong bộ nhớ:</string>
@@ -1505,19 +1505,19 @@
     <string name="trakt_watch_progress_dialog_title">Tiến trình xem</string>
     <string name="trakt_watch_progress_dialog_subtitle">Chọn nguồn tiến trình dùng để phát tiếp và tiếp tục xem như Trakt hoặc Đồng bộ CINEBOX, trong khi tính năng ghi nhật ký phát lại của Trakt vẫn hoạt động.</string>
     <string name="trakt_watch_progress_source_trakt">Trakt</string>
-    <string name="trakt_watch_progress_source_nuvio">Đồng bộ CINEBOX</string>
+    <string name="trakt_watch_progress_source_cinebox">Đồng bộ CINEBOX</string>
     <string name="trakt_library_source_title">Nguồn thư viện</string>
     <string name="trakt_library_source_subtitle">Chọn thư viện để lưu và quản lý bộ sưu tập</string>
     <string name="trakt_library_source_dialog_title">Nguồn thư viện</string>
     <string name="trakt_library_source_dialog_subtitle">Chọn nguồn mà CINEBOX sử dụng cho Thư viện của bạn</string>
     <string name="trakt_library_source_trakt">Trakt</string>
-    <string name="trakt_library_source_nuvio">Thư viện CINEBOX</string>
+    <string name="trakt_library_source_cinebox">Thư viện CINEBOX</string>
     <string name="trakt_library_source_trakt_selected">Đã chọn thư viện Trakt</string>
-    <string name="trakt_library_source_nuvio_selected">Đã chọn thư viện CINEBOX</string>
+    <string name="trakt_library_source_cinebox_selected">Đã chọn thư viện CINEBOX</string>
     <string name="trakt_setting_on">Bật</string>
     <string name="trakt_setting_off">Tắt</string>
     <string name="trakt_watch_progress_trakt_selected">Đã đặt nguồn tiến trình xem là Trakt</string>
-    <string name="trakt_watch_progress_nuvio_selected">Đã đặt nguồn tiến trình xem là Đồng bộ CINEBOX</string>
+    <string name="trakt_watch_progress_cinebox_selected">Đã đặt nguồn tiến trình xem là Đồng bộ CINEBOX</string>
     <string name="trakt_continue_watching_window">Cửa sổ Xem tiếp</string>
     <string name="trakt_continue_watching_subtitle">Lịch sử Trakt được dùng cho mục Tiếp tục xem</string>
     <string name="trakt_unaired_next_up">Tập tiếp theo chưa phát sóng</string>
@@ -2126,7 +2126,7 @@
     <string name="library_delete_subtitle">Thao tác này sẽ xóa danh sách và tất cả mục danh sách khỏi Trakt.</string>
     <string name="library_delete_confirm">Xóa</string>
     <string name="library_source_local">CỤC BỘ</string>
-    <string name="library_source_nuvio">CINEBOX</string>
+    <string name="library_source_cinebox">CINEBOX</string>
     <string name="library_source_trakt">TRAKT</string>
     <string name="library_source_saved">Đã lưu</string>
     <string name="library_source_cloud">Đám mây</string>
@@ -2562,7 +2562,7 @@
     <string name="cd_trailer_controls">Nút điều khiển trailer</string>
     <string name="cd_seek_bar">Thanh tua</string>
     <string name="cd_unlink">Hủy liên kết</string>
-    <string name="cd_nuvio_logo">CINEBOX</string>
+    <string name="cd_cinebox_logo">CINEBOX</string>
     <string name="cd_trakt_logo">Logo Trakt</string>
     <string name="cd_trakt_qr">Mã QR kích hoạt Trakt</string>
     <string name="cd_imdb">IMDb</string>
@@ -2574,7 +2574,7 @@
     <string name="cd_expand">Mở rộng %1$s</string>
     <string name="cd_collapse">Thu gọn %1$s</string>
     <string name="cd_qr_login">Mã QR đăng nhập</string>
-    <string name="cd_nuvio">CINEBOX</string>
+    <string name="cd_cinebox">CINEBOX</string>
 
     <string name="debug_signin_success">Đăng nhập thành công</string>
     <string name="debug_generate_description">Mục %1$s được tạo để gỡ lỗi #%2$d</string>
@@ -2609,7 +2609,7 @@
     <string name="collections_paste_clipboard">Dán từ bảng nhớ tạm</string>
     <string name="collections_validate">Xác minh</string>
     <string name="collections_paste_hint">Dán JSON bộ sưu tập vào đây…</string>
-    <string name="collections_file_description">Đọc tệp nuvio-collections.json từ thư mục Tải xuống.</string>
+    <string name="collections_file_description">Đọc tệp cinebox-collections.json từ thư mục Tải xuống.</string>
     <string name="collections_load_file">Tải tệp</string>
     <string name="collections_file_loaded">Đã tải tệp (%1$d ký tự)</string>
     <string name="collections_fetch_url">Truy xuất URL</string>
@@ -3231,9 +3231,9 @@
     <string name="playback_section_buffer_network">Bộ đệm &amp; Mạng</string>
     <string name="playback_section_buffer_network_desc">Lượng nội dung cần giữ trong bộ nhớ và cách tải luồng phát.</string>
     <string name="playback_net_device_memory_info">Bộ nhớ thiết bị: %1$s | Giới hạn an toàn khuyến nghị: %2$d MB</string>
-    <string name="playback_net_nuvio_performance_mode">Bộ nhớ gốc ExoPlayer</string>
-    <string name="playback_net_nuvio_performance_mode_sub">Bật trình cấp phát gốc bộ nhớ ngoài vùng nhớ đống và các tối ưu hóa tua nhanh.</string>
-    <string name="playback_net_nuvio_performance_mode_not_supported">Thiết bị của bạn không hỗ trợ tính năng này.</string>
+    <string name="playback_net_cinebox_performance_mode">Bộ nhớ gốc ExoPlayer</string>
+    <string name="playback_net_cinebox_performance_mode_sub">Bật trình cấp phát gốc bộ nhớ ngoài vùng nhớ đống và các tối ưu hóa tua nhanh.</string>
+    <string name="playback_net_cinebox_performance_mode_not_supported">Thiết bị của bạn không hỗ trợ tính năng này.</string>
     <string name="playback_buffer_custom">Bộ đệm phát lại tùy chỉnh</string>
     <string name="playback_buffer_custom_sub">Ghi đè chế độ đệm mặc định của Media3 bằng các giá trị bên dưới. Khi tắt, trình phát sẽ sử dụng thời lượng bộ đệm và kích thước mục tiêu mặc định của Media3.</string>
     <string name="playback_buffer_header">Bộ đệm</string>
