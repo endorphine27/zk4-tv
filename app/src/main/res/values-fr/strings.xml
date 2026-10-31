@@ -2246,8 +2246,6 @@
     <string name="official_server_description">Vous serez déconnecté du serveur personnalisé et l’application redémarrera avec le service officiel.</string>
     <string name="official_server_action">Utiliser le serveur officiel</string>
     <string name="custom_server_error_invalid_url">Saisissez une URL de backend HTTP ou HTTPS valide.</string>
-    <string name="custom_server_error_official_active">api.nuvio.tv est le serveur officiel et il est déjà sélectionné.</string>
-    <string name="custom_server_error_official_available">api.nuvio.tv est le serveur officiel. Fermez cette boîte de dialogue et choisissez «&#160;Utiliser le serveur officiel&#160;» pour revenir en arrière.</string>
     <string name="custom_server_error_connection">Impossible de joindre le point de terminaison de découverte. Vérifiez l’URL et la disponibilité du serveur.</string>
     <string name="custom_server_error_http">Le point de terminaison de découverte a renvoyé le code HTTP %1$d.</string>
     <string name="custom_server_error_response_too_large">Le document de découverte est plus volumineux que la taille autorisée.</string>

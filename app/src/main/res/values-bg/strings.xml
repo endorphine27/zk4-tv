@@ -2245,8 +2245,6 @@
     <string name="official_server_description">Ще излезете от персонализирания сървър и приложението ще се рестартира с официалната услуга.</string>
     <string name="official_server_action">Използване на официален сървър</string>
     <string name="custom_server_error_invalid_url">Въведете валиден HTTP или HTTPS URL адрес за бекенд.</string>
-    <string name="custom_server_error_official_active">api.nuvio.tv е официалният сървър и вече е избран.</string>
-    <string name="custom_server_error_official_available">api.nuvio.tv е официалният сървър. Затворете този диалогов прозорец и изберете „Използване на официален сървър“, за да се върнете обратно.</string>
     <string name="custom_server_error_connection">Не можа да се достигне крайната точка за откриване. Проверете URL адреса и наличността на сървъра.</string>
     <string name="custom_server_error_http">Крайната точка за откриване върна HTTP %1$d.</string>
     <string name="custom_server_error_response_too_large">Документът за откриване е по-голям от разрешения.</string>
