@@ -14,14 +14,19 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
@@ -36,7 +41,9 @@ import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
 import com.cinebox.tv.R
 import com.cinebox.tv.ui.theme.CineboxTheme
+import kotlinx.coroutines.delay
 import java.time.LocalDate
+import java.time.temporal.ChronoUnit
 import java.time.format.DateTimeFormatter
 import java.time.format.TextStyle
 import java.util.Locale
@@ -51,6 +58,26 @@ fun CalendarScreen(
     val state by viewModel.state.collectAsState()
     val today = remember { LocalDate.now() }
     val grouped = remember(state.episodes) { state.episodes.groupBy { it.date } }
+    val listState = rememberLazyListState()
+    val firstEpisodeFocus = remember { FocusRequester() }
+    // The list opens on today (or the next day with episodes); earlier days stay above, dimmed.
+    val firstUpcomingDate = remember(grouped) { grouped.keys.firstOrNull { !it.isBefore(today) } }
+    val firstUpcomingIndex = remember(grouped, firstUpcomingDate) {
+        var index = 0
+        var found = 0
+        for ((date, episodes) in grouped) {
+            if (date == firstUpcomingDate) { found = index; break }
+            index += 1 + episodes.size
+        }
+        found
+    }
+    LaunchedEffect(state.episodes.isNotEmpty(), firstUpcomingIndex) {
+        if (state.episodes.isNotEmpty()) {
+            listState.scrollToItem(firstUpcomingIndex)
+            delay(150)
+            runCatching { firstEpisodeFocus.requestFocus() }
+        }
+    }
 
     Column(modifier = Modifier.fillMaxSize().padding(horizontal = 32.dp, vertical = 24.dp)) {
         if (showBuiltInHeader) {
@@ -70,6 +97,7 @@ fun CalendarScreen(
             return@Column
         }
         LazyColumn(
+            state = listState,
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(bottom = 48.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
@@ -79,12 +107,21 @@ fun CalendarScreen(
                     Text(
                         text = dayLabel(date, today),
                         style = MaterialTheme.typography.titleLarge,
-                        color = if (date == today) CineboxTheme.colors.Primary else CineboxTheme.colors.TextPrimary,
+                        color = when {
+                            date == today -> CineboxTheme.colors.Primary
+                            date.isBefore(today) -> CineboxTheme.colors.TextSecondary
+                            else -> CineboxTheme.colors.TextPrimary
+                        },
                         modifier = Modifier.padding(top = 12.dp),
                     )
                 }
                 items(episodes, key = { "e-${it.seriesId}-${it.season}-${it.episode}" }) { episode ->
-                    EpisodeRow(episode) { onOpenSeries(episode.seriesId, episode.seriesType, episode.addonBaseUrl) }
+                    EpisodeRow(
+                        episode = episode,
+                        past = date.isBefore(today),
+                        whenText = whenLabel(date, today),
+                        focusRequester = if (date == firstUpcomingDate && episode == episodes.first()) firstEpisodeFocus else null,
+                    ) { onOpenSeries(episode.seriesId, episode.seriesType, episode.addonBaseUrl) }
                 }
             }
         }
@@ -93,11 +130,19 @@ fun CalendarScreen(
 
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
-private fun EpisodeRow(episode: CalendarEpisode, onClick: () -> Unit) {
+private fun EpisodeRow(
+    episode: CalendarEpisode,
+    past: Boolean,
+    whenText: String?,
+    focusRequester: FocusRequester?,
+    onClick: () -> Unit,
+) {
     val shape = RoundedCornerShape(14.dp)
     Card(
         onClick = onClick,
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .then(if (focusRequester != null) Modifier.focusRequester(focusRequester) else Modifier),
         shape = CardDefaults.shape(shape = shape),
         colors = CardDefaults.colors(
             containerColor = CineboxTheme.colors.BackgroundCard,
@@ -109,11 +154,11 @@ private fun EpisodeRow(episode: CalendarEpisode, onClick: () -> Unit) {
         scale = CardDefaults.scale(focusedScale = 1.02f),
     ) {
         Row(
-            modifier = Modifier.fillMaxWidth().padding(12.dp),
+            modifier = Modifier.fillMaxWidth().alpha(if (past) 0.55f else 1f).padding(12.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Box(modifier = Modifier.width(150.dp).aspectRatio(16f / 9f).clip(RoundedCornerShape(10.dp))) {
+            Box(modifier = Modifier.width(190.dp).aspectRatio(16f / 9f).clip(RoundedCornerShape(10.dp))) {
                 AsyncImage(
                     model = episode.thumbnail ?: episode.poster,
                     contentDescription = episode.seriesName,
@@ -137,12 +182,21 @@ private fun EpisodeRow(episode: CalendarEpisode, onClick: () -> Unit) {
                     overflow = TextOverflow.Ellipsis,
                 )
             }
-            if (episode.watched) {
-                Text(
-                    text = "✓ " + stringResource(R.string.calendar_watched),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = CineboxTheme.colors.Primary,
-                )
+            Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                if (whenText != null) {
+                    Text(
+                        text = whenText,
+                        style = MaterialTheme.typography.titleSmall,
+                        color = CineboxTheme.colors.Primary,
+                    )
+                }
+                if (episode.watched) {
+                    Text(
+                        text = "✓ " + stringResource(R.string.calendar_watched),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = CineboxTheme.colors.Primary,
+                    )
+                }
             }
         }
     }
@@ -152,8 +206,22 @@ private fun dayLabel(date: LocalDate, today: LocalDate): String {
     val locale = Locale.getDefault()
     val base = date.format(DateTimeFormatter.ofPattern("d MMMM yyyy", locale))
     val weekday = date.dayOfWeek.getDisplayName(TextStyle.FULL, locale)
-    return when (date) {
-        today -> "$weekday, $base"
-        else -> "$weekday, $base"
+    val prefix = when (date) {
+        today -> "Azi · "
+        today.plusDays(1) -> "Mâine · "
+        today.minusDays(1) -> "Ieri · "
+        else -> ""
+    }
+    return "$prefix$weekday, $base"
+}
+
+/** Short badge for upcoming days: "Azi", "Mâine", "peste 3 zile"; nothing for days already gone. */
+private fun whenLabel(date: LocalDate, today: LocalDate): String? {
+    val days = ChronoUnit.DAYS.between(today, date)
+    return when {
+        days < 0 -> null
+        days == 0L -> "Azi"
+        days == 1L -> "Mâine"
+        else -> "peste $days zile"
     }
 }
