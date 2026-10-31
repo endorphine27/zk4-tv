@@ -513,7 +513,6 @@ private fun AuthEmailLoginForm(
             ),
             textAlign = TextAlign.Center
         )
-        // Terms link removed: pointed at nuvio.tv
         uiState.error?.takeIf { it.isNotBlank() }?.let { error ->
             StatusPill(
                 text = error,
@@ -563,7 +562,6 @@ private fun AuthQrCodeBlock(
     )
 
     Spacer(modifier = Modifier.height(12.dp))
-    // Terms link removed: pointed at nuvio.tv
 
     val statusText = uiState.error ?: uiState.qrLoginStatus
     if (!statusText.isNullOrBlank()) {
@@ -702,7 +700,7 @@ private fun AuthTermsAcknowledgement() {
             text = stringResource(R.string.auth_qr_terms_link),
             modifier = Modifier
                 .clickable {
-                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://nuvio.tv/terms")))
+                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://cinebox.invalid/terms")))
                 }
                 .semantics { role = Role.Button },
             style = MaterialTheme.typography.bodyMedium.copy(

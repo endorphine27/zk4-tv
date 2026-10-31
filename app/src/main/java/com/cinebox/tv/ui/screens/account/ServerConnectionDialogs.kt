@@ -233,7 +233,7 @@ private fun ServerConnectionDialog(
     }
 
     var serverUrl by rememberSaveable {
-        mutableStateOf(uiState.activeServer.discoveryUrl?.substringBefore("/.well-known/nuvio").orEmpty())
+        mutableStateOf(uiState.activeServer.discoveryUrl?.substringBefore("/.well-known/cinebox").orEmpty())
     }
     val urlFocusRequester = remember { FocusRequester() }
     val canDiscover = serverUrl.isNotBlank() && !uiState.isDiscovering

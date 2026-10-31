@@ -71,7 +71,7 @@ internal object ServerDiscoveryPolicy {
         if (parsed.username.isNotEmpty() || parsed.password.isNotEmpty()) {
             throw ServerDiscoveryException(ServerDiscoveryFailure.INVALID_URL)
         }
-        val suffix = "/.well-known/nuvio"
+        val suffix = "/.well-known/cinebox"
         val basePath = parsed.encodedPath.removeSuffix(suffix).trimEnd('/')
         return parsed.newBuilder()
             .encodedPath(if (basePath.isBlank()) suffix else "$basePath$suffix")
@@ -85,7 +85,7 @@ internal object ServerDiscoveryPolicy {
         val payload = runCatching { json.decodeFromString<DiscoveryDocument>(document) }
             .getOrElse { throw ServerDiscoveryException(ServerDiscoveryFailure.INVALID_DOCUMENT, cause = it) }
         if (payload.version != 1) throw ServerDiscoveryException(ServerDiscoveryFailure.UNSUPPORTED_VERSION)
-        if (!payload.service.equals("nuvio", ignoreCase = true)) {
+        if (!payload.service.equals("cinebox", ignoreCase = true)) {
             throw ServerDiscoveryException(ServerDiscoveryFailure.WRONG_SERVICE)
         }
         if (!payload.selfHosted) throw ServerDiscoveryException(ServerDiscoveryFailure.NOT_SELF_HOSTED)
