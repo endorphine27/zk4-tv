@@ -12,6 +12,7 @@ import com.cinebox.tv.domain.model.skipStep
 import com.cinebox.tv.domain.model.supportsExtra
 import com.cinebox.tv.domain.repository.AddonRepository
 import com.cinebox.tv.domain.repository.CatalogRepository
+import com.cinebox.tv.domain.repository.MetaRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -37,6 +38,8 @@ data class TvChannelsUiState(
     val isLoading: Boolean = true,
     val channels: List<TvChannel> = emptyList(),
     val favorites: Set<String> = emptySet(),
+    /** Upcoming programmes per channel id, e.g. "01:45  Film" (loaded when a channel gets focus). */
+    val upNext: Map<String, List<String>> = emptyMap(),
 )
 
 /** Channels of every enabled addon catalog of type "tv", independent of what the home screen shows. */
@@ -45,6 +48,7 @@ class TvChannelsViewModel @Inject constructor(
     @ApplicationContext context: Context,
     private val addonRepository: AddonRepository,
     private val catalogRepository: CatalogRepository,
+    private val metaRepository: MetaRepository,
 ) : ViewModel() {
 
     private val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -56,6 +60,22 @@ class TvChannelsViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             addonRepository.getInstalledAddons().collectLatest { addons -> loadChannels(addons.enabledAddons()) }
+        }
+    }
+
+    /** Fetches the "up next" list of a channel once; the addon sends it as links in the channel meta. */
+    fun loadUpNext(channel: TvChannel) {
+        if (channel.id in _state.value.upNext) return
+        viewModelScope.launch {
+            val outcome = metaRepository.getMeta(channel.addonBaseUrl, channel.type, channel.id)
+                .first { it !is NetworkResult.Loading }
+            val upcoming = (outcome as? NetworkResult.Success)?.data?.links
+                ?.filter { it.category.contains("Urmează", ignoreCase = true) }
+                ?.map { it.name.trim() }
+                ?.filter { it.isNotEmpty() }
+                ?.take(4)
+                .orEmpty()
+            _state.update { it.copy(upNext = it.upNext + (channel.id to upcoming)) }
         }
     }
 

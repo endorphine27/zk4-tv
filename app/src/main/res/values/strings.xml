@@ -3419,6 +3419,8 @@
     <string name="tv_channels_loading">Loading channels...</string>
     <string name="tv_channels_empty">No TV channels found. Install an addon with a catalog of type tv.</string>
     <string name="tv_channels_favorites">Favourites</string>
+    <string name="tv_channels_search">Search channel…</string>
+    <string name="tv_channels_next">Up next</string>
     <string name="tv_channels_all">All channels</string>
     <string name="nav_calendar">Calendar</string>
     <string name="calendar_loading">Loading episodes…</string>

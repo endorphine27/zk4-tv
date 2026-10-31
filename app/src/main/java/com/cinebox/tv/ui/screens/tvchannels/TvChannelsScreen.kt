@@ -29,6 +29,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
@@ -44,7 +45,10 @@ import androidx.tv.material3.Icon
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
 import coil3.compose.AsyncImage
+import kotlinx.coroutines.delay
+import java.text.Normalizer
 import com.cinebox.tv.R
+import com.cinebox.tv.ui.screens.account.InputField
 import com.cinebox.tv.ui.theme.CineboxTheme
 import com.cinebox.tv.ui.util.rememberLongPressKeyTracker
 
@@ -56,8 +60,20 @@ fun TvChannelsScreen(
     viewModel: TvChannelsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsState()
-    val favorites = remember(state.channels, state.favorites) {
-        state.channels.filter { it.id in state.favorites }
+    var query by remember { mutableStateOf("") }
+    var focusedId by remember { mutableStateOf<String?>(null) }
+    val visibleChannels = remember(state.channels, query) {
+        val needle = query.trim().foldForSearch()
+        if (needle.isEmpty()) state.channels else state.channels.filter { it.name.foldForSearch().contains(needle) }
+    }
+    val favorites = remember(visibleChannels, state.favorites, query) {
+        if (query.isNotBlank()) emptyList() else visibleChannels.filter { it.id in state.favorites }
+    }
+    val focusedChannel = state.channels.firstOrNull { it.id == focusedId }
+    LaunchedEffect(focusedId) {
+        val channel = focusedChannel ?: return@LaunchedEffect
+        delay(250)
+        viewModel.loadUpNext(channel)
     }
     val firstTile = remember { FocusRequester() }
     var focusRequested by remember { mutableStateOf(false) }
@@ -84,6 +100,37 @@ fun TvChannelsScreen(
             Spacer(Modifier.height(16.dp))
         }
 
+        if (state.channels.isNotEmpty()) {
+            InputField(
+                value = query,
+                onValueChange = { query = it },
+                placeholder = stringResource(R.string.tv_channels_search),
+                modifier = Modifier.fillMaxWidth(0.5f),
+            )
+            Spacer(Modifier.height(8.dp))
+            Column(modifier = Modifier.fillMaxWidth().height(60.dp)) {
+                if (focusedChannel != null) {
+                    Text(
+                        text = listOfNotNull(focusedChannel.name, focusedChannel.programme).joinToString("  —  "),
+                        style = MaterialTheme.typography.titleSmall,
+                        color = CineboxTheme.colors.TextPrimary,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                    val next = state.upNext[focusedChannel.id].orEmpty()
+                    if (next.isNotEmpty()) {
+                        Text(
+                            text = stringResource(R.string.tv_channels_next) + ": " + next.joinToString("   ·   "),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = CineboxTheme.colors.TextSecondary,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis,
+                        )
+                    }
+                }
+            }
+        }
+
         when {
             state.channels.isEmpty() -> Text(
                 text = stringResource(if (state.isLoading) R.string.tv_channels_loading else R.string.tv_channels_empty),
@@ -106,6 +153,7 @@ fun TvChannelsScreen(
                             channel = channel,
                             isFavorite = true,
                             focusRequester = if (channel == favorites.first()) firstTile else null,
+                            onFocused = { focusedId = channel.id },
                             onClick = { onOpenChannel(channel) },
                             onToggleFavorite = { viewModel.toggleFavorite(channel.id) },
                         )
@@ -114,11 +162,12 @@ fun TvChannelsScreen(
                 item(span = { GridItemSpan(maxLineSpan) }, key = "h-all") {
                     SectionTitle(stringResource(R.string.tv_channels_all))
                 }
-                items(state.channels, key = { "all-${it.id}" }) { channel ->
+                items(visibleChannels, key = { "all-${it.id}" }) { channel ->
                     ChannelTile(
                         channel = channel,
                         isFavorite = channel.id in state.favorites,
-                        focusRequester = if (favorites.isEmpty() && channel == state.channels.first()) firstTile else null,
+                        focusRequester = if (favorites.isEmpty() && channel == visibleChannels.first()) firstTile else null,
+                        onFocused = { focusedId = channel.id },
                         onClick = { onOpenChannel(channel) },
                         onToggleFavorite = { viewModel.toggleFavorite(channel.id) },
                     )
@@ -143,6 +192,7 @@ private fun ChannelTile(
     channel: TvChannel,
     isFavorite: Boolean,
     focusRequester: FocusRequester?,
+    onFocused: () -> Unit,
     onClick: () -> Unit,
     onToggleFavorite: () -> Unit,
 ) {
@@ -157,6 +207,7 @@ private fun ChannelTile(
                 .fillMaxWidth()
                 .aspectRatio(1f)
                 .then(if (focusRequester != null) Modifier.focusRequester(focusRequester) else Modifier)
+                .onFocusChanged { if (it.isFocused) onFocused() }
                 .onPreviewKeyEvent { keyEvent ->
                     val native = keyEvent.nativeKeyEvent
                     // Menu key or a long press on OK adds/removes the channel from favourites
@@ -230,6 +281,10 @@ private fun ChannelTile(
         }
     }
 }
+
+/** Lower-case and strip accents, so "pro" finds "PRO TV" and "stiri" finds "Știri". */
+private fun String.foldForSearch(): String =
+    Normalizer.normalize(this, Normalizer.Form.NFD).replace(Regex("\\p{M}+"), "").lowercase()
 
 private fun isSelectKey(keyCode: Int): Boolean =
     keyCode == AndroidKeyEvent.KEYCODE_DPAD_CENTER ||
