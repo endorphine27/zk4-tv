@@ -1483,7 +1483,7 @@
     <string name="trakt_stat_watched_hours">Odgledani sati</string>
     <string name="trakt_disconnect">Prekini vezu</string>
     <string name="trakt_disconnect_title">Prekinuti vezu s Traktom?</string>
-    <string name="trakt_disconnect_subtitle">Ovo će prekinuti vezu tvog Trakt računa s Nuviom.</string>
+    <string name="trakt_disconnect_subtitle">Ovo će prekinuti vezu tvog Trakt računa s CINEBOX.</string>
     <string name="trakt_login">Prijava</string>
     <string name="trakt_retry">Pokušaj ponovno</string>
     <string name="trakt_back">Natrag</string>

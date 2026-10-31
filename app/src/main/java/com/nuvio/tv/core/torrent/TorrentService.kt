@@ -318,10 +318,10 @@ class TorrentService @Inject constructor(
         val stateDirectory = File(context.noBackupFilesDir, "nuvio-engine/state")
         val cacheDirectory = File(context.cacheDir, "nuvio-engine")
         check(stateDirectory.mkdirs() || stateDirectory.isDirectory) {
-            "Could not create the Nuvio Engine state directory"
+            "Could not create the CINEBOX Engine state directory"
         }
         check(cacheDirectory.mkdirs() || cacheDirectory.isDirectory) {
-            "Could not create the Nuvio Engine cache directory"
+            "Could not create the CINEBOX Engine cache directory"
         }
         migrateNestedPayloadDirectory(cacheDirectory)
         return NuvioEngine.create(

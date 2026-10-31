@@ -1176,7 +1176,7 @@
     <string name="profile_pin_overlay_set_support">Denna PIN krävs innan denna profil öppnas.</string>
     <string name="profile_pin_overlay_confirm_support">Ange samma 4 siffror igen för att slutföra.</string>
     <string name="profile_pin_overlay_mismatch">PIN-koderna matchade inte. Ange en ny PIN igen.</string>
-    <string name="profile_pin_overlay_forgot_hint">Glömt PIN? Återställ den från ditt CINEBOX-konto på Nuvios webbplats.</string>
+    <string name="profile_pin_overlay_forgot_hint">Glömt PIN? Återställ den från ditt CINEBOX-konto på CINEBOX webbplats.</string>
     <string name="profile_pin_overlay_back_hint">Tryck tillbaka för att avbryta</string>
 
     <!-- Missing: Debug library -->
@@ -1293,7 +1293,7 @@
     <string name="playback_afr_capability_disable_resolution_button">Inaktivera upplösningsmatchning</string>
     <string name="playback_afr_capability_disable_both_button">Inaktivera båda</string>
     <string name="playback_engine_exoplayer_desc">Bästa kompatibilitet med nuvarande CINEBOX-funktioner.</string>
-    <string name="playback_engine_mvplayer_desc">Använder libmpv med Nuvios OSD-kontroller. Experimentellt.</string>
+    <string name="playback_engine_mvplayer_desc">Använder libmpv med CINEBOX OSD-kontroller. Experimentellt.</string>
 
     <!-- PlaybackAudioSettings -->
     <string name="audio_lang_original">Originalspråk</string>
