@@ -837,6 +837,9 @@
     <string name="nav_calendar">Calendar</string>
     <string name="calendar_loading">Se încarcă episoadele…</string>
     <string name="calendar_empty">Nu există episoade apropiate pentru serialele din bibliotecă.</string>
+    <string name="calendar_upcoming">Urmează</string>
+    <string name="calendar_upcoming_empty">Niciun episod nou în următoarele 60 de zile pentru serialele din bibliotecă.</string>
+    <string name="calendar_recent">Difuzate recent</string>
     <string name="calendar_watched">Văzut</string>
     <string name="auth_forgot_password_hint">Ai uitat parola? Deschide pe telefon destinyab.go.ro:8444/reset</string>
 </resources>

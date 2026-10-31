@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -57,23 +56,16 @@ fun CalendarScreen(
 ) {
     val state by viewModel.state.collectAsState()
     val today = remember { LocalDate.now() }
-    val grouped = remember(state.episodes) { state.episodes.groupBy { it.date } }
-    val listState = rememberLazyListState()
-    val firstEpisodeFocus = remember { FocusRequester() }
-    // The list opens on today (or the next day with episodes); earlier days stay above, dimmed.
-    val firstUpcomingDate = remember(grouped) { grouped.keys.firstOrNull { !it.isBefore(today) } }
-    val firstUpcomingIndex = remember(grouped, firstUpcomingDate) {
-        var index = 0
-        var found = 0
-        for ((date, episodes) in grouped) {
-            if (date == firstUpcomingDate) { found = index; break }
-            index += 1 + episodes.size
-        }
-        found
+    // Two sections: what is coming (soonest first), then what aired recently (latest first, dimmed).
+    val upcoming = remember(state.episodes) {
+        state.episodes.filter { !it.date.isBefore(today) }.groupBy { it.date }
     }
-    LaunchedEffect(state.episodes.isNotEmpty(), firstUpcomingIndex) {
+    val recent = remember(state.episodes) {
+        state.episodes.filter { it.date.isBefore(today) }.sortedByDescending { it.date }.groupBy { it.date }
+    }
+    val firstEpisodeFocus = remember { FocusRequester() }
+    LaunchedEffect(state.episodes.isNotEmpty()) {
         if (state.episodes.isNotEmpty()) {
-            listState.scrollToItem(firstUpcomingIndex)
             delay(150)
             runCatching { firstEpisodeFocus.requestFocus() }
         }
@@ -97,35 +89,75 @@ fun CalendarScreen(
             return@Column
         }
         LazyColumn(
-            state = listState,
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(bottom = 48.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ) {
-            grouped.forEach { (date, episodes) ->
-                item(key = "d-$date") {
+            item(key = "h-upcoming") {
+                SectionHeading(stringResource(R.string.calendar_upcoming))
+            }
+            if (upcoming.isEmpty()) {
+                item(key = "h-upcoming-empty") {
                     Text(
-                        text = dayLabel(date, today),
-                        style = MaterialTheme.typography.titleLarge,
-                        color = when {
-                            date == today -> CineboxTheme.colors.Primary
-                            date.isBefore(today) -> CineboxTheme.colors.TextSecondary
-                            else -> CineboxTheme.colors.TextPrimary
-                        },
-                        modifier = Modifier.padding(top = 12.dp),
+                        text = stringResource(R.string.calendar_upcoming_empty),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = CineboxTheme.colors.TextSecondary,
                     )
                 }
-                items(episodes, key = { "e-${it.seriesId}-${it.season}-${it.episode}" }) { episode ->
+            }
+            upcoming.forEach { (date, episodes) ->
+                item(key = "u-$date") { DayHeading(date, today) }
+                items(episodes, key = { "u-${it.seriesId}-${it.season}-${it.episode}" }) { episode ->
                     EpisodeRow(
                         episode = episode,
-                        past = date.isBefore(today),
+                        past = false,
                         whenText = whenLabel(date, today),
-                        focusRequester = if (date == firstUpcomingDate && episode == episodes.first()) firstEpisodeFocus else null,
+                        focusRequester = if (date == upcoming.keys.first() && episode == episodes.first()) firstEpisodeFocus else null,
                     ) { onOpenSeries(episode.seriesId, episode.seriesType, episode.addonBaseUrl) }
+                }
+            }
+            if (recent.isNotEmpty()) {
+                item(key = "h-recent") {
+                    SectionHeading(stringResource(R.string.calendar_recent), modifier = Modifier.padding(top = 20.dp))
+                }
+                recent.forEach { (date, episodes) ->
+                    item(key = "r-$date") { DayHeading(date, today) }
+                    items(episodes, key = { "r-${it.seriesId}-${it.season}-${it.episode}" }) { episode ->
+                        EpisodeRow(
+                            episode = episode,
+                            past = true,
+                            whenText = null,
+                            focusRequester = if (upcoming.isEmpty() && date == recent.keys.first() && episode == episodes.first()) firstEpisodeFocus else null,
+                        ) { onOpenSeries(episode.seriesId, episode.seriesType, episode.addonBaseUrl) }
+                    }
                 }
             }
         }
     }
+}
+
+@Composable
+private fun SectionHeading(text: String, modifier: Modifier = Modifier) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.headlineSmall,
+        color = CineboxTheme.colors.TextPrimary,
+        modifier = modifier,
+    )
+}
+
+@Composable
+private fun DayHeading(date: LocalDate, today: LocalDate) {
+    Text(
+        text = dayLabel(date, today),
+        style = MaterialTheme.typography.titleLarge,
+        color = when {
+            date == today -> CineboxTheme.colors.Primary
+            date.isBefore(today) -> CineboxTheme.colors.TextSecondary
+            else -> CineboxTheme.colors.TextPrimary
+        },
+        modifier = Modifier.padding(top = 8.dp),
+    )
 }
 
 @OptIn(ExperimentalTvMaterial3Api::class)
