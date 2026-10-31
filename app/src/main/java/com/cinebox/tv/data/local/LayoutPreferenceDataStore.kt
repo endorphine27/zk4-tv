@@ -72,6 +72,7 @@ class LayoutPreferenceDataStore @Inject constructor(
     private val hasChosenKey = booleanPreferencesKey("has_chosen_layout")
     private val heroCatalogKey = stringPreferencesKey("hero_catalog_key")
     private val heroCatalogKeysKey = stringPreferencesKey("hero_catalog_keys")
+    private val heroDefaultAppliedKey = booleanPreferencesKey("hero_default_applied")
     private val homeCatalogOrderKeysKey = stringPreferencesKey("home_catalog_order_keys")
     private val disabledHomeCatalogKeysKey = stringPreferencesKey("disabled_home_catalog_keys")
     private val customCatalogTitlesKey = stringPreferencesKey("custom_catalog_titles")
@@ -156,11 +157,11 @@ class LayoutPreferenceDataStore @Inject constructor(
         value?.takeIf { it > 0 } ?: defaultValue
 
     val selectedLayout: Flow<HomeLayout> = profileFlow { prefs ->
-        val layoutName = prefs[layoutKey] ?: HomeLayout.MODERN.name
+        val layoutName = prefs[layoutKey] ?: HomeLayout.CLASSIC.name
         try {
             HomeLayout.valueOf(layoutName)
         } catch (e: IllegalArgumentException) {
-            HomeLayout.MODERN
+            HomeLayout.CLASSIC
         }
     }
 
@@ -512,6 +513,25 @@ class LayoutPreferenceDataStore @Inject constructor(
                     FocusedPosterTrailerPlaybackTarget.HERO_MEDIA.name
             }
             prefs[hasChosenKey] = true
+        }
+    }
+
+    /**
+     * First run on a profile: pick a few movie catalogs for the hero carousel so it is not empty.
+     * Runs once; later changes by the user are never overwritten.
+     */
+    suspend fun applyDefaultHeroCatalogsIfNeeded(candidateKeys: List<String>) {
+        val keys = normalizeCatalogOrderKeys(candidateKeys).take(3)
+        if (keys.isEmpty()) return
+        store().edit { prefs ->
+            if (prefs[heroDefaultAppliedKey] == true) return@edit
+            prefs[heroDefaultAppliedKey] = true
+            val alreadyChosen = parseCatalogKeys(prefs.getStringOrMigrateSet(heroCatalogKeysKey)).isNotEmpty() ||
+                !prefs.getStringOrMigrateSet(heroCatalogKey).isNullOrBlank()
+            if (!alreadyChosen) {
+                prefs[heroCatalogKeysKey] = gson.toJson(keys)
+                prefs[heroCatalogKey] = keys.first()
+            }
         }
     }
 

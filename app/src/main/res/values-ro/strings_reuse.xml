@@ -241,7 +241,7 @@
     <string name="licenses_attributions_mdblist_body">CINEBOX utilizează MDBList pentru evaluări și date de la furnizori externi de scoruri. CINEBOX nu este afiliat cu și nici aprobat de MDBList.</string>
     <string name="licenses_attributions_introdb_body">CINEBOX folosește API-ul IntroDB pentru marcajele de timp (intro, recapitulare, credite și previzualizări) oferite de comunitate și utilizate de comenzile de salt. CINEBOX nu este afiliat cu și nici aprobat de IntroDB.</string>
     <string name="licenses_attributions_imdb_title">Seturi de date IMDb non-comerciale</string>
-    <string name="settings_content_discovery">Conținut și descoperire</string>
+    <string name="settings_content_discovery">Conținut</string>
     <string name="settings_tracking_title">Urmărire</string>
     <string name="settings_tracking_description">Conectează furnizori de urmărire și alege care dintre ei alimentează Biblioteca și „Continuă vizionarea”.</string>
     <string name="tracking_accounts_title">Conturi</string>

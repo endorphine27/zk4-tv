@@ -135,6 +135,13 @@ internal fun HomeViewModel.observeInstalledAddonsPipeline() {
             .distinctUntilChanged()
             .collectLatest { addons ->
                 addonsCache = addons
+                layoutPreferenceDataStore.applyDefaultHeroCatalogsIfNeeded(
+                    addons.flatMap { addon ->
+                        addon.catalogs
+                            .filter { it.apiType == "movie" && !it.isSearchOnlyCatalog() }
+                            .map { catalogKey(addonId = addon.id, type = it.apiType, catalogId = it.id) }
+                    }
+                )
                 loadAllCatalogsPipeline(addons)
             }
     }

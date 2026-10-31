@@ -278,7 +278,7 @@ data class PlayerSettings(
     val centerMixLevelDb: Int = 0,
     val persistAudioAmplification: Boolean = false,
     val rememberAudioDelayPerDevice: Boolean = true,
-    val preferredAudioLanguage: String = AudioLanguageOption.DEVICE,
+    val preferredAudioLanguage: String = AudioLanguageOption.ORIGINAL,
     val secondaryPreferredAudioLanguage: String? = null,
     val loadingOverlayEnabled: Boolean = true,
     val showPlayerLoadingStatus: Boolean = true,
@@ -992,7 +992,7 @@ class PlayerSettingsDataStore @Inject constructor(
                 persistAudioAmplification = prefs[persistAudioAmplificationKey] ?: false,
                 rememberAudioDelayPerDevice = prefs[rememberAudioDelayPerDeviceKey] ?: true,
                 preferredAudioLanguage = normalizeSelectableLanguageCode(
-                    prefs[preferredAudioLanguageKey] ?: AudioLanguageOption.DEVICE
+                    prefs[preferredAudioLanguageKey] ?: AudioLanguageOption.ORIGINAL
                 ),
                 secondaryPreferredAudioLanguage = prefs[secondaryPreferredAudioLanguageKey]
                     ?.let(::normalizeSecondaryAudioLanguageCode),
@@ -1609,7 +1609,11 @@ class PlayerSettingsDataStore @Inject constructor(
         preferredLanguage: String?,
         secondaryLanguage: String?
     ): ResolvedSubtitlePreferredLanguage {
-        val preferred = preferredLanguage?.let(::normalizeSelectableLanguageCode)
+        // Nothing chosen yet: Romanian subtitles by default (an explicit "device language" choice is kept).
+        if (preferredLanguage == null) {
+            return ResolvedSubtitlePreferredLanguage("ro", isSystemDefault = false)
+        }
+        val preferred = preferredLanguage.let(::normalizeSelectableLanguageCode)
         if (preferred == null || preferred == SubtitleLanguageOption.DEVICE) {
             return ResolvedSubtitlePreferredLanguage(resolveDeviceSubtitleLanguage(), isSystemDefault = true)
         }
