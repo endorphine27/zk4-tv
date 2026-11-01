@@ -29,6 +29,8 @@ jobs:
             echo "CINEBOX_SUPABASE_URL=https://destinyab.go.ro:8444"
             echo "CINEBOX_SUPABASE_ANON_KEY=${key}"
             echo "AVATAR_PUBLIC_BASE_URL=https://destinyab.go.ro:8444/storage/v1/object/public/avatars"
+            echo "TRAKT_CLIENT_ID=${{ secrets.TRAKT_CLIENT_ID }}"
+            echo "TRAKT_CLIENT_SECRET=${{ secrets.TRAKT_CLIENT_SECRET }}"
           } > local.properties
 
       - name: Compute app version
