@@ -29,6 +29,7 @@ import com.cinebox.tv.domain.model.ListMembershipChanges
 import com.cinebox.tv.core.tracking.TrackingMembershipRemovalConfirmation
 import com.cinebox.tv.core.tracking.toggleTrackingMembershipSelection
 import com.cinebox.tv.domain.model.Meta
+import com.cinebox.tv.domain.model.MetaPreview
 import com.cinebox.tv.domain.model.MetaTrailer
 import com.cinebox.tv.domain.model.NextToWatch
 import com.cinebox.tv.domain.model.TmdbSettings
