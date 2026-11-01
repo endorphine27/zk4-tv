@@ -18,6 +18,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -76,6 +77,16 @@ class TraktSettingsDataStore @Inject constructor(
     private val rememberedLibrarySourceModeKey = stringPreferencesKey("remembered_library_source_mode")
     private val moreLikeThisSourceKey = stringPreferencesKey("more_like_this_source")
     private val simklAnimeIdPreferenceKey = stringPreferencesKey("simkl_anime_id_preference")
+    private val clientIdKey = stringPreferencesKey("trakt_client_id")
+
+    val clientId: StateFlow<String> = profileManager.activeProfileId.flatMapLatest { pid ->
+        factory.get(pid, FEATURE).data.map { prefs -> prefs[clientIdKey].orEmpty() }
+    }.onEach { com.cinebox.tv.core.trakt.TraktClientId.userId = it }
+        .stateIn(scope, SharingStarted.Eagerly, "")
+
+    suspend fun setClientId(value: String) {
+        store().edit { it[clientIdKey] = value.trim() }
+    }
 
     val continueWatchingDaysCap: Flow<Int> = profileManager.activeProfileId.flatMapLatest { pid ->
         factory.get(pid, FEATURE).data.map { prefs ->

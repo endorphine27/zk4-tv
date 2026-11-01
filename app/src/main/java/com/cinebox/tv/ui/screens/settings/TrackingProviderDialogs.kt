@@ -76,7 +76,8 @@ internal fun TraktAccountDialog(
     onStartConnection: () -> Unit,
     onRetryPolling: () -> Unit,
     onDisconnect: () -> Unit,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    onEditClientId: (() -> Unit)? = null
 ) {
     val logo = painterResource(R.drawable.trakt_logo_wordmark)
     if (state.mode == TraktConnectionMode.CONNECTED) {
@@ -137,7 +138,8 @@ internal fun TraktAccountDialog(
                 missingCredentialsMessage = stringResource(R.string.trakt_missing_credentials),
                 onStartConnection = onStartConnection,
                 onRetryPolling = onRetryPolling,
-                onDismiss = onDismiss
+                onDismiss = onDismiss,
+                onEditClientId = onEditClientId
             )
         }
     }
@@ -287,7 +289,8 @@ internal fun TrackingDeviceAuthContent(
     onStartConnection: () -> Unit,
     onRetryPolling: () -> Unit,
     onDismiss: () -> Unit,
-    logoLabel: String? = null
+    logoLabel: String? = null,
+    onEditClientId: (() -> Unit)? = null
 ) {
     TrackingProviderWordmark(logo, logoContentDescription, logoLabel)
     when {
@@ -426,6 +429,12 @@ internal fun TrackingDeviceAuthContent(
             text = stringResource(R.string.action_cancel),
             onClick = onDismiss
         )
+        if (onEditClientId != null && !isLoading && userCode.isNullOrBlank()) {
+            SettingsDialogActionButton(
+                text = stringResource(R.string.trakt_client_id_button),
+                onClick = onEditClientId
+            )
+        }
         if (!isLoading && userCode.isNullOrBlank()) {
             SettingsDialogActionButton(
                 text = stringResource(R.string.action_retry),

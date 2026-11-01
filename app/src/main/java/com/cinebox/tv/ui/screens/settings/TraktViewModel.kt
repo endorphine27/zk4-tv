@@ -73,6 +73,20 @@ class TraktViewModel @Inject constructor(
         observeAuthState()
     }
 
+    val clientId: StateFlow<String> = traktSettingsDataStore.clientId
+
+    fun onClientIdSaved(value: String) {
+        viewModelScope.launch {
+            traktSettingsDataStore.setClientId(value)
+            _uiState.update {
+                it.copy(
+                    credentialsConfigured = traktAuthService.hasRequiredCredentials(),
+                    errorMessage = null
+                )
+            }
+        }
+    }
+
     fun onContinueWatchingDaysCapSelected(days: Int) {
         viewModelScope.launch {
             traktSettingsDataStore.setContinueWatchingDaysCap(days)

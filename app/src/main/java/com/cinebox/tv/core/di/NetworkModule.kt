@@ -251,7 +251,7 @@ object NetworkModule {
             val newRequest = request.newBuilder()
                 .header("Content-Type", "application/json")
                 .header("User-Agent", "CINEBOX/$version")
-                .header("trakt-api-key", BuildConfig.TRAKT_CLIENT_ID)
+                .header("trakt-api-key", com.cinebox.tv.core.trakt.TraktClientId.get())
                 .header("trakt-api-version", "2")
                 .build()
 

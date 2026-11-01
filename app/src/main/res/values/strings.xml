@@ -1517,7 +1517,7 @@
     <string name="trakt_code_expires">Code expires in %1$s</string>
     <string name="trakt_token_refreshes">Trakt access token refreshes in %1$s</string>
     <string name="trakt_login_instruction">Press Login to start Trakt device authentication. A QR code will appear here.</string>
-    <string name="trakt_missing_credentials">Missing TRAKT_CLIENT_ID / TRAKT_CLIENT_SECRET in local.properties.</string>
+    <string name="trakt_missing_credentials">Add your Trakt Client ID (create a free app at developer.trakt.tv).</string>
     <string name="trakt_watch_progress_title">Watch Progress</string>
     <string name="trakt_watch_progress_subtitle">Choose which progress source powers resume and continue watching</string>
     <string name="trakt_watch_progress_dialog_title">Watch Progress</string>
@@ -3449,4 +3449,8 @@
     <string name="tmdb_api_key_placeholder">TMDB API key</string>
     <string name="tmdb_test_title">Test TMDB connection</string>
     <string name="tmdb_test_subtitle">Checks the key and a sample recommendation request</string>
+    <string name="trakt_client_id_title">Trakt Client ID</string>
+    <string name="trakt_client_id_dialog_subtitle">Create a free app at developer.trakt.tv and paste its Client ID.</string>
+    <string name="trakt_client_id_placeholder">Client ID</string>
+    <string name="trakt_client_id_button">Client ID</string>
 </resources>

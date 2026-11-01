@@ -1465,4 +1465,8 @@
     <string name="tmdb_api_key_placeholder">Cheie API TMDB</string>
     <string name="tmdb_test_title">Testează conexiunea TMDB</string>
     <string name="tmdb_test_subtitle">Verifică cheia și o cerere de recomandări de probă</string>
+    <string name="trakt_client_id_title">Client ID Trakt</string>
+    <string name="trakt_client_id_dialog_subtitle">Creează o aplicație gratuită pe developer.trakt.tv și lipește Client ID-ul.</string>
+    <string name="trakt_client_id_placeholder">Client ID</string>
+    <string name="trakt_client_id_button">Client ID</string>
 </resources>

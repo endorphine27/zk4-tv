@@ -93,6 +93,8 @@ fun TrackingSettingsContent(
     var showDaysCapDialog by remember { mutableStateOf(false) }
     var showMoreLikeThisSourceDialog by remember { mutableStateOf(false) }
     var showAnimeIdDialog by remember { mutableStateOf(false) }
+    var showTraktClientIdDialog by remember { mutableStateOf(false) }
+    val traktClientId by traktViewModel.clientId.collectAsStateWithLifecycle()
     var showMdbListLibraryListsDialog by remember { mutableStateOf(false) }
 
     val hasOverlay = activeProvider != null ||
@@ -224,9 +226,21 @@ fun TrackingSettingsContent(
         }
     )
 
+    if (showTraktClientIdDialog) {
+        TraktClientIdDialog(
+            currentValue = traktClientId,
+            onSave = {
+                traktViewModel.onClientIdSaved(it)
+                showTraktClientIdDialog = false
+            },
+            onDismiss = { showTraktClientIdDialog = false }
+        )
+    }
+
     when (activeProvider) {
         TrackingProviderId.TRAKT -> {
             TraktAccountDialog(
+                onEditClientId = { showTraktClientIdDialog = true },
                 state = traktState,
                 onStartConnection = traktViewModel::onConnectClick,
                 onRetryPolling = traktViewModel::onRetryPolling,

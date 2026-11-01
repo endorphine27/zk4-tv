@@ -50,6 +50,7 @@ class CineboxApplication : Application(), SingletonImageLoader.Factory {
     @Inject lateinit var simklAnimeIdPreferenceHolder: SimklAnimeIdPreferenceHolder
     @Inject lateinit var serverUserStateProjection: ServerUserStateProjection
     @Inject lateinit var tmdbSettingsDataStore: com.cinebox.tv.data.local.TmdbSettingsDataStore
+    @Inject lateinit var traktSettingsDataStore: com.cinebox.tv.data.local.TraktSettingsDataStore
 
     companion object {
         /**
