@@ -26,6 +26,7 @@ import com.cinebox.tv.core.sync.StartupSyncService
 import com.cinebox.tv.core.sync.androidtv.AndroidTvChannelSyncService
 import com.cinebox.tv.core.network.IPv4FirstDns
 import com.cinebox.tv.core.network.NoDelaySocketFactory
+import com.cinebox.tv.core.network.imageNetworkFetcherFactory
 import com.cinebox.tv.data.local.ImagePerformancePreferences
 import com.cinebox.tv.data.local.SentrySettingsDataStore
 import com.cinebox.tv.data.mediaserver.ServerUserStateProjection
@@ -131,7 +132,7 @@ class CineboxApplication : Application(), SingletonImageLoader.Factory {
                 }
                 add(SvgDecoder.Factory())
                 add(
-                    coil3.network.okhttp.OkHttpNetworkFetcherFactory(
+                    imageNetworkFetcherFactory(
                         callFactory = { imageOkHttpClient },
                         cacheStrategy = {
                             StaleWhileRevalidateCacheStrategy(

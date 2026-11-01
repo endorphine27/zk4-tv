@@ -1447,4 +1447,15 @@
     <string name="autosync_toast_failed_no_reference">Sincronizare eșuată: acest videoclip nu are subtitrări încorporate pentru comparație.</string>
     <string name="autosync_toast_failed_unsupported">Sincronizare eșuată: sincronizarea automată nu acceptă acest format de subtitrare.</string>
     <string name="stream_resume_from_percent">Reia de la %1$d%%</string>
+    <string name="audio_night_mode">Mod de noapte</string>
+    <string name="audio_night_mode_sub">Ridică dialogul și sunetele slabe, ca să poți ține volumul mic</string>
+    <string name="audio_night_mode_desc">Ridică dialogul și sunetele slabe; scenele tari rămân așa cum au fost mixate. Funcționează pe sunetul decodat de aplicație. Dolby și DTS trimise ca passthrough către receiver sau soundbar rămân neschimbate.</string>
+    <string name="audio_night_mode_value">Mod de noapte: %1$s</string>
+    <string name="audio_night_mode_off">Oprit</string>
+    <string name="audio_night_mode_light">Ușor</string>
+    <string name="audio_night_mode_light_desc">Ridicare discretă, până la +6 dB</string>
+    <string name="audio_night_mode_medium">Mediu</string>
+    <string name="audio_night_mode_medium_desc">Dialog clar ridicat, până la +10 dB</string>
+    <string name="audio_night_mode_strong">Puternic</string>
+    <string name="audio_night_mode_strong_desc">Până la +15 dB, pentru vizionare târziu, la volum mic</string>
 </resources>

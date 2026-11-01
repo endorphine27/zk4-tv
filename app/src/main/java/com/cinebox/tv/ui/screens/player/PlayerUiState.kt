@@ -9,6 +9,7 @@ import com.cinebox.tv.data.local.FrameRateMatchingMode
 import com.cinebox.tv.data.local.InternalPlayerEngine
 import com.cinebox.tv.data.local.LibassRenderType
 import com.cinebox.tv.data.local.LibassRenderMode
+import com.cinebox.tv.data.local.NightMode
 import com.cinebox.tv.data.local.StreamAutoPlayMode
 import com.cinebox.tv.data.local.SubtitleStyleSettings
 import com.cinebox.tv.data.repository.SkipInterval
@@ -112,6 +113,8 @@ data class PlayerUiState(
     val persistAudioAmplification: Boolean = false,
     val centerMixLevelDb: Int = 0,
     val isCenterMixAvailable: Boolean = false,
+    val nightMode: NightMode = NightMode.OFF,
+    val isNightModeAvailable: Boolean = false,
     val showAudioOverlay: Boolean = false,
     val showSubtitleOverlay: Boolean = false,
     val showSubtitleStylePanel: Boolean = false,
@@ -324,6 +327,7 @@ sealed class PlayerEvent {
     data class OnSetAudioAmplificationDb(val db: Int) : PlayerEvent()
     data class OnSetPersistAudioAmplification(val enabled: Boolean) : PlayerEvent()
     data class OnSetCenterMixLevelDb(val db: Int) : PlayerEvent()
+    data class OnSetNightMode(val mode: NightMode) : PlayerEvent()
     data class OnSelectSubtitleTrack(val index: Int) : PlayerEvent()
     data object OnDisableSubtitles : PlayerEvent()
     data class OnSelectAddonSubtitle(val subtitle: Subtitle) : PlayerEvent()
@@ -349,7 +353,7 @@ sealed class PlayerEvent {
     data object OnDismissEpisodesPanel : PlayerEvent()
     data object OnBackFromEpisodeStreams : PlayerEvent()
     data class OnEpisodeSeasonSelected(val season: Int) : PlayerEvent()
-    data class OnEpisodeSelected(val video: Video) : PlayerEvent()
+    data class OnEpisodeSelected(val video: Video, val manualSelection: Boolean = false) : PlayerEvent()
     data object OnReloadEpisodeStreams : PlayerEvent()
     data class OnEpisodeAddonFilterSelected(val addonName: String?) : PlayerEvent()
     data class OnEpisodeStreamSelected(val stream: Stream) : PlayerEvent()

@@ -8,6 +8,7 @@ import com.cinebox.tv.data.local.LibassRenderScale
 import com.cinebox.tv.data.local.LibassRenderType
 import com.cinebox.tv.data.local.LibassRenderMode
 import com.cinebox.tv.data.local.InternalPlayerEngine
+import com.cinebox.tv.data.local.NightMode
 import com.cinebox.tv.data.local.Dv7HandlingMode
 import com.cinebox.tv.data.local.PlayerSettings
 import com.cinebox.tv.data.local.PlayerSettingsDataStore
@@ -146,6 +147,10 @@ class PlaybackSettingsViewModel @Inject constructor(
 
     suspend fun setSkipSilence(enabled: Boolean) {
         playerSettingsDataStore.setSkipSilence(enabled)
+    }
+
+    suspend fun setNightMode(mode: NightMode) {
+        playerSettingsDataStore.setNightMode(mode)
     }
 
     suspend fun setRememberAudioDelayPerDevice(enabled: Boolean) {
