@@ -36,8 +36,7 @@ internal fun visibleSettingsCategories(
         SettingsCategory.WATCH_PARTY -> isWatchPartyAvailable
         SettingsCategory.DEBUG -> isDebugBuild && !isEssentialMode
         SettingsCategory.EXPERIENCE -> false
-        // Trakt/Simkl/MDBList need API keys that the personal build does not have
-        SettingsCategory.TRACKING -> false
+        SettingsCategory.TRACKING -> true
         else -> true
     }
 }
