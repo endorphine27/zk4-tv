@@ -98,7 +98,7 @@ class CalendarViewModel @Inject constructor(
         value?.takeIf { it.length >= 10 }?.let { runCatching { LocalDate.parse(it.substring(0, 10)) }.getOrNull() }
 
     private companion object {
-        const val WINDOW_PAST_DAYS = 14L
-        const val WINDOW_FUTURE_DAYS = 60L
+        const val WINDOW_PAST_DAYS = 45L
+        const val WINDOW_FUTURE_DAYS = 120L
     }
 }

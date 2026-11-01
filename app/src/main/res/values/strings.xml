@@ -3425,9 +3425,10 @@
     <string name="nav_calendar">Calendar</string>
     <string name="calendar_loading">Loading episodes…</string>
     <string name="calendar_empty">No upcoming episodes for the series in your library.</string>
-    <string name="calendar_upcoming">Coming up</string>
+    <string name="calendar_upcoming">Upcoming episodes</string>
     <string name="calendar_upcoming_empty">No new episodes in the next 60 days for the series in your library.</string>
     <string name="calendar_recent">Aired recently</string>
+    <string name="calendar_day_empty">No episodes on this day.</string>
     <string name="calendar_watched">Watched</string>
     <string name="auth_forgot_password_hint">Forgot your password? On your phone, open destinyab.go.ro:8444/reset</string>
 </resources>
