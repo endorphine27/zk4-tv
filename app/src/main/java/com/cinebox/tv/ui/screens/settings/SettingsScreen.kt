@@ -108,7 +108,8 @@ private enum class IntegrationSettingsSection {
     Debrid,
     Tmdb,
     MdbList,
-    AnimeSkip
+    AnimeSkip,
+    Tracking
 }
 
 internal enum class SettingsSectionDestination {
@@ -1066,6 +1067,7 @@ private fun IntegrationSettingsContent(
     animeSkipFocusRequester: FocusRequester,
     autoFocusEnabled: Boolean
 ) {
+    val trackingFocusRequester = remember { FocusRequester() }
     BackHandler(enabled = selectedSection != IntegrationSettingsSection.Hub) {
         onSelectSection(IntegrationSettingsSection.Hub)
     }
@@ -1076,6 +1078,7 @@ private fun IntegrationSettingsContent(
         IntegrationSettingsSection.Tmdb -> tmdbFocusRequester
         IntegrationSettingsSection.MdbList -> mdbListFocusRequester
         IntegrationSettingsSection.AnimeSkip -> animeSkipFocusRequester
+        IntegrationSettingsSection.Tracking -> trackingFocusRequester
     }
     val hubEntryTargetSection = hubReturnSection.takeIf {
         it != IntegrationSettingsSection.Hub
@@ -1089,6 +1092,7 @@ private fun IntegrationSettingsContent(
             IntegrationSettingsSection.Tmdb -> tmdbFocusRequester
             IntegrationSettingsSection.MdbList -> mdbListFocusRequester
             IntegrationSettingsSection.AnimeSkip -> animeSkipFocusRequester
+            IntegrationSettingsSection.Tracking -> trackingFocusRequester
         }
         runCatching { requester.requestFocus() }
     }
@@ -1115,6 +1119,19 @@ private fun IntegrationSettingsContent(
                             state = integrationHubState,
                             verticalArrangement = Arrangement.spacedBy(10.dp)
                         ) {
+                            item(key = "integration_hub_tracking") {
+                                SettingsActionRow(
+                                    title = stringResource(R.string.settings_tracking_title),
+                                    subtitle = stringResource(R.string.settings_tracking_description),
+                                    leadingIcon = Icons.Default.Sync,
+                                    onClick = { onSelectSection(IntegrationSettingsSection.Tracking) },
+                                    modifier = if (hubEntryTargetSection == IntegrationSettingsSection.Tracking) {
+                                        Modifier.focusRequester(hubEntryFocusRequester)
+                                    } else {
+                                        Modifier
+                                    }
+                                )
+                            }
                             item(key = "integration_hub_tmdb") {
                                 SettingsActionRow(
                                     title = "TMDB",
@@ -1182,6 +1199,12 @@ private fun IntegrationSettingsContent(
         IntegrationSettingsSection.AnimeSkip -> {
             AnimeSkipSettingsContent(
                 initialFocusRequester = animeSkipFocusRequester
+            )
+        }
+
+        IntegrationSettingsSection.Tracking -> {
+            TrackingSettingsContent(
+                initialFocusRequester = trackingFocusRequester
             )
         }
     }

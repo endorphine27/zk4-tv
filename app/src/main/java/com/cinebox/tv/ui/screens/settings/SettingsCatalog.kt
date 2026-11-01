@@ -36,7 +36,8 @@ internal fun visibleSettingsCategories(
         SettingsCategory.WATCH_PARTY -> isWatchPartyAvailable
         SettingsCategory.DEBUG -> isDebugBuild && !isEssentialMode
         SettingsCategory.EXPERIENCE -> false
-        SettingsCategory.TRACKING -> true
+        // Trakt now lives under Integrations
+        SettingsCategory.TRACKING -> false
         else -> true
     }
 }
