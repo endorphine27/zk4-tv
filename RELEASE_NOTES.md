@@ -8,4 +8,4 @@ Ce se schimbă în această versiune:
 • Player: butonul „Sari” nu mai clipește
 • Player: butonul Înapoi iese din ecranul de recomandări
 • Sunet: Mod de noapte (Setări → Redare → Audio) ridică dialogul și sunetele slabe, ca să poți ține volumul mic
-• Stabilitate: fixuri pentru încărcarea postere și linkuri Debrid, sincronizarea pluginurilor și fluiditatea ecranului principal
+• Stabilitate: fixuri pentru încărcarea posterelor și linkuri Debrid, și sincronizarea pluginurilor
