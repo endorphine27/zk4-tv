@@ -54,6 +54,7 @@ class ProviderCredentialSyncService @Inject constructor(
     private val profileManager: ProfileManager,
     private val debridSettingsDataStore: DebridSettingsDataStore,
     private val mdbListSettingsDataStore: MDBListSettingsDataStore,
+    private val tmdbSettingsDataStore: com.cinebox.tv.data.local.TmdbSettingsDataStore,
     private val animeSkipSettingsDataStore: AnimeSkipSettingsDataStore,
     private val syncClientIdentity: SyncClientIdentity
 ) {
@@ -192,6 +193,7 @@ class ProviderCredentialSyncService @Inject constructor(
         check(profileManager.activeProfileId.value == profileId)
         val debrid = debridSettingsDataStore.settings.first()
         val mdbList = mdbListSettingsDataStore.settings.first()
+        val tmdb = tmdbSettingsDataStore.settings.first()
         val animeSkipClientId = animeSkipSettingsDataStore.clientId.first()
         check(profileManager.activeProfileId.value == profileId)
         return ProviderCredentialSnapshot(
@@ -206,6 +208,13 @@ class ProviderCredentialSyncService @Inject constructor(
                         )
                     )
                 }
+                add(
+                    ProviderCredentialValue(
+                        provider = ProviderCredentialIds.TMDB,
+                        field = API_KEY_FIELD,
+                        value = tmdb.apiKey
+                    )
+                )
                 add(
                     ProviderCredentialValue(
                         provider = ProviderCredentialIds.MDBLIST,
@@ -231,6 +240,9 @@ class ProviderCredentialSyncService @Inject constructor(
                 credential.provider.startsWith("debrid:") -> {
                     val providerId = credential.provider.substringAfter("debrid:")
                     debridSettingsDataStore.setProviderApiKey(providerId, credential.value)
+                }
+                credential.provider == ProviderCredentialIds.TMDB -> {
+                    tmdbSettingsDataStore.setApiKey(credential.value)
                 }
                 credential.provider == ProviderCredentialIds.MDBLIST -> {
                     mdbListSettingsDataStore.setApiKey(credential.value)
@@ -262,8 +274,9 @@ class ProviderCredentialSyncService @Inject constructor(
                     combine(
                         debridSettingsDataStore.settings,
                         mdbListSettingsDataStore.settings,
+                        tmdbSettingsDataStore.settings,
                         animeSkipSettingsDataStore.clientId
-                    ) { debrid, mdbList, animeSkipClientId ->
+                    ) { debrid, mdbList, tmdb, animeSkipClientId ->
                         ProviderCredentialSnapshot(
                             profileId = profileId,
                             values = buildList {
@@ -276,6 +289,13 @@ class ProviderCredentialSyncService @Inject constructor(
                                         )
                                     )
                                 }
+                                add(
+                                    ProviderCredentialValue(
+                                        provider = ProviderCredentialIds.TMDB,
+                                        field = API_KEY_FIELD,
+                                        value = tmdb.apiKey
+                                    )
+                                )
                                 add(
                                     ProviderCredentialValue(
                                         provider = ProviderCredentialIds.MDBLIST,

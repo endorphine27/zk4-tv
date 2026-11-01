@@ -7,6 +7,7 @@ import kotlinx.serialization.json.contentOrNull
 import kotlinx.serialization.json.put
 
 internal object ProviderCredentialIds {
+    const val TMDB = "tmdb"
     const val MDBLIST = "mdblist"
     const val ANIMESKIP = "animeskip"
 

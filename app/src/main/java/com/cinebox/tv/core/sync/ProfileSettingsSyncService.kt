@@ -158,6 +158,7 @@ private val credentialProfileSettingsKeys = mapOf(
         "premiumize_api_key",
         "real_debrid_api_key"
     ),
+    "tmdb_settings" to setOf("tmdb_api_key"),
     "mdblist_settings" to setOf("mdblist_api_key"),
     "animeskip_settings" to setOf("animeskip_client_id")
 )
