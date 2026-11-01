@@ -56,6 +56,7 @@ class ProviderCredentialSyncService @Inject constructor(
     private val mdbListSettingsDataStore: MDBListSettingsDataStore,
     private val tmdbSettingsDataStore: com.cinebox.tv.data.local.TmdbSettingsDataStore,
     private val animeSkipSettingsDataStore: AnimeSkipSettingsDataStore,
+    private val traktSettingsDataStore: com.cinebox.tv.data.local.TraktSettingsDataStore,
     private val syncClientIdentity: SyncClientIdentity
 ) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
@@ -195,6 +196,7 @@ class ProviderCredentialSyncService @Inject constructor(
         val mdbList = mdbListSettingsDataStore.settings.first()
         val tmdb = tmdbSettingsDataStore.settings.first()
         val animeSkipClientId = animeSkipSettingsDataStore.clientId.first()
+        val traktClientId = traktSettingsDataStore.clientId.value
         check(profileManager.activeProfileId.value == profileId)
         return ProviderCredentialSnapshot(
             profileId = profileId,
@@ -229,6 +231,13 @@ class ProviderCredentialSyncService @Inject constructor(
                         value = animeSkipClientId
                     )
                 )
+                add(
+                    ProviderCredentialValue(
+                        provider = ProviderCredentialIds.TRAKT,
+                        field = CLIENT_ID_FIELD,
+                        value = traktClientId
+                    )
+                )
             }
         )
     }
@@ -249,6 +258,12 @@ class ProviderCredentialSyncService @Inject constructor(
                 }
                 credential.provider == ProviderCredentialIds.ANIMESKIP -> {
                     animeSkipSettingsDataStore.setClientId(credential.value)
+                }
+                credential.provider == ProviderCredentialIds.TRAKT -> {
+                    // Never wipe a Client ID typed here just because no other device has one yet.
+                    if (credential.value.isNotBlank()) {
+                        traktSettingsDataStore.setClientId(credential.value)
+                    }
                 }
             }
         }
@@ -275,8 +290,9 @@ class ProviderCredentialSyncService @Inject constructor(
                         debridSettingsDataStore.settings,
                         mdbListSettingsDataStore.settings,
                         tmdbSettingsDataStore.settings,
-                        animeSkipSettingsDataStore.clientId
-                    ) { debrid, mdbList, tmdb, animeSkipClientId ->
+                        animeSkipSettingsDataStore.clientId,
+                        traktSettingsDataStore.clientId
+                    ) { debrid, mdbList, tmdb, animeSkipClientId, traktClientId ->
                         ProviderCredentialSnapshot(
                             profileId = profileId,
                             values = buildList {
@@ -308,6 +324,13 @@ class ProviderCredentialSyncService @Inject constructor(
                                         provider = ProviderCredentialIds.ANIMESKIP,
                                         field = CLIENT_ID_FIELD,
                                         value = animeSkipClientId
+                                    )
+                                )
+                                add(
+                                    ProviderCredentialValue(
+                                        provider = ProviderCredentialIds.TRAKT,
+                                        field = CLIENT_ID_FIELD,
+                                        value = traktClientId
                                     )
                                 )
                             }
