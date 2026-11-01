@@ -1,2 +1,2 @@
 Ce se schimbă în această versiune:
-• Setări: Trakt (Urmărire) este acum în Integrări, lângă TMDB și MDBList
+• Trakt: Client ID-ul introdus pe alt dispozitiv (de exemplu pe Mac) apare automat și pe TV
