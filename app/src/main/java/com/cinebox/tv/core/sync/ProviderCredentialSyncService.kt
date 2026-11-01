@@ -41,6 +41,7 @@ private const val PROVIDER_CREDENTIAL_FOREGROUND_DELAY_MS = 2500L
 private const val PROVIDER_CREDENTIAL_FOREGROUND_MIN_INTERVAL_MS = 60_000L
 private const val API_KEY_FIELD = "api_key"
 private const val CLIENT_ID_FIELD = "client_id"
+private const val AUTH_JSON_FIELD = "auth_json"
 
 private data class ProviderCredentialScope(
     val userId: String,
@@ -57,9 +58,12 @@ class ProviderCredentialSyncService @Inject constructor(
     private val tmdbSettingsDataStore: com.cinebox.tv.data.local.TmdbSettingsDataStore,
     private val animeSkipSettingsDataStore: AnimeSkipSettingsDataStore,
     private val traktSettingsDataStore: com.cinebox.tv.data.local.TraktSettingsDataStore,
+    private val traktAuthDataStore: com.cinebox.tv.data.local.TraktAuthDataStore,
     private val syncClientIdentity: SyncClientIdentity
 ) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    @Volatile
+    private var lastTraktAuthPayload: String = ""
     private val syncMutex = Mutex()
     private val stateLock = Any()
     private val observedSnapshots = mutableMapOf<Int, ProviderCredentialSnapshot>()
@@ -197,6 +201,7 @@ class ProviderCredentialSyncService @Inject constructor(
         val tmdb = tmdbSettingsDataStore.settings.first()
         val animeSkipClientId = animeSkipSettingsDataStore.clientId.first()
         val traktClientId = traktSettingsDataStore.clientId.value
+        val traktAuthPayload = TraktAuthSyncCodec.encode(traktAuthDataStore.getCurrentState(profileId), lastTraktAuthPayload)
         check(profileManager.activeProfileId.value == profileId)
         return ProviderCredentialSnapshot(
             profileId = profileId,
@@ -238,6 +243,13 @@ class ProviderCredentialSyncService @Inject constructor(
                         value = traktClientId
                     )
                 )
+                add(
+                    ProviderCredentialValue(
+                        provider = ProviderCredentialIds.TRAKT_AUTH,
+                        field = AUTH_JSON_FIELD,
+                        value = traktAuthPayload
+                    )
+                )
             }
         )
     }
@@ -259,11 +271,45 @@ class ProviderCredentialSyncService @Inject constructor(
                 credential.provider == ProviderCredentialIds.ANIMESKIP -> {
                     animeSkipSettingsDataStore.setClientId(credential.value)
                 }
+                credential.provider == ProviderCredentialIds.TRAKT_AUTH -> {
+                    applyTraktAuth(snapshot.profileId, credential.value)
+                }
                 credential.provider == ProviderCredentialIds.TRAKT -> {
                     // Never wipe a Client ID typed here just because no other device has one yet.
                     if (credential.value.isNotBlank()) {
                         traktSettingsDataStore.setClientId(credential.value)
                     }
+                }
+            }
+        }
+    }
+
+    private suspend fun applyTraktAuth(profileId: Int, payload: String) {
+        val remote = TraktAuthSyncCodec.decode(payload) ?: return
+        lastTraktAuthPayload = payload
+        val local = traktAuthDataStore.getCurrentState(profileId)
+        when (remote) {
+            is SyncedTraktAuth.Login -> {
+                val adopt = !local.isAuthenticated ||
+                    remote.createdAt > (local.createdAt ?: 0L)
+                // A device that disconnected after this login was issued must not be logged back in.
+                val disconnectedLater = (local.disconnectedAtMillis ?: 0L) > remote.createdAt * 1000L
+                if (adopt && !disconnectedLater) {
+                    traktAuthDataStore.saveSyncedAuth(
+                        accessToken = remote.accessToken,
+                        refreshToken = remote.refreshToken,
+                        tokenType = remote.tokenType,
+                        createdAt = remote.createdAt,
+                        expiresIn = remote.expiresIn,
+                        username = remote.username,
+                        userSlug = remote.userSlug
+                    )
+                }
+            }
+            is SyncedTraktAuth.Disconnected -> {
+                if (local.isAuthenticated && (local.createdAt ?: 0L) * 1000L < remote.atMillis) {
+                    traktAuthDataStore.clearAuth()
+                    traktAuthDataStore.markDisconnected(remote.atMillis)
                 }
             }
         }
@@ -334,6 +380,14 @@ class ProviderCredentialSyncService @Inject constructor(
                                     )
                                 )
                             }
+                        )
+                    }.combine(traktAuthDataStore.state) { snapshot, auth ->
+                        snapshot.copy(
+                            values = snapshot.values + ProviderCredentialValue(
+                                provider = ProviderCredentialIds.TRAKT_AUTH,
+                                field = AUTH_JSON_FIELD,
+                                value = TraktAuthSyncCodec.encode(auth, lastTraktAuthPayload)
+                            )
                         )
                     }
                 }

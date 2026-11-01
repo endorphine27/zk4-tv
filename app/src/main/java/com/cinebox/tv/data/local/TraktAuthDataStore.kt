@@ -38,7 +38,9 @@ data class TraktAuthState(
     val userCode: String? = null,
     val verificationUrl: String? = null,
     val expiresAt: Long? = null,
-    val pollInterval: Int? = null
+    val pollInterval: Int? = null,
+    /** Set when the user disconnected on purpose, so other devices can follow. */
+    val disconnectedAtMillis: Long? = null
 ) {
     val isAuthenticated: Boolean
         get() = !accessToken.isNullOrBlank() && !refreshToken.isNullOrBlank()
@@ -68,6 +70,7 @@ class TraktAuthDataStore @Inject constructor(
     private val verificationUrlKey = stringPreferencesKey("verification_url")
     private val expiresAtKey = longPreferencesKey("expires_at")
     private val pollIntervalKey = intPreferencesKey("poll_interval")
+    private val disconnectedAtKey = longPreferencesKey("disconnected_at")
 
     private fun store(profileId: Int = profileManager.activeProfileId.value) =
         factory.get(profileId, FEATURE)
@@ -86,7 +89,8 @@ class TraktAuthDataStore @Inject constructor(
                 userCode = preferences[userCodeKey],
                 verificationUrl = preferences[verificationUrlKey],
                 expiresAt = preferences[expiresAtKey],
-                pollInterval = preferences[pollIntervalKey]
+                pollInterval = preferences[pollIntervalKey],
+                disconnectedAtMillis = preferences[disconnectedAtKey]
             )
         }
     }
@@ -113,7 +117,8 @@ class TraktAuthDataStore @Inject constructor(
             userCode = prefs[userCodeKey],
             verificationUrl = prefs[verificationUrlKey],
             expiresAt = prefs[expiresAtKey],
-            pollInterval = prefs[pollIntervalKey]
+            pollInterval = prefs[pollIntervalKey],
+            disconnectedAtMillis = prefs[disconnectedAtKey]
         )
     }
 
@@ -124,6 +129,38 @@ class TraktAuthDataStore @Inject constructor(
             preferences[tokenTypeKey] = token.tokenType
             preferences[createdAtKey] = token.createdAt
             preferences[expiresInKey] = normalizeTraktTokenLifetimeSeconds(token.expiresIn)
+            preferences.remove(disconnectedAtKey)
+        }
+    }
+
+    suspend fun markDisconnected(atMillis: Long) {
+        store().edit { it[disconnectedAtKey] = atMillis }
+    }
+
+    /** Adopts a Trakt login that another device made (or refreshed). */
+    suspend fun saveSyncedAuth(
+        accessToken: String,
+        refreshToken: String,
+        tokenType: String?,
+        createdAt: Long,
+        expiresIn: Int,
+        username: String?,
+        userSlug: String?
+    ) {
+        store().edit { preferences ->
+            preferences[accessTokenKey] = accessToken
+            preferences[refreshTokenKey] = refreshToken
+            if (tokenType.isNullOrBlank()) preferences.remove(tokenTypeKey) else preferences[tokenTypeKey] = tokenType
+            preferences[createdAtKey] = createdAt
+            preferences[expiresInKey] = normalizeTraktTokenLifetimeSeconds(expiresIn)
+            if (username.isNullOrBlank()) preferences.remove(usernameKey) else preferences[usernameKey] = username
+            if (userSlug.isNullOrBlank()) preferences.remove(userSlugKey) else preferences[userSlugKey] = userSlug
+            preferences.remove(disconnectedAtKey)
+            preferences.remove(deviceCodeKey)
+            preferences.remove(userCodeKey)
+            preferences.remove(verificationUrlKey)
+            preferences.remove(expiresAtKey)
+            preferences.remove(pollIntervalKey)
         }
     }
 

@@ -319,6 +319,7 @@ class TraktAuthService @Inject constructor(
         }
         authSessionNoticeDataStore.markTraktExplicitLogout()
         traktAuthDataStore.clearAuth()
+        traktAuthDataStore.markDisconnected(System.currentTimeMillis())
     }
 
     suspend fun fetchUserSettings(): String? {
