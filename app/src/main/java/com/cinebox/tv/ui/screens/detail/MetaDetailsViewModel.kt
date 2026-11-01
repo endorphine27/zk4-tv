@@ -1291,7 +1291,8 @@ class MetaDetailsViewModel @Inject constructor(
                 }
             }
 
-            val rawRecommendations = when (source) {
+            var effectiveSource = source
+            var rawRecommendations = when (source) {
                 MoreLikeThisSource.TRAKT -> {
                     runCatching {
                         traktRelatedService.getRelated(
@@ -1318,27 +1319,15 @@ class MetaDetailsViewModel @Inject constructor(
                     }
                 }
 
-                MoreLikeThisSource.TMDB -> {
-                    val settings = tmdbSettingsDataStore.settings.first()
-                    val tmdbContentType = resolveTmdbContentType(meta)
-                    val tmdbLookupType = tmdbContentType.toApiString()
-                    val tmdbId = tmdbService.ensureTmdbId(meta.id, tmdbLookupType, fallbackImdbId = meta.imdbId)
-                        ?: tmdbService.ensureTmdbId(itemId, itemType, fallbackImdbId = meta.imdbId)
-                    if (tmdbId.isNullOrBlank()) {
-                        _uiState.update { it.copy(moreLikeThis = emptyList(), moreLikeThisSource = null) }
-                        return@launch
-                    }
+                MoreLikeThisSource.TMDB -> fetchTmdbMoreLikeThis(meta)
+            }
 
-                    runCatching {
-                        tmdbMetadataService.fetchMoreLikeThis(
-                            tmdbId = tmdbId,
-                            contentType = tmdbContentType,
-                            language = settings.language
-                        )
-                    }.getOrElse {
-                        Log.w(TAG, "Failed to load More like this for ${meta.id}: ${it.message}")
-                        emptyList()
-                    }
+            // The chosen Trakt/Simkl source can answer with nothing (no client keys in this build): use TMDB then.
+            if (rawRecommendations.isEmpty() && source != MoreLikeThisSource.TMDB) {
+                val tmdbSettings = tmdbSettingsDataStore.settings.first()
+                if (shouldLoadMoreLikeThis(tmdbSettings)) {
+                    rawRecommendations = fetchTmdbMoreLikeThis(meta)
+                    if (rawRecommendations.isNotEmpty()) effectiveSource = MoreLikeThisSource.TMDB
                 }
             }
 
@@ -1357,12 +1346,31 @@ class MetaDetailsViewModel @Inject constructor(
                 if (state.meta == null || state.meta.id == meta.id) {
                     state.copy(
                         moreLikeThis = recommendations,
-                        moreLikeThisSource = source.takeIf { recommendations.isNotEmpty() }
+                        moreLikeThisSource = effectiveSource.takeIf { recommendations.isNotEmpty() }
                     )
                 } else {
                     state
                 }
             }
+        }
+    }
+
+    private suspend fun fetchTmdbMoreLikeThis(meta: Meta): List<MetaPreview> {
+        val settings = tmdbSettingsDataStore.settings.first()
+        val tmdbContentType = resolveTmdbContentType(meta)
+        val tmdbLookupType = tmdbContentType.toApiString()
+        val tmdbId = tmdbService.ensureTmdbId(meta.id, tmdbLookupType, fallbackImdbId = meta.imdbId)
+            ?: tmdbService.ensureTmdbId(itemId, itemType, fallbackImdbId = meta.imdbId)
+        if (tmdbId.isNullOrBlank()) return emptyList()
+        return runCatching {
+            tmdbMetadataService.fetchMoreLikeThis(
+                tmdbId = tmdbId,
+                contentType = tmdbContentType,
+                language = settings.language
+            )
+        }.getOrElse {
+            Log.w(TAG, "Failed to load More like this for ${meta.id}: ${it.message}")
+            emptyList()
         }
     }
 

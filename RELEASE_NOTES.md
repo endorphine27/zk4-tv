@@ -1,2 +1,2 @@
 Ce se schimbă în această versiune:
-• TMDB: testul din Setări → Integrări → TMDB arată acum și câte recomandări construiește aplicația
+• Recomandări: „Mai multe de acest gen” folosește TMDB când Trakt sau Simkl nu întorc nimic, deci fila apare în detaliile filmelor și serialelor
