@@ -106,6 +106,15 @@ fun TmdbSettingsContent(
                     )
                 }
 
+                item(key = "tmdb_test") {
+                    val result by viewModel.testResult.collectAsStateWithLifecycle()
+                    SettingsActionRow(
+                        title = stringResource(R.string.tmdb_test_title),
+                        subtitle = result ?: stringResource(R.string.tmdb_test_subtitle),
+                        onClick = { viewModel.runTest() }
+                    )
+                }
+
                 item(key = "tmdb_modern_home_enabled") {
                     SettingsToggleRow(
                         title = stringResource(R.string.tmdb_modern_home_title),

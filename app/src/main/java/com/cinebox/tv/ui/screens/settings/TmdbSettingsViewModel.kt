@@ -21,7 +21,8 @@ class TmdbSettingsViewModel @Inject constructor(
     private val dataStore: TmdbSettingsDataStore,
     private val trailerService: TrailerService,
     private val metaRepository: MetaRepository,
-    private val cwEnrichmentCache: ContinueWatchingEnrichmentCache
+    private val cwEnrichmentCache: ContinueWatchingEnrichmentCache,
+    private val tmdbService: com.cinebox.tv.core.tmdb.TmdbService
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(TmdbSettingsUiState())
@@ -33,6 +34,14 @@ class TmdbSettingsViewModel @Inject constructor(
                 _uiState.update { it.fromSettings(settings) }
             }
         }
+    }
+
+    private val _testResult = MutableStateFlow<String?>(null)
+    val testResult: StateFlow<String?> = _testResult.asStateFlow()
+
+    fun runTest() {
+        _testResult.value = "…"
+        viewModelScope.launch { _testResult.value = tmdbService.diagnose() }
     }
 
     fun onEvent(event: TmdbSettingsEvent) {

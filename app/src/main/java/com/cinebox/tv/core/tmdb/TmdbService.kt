@@ -23,6 +23,19 @@ private const val TAG = "TmdbService"
 class TmdbService @Inject constructor(
     private val tmdbApi: TmdbApi
 ) {
+    /** One-line connectivity check for the settings screen; never throws. */
+    suspend fun diagnose(): String = withContext(Dispatchers.IO) {
+        val key = TmdbApiKey.get()
+        if (key.isBlank()) return@withContext "fără cheie"
+        try {
+            val find = tmdbApi.findByExternalId("tt8740790", key, "imdb_id")
+            val rec = tmdbApi.getTvRecommendations(63351, key, "ro-RO")
+            "cheie ${key.length} car. · find ${find.code()} (${find.body()?.tvResults?.size ?: 0}) · recomandări ${rec.code()} (${rec.body()?.results?.size ?: 0})"
+        } catch (e: Exception) {
+            "eroare: ${e.javaClass.simpleName}: ${e.message?.take(80)}"
+        }
+    }
+
     // Cache: IMDB ID -> TMDB ID (keyed by "$imdbId:$mediaType")
     private val imdbToTmdbCache = ConcurrentHashMap<String, Int>()
     
