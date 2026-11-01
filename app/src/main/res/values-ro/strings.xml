@@ -91,7 +91,7 @@
     <string name="cast_role_director">Regizor</string>
     <string name="cast_role_writer">Scenarist</string>
     <string name="detail_tab_ratings">Evaluări</string>
-    <string name="detail_tab_more_like_this">Mai multe ca acestea</string>
+    <string name="detail_tab_more_like_this">Mai multe de acest gen</string>
     <string name="detail_section_network">Rețea</string>
     <string name="detail_section_production">Producție</string>
     <string name="detail_lists_fallback">Liste</string>
@@ -401,8 +401,8 @@
     <string name="tmdb_networks_subtitle">Rețele cu logo-uri de la TMDB</string>
     <string name="tmdb_episodes_title">Episoade</string>
     <string name="tmdb_episodes_subtitle">Titluri de episoade, descrieri, miniaturi și durata de redare de la TMDB</string>
-    <string name="tmdb_more_like_this_title">Alte asemenea</string>
-    <string name="tmdb_more_like_this_subtitle">Fundaluri de recomandare TMDB pe pagina de detalii</string>
+    <string name="tmdb_more_like_this_title">Mai multe de acest gen</string>
+    <string name="tmdb_more_like_this_subtitle">Arată recomandări TMDB pe pagina de detalii</string>
     <string name="tmdb_language_dialog_title">Limba TMDB</string>
 
     <!-- TraktScreen -->
