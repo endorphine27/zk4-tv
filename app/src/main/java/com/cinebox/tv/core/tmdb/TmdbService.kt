@@ -14,7 +14,6 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 private const val TAG = "TmdbService"
-private val TMDB_API_KEY = BuildConfig.TMDB_API_KEY
 
 /**
  * Service to handle TMDB ID conversions and lookups.
@@ -70,7 +69,7 @@ class TmdbService @Inject constructor(
             
             val response = tmdbApi.findByExternalId(
                 externalId = imdbId,
-                apiKey = TMDB_API_KEY,
+                apiKey = TmdbApiKey.get(),
                 externalSource = "imdb_id"
             )
             
@@ -150,9 +149,9 @@ class TmdbService @Inject constructor(
             Log.d(TAG, "Looking up IMDB ID for TMDB: $tmdbId (type: $mediaType)")
             
             val response = when (normalizedType) {
-                "movie" -> tmdbApi.getMovieExternalIds(tmdbId, TMDB_API_KEY)
-                "tv", "series" -> tmdbApi.getTvExternalIds(tmdbId, TMDB_API_KEY)
-                else -> tmdbApi.getMovieExternalIds(tmdbId, TMDB_API_KEY)
+                "movie" -> tmdbApi.getMovieExternalIds(tmdbId, TmdbApiKey.get())
+                "tv", "series" -> tmdbApi.getTvExternalIds(tmdbId, TmdbApiKey.get())
+                else -> tmdbApi.getMovieExternalIds(tmdbId, TmdbApiKey.get())
             }
             
             if (!response.isSuccessful) {
@@ -281,7 +280,7 @@ class TmdbService @Inject constructor(
     fun cachedTmdbId(imdbId: String): Int? =
         imdbToTmdbCache["$imdbId:movie"] ?: imdbToTmdbCache["$imdbId:tv"]
 
-    fun apiKey(): String = TMDB_API_KEY
+    fun apiKey(): String = TmdbApiKey.get()
 
     /**
      * Fetches backdrop and poster URLs from TMDB for the given IMDB ID.
@@ -295,9 +294,9 @@ class TmdbService @Inject constructor(
             runCatching {
                 val isMovie = normalizeMediaType(mediaType) == "movie"
                 val response = if (isMovie)
-                    tmdbApi.getMovieDetails(tmdbId, TMDB_API_KEY)
+                    tmdbApi.getMovieDetails(tmdbId, TmdbApiKey.get())
                 else
-                    tmdbApi.getTvDetails(tmdbId, TMDB_API_KEY)
+                    tmdbApi.getTvDetails(tmdbId, TmdbApiKey.get())
                 val body = response.body() ?: return@runCatching null
                 TmdbImages(
                     backdropUrl = body.backdropPath?.let { "https://image.tmdb.org/t/p/w1280$it" },

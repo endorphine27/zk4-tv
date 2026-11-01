@@ -6,6 +6,8 @@ data class TmdbSettings(
     val enrichContinueWatching: Boolean = true,
     // TMDB language preference (ISO-639-1, default English)
     val language: String = "en",
+    // Key entered by the user; empty means the build-time key is used
+    val apiKey: String = "",
     // Group: Artwork (logo, backdrop)
     val useArtwork: Boolean = true,
     // Group: Basic Info (description, genres, rating)

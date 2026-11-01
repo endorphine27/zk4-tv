@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -36,6 +37,7 @@ class TmdbSettingsDataStore @Inject constructor(
     private val modernHomeEnabledKey = booleanPreferencesKey("tmdb_modern_home_enabled")
     private val enrichContinueWatchingKey = booleanPreferencesKey("tmdb_enrich_continue_watching")
     private val languageKey = stringPreferencesKey("tmdb_language")
+    private val apiKeyKey = stringPreferencesKey("tmdb_api_key")
     private val useArtworkKey = booleanPreferencesKey("tmdb_use_artwork")
     private val useBasicInfoKey = booleanPreferencesKey("tmdb_use_basic_info")
     private val useDetailsKey = booleanPreferencesKey("tmdb_use_details")
@@ -54,6 +56,7 @@ class TmdbSettingsDataStore @Inject constructor(
                 modernHomeEnabled = prefs[modernHomeEnabledKey] ?: false,
                 enrichContinueWatching = prefs[enrichContinueWatchingKey] ?: true,
                 language = prefs[languageKey] ?: "en",
+                apiKey = prefs[apiKeyKey].orEmpty(),
                 useArtwork = prefs[useArtworkKey] ?: true,
                 useBasicInfo = prefs[useBasicInfoKey] ?: true,
                 useDetails = prefs[useDetailsKey] ?: true,
@@ -66,7 +69,12 @@ class TmdbSettingsDataStore @Inject constructor(
                 useCollections = prefs[useCollectionsKey] ?: true
             )
         }
-    }.stateIn(scope, SharingStarted.Eagerly, TmdbSettings())
+    }.onEach { com.cinebox.tv.core.tmdb.TmdbApiKey.userKey = it.apiKey }
+        .stateIn(scope, SharingStarted.Eagerly, TmdbSettings())
+
+    suspend fun setApiKey(value: String) {
+        store().edit { it[apiKeyKey] = value.trim() }
+    }
 
     suspend fun setEnabled(enabled: Boolean) {
         store().edit { it[enabledKey] = enabled }

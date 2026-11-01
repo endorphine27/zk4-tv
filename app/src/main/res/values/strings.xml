@@ -3442,4 +3442,9 @@
     <string name="calendar_day_empty">No episodes on this day.</string>
     <string name="calendar_watched">Watched</string>
     <string name="auth_forgot_password_hint">Forgot your password? On your phone, open destinyab.go.ro:8444/reset</string>
+    <string name="tmdb_api_key_title">TMDB API key</string>
+    <string name="tmdb_api_key_subtitle">Needed for recommendations and extra details from TMDB</string>
+    <string name="tmdb_api_key_not_set">Not set</string>
+    <string name="tmdb_api_key_dialog_subtitle">Paste or type your TMDB API key (v3).</string>
+    <string name="tmdb_api_key_placeholder">TMDB API key</string>
 </resources>

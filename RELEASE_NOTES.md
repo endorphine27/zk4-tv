@@ -9,3 +9,4 @@ Ce se schimbă în această versiune:
 • Player: butonul Înapoi iese din ecranul de recomandări
 • Sunet: Mod de noapte (Setări → Redare → Audio) ridică dialogul și sunetele slabe, ca să poți ține volumul mic
 • Stabilitate: fixuri pentru încărcarea posterelor și linkuri Debrid, și sincronizarea pluginurilor
+• TMDB: câmp nou „Cheie API TMDB” în Setări → Integrări → TMDB; fără ea nu apar recomandările „Mai multe de acest gen”

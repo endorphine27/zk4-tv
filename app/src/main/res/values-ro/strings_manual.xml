@@ -1458,4 +1458,9 @@
     <string name="audio_night_mode_medium_desc">Dialog clar ridicat, până la +10 dB</string>
     <string name="audio_night_mode_strong">Puternic</string>
     <string name="audio_night_mode_strong_desc">Până la +15 dB, pentru vizionare târziu, la volum mic</string>
+    <string name="tmdb_api_key_title">Cheie API TMDB</string>
+    <string name="tmdb_api_key_subtitle">Necesară pentru recomandări și detalii suplimentare de la TMDB</string>
+    <string name="tmdb_api_key_not_set">Nesetat</string>
+    <string name="tmdb_api_key_dialog_subtitle">Lipește sau scrie cheia ta API TMDB (v3).</string>
+    <string name="tmdb_api_key_placeholder">Cheie API TMDB</string>
 </resources>
