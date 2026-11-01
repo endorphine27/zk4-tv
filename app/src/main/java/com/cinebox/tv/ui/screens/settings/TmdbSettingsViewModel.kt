@@ -22,7 +22,8 @@ class TmdbSettingsViewModel @Inject constructor(
     private val trailerService: TrailerService,
     private val metaRepository: MetaRepository,
     private val cwEnrichmentCache: ContinueWatchingEnrichmentCache,
-    private val tmdbService: com.cinebox.tv.core.tmdb.TmdbService
+    private val tmdbService: com.cinebox.tv.core.tmdb.TmdbService,
+    private val tmdbMetadataService: com.cinebox.tv.core.tmdb.TmdbMetadataService
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(TmdbSettingsUiState())
@@ -41,7 +42,14 @@ class TmdbSettingsViewModel @Inject constructor(
 
     fun runTest() {
         _testResult.value = "…"
-        viewModelScope.launch { _testResult.value = tmdbService.diagnose() }
+        viewModelScope.launch {
+            val base = tmdbService.diagnose()
+            val st = dataStore.settings.value
+            val items = runCatching {
+                tmdbMetadataService.fetchMoreLikeThis("63351", com.cinebox.tv.domain.model.ContentType.SERIES, st.language).size
+            }.getOrElse { -1 }
+            _testResult.value = "$base · listă $items · activ=${st.enabled}/${st.useMoreLikeThis} · limba ${st.language}"
+        }
     }
 
     fun onEvent(event: TmdbSettingsEvent) {
