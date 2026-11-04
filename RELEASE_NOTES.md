@@ -1,2 +1,3 @@
 Ce se schimbă în această versiune:
-• MDBList: conectare cu cont MDBList (istoric și progres), disponibilă din Setări → Urmărire
+• Redare: detectare HDR mai bună (HLG în fișiere MKV și format HDR din decodor)
+• Setări avansate: derularea nu mai rămâne blocată
