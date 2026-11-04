@@ -546,6 +546,10 @@ class LayoutSettingsViewModel @Inject constructor(
         viewModelScope.launch { streamBadgeSettingsDataStore.setShowFileSizeBadges(enabled) }
     }
 
+    fun setSortByVideoQuality(enabled: Boolean) {
+        viewModelScope.launch { streamBadgeSettingsDataStore.setSortByVideoQuality(enabled) }
+    }
+
     fun setShowAddonLogo(enabled: Boolean) {
         viewModelScope.launch { streamBadgeSettingsDataStore.setShowAddonLogo(enabled) }
     }
@@ -1044,6 +1048,9 @@ data class StreamBadgeSettingsUiState(
 
     val showFileSizeBadges: Boolean
         get() = settings.showFileSizeBadges
+
+    val sortByVideoQuality: Boolean
+        get() = settings.sortByVideoQuality
 
     val showAddonLogo: Boolean
         get() = settings.showAddonLogo

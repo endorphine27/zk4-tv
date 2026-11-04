@@ -224,6 +224,11 @@ class StreamRepositoryPluginIsolationTest {
                 tmdbService = tmdbService,
                 debridStreamPresentation = presentation,
                 localDebridAvailabilityService = availability,
+                streamBadgeSettingsDataStore = mockk {
+                    every { settings } returns kotlinx.coroutines.flow.flowOf(
+                        com.cinebox.tv.core.streams.StreamBadgeSettings(sortByVideoQuality = false)
+                    )
+                },
                 serverStreams = mockk {
                     every { isNativeRequest(any()) } returns false
                     every { revision } returns 0

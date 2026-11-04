@@ -53,6 +53,7 @@ class StreamBadgeSettingsDataStore @Inject constructor(
 
     private val streamBadgeRulesKey = stringPreferencesKey("stream_badge_rules")
     private val showFileSizeBadgesKey = booleanPreferencesKey("show_file_size_badges")
+    private val sortByVideoQualityKey = booleanPreferencesKey("sort_by_video_quality")
     private val showAddonLogoKey = booleanPreferencesKey("show_addon_logo")
     private val streamBadgePlacementKey = stringPreferencesKey("stream_badge_placement")
     private val showInPlayerKey = booleanPreferencesKey("show_badges_in_player")
@@ -69,6 +70,7 @@ class StreamBadgeSettingsDataStore @Inject constructor(
         StreamBadgeSettings(
             rules = parseStreamBadgeRules(prefs[streamBadgeRulesKey]) ?: StreamBadgeRules(),
             showFileSizeBadges = prefs[showFileSizeBadgesKey] ?: true,
+            sortByVideoQuality = prefs[sortByVideoQualityKey] ?: true,
             showAddonLogo = prefs[showAddonLogoKey] ?: true,
             badgePlacement = prefs[streamBadgePlacementKey].toStreamBadgePlacement(),
             showInPlayer = prefs[showInPlayerKey] ?: false,
@@ -89,6 +91,10 @@ class StreamBadgeSettingsDataStore @Inject constructor(
 
     suspend fun setShowFileSizeBadges(enabled: Boolean) {
         store().edit { it[showFileSizeBadgesKey] = enabled }
+    }
+
+    suspend fun setSortByVideoQuality(enabled: Boolean) {
+        store().edit { it[sortByVideoQualityKey] = enabled }
     }
 
     suspend fun setShowAddonLogo(enabled: Boolean) {
@@ -116,6 +122,7 @@ class StreamBadgeSettingsDataStore @Inject constructor(
                 it.remove(streamBadgeRulesKey)
             }
             it[showFileSizeBadgesKey] = settings.showFileSizeBadges
+            it[sortByVideoQualityKey] = settings.sortByVideoQuality
             it[showAddonLogoKey] = settings.showAddonLogo
             it[streamBadgePlacementKey] = settings.badgePlacement.name
             it[showInPlayerKey] = settings.showInPlayer

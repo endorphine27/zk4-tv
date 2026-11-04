@@ -849,4 +849,6 @@
     <string name="dv7_libdovi_mode_row_title" translatable="false">Mod conversie</string>
     <string name="dv7_libdovi_mode_none_title" translatable="false">Niciunul</string>
     <string name="dv7_libdovi_mode_none_sub" translatable="false">Fără suprascriere. Folosește modul ales automat.</string>
+    <string name="settings_stream_sort_quality_title">Sortează după calitatea video</string>
+    <string name="settings_stream_sort_quality_description">Cea mai bună imagine prima: rezoluție, Dolby Vision/HDR, apoi remux/BluRay. Dacă e oprit, rămâne ordinea dată de addon.</string>
 </resources>

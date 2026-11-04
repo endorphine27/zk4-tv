@@ -59,10 +59,19 @@ class StreamRepositoryImpl @Inject constructor(
     private val tmdbService: TmdbService,
     private val debridStreamPresentation: DebridStreamPresentation,
     private val localDebridAvailabilityService: LocalDebridAvailabilityService,
-    private val serverStreams: ServerStreams
+    private val serverStreams: ServerStreams,
+    private val streamBadgeSettingsDataStore: com.cinebox.tv.data.local.StreamBadgeSettingsDataStore
 ) : StreamRepository {
     private val streamSearchSessions = StreamSearchSessionCache()
     private val localPluginSearchPaused = MutableStateFlow(false)
+
+    /** Puts the best picture first when the user has video-quality ordering on; otherwise keeps the addon order. */
+    private suspend fun orderForPreference(streams: List<Stream>): List<Stream> =
+        if (streamBadgeSettingsDataStore.settings.first().sortByVideoQuality) {
+            com.cinebox.tv.core.streams.StreamQuality.sortedByVideoQuality(streams)
+        } else {
+            streams
+        }
 
     override fun setLocalPluginSearchPaused(paused: Boolean) {
         localPluginSearchPaused.value = paused
@@ -222,9 +231,9 @@ class StreamRepositoryImpl @Inject constructor(
                             when (streamsResult) {
                                 is NetworkResult.Success -> {
                                     if (streamsResult.data.isNotEmpty()) {
-                                        val namedStreams = streamsResult.data.map {
+                                        val namedStreams = orderForPreference(streamsResult.data.map {
                                             it.copy(addonName = addon.displayName, addonLogo = addon.logo)
-                                        }
+                                        })
                                         resultChannel.send(
                                             AddonStreams(
                                                 addonName = addon.displayName,
@@ -243,7 +252,7 @@ class StreamRepositoryImpl @Inject constructor(
                                                 AddonStreams(
                                                     addonName = addon.displayName,
                                                     addonLogo = addon.logo,
-                                                    streams = inlineStreams
+                                                    streams = orderForPreference(inlineStreams)
                                                 )
                                             )
                                         } else {
@@ -528,7 +537,7 @@ class StreamRepositoryImpl @Inject constructor(
                     val addonStreams = AddonStreams(
                         addonName = addonName,
                         addonLogo = null,
-                        streams = results.map { result -> result.toPluginStream(scraper, addonName) }
+                        streams = orderForPreference(results.map { result -> result.toPluginStream(scraper, addonName) })
                     )
                     resultChannel.send(addonStreams)
                     Log.d(TAG, "Streamed ${results.size} results from ${scraper.name}")

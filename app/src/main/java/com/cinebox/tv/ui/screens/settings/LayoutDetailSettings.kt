@@ -150,6 +150,7 @@ internal fun LayoutDetailPageSection(
 internal fun LayoutStreamsSection(
     streamBadgeUiState: StreamBadgeSettingsUiState,
     onShowFileSizeBadgesChange: (Boolean) -> Unit,
+    onSortByVideoQualityChange: (Boolean) -> Unit,
     onShowAddonLogoChange: (Boolean) -> Unit,
     onBadgePlacementSelected: (StreamBadgePlacement) -> Unit,
     onConfigureBadges: () -> Unit,
@@ -166,6 +167,12 @@ internal fun LayoutStreamsSection(
         subtitle = stringResource(R.string.settings_stream_size_badges_description),
         checked = streamBadgeUiState.showFileSizeBadges,
         onToggle = { onShowFileSizeBadgesChange(!streamBadgeUiState.showFileSizeBadges) }
+    )
+    SettingsToggleRow(
+        title = stringResource(R.string.settings_stream_sort_quality_title),
+        subtitle = stringResource(R.string.settings_stream_sort_quality_description),
+        checked = streamBadgeUiState.sortByVideoQuality,
+        onToggle = { onSortByVideoQualityChange(!streamBadgeUiState.sortByVideoQuality) }
     )
     SettingsActionRow(
         title = stringResource(R.string.settings_stream_badge_position_title),

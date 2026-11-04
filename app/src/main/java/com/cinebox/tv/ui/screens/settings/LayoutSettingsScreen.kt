@@ -189,6 +189,7 @@ private fun LayoutSectionContent(
         LayoutSection.STREAMS -> LayoutStreamsSection(
             streamBadgeUiState = streamBadgeUiState,
             onShowFileSizeBadgesChange = viewModel::setShowFileSizeBadges,
+            onSortByVideoQualityChange = viewModel::setSortByVideoQuality,
             onShowAddonLogoChange = viewModel::setShowAddonLogo,
             onBadgePlacementSelected = viewModel::setStreamBadgePlacement,
             onConfigureBadges = viewModel::startStreamBadgeQrMode,
