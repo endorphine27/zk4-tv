@@ -84,6 +84,7 @@ data class MetaDetailsUiState(
     val mdbListRatingOrder: List<String> = com.cinebox.tv.domain.model.MDBListSettings.DEFAULT_RATING_ORDER,
     val isMdbListRatingsActive: Boolean = false,
     val tmdbRating: Float? = null,
+    val bestStreamBadges: List<com.cinebox.tv.domain.model.StreamBadge> = emptyList(),
     val comments: List<TraktCommentReview> = emptyList(),
     val commentsCurrentPage: Int = 0,
     val commentsPageCount: Int = 0,

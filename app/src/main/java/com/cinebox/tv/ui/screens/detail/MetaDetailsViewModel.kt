@@ -77,11 +77,14 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 private const val TAG = "MetaDetailsViewModel"
+private const val BEST_STREAM_SEARCH_TIMEOUT_MS = 25_000L
 
 @HiltViewModel
 class MetaDetailsViewModel @Inject constructor(
     @ApplicationContext private val context: Context,
     private val metaRepository: MetaRepository,
+    private val streamRepository: com.cinebox.tv.domain.repository.StreamRepository,
+    private val streamBadgePresentation: com.cinebox.tv.core.streams.StreamBadgePresentation,
     private val tmdbSettingsDataStore: TmdbSettingsDataStore,
     private val tmdbService: TmdbService,
     private val tmdbMetadataService: TmdbMetadataService,
@@ -938,6 +941,65 @@ class MetaDetailsViewModel @Inject constructor(
         }
     }
 
+    private var bestStreamBadgesJob: Job? = null
+
+    /**
+     * Shows the badges of the best stream the addons hold for this title. The search goes through
+     * the shared stream repository, so opening the sources list afterwards reuses its results.
+     */
+    private fun loadBestStreamBadges(meta: Meta) {
+        bestStreamBadgesJob?.cancel()
+        if (isServerItem || meta.type == ContentType.CHANNEL || meta.type == ContentType.TV) return
+        bestStreamBadgesJob = viewModelScope.launch {
+            if (!streamBadgePresentation.hasActiveFilters()) return@launch
+            // Series have no streams of their own, so the first regular episode stands in for the show.
+            val episode = meta.videos
+                .filter { (it.season ?: 0) > 0 && it.available != false }
+                .minWithOrNull(compareBy({ it.season ?: 0 }, { it.episode ?: 0 }))
+            val videoId = episode?.id ?: meta.id
+            var groups: List<com.cinebox.tv.domain.model.AddonStreams> = emptyList()
+            withTimeoutOrNull(BEST_STREAM_SEARCH_TIMEOUT_MS) {
+                streamRepository.getStreamsFromAllAddons(
+                    type = meta.apiType,
+                    videoId = videoId,
+                    season = episode?.season,
+                    episode = episode?.episode
+                ).collect { result ->
+                    if (result is NetworkResult.Success) groups = result.data
+                }
+            }
+            val best = groups.flatMap { it.streams }
+                .filter { !it.url.isNullOrBlank() || !it.infoHash.isNullOrBlank() }
+                .maxByOrNull(::streamQualityScore)
+                ?: return@launch
+            val badges = streamBadgePresentation
+                .apply(listOf(com.cinebox.tv.domain.model.AddonStreams(best.addonName, best.addonLogo, listOf(best))))
+                .firstOrNull()?.streams?.firstOrNull()?.badges.orEmpty()
+            _uiState.update { it.copy(bestStreamBadges = badges) }
+        }
+    }
+
+    private fun streamQualityScore(stream: com.cinebox.tv.domain.model.Stream): Int {
+        val text = listOfNotNull(stream.name, stream.title, stream.description).joinToString(" ").lowercase()
+        var score = when {
+            Regex("""2160p|\b4k\b|\buhd\b""").containsMatchIn(text) -> 400
+            Regex("""1440p""").containsMatchIn(text) -> 300
+            Regex("""1080p""").containsMatchIn(text) -> 200
+            Regex("""720p""").containsMatchIn(text) -> 100
+            else -> 0
+        }
+        if (Regex("""dolby[ ._-]?vision|\bdv\b|\bdovi\b""").containsMatchIn(text)) score += 30
+        else if (Regex("""hdr10\+""").containsMatchIn(text)) score += 25
+        else if (Regex("""\bhdr""").containsMatchIn(text)) score += 20
+        if (text.contains("atmos")) score += 12
+        else if (Regex("""truehd|dts[ -]?(x|hd)""").containsMatchIn(text)) score += 9
+        else if (Regex("""dd\+|e-?ac-?3|ddp""").containsMatchIn(text)) score += 6
+        if (text.contains("remux")) score += 5
+        // A cached debrid link starts right away, so it beats an uncached one of the same quality.
+        if (text.contains("[rd+]") || text.contains("[tb+]") || text.contains("[pm+]") || text.contains("[ad+]") || text.contains("\u26A1")) score += 3
+        return score
+    }
+
     private fun applyMeta(
         meta: Meta,
         initialNextToWatch: NextToWatch?
@@ -947,6 +1009,7 @@ class MetaDetailsViewModel @Inject constructor(
         // (which may be "tmdb:13836").  Don't downgrade from an IMDB ID to a
         // less canonical one (e.g. tmdb:) — Trakt stores progress under IMDB.
         syncEffectiveContentId(meta)
+        loadBestStreamBadges(meta)
 
         val seasons = if (meta.apiType.equals("tv", ignoreCase = true)) {
             meta.videos

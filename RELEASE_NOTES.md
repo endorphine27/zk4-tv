@@ -1,3 +1,2 @@
 Ce se schimbă în această versiune:
-• Redare: detectare HDR mai bună (HLG în fișiere MKV și format HDR din decodor)
-• Setări avansate: derularea nu mai rămâne blocată
+• Pagina titlului: insignele (4K, HDR, Atmos etc.) apar sub detalii, calculate pentru cea mai bună sursă disponibilă

@@ -120,6 +120,7 @@ fun HeroContentSection(
     mdbListRatingOrder: List<String> = com.cinebox.tv.domain.model.MDBListSettings.DEFAULT_RATING_ORDER,
     hideMetaInfoImdb: Boolean = false,
     tmdbRating: Float? = null,
+    bestStreamBadges: List<com.cinebox.tv.domain.model.StreamBadge> = emptyList(),
     showFullReleaseDate: Boolean = true,
     isTrailerPlaying: Boolean = false,
     playButtonFocusRequester: FocusRequester? = null,
@@ -363,7 +364,8 @@ fun HeroContentSection(
                         meta = meta,
                         hideImdbRating = hideMetaInfoImdb,
                         showFullReleaseDate = showFullReleaseDate,
-                        tmdbRating = tmdbRating
+                        tmdbRating = tmdbRating,
+                        bestStreamBadges = bestStreamBadges
                     )
                 }
             }
@@ -650,7 +652,8 @@ private fun MetaInfoRow(
     meta: Meta,
     hideImdbRating: Boolean,
     showFullReleaseDate: Boolean = true,
-    tmdbRating: Float? = null
+    tmdbRating: Float? = null,
+    bestStreamBadges: List<com.cinebox.tv.domain.model.StreamBadge> = emptyList()
 ) {
     val context = LocalContext.current
     val genresText = remember(meta.genres) {
@@ -824,6 +827,10 @@ private fun MetaInfoRow(
                     }
                 }
             }
+        }
+
+        if (bestStreamBadges.isNotEmpty()) {
+            com.cinebox.tv.ui.components.StreamBadgeChips(badges = bestStreamBadges)
         }
     }
 }
