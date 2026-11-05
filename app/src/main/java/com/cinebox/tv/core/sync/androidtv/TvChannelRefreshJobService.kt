@@ -20,7 +20,9 @@ import kotlinx.coroutines.launch
 private const val TAG = "TvChannelSync"
 private const val JOB_ID_PERIODIC = 10_010
 private const val JOB_ID_IMMEDIATE = 10_011
-private const val PERIODIC_INTERVAL_MS = 15 * 60_000L  // 15 minutes (JobScheduler OS minimum)
+// The channel is also reconciled whenever the app goes to the background, so the periodic job only has to
+// catch changes made elsewhere: hourly keeps the device from waking the app process every 15 minutes.
+private const val PERIODIC_INTERVAL_MS = 60 * 60_000L
 
 /**
  * Background job that keeps the Continue Watching preview channel in sync when the app
@@ -81,7 +83,9 @@ class TvChannelRefreshJobService : JobService() {
     companion object {
         fun schedulePeriodic(context: Context) {
             val scheduler = context.getSystemService(Context.JOB_SCHEDULER_SERVICE) as JobScheduler
-            if (scheduler.allPendingJobs.any { it.id == JOB_ID_PERIODIC }) return
+            // Reschedule a job left over from an older version with a different interval.
+            val pending = scheduler.allPendingJobs.firstOrNull { it.id == JOB_ID_PERIODIC }
+            if (pending != null && pending.intervalMillis == PERIODIC_INTERVAL_MS) return
             val job = JobInfo.Builder(
                 JOB_ID_PERIODIC,
                 ComponentName(context, TvChannelRefreshJobService::class.java)
