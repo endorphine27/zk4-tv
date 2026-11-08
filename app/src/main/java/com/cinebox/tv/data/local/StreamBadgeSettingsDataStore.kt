@@ -9,6 +9,7 @@ import com.cinebox.tv.core.streams.StreamBadgeGroup
 import com.cinebox.tv.core.streams.StreamBadgeImport
 import com.cinebox.tv.core.streams.StreamBadgePlacement
 import com.cinebox.tv.core.streams.StreamBadgeRules
+import com.cinebox.tv.core.streams.StreamBadgeRulesParser
 import com.cinebox.tv.core.streams.StreamBadgeSettings
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -20,6 +21,9 @@ import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.shareIn
+import kotlinx.coroutines.launch
+import java.net.HttpURLConnection
+import java.net.URL
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerializationException
@@ -43,6 +47,8 @@ class StreamBadgeSettingsDataStore @Inject constructor(
     companion object {
         const val FEATURE = "stream_badge_settings"
         private const val LEGACY_DEBRID_FEATURE = "debrid_settings"
+        private const val DEFAULT_BADGE_PACK_URL =
+            "https://xperience-app.com/badges/2c130c8d-5eb3-428d-8584-4d639a822565.json"
     }
 
     private fun store(profileId: Int = profileManager.activeProfileId.value) =
@@ -59,6 +65,8 @@ class StreamBadgeSettingsDataStore @Inject constructor(
     private val showInPlayerKey = booleanPreferencesKey("show_badges_in_player")
     private val playerBadgeSourceKey = stringPreferencesKey("player_badge_source")
     private val legacyDebridStreamBadgeRulesKey = stringPreferencesKey("debrid_stream_badge_rules")
+    private val defaultPackSeededKey = booleanPreferencesKey("default_badge_pack_seeded")
+    private val seedingProfiles = mutableSetOf<Int>()
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
@@ -134,13 +142,53 @@ class StreamBadgeSettingsDataStore @Inject constructor(
         val currentPrefs = store(profileId).data.first()
         if (currentPrefs[streamBadgeRulesKey] != null) return
         val legacyPrefs = legacyDebridStore(profileId).data.first()
-        val legacyRules = parseStreamBadgeRules(legacyPrefs[legacyDebridStreamBadgeRulesKey]) ?: return
+        val legacyRules = parseStreamBadgeRules(legacyPrefs[legacyDebridStreamBadgeRulesKey])
+        if (legacyRules == null) {
+            seedDefaultPack(profileId, currentPrefs[defaultPackSeededKey] == true)
+            return
+        }
         store(profileId).edit {
             if (it[streamBadgeRulesKey] == null) {
                 it[streamBadgeRulesKey] = json.encodeToString(legacyRules.normalized())
             }
         }
         legacyDebridStore(profileId).edit { it.remove(legacyDebridStreamBadgeRulesKey) }
+    }
+
+    // First run only: import the default pack in the background. The marker is set only after a
+    // successful import, so being offline retries later, and deleting the pack never brings it back.
+    private fun seedDefaultPack(profileId: Int, alreadySeeded: Boolean) {
+        if (alreadySeeded) return
+        synchronized(seedingProfiles) { if (!seedingProfiles.add(profileId)) return }
+        scope.launch {
+            try {
+                val payload = fetchDefaultPack()
+                val parsed = StreamBadgeRulesParser.parse(DEFAULT_BADGE_PACK_URL, payload)
+                val rules = StreamBadgeRules().upsert(parsed, activate = true).normalized()
+                store(profileId).edit {
+                    if (it[streamBadgeRulesKey] == null && it[defaultPackSeededKey] != true) {
+                        it[streamBadgeRulesKey] = json.encodeToString(rules)
+                    }
+                    it[defaultPackSeededKey] = true
+                }
+            } catch (_: Exception) {
+                // Offline or invalid payload: nothing saved, try again on the next start.
+            } finally {
+                synchronized(seedingProfiles) { seedingProfiles.remove(profileId) }
+            }
+        }
+    }
+
+    private fun fetchDefaultPack(): String {
+        val connection = URL(DEFAULT_BADGE_PACK_URL).openConnection() as HttpURLConnection
+        connection.connectTimeout = 10_000
+        connection.readTimeout = 15_000
+        return try {
+            if (connection.responseCode !in 200..299) error("HTTP ${connection.responseCode}")
+            connection.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() }
+        } finally {
+            connection.disconnect()
+        }
     }
 
     private fun parseStreamBadgeRules(value: String?): StreamBadgeRules? {
