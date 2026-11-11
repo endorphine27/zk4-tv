@@ -295,6 +295,8 @@
     <string name="layout_modern_sidebar_sub">Activați navigarea cu bară laterală plutitoare.</string>
     <string name="layout_modern_sidebar_blur">Estompare bară laterală modernă</string>
     <string name="layout_modern_sidebar_blur_sub">Comutați efectul de estompare pentru suprafețele barei laterale moderne.</string>
+    <string name="layout_hero_surprise">Surprinde-mă</string>
+    <string name="layout_hero_surprise_sub">Orice catalog instalat, ales din nou la fiecare încărcare a ecranului principal.</string>
     <string name="layout_show_hero">Afișează Secțiunea Hero</string>
     <string name="layout_show_hero_sub">Afișează caruselul hero în partea de sus a paginii principale.</string>
     <string name="layout_show_discover">Afișează Descoperă în Căutare</string>

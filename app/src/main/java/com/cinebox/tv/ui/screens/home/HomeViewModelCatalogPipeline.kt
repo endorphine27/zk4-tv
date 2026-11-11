@@ -142,6 +142,16 @@ internal fun HomeViewModel.observeInstalledAddonsPipeline() {
                             .map { catalogKey(addonId = addon.id, type = it.apiType, catalogId = it.id) }
                     }
                 )
+                if (!heroSurpriseRolled) {
+                    val surpriseCandidates = addons.flatMap { addon ->
+                        addon.catalogs
+                            .filter { (it.apiType == "movie" || it.apiType == "series") && !it.isSearchOnlyCatalog() }
+                            .map { catalogKey(addonId = addon.id, type = it.apiType, catalogId = it.id) }
+                    }
+                    if (layoutPreferenceDataStore.rollHeroSurpriseCatalog(surpriseCandidates)) {
+                        heroSurpriseRolled = true
+                    }
+                }
                 loadAllCatalogsPipeline(addons)
             }
     }

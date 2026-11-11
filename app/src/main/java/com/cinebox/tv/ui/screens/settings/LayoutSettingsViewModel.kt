@@ -50,6 +50,7 @@ data class LayoutSettingsUiState(
     val modernLandscapePostersEnabled: Boolean = false,
     val modernHeroFullScreenBackdropEnabled: Boolean = false,
     val heroSectionEnabled: Boolean = true,
+    val heroSurprise: Boolean = false,
     val discoverLocation: DiscoverLocation = DiscoverLocation.IN_SEARCH,
     val lastNonOffDiscoverLocation: DiscoverLocation = DiscoverLocation.IN_SEARCH,
     val posterLabelsEnabled: Boolean = true,
@@ -108,6 +109,7 @@ sealed class LayoutSettingsEvent {
     data class SetModernLandscapePostersEnabled(val enabled: Boolean) : LayoutSettingsEvent()
     data class SetModernHeroFullScreenBackdropEnabled(val enabled: Boolean) : LayoutSettingsEvent()
     data class SetHeroSectionEnabled(val enabled: Boolean) : LayoutSettingsEvent()
+    data class SetHeroSurprise(val enabled: Boolean) : LayoutSettingsEvent()
     data class SetDiscoverLocation(val location: DiscoverLocation) : LayoutSettingsEvent()
     data class SetPosterLabelsEnabled(val enabled: Boolean) : LayoutSettingsEvent()
     data class SetCatalogAddonNameEnabled(val enabled: Boolean) : LayoutSettingsEvent()
@@ -240,6 +242,11 @@ class LayoutSettingsViewModel @Inject constructor(
         viewModelScope.launch {
             layoutPreferenceDataStore.heroSectionEnabled.distinctUntilChanged().collectLatest { enabled ->
                 updateUiStateIfChanged { it.copy(heroSectionEnabled = enabled) }
+            }
+        }
+        viewModelScope.launch {
+            layoutPreferenceDataStore.heroSurprise.distinctUntilChanged().collectLatest { enabled ->
+                updateUiStateIfChanged { it.copy(heroSurprise = enabled) }
             }
         }
         viewModelScope.launch {
@@ -450,6 +457,7 @@ class LayoutSettingsViewModel @Inject constructor(
             is LayoutSettingsEvent.SetModernLandscapePostersEnabled -> setModernLandscapePostersEnabled(event.enabled)
             is LayoutSettingsEvent.SetModernHeroFullScreenBackdropEnabled -> setModernHeroFullScreenBackdropEnabled(event.enabled)
             is LayoutSettingsEvent.SetHeroSectionEnabled -> setHeroSectionEnabled(event.enabled)
+            is LayoutSettingsEvent.SetHeroSurprise -> setHeroSurprise(event.enabled)
             is LayoutSettingsEvent.SetDiscoverLocation -> setDiscoverLocation(event.location)
             is LayoutSettingsEvent.SetPosterLabelsEnabled -> setPosterLabelsEnabled(event.enabled)
             is LayoutSettingsEvent.SetCatalogAddonNameEnabled -> setCatalogAddonNameEnabled(event.enabled)
@@ -630,6 +638,14 @@ class LayoutSettingsViewModel @Inject constructor(
         if (_uiState.value.modernHeroFullScreenBackdropEnabled == enabled) return
         viewModelScope.launch {
             layoutPreferenceDataStore.setModernHeroFullScreenBackdropEnabled(enabled)
+        }
+    }
+
+    private fun setHeroSurprise(enabled: Boolean) {
+        if (_uiState.value.heroSurprise == enabled) return
+        val candidateKeys = _uiState.value.availableCatalogs.map { it.key }
+        viewModelScope.launch {
+            layoutPreferenceDataStore.setHeroSurprise(enabled, candidateKeys)
         }
     }
 

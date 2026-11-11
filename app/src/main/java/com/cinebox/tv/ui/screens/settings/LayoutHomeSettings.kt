@@ -104,6 +104,14 @@ internal fun LayoutHomeLayoutSection(
             onToggle = { onEvent(LayoutSettingsEvent.SetHeroSectionEnabled(!uiState.heroSectionEnabled)) }
         )
         if (uiState.heroSectionEnabled && uiState.availableCatalogs.isNotEmpty()) {
+            SettingsToggleRow(
+                title = stringResource(R.string.layout_hero_surprise),
+                subtitle = stringResource(R.string.layout_hero_surprise_sub),
+                checked = uiState.heroSurprise,
+                onToggle = { onEvent(LayoutSettingsEvent.SetHeroSurprise(!uiState.heroSurprise)) }
+            )
+        }
+        if (uiState.heroSectionEnabled && !uiState.heroSurprise && uiState.availableCatalogs.isNotEmpty()) {
             Text(
                 text = stringResource(R.string.layout_hero_catalogs),
                 style = MaterialTheme.typography.labelLarge,

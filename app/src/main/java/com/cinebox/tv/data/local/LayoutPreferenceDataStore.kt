@@ -73,6 +73,8 @@ class LayoutPreferenceDataStore @Inject constructor(
     private val heroCatalogKey = stringPreferencesKey("hero_catalog_key")
     private val heroCatalogKeysKey = stringPreferencesKey("hero_catalog_keys")
     private val heroDefaultAppliedKey = booleanPreferencesKey("hero_default_applied")
+    private val heroSurpriseKey = booleanPreferencesKey("hero_surprise")
+    private val heroSurpriseCatalogKey = stringPreferencesKey("hero_surprise_catalog")
     private val homeCatalogOrderKeysKey = stringPreferencesKey("home_catalog_order_keys")
     private val disabledHomeCatalogKeysKey = stringPreferencesKey("disabled_home_catalog_keys")
     private val customCatalogTitlesKey = stringPreferencesKey("custom_catalog_titles")
@@ -182,7 +184,15 @@ class LayoutPreferenceDataStore @Inject constructor(
         prefs[hasChosenKey] ?: false
     }
 
+    val heroSurprise: Flow<Boolean> = profileFlow { prefs ->
+        prefs[heroSurpriseKey] ?: false
+    }
+
     val heroCatalogSelections: Flow<List<String>> = profileFlow { prefs ->
+        // "Surprise me": one random installed catalog, re-rolled on each Home load.
+        if (prefs[heroSurpriseKey] == true) {
+            prefs[heroSurpriseCatalogKey]?.trim()?.takeIf { it.isNotEmpty() }?.let { return@profileFlow listOf(it) }
+        }
         val multiSelection = parseCatalogKeys(prefs.getStringOrMigrateSet(heroCatalogKeysKey))
         if (multiSelection.isNotEmpty()) {
             multiSelection
@@ -533,6 +543,30 @@ class LayoutPreferenceDataStore @Inject constructor(
                 prefs[heroCatalogKey] = keys.first()
             }
         }
+    }
+
+    suspend fun setHeroSurprise(enabled: Boolean, candidateKeys: List<String> = emptyList()) {
+        store().edit { prefs ->
+            prefs[heroSurpriseKey] = enabled
+            if (!enabled) {
+                prefs.remove(heroSurpriseCatalogKey)
+            } else if (candidateKeys.isNotEmpty()) {
+                prefs[heroSurpriseCatalogKey] = candidateKeys.random()
+            }
+        }
+    }
+
+    /** Re-rolls the surprise catalog. Returns true when it was rolled (surprise on and candidates exist). */
+    suspend fun rollHeroSurpriseCatalog(candidateKeys: List<String>): Boolean {
+        if (candidateKeys.isEmpty()) return false
+        var rolled = false
+        store().edit { prefs ->
+            if (prefs[heroSurpriseKey] == true) {
+                prefs[heroSurpriseCatalogKey] = candidateKeys.random()
+                rolled = true
+            }
+        }
+        return rolled
     }
 
     suspend fun setHeroCatalogKeys(catalogKeys: List<String>) {

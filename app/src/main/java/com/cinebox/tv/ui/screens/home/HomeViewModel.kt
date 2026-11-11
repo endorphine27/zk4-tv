@@ -235,6 +235,7 @@ class HomeViewModel @Inject constructor(
     internal var followAddonsOrderEnabled: Boolean = false
     internal var customCatalogTitles: Map<String, String> = emptyMap()
     internal var currentHeroCatalogKeys: List<String> = emptyList()
+    internal var heroSurpriseRolled = false
     internal var catalogUpdateJob: Job? = null
     internal var hasRenderedFirstCatalog = false
     internal val catalogLoadSemaphore = Semaphore(MAX_CATALOG_LOAD_CONCURRENCY)
